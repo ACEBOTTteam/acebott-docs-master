@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bluetooth — 提供无线蓝牙功能 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">bluetooth</span></code> — 提供无线蓝牙功能</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-bluetooth"></span><div class="section" id="bluetooth">
+<h1><a class="reference internal" href="#module-bluetooth" title="bluetooth: 提供无线蓝牙功能"><code class="xref py py-mod docutils literal"><span class="pre">bluetooth</span></code></a> — 提供无线蓝牙功能<a class="headerlink" href="#bluetooth" title="Permalink to this headline">¶</a></h1>
+<p>该模块提供ble蓝牙通讯、HID模拟设备功能。</p>
+<div class="section" id="ble">
+<h2>ble类<a class="headerlink" href="#ble" title="Permalink to this headline">¶</a></h2>
+<p>ble类, 支持客户端与主机端的BLE通讯及HID功能。HID功能,遵循BLE HID规范,可实现模拟无线蓝牙HID设备(如鼠标，键盘，游戏手柄等人机交互设备)。</p>
+<dl class="class">
+<dt id="bluetooth.ble">
+<em class="property">class </em><code class="descclassname">bluetooth.</code><code class="descname">ble</code><a class="headerlink" href="#bluetooth.ble" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="section" id="id1">
+<h3>BLE 通讯<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="bluetooth.ble.init">
+<code class="descclassname">ble.</code><code class="descname">init</code><span class="sig-paren">(</span><em>name=&quot;mpython&quot;</em><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>BLE客户端设备初始化。当不带参数时,默认客户端设备名为 <cite>mpython</cite> 。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">name</span></code> - 客户端设备名称,字符串类型。</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.start_advertising">
+<code class="descclassname">ble.</code><code class="descname">start_advertising</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.start_advertising" title="Permalink to this definition">¶</a></dt>
+<dd><p>BLE客户端设备开启广播。开启后,可被BLE主机设置搜索。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.board_send">
+<code class="descclassname">ble.</code><code class="descname">board_send</code><span class="sig-paren">(</span><em>buf</em><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.board_send" title="Permalink to this definition">¶</a></dt>
+<dd><p>BLE客户端向BLE主机端发送字节缓存</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.board_register_output_callback">
+<code class="descclassname">ble.</code><code class="descname">board_register_output_callback</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.board_register_output_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>接收BLE主机端的数据的回调函数, <cite>f</cite> 为回调函数,函数定义如下, <code class="docutils literal"><span class="pre">f(bytearray)</span></code> 。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.stop_advertising">
+<code class="descclassname">ble.</code><code class="descname">stop_advertising</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.stop_advertising" title="Permalink to this definition">¶</a></dt>
+<dd><p>BLE客户端设备关闭广播</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.hidd_send_consumer">
+<code class="descclassname">ble.</code><code class="descname">hidd_send_consumer</code><span class="sig-paren">(</span><em>ble.HID_CONSUMER_xxx</em>, <em>True</em><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.hidd_send_consumer" title="Permalink to this definition">¶</a></dt>
+<dd><p>模拟HID消费类设备的控制器。如,蓝牙遥控器。</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">第一参数</span></code> - HID Consumer类的常用的按键ID。如你想控制电视机开机,则用 <cite>ble.HID_CONSUMER_POWER</cite>  。具体的按键常量详见 <a class="reference internal" href="#hid-consumer-usage-ids"><span class="std std-ref">HID Consumer ID表</span></a> 。</li>
+<li><code class="docutils literal"><span class="pre">第二参数</span></code>- 按键状态, <cite>True</cite> 为按下, <cite>False</cite> 为松开。</li>
+</ul>
+<p>电视遥控音量加减的示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 导入蓝牙ble类</span>
+<span class="kn">from</span> <span class="nn">bluetooth</span> <span class="k">import</span> <span class="n">ble</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># ble初始化</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="c1"># 等待主机设备连接</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1"># 按下音量+</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_consumer</span><span class="p">(</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_CONSUMER_VOLUME_UP</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># 按下保持状态</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># 释放按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_consumer</span><span class="p">(</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_CONSUMER_VOLUME_UP</span><span class="p">,</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># 按下音量-</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_consumer</span><span class="p">(</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_CONSUMER_VOLUME_DOWN</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># 按下保持状态</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># 释放按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_consumer</span><span class="p">(</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_CONSUMER_VOLUME_DOWN</span><span class="p">,</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.hidd_send_keyboard">
+<code class="descclassname">ble.</code><code class="descname">hidd_send_keyboard</code><span class="sig-paren">(</span><em>keys = [key1...], modifier = KEY_MASK_NONE</em><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.hidd_send_keyboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>模拟HID键盘设备。</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">keys</span></code> - 一个或多个按键的数组类型。当数组内成员表示为按下的按键,如要释放按键只需将数组内对应位置的值赋值为0。具体的按键常量详见 <a class="reference internal" href="#hid-keyboard-usage-ids"><span class="std std-ref">HID Keyboard ID表</span></a> 。</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">modifier</span></code> - 键盘组合按键,默认为 <cite>KEY_MASK_NONE</cite> 表示为单按键 ,可以为以下值。如要用到2个组合按键,可使用 <code class="docutils literal"><span class="pre">|</span></code> 或逻辑运算,像 <cite>Ctrl</cite> + <cite>Alt</cite> 组合按键时为 <cite>KEY_MASK_L_CTRL | KEY_MASK_L_ALT</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>KEY_MASK_NONE</cite> - 0</li>
+<li><cite>KEY_MASK_L_CTRL</cite> - 1</li>
+<li><cite>KEY_MASK_L_SHIFT</cite> - 2</li>
+<li><cite>KEY_MASK_L_ALT</cite> - 4</li>
+<li><cite>KEY_MASK_L_GUI</cite> - 8</li>
+<li><cite>KEY_MASK_R_CTRL</cite> - 16</li>
+<li><cite>KEY_MASK_R_SHIFT</cite> - 32</li>
+<li><cite>KEY_MASK_R_ALT</cite> - 64</li>
+<li><cite>KEY_MASK_R_GUI</cite> - 128</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>键盘示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Ctrl + F组合按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEY_F</span><span class="p">],</span><span class="n">ble</span><span class="o">.</span><span class="n">KEY_MASK_L_CTRL</span><span class="p">)</span>
+<span class="c1"># 释放按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Ctrl + Alt + Del 组合按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEYPAD_DOT</span><span class="p">],</span><span class="n">ble</span><span class="o">.</span><span class="n">KEY_MASK_L_CTRL</span> <span class="o">|</span> <span class="n">ble</span><span class="o">.</span><span class="n">KEY_MASK_L_ALT</span> <span class="p">)</span>
+ <span class="c1"># 释放按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># 单按键 A</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEY_A</span><span class="p">])</span>
+<span class="c1"># 释放按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bluetooth.ble.hidd_send_mouse">
+<code class="descclassname">ble.</code><code class="descname">hidd_send_mouse</code><span class="sig-paren">(</span><em>button = 0</em>, <em>x = 0</em>, <em>y = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#bluetooth.ble.hidd_send_mouse" title="Permalink to this definition">¶</a></dt>
+<dd><p>模拟HID鼠标设备。</p>
+<blockquote>
+<div><ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">button</span></code> - 鼠标按键, 可以为以下值:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">0</span></code> - 释放按键</li>
+<li><code class="docutils literal"><span class="pre">ble.HID_MOUSE_LEFT</span></code> - 鼠标左键</li>
+<li><code class="docutils literal"><span class="pre">ble.HID_MOUSE_MIDDLE</span></code> - 鼠标中键</li>
+<li><code class="docutils literal"><span class="pre">ble.HID_MOUSE_RIGHT</span></code> - 鼠标右键</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">x</span></code> - 鼠标坐标x轴的相对位移,范围-1023 ~ 1023</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">y</span></code> - 鼠标坐标y轴的相对位移,范围-1023 ~ 1023</p>
+</li>
+</ul>
+</div></blockquote>
+<p>鼠标示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 按下鼠标左键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_mouse</span><span class="p">(</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_MOUSE_LEFT</span><span class="p">)</span>
+<span class="c1"># 释放鼠标按键</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_mouse</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># 坐标x轴位移</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_mouse</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="id2">
+<h2>常量<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hid-consumer">
+<h3>HID Consumer<a class="headerlink" href="#hid-consumer" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="hid-consumer-usage-ids">
+<colgroup>
+<col width="49%" />
+<col width="7%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HID Consumer Usage IDs</th>
+<th class="head">数值</th>
+<th class="head">定义</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_POWER</span></code></td>
+<td>48</td>
+<td>Power</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_RESET</span></code></td>
+<td>49</td>
+<td>Reset</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_SLEEP</span></code></td>
+<td>50</td>
+<td>Sleep</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_MENU</span></code></td>
+<td>64</td>
+<td>Menu</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_SELECTION</span></code></td>
+<td>128</td>
+<td>Selection</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_ASSIGN_SEL</span></code></td>
+<td>129</td>
+<td>Assign Selection</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_MODE_STEP</span></code></td>
+<td>130</td>
+<td>Mode Step</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_RECALL_LAST</span></code></td>
+<td>131</td>
+<td>Recall Last</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_QUIT</span></code></td>
+<td>148</td>
+<td>Quit</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_HELP</span></code></td>
+<td>149</td>
+<td>Help</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_CHANNEL_UP</span></code></td>
+<td>156</td>
+<td>Channel Increment</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_CHANNEL_DOWN</span></code></td>
+<td>157</td>
+<td>Channel Decrement</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_PLAY</span></code></td>
+<td>176</td>
+<td>Play</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_PAUSE</span></code></td>
+<td>177</td>
+<td>Pause</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_RECORD</span></code></td>
+<td>178</td>
+<td>Record</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_FAST_FORWARD</span></code></td>
+<td>179</td>
+<td>Fast Forward</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_REWIND</span></code></td>
+<td>180</td>
+<td>Rewind</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_SCAN_NEXT_TRK</span></code></td>
+<td>181</td>
+<td>Scan Next Track</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_SCAN_PREV_TRK</span></code></td>
+<td>182</td>
+<td>Scan Previous Track</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_STOP</span></code></td>
+<td>183</td>
+<td>Stop</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_EJECT</span></code></td>
+<td>184</td>
+<td>Eject</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_RANDOM_PLAY</span></code></td>
+<td>185</td>
+<td>Random Play</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_SELECT_DISC</span></code></td>
+<td>186</td>
+<td>Select Disk</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_ENTER_DISC</span></code></td>
+<td>187</td>
+<td>Enter Disc</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_REPEAT</span></code></td>
+<td>188</td>
+<td>Repeat</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_STOP_EJECT</span></code></td>
+<td>204</td>
+<td>Stop/Eject</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_PLAY_PAUSE</span></code></td>
+<td>205</td>
+<td>Play/Pause</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_PLAY_SKIP</span></code></td>
+<td>206</td>
+<td>Play/Skip</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_VOLUME</span></code></td>
+<td>224</td>
+<td>Volume</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_BALANCE</span></code></td>
+<td>225</td>
+<td>Balance</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_MUTE</span></code></td>
+<td>226</td>
+<td>Mute</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_BASS</span></code></td>
+<td>227</td>
+<td>Bass</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_VOLUME_UP</span></code></td>
+<td>233</td>
+<td>Volume Increment</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_CONSUMER_VOLUME_DOWN</span></code></td>
+<td>234</td>
+<td>Volume Decrement</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hid-keyboard">
+<h3>HID Keyboard<a class="headerlink" href="#hid-keyboard" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="hid-keyboard-usage-ids">
+<colgroup>
+<col width="49%" />
+<col width="7%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HID Keyboard Usage IDs</th>
+<th class="head">数值</th>
+<th class="head">定义</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_A</span></code></td>
+<td>4</td>
+<td>Keyboard A and a</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_B</span></code></td>
+<td>5</td>
+<td>Keyboard B and b</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_C</span></code></td>
+<td>6</td>
+<td>Keyboard C and c</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_D</span></code></td>
+<td>7</td>
+<td>Keyboard D and d</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_E</span></code></td>
+<td>8</td>
+<td>Keyboard E and e</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F</span></code></td>
+<td>9</td>
+<td>Keyboard F and f</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_G</span></code></td>
+<td>10</td>
+<td>Keyboard G and g</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_H</span></code></td>
+<td>11</td>
+<td>Keyboard H and h</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_I</span></code></td>
+<td>12</td>
+<td>Keyboard I and i</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_J</span></code></td>
+<td>13</td>
+<td>Keyboard J and j</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_K</span></code></td>
+<td>14</td>
+<td>Keyboard K and k</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_L</span></code></td>
+<td>15</td>
+<td>Keyboard L and l</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_M</span></code></td>
+<td>16</td>
+<td>Keyboard M and m</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_N</span></code></td>
+<td>17</td>
+<td>Keyboard N and n</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_O</span></code></td>
+<td>18</td>
+<td>Keyboard O and o</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_P</span></code></td>
+<td>19</td>
+<td>Keyboard P and p</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_Q</span></code></td>
+<td>20</td>
+<td>Keyboard Q and q</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_R</span></code></td>
+<td>21</td>
+<td>Keyboard R and r</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_S</span></code></td>
+<td>22</td>
+<td>Keyboard S and s</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_T</span></code></td>
+<td>23</td>
+<td>Keyboard T and t</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_U</span></code></td>
+<td>24</td>
+<td>Keyboard U and u</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_V</span></code></td>
+<td>25</td>
+<td>Keyboard V and v</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_W</span></code></td>
+<td>26</td>
+<td>Keyboard W and w</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_X</span></code></td>
+<td>27</td>
+<td>Keyboard X and x</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_Y</span></code></td>
+<td>28</td>
+<td>Keyboard Y and y</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_Z</span></code></td>
+<td>29</td>
+<td>Keyboard Z and z</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_1</span></code></td>
+<td>30</td>
+<td>Keyboard 1</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_2</span></code></td>
+<td>31</td>
+<td>Keyboard 2</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_3</span></code></td>
+<td>32</td>
+<td>Keyboard 3</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_4</span></code></td>
+<td>33</td>
+<td>Keyboard 4</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_5</span></code></td>
+<td>34</td>
+<td>Keyboard 5</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_6</span></code></td>
+<td>35</td>
+<td>Keyboard 6</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_7</span></code></td>
+<td>36</td>
+<td>Keyboard 7</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_8</span></code></td>
+<td>37</td>
+<td>Keyboard 8</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_9</span></code></td>
+<td>38</td>
+<td>Keyboard 9</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_0</span></code></td>
+<td>39</td>
+<td>Keyboard 0</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_RETURN</span></code></td>
+<td>40</td>
+<td>Keyboard Return (ENTER)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_ESCAPE</span></code></td>
+<td>41</td>
+<td>Keyboard ESCAPE</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_DELETE</span></code></td>
+<td>42</td>
+<td>Keyboard DELETE (Backspace)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_TAB</span></code></td>
+<td>43</td>
+<td>Keyboard Tab</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_SPACEBAR</span></code></td>
+<td>44</td>
+<td>Keyboard Spacebar</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_MINUS</span></code></td>
+<td>45</td>
+<td>Keyboard - and (underscore)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_EQUAL</span></code></td>
+<td>46</td>
+<td>Keyboard = and +</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_LEFT_BRKT</span></code></td>
+<td>47</td>
+<td>Keyboard [ and {</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_RIGHT_BRKT</span></code></td>
+<td>48</td>
+<td>Keyboard ] and }</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_BACK_SLASH</span></code></td>
+<td>49</td>
+<td>Keyboard and |</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_SEMI_COLON</span></code></td>
+<td>51</td>
+<td>Keyboard ; and :</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_SGL_QUOTE</span></code></td>
+<td>52</td>
+<td>Keyboard ‘ and “</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_GRV_ACCENT</span></code></td>
+<td>53</td>
+<td>Keyboard Grave Accent and Tilde</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_COMMA</span></code></td>
+<td>54</td>
+<td>Keyboard , and &lt;</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_DOT</span></code></td>
+<td>55</td>
+<td>Keyboard . and &gt;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_FWD_SLASH</span></code></td>
+<td>56</td>
+<td>Keyboard / and ?</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_CAPS_LOCK</span></code></td>
+<td>57</td>
+<td>Keyboard Caps Lock</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F1</span></code></td>
+<td>58</td>
+<td>Keyboard F1</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F2</span></code></td>
+<td>59</td>
+<td>Keyboard F2</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F3</span></code></td>
+<td>60</td>
+<td>Keyboard F3</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F4</span></code></td>
+<td>61</td>
+<td>Keyboard F4</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F5</span></code></td>
+<td>62</td>
+<td>Keyboard F5</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F6</span></code></td>
+<td>63</td>
+<td>Keyboard F6</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F7</span></code></td>
+<td>64</td>
+<td>Keyboard F7</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F8</span></code></td>
+<td>65</td>
+<td>Keyboard F8</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F9</span></code></td>
+<td>66</td>
+<td>Keyboard F9</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F10</span></code></td>
+<td>67</td>
+<td>Keyboard F10</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F11</span></code></td>
+<td>68</td>
+<td>Keyboard F11</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_F12</span></code></td>
+<td>69</td>
+<td>Keyboard F12</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_PRNT_SCREEN</span></code></td>
+<td>70</td>
+<td>Keyboard Print Screen</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_SCROLL_LOCK</span></code></td>
+<td>71</td>
+<td>Keyboard Scroll Lock</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_PAUSE</span></code></td>
+<td>72</td>
+<td>Keyboard Pause</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_INSERT</span></code></td>
+<td>73</td>
+<td>Keyboard Insert</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_HOME</span></code></td>
+<td>74</td>
+<td>Keyboard Home</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_PAGE_UP</span></code></td>
+<td>75</td>
+<td>Keyboard PageUp</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_DELETE_FWD</span></code></td>
+<td>76</td>
+<td>Keyboard Delete Forward</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_END</span></code></td>
+<td>77</td>
+<td>Keyboard End</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_PAGE_DOWN</span></code></td>
+<td>78</td>
+<td>Keyboard PageDown</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_RIGHT_ARROW</span></code></td>
+<td>79</td>
+<td>Keyboard RightArrow</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_LEFT_ARROW</span></code></td>
+<td>80</td>
+<td>Keyboard LeftArrow</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_DOWN_ARROW</span></code></td>
+<td>81</td>
+<td>Keyboard DownArrow</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_UP_ARROW</span></code></td>
+<td>82</td>
+<td>Keyboard UpArrow</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_NUM_LOCK</span></code></td>
+<td>83</td>
+<td>Keypad Num Lock and Clear</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_DIVIDE</span></code></td>
+<td>84</td>
+<td>Keypad /</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_MULTIPLY</span></code></td>
+<td>85</td>
+<td>Keypad *</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_SUBTRACT</span></code></td>
+<td>86</td>
+<td>Keypad -</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_ADD</span></code></td>
+<td>87</td>
+<td>Keypad +-</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_ENTER</span></code></td>
+<td>88</td>
+<td>Keypad ENTER</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_1</span></code></td>
+<td>89</td>
+<td>Keypad 1 and End</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_2</span></code></td>
+<td>90</td>
+<td>Keypad 2 and Down Arrow</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_3</span></code></td>
+<td>91</td>
+<td>Keypad 3 and PageDn</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_4</span></code></td>
+<td>92</td>
+<td>Keypad 4 and Lfet Arrow</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_5</span></code></td>
+<td>93</td>
+<td>Keypad 5</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_6</span></code></td>
+<td>94</td>
+<td>Keypad 6 and Right Arrow</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_7</span></code></td>
+<td>95</td>
+<td>Keypad 7 and Home</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_8</span></code></td>
+<td>96</td>
+<td>Keypad 8 and Up Arrow</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_9</span></code></td>
+<td>97</td>
+<td>Keypad 9 and PageUp</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_0</span></code></td>
+<td>98</td>
+<td>Keypad 0 and Insert</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEYPAD_DOT</span></code></td>
+<td>99</td>
+<td>Keypad . and Delete</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_MUTE</span></code></td>
+<td>127</td>
+<td>Keyboard Mute</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_VOLUME_UP</span></code></td>
+<td>128</td>
+<td>Keyboard Volume up</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_KEY_VOLUME_DOWN</span></code></td>
+<td>129</td>
+<td>Keyboard Volume down</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hid-mouse">
+<h3>HID Mouse<a class="headerlink" href="#hid-mouse" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="hid-mouse-usage-ids">
+<colgroup>
+<col width="49%" />
+<col width="7%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HID Mouse Usage IDs</th>
+<th class="head">数值</th>
+<th class="head">定义</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_MOUSE_LEFT</span></code></td>
+<td>253</td>
+<td>Mouse Left</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ble.HID_MOUSE_MIDDLE</span></code></td>
+<td>254</td>
+<td>Mouse Middle</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ble.HID_MOUSE_RIGHT</span></code></td>
+<td>255</td>
+<td>Mouse Right</td>
+</tr>
+</tbody>
+</table>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">PPT 翻页遥控器</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># MIT license; Copyright (c) 2019 Labplus &amp; mPython Development </span>
+<span class="c1"># V1.0 Tangliufeng</span>
+<span class="c1"># 掌控板PPT翻页遥控器</span>
+<span class="c1"># 使用方式: 短按键A-上页；短按键B-下页；长按键A-进入放映；长按键B-退出放映</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">bluetooth</span> <span class="k">import</span> <span class="n">ble</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="c1"># 按键状态标志</span>
+<span class="n">btn_a_status</span><span class="p">,</span> <span class="n">btn_b_status</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;PPT 翻页控制器&#39;</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># ble初始化</span>
+<span class="n">ble</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="s1">&#39;PPT_Remote&#39;</span><span class="p">)</span>
+<span class="c1"># 等待蓝牙主机</span>
+<span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># 当按键A为低电平且标志为0</span>
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">btn_a_status</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">btn_a_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">()</span>
+        <span class="c1"># 按键保持标志</span>
+        <span class="n">a_hold_flag</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="c1"># 当按键一直按下</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">button_a</span><span class="o">.</span><span class="n">value</span><span class="p">():</span>
+            <span class="c1"># 当按下保持2秒</span>
+            <span class="k">if</span> <span class="n">time</span><span class="o">.</span><span class="n">ticks_diff</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">(),</span> <span class="n">btn_a_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">:</span>
+                <span class="c1"># 发送 F5,放映幻灯片</span>
+                <span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEY_F5</span><span class="p">])</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pressed F5&quot;</span><span class="p">)</span>
+                <span class="c1"># 按键保持标志置为1</span>
+                <span class="n">a_hold_flag</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">break</span>
+        <span class="c1"># 如果没有持续按下按键</span>
+        <span class="k">if</span> <span class="n">a_hold_flag</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+            <span class="c1"># 发送 LeftArrow,幻灯片上页</span>
+            <span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEY_LEFT_ARROW</span><span class="p">])</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pressed LeftArrow&quot;</span><span class="p">)</span>
+        <span class="c1"># 按键状态置为1</span>
+        <span class="n">btn_a_status</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="c1"># 当按键A为高电平且标志为1时,释放按键</span>
+    <span class="k">elif</span> <span class="n">button_a</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">btn_a_status</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Relesed Button A&quot;</span><span class="p">)</span>
+        <span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">btn_a_status</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">btn_b_status</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">btn_b_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">()</span>
+        <span class="n">b_hold_flag</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">button_b</span><span class="o">.</span><span class="n">value</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">time</span><span class="o">.</span><span class="n">ticks_diff</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">(),</span> <span class="n">btn_b_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">:</span>
+                <span class="c1"># 发送 ESC,退出放映幻灯片</span>
+                <span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEY_ESCAPE</span><span class="p">])</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pressed ESC&quot;</span><span class="p">)</span>
+                <span class="n">b_hold_flag</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">break</span>
+
+        <span class="k">if</span> <span class="n">b_hold_flag</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+            <span class="c1"># 发送 RightArrow,幻灯片翻页</span>
+            <span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="n">ble</span><span class="o">.</span><span class="n">HID_KEY_RIGHT_ARROW</span><span class="p">])</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pressed RightArrow&quot;</span><span class="p">)</span>
+
+        <span class="n">btn_b_status</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">btn_b_status</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Relesed Button B&quot;</span><span class="p">)</span>
+        <span class="n">ble</span><span class="o">.</span><span class="n">hidd_send_keyboard</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">btn_b_status</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

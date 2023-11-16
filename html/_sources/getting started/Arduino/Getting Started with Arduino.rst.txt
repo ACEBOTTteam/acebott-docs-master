@@ -1,0 +1,30 @@
+Getting Started with Arduino
+======================================
+
+What is Arduino
+---------------------
+
+Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, 
+a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. 
+You can tell your board what to do by sending a set of instructions to the microcontroller on the board. 
+To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE) , based on Processing.
+
+Click the link below to get more info.
+
+https://www.arduino.cc/en/Guide/Introduction
+
+https://www.arduino.cc/en/Guide
+
+https://www.arduino.cc/en/hardware
+
+The Arduino Platform
+------------------------------
+Arduino is composed of two major parts:
+
+The Arduino board , which is the piece of hardware you work on when you build your objects. Arduino senses the environment by receiving inputs from many sensors, 
+and affects its surroundings by controlling lights, motors, and other actuators.
+
+The Arduino IDE , the piece of software you run on your computer. You use the IDE to create a sketch (a little computer program) that you upload to the Arduino board. 
+The sketch tells the board what to do.
+You can tell your Arduino what to do by writing code in the Arduino programming language and using the Arduino development environment .
+

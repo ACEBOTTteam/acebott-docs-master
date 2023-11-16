@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>类 ADC – 模数转换 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">类 ADC – 模数转换</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-ADC"><span id="machine-adc"></span></span><div class="section" id="adc">
+<h1>类 ADC – 模数转换<a class="headerlink" href="#adc" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ADC.ADC">
+<em class="property">class </em><code class="descclassname">ADC.</code><code class="descname">ADC</code><span class="sig-paren">(</span><em>Pin</em><span class="sig-paren">)</span><a class="headerlink" href="#ADC.ADC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>创建与设定引脚关联的ADC对象。这样您就可以读取该引脚上的模拟值。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">Pin</span></code> - ADC在专用引脚上可用，ESP32可用引脚有：IO39、IO36、IO35、IO33、IO34、IO32。掌控板的ADC引脚有P0、P1、P2、P3、P4、P10。</li>
+</ul>
+</div></blockquote>
+<p>详细引脚定义可查阅 <a class="reference external" href="../../../_images/pinout_wroom_pinout.png">ESP32引脚功能表.</a> 和  <span class="xref std std-ref">掌控板引脚定义</span> 章节。</p>
+<p>示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">Pin</span>
+
+<span class="n">adc</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">33</span><span class="p">))</span>      <span class="c1"># create an ADC object</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="ADC.ADC.read">
+<code class="descclassname">ADC.</code><code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ADC.ADC.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>读取ADC并返回读取结果。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ADC.ADC.atten">
+<code class="descclassname">ADC.</code><code class="descname">atten</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#ADC.ADC.atten" title="Permalink to this definition">¶</a></dt>
+<dd><p>该方法允许设置ADC输入的衰减量。这允许更宽的可能输入电压范围，但是以精度为代价（相同的位数现在表示更宽的范围）。在未设置atten(),默认为0DB衰减。可能的衰减选项包括：</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">db</span></code></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="14%" />
+<col width="10%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">宏定义</th>
+<th class="head">衰减量</th>
+<th class="head">数值</th>
+<th class="head">满量程电压</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ADC.ATTN_0DB</span></code></td>
+<td>0dB衰减</td>
+<td>0</td>
+<td>1V</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ADC.ATTN_2_5DB</span></code></td>
+<td>2.5dB衰减</td>
+<td>1</td>
+<td>1.5V</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ADC.ATTN_6DB</span></code></td>
+<td>6dB衰减</td>
+<td>2</td>
+<td>2V</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ADC.ATTN_11DB</span></code></td>
+<td>11dB衰减</td>
+<td>3</td>
+<td>3.3V</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="ADC.ADC.width">
+<code class="descclassname">ADC.</code><code class="descname">width</code><span class="sig-paren">(</span><em>bit</em><span class="sig-paren">)</span><a class="headerlink" href="#ADC.ADC.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>设置数据宽度(分辨率)。ADC的分辨率是指能够将采集的模拟信号转化为数字信号的精度，通常我们用“位”来表述，比如8位就是指ADC可以将制定量程内的电压信号，分别对应到0 - 2^8-1,即 0-255这256个数字上。分辨率位数越高，能够表示的也就越精确，信息丢失的也就越少。</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">bit</span></code> -  宽度选项有:</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="24%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">宏定义</th>
+<th class="head">数值</th>
+<th class="head">满量程</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ADC.WIDTH_9BIT</span></code></td>
+<td>0</td>
+<td>0x1ff(511)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ADC.WIDTH_10BIT</span></code></td>
+<td>1</td>
+<td>0x3ff(1023)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">ADC.WIDTH_11BIT</span></code></td>
+<td>2</td>
+<td>0x7ff(2047)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ADC.WIDTH_12BIT</span></code></td>
+<td>3</td>
+<td>00xfff(4095)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<p>示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">Pin</span>
+
+<span class="n">adc</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">34</span><span class="p">))</span>      <span class="c1"># create an ADC object</span>
+<span class="n">adc</span><span class="o">.</span><span class="n">atten</span><span class="p">(</span><span class="n">adc</span><span class="o">.</span><span class="n">ATTN_11DB</span><span class="p">)</span>   <span class="c1"># set 3.3V Range</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">adc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>常量<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>衰减比<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<dl class="data">
+<dt id="ADC.ADC.ATTN_0DB">
+<code class="descclassname">ADC.</code><code class="descname">ATTN_0DB</code><a class="headerlink" href="#ADC.ADC.ATTN_0DB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ADC.ADC.ATTN_2_5DB">
+<code class="descclassname">ADC.</code><code class="descname">ATTN_2_5DB</code><a class="headerlink" href="#ADC.ADC.ATTN_2_5DB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ADC.ADC.ATTN_6DB">
+<code class="descclassname">ADC.</code><code class="descname">ATTN_6DB</code><a class="headerlink" href="#ADC.ADC.ATTN_6DB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ADC.ADC.ATTN_11DB">
+<code class="descclassname">ADC.</code><code class="descname">ATTN_11DB</code><a class="headerlink" href="#ADC.ADC.ATTN_11DB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="id5">
+<h3>数据宽度<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<dl class="data">
+<dt id="ADC.ADC.WIDTH_9BIT">
+<code class="descclassname">ADC.</code><code class="descname">WIDTH_9BIT</code><a class="headerlink" href="#ADC.ADC.WIDTH_9BIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ADC.ADC.WIDTH_10BIT">
+<code class="descclassname">ADC.</code><code class="descname">WIDTH_10BIT</code><a class="headerlink" href="#ADC.ADC.WIDTH_10BIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ADC.ADC.WIDTH_11BIT">
+<code class="descclassname">ADC.</code><code class="descname">WIDTH_11BIT</code><a class="headerlink" href="#ADC.ADC.WIDTH_11BIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="ADC.ADC.WIDTH_12BIT">
+<code class="descclassname">ADC.</code><code class="descname">WIDTH_12BIT</code><a class="headerlink" href="#ADC.ADC.WIDTH_12BIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>类 TouchPad – 触摸 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">类 TouchPad – 触摸</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-TouchPad"><span id="machine-touchpad"></span></span><div class="section" id="touchpad">
+<h1>类 TouchPad – 触摸<a class="headerlink" href="#touchpad" title="Permalink to this headline">¶</a></h1>
+<p>ESP32 提供了多达 10 个电容式传感 GPIO，能够探测由手指或其他物品直接接触或接近而产生的电容差异。</p>
+<div class="section" id="id1">
+<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="TouchPad.TouchPad">
+<em class="property">class </em><code class="descclassname">TouchPad.</code><code class="descname">TouchPad</code><span class="sig-paren">(</span><em>Pin</em><span class="sig-paren">)</span><a class="headerlink" href="#TouchPad.TouchPad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>创建与设定引脚关联的TouchPad对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">Pin</span></code> - 可用引脚有：</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="22%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>电容式传感信号名称</td>
+<td>ESP32 GPIO</td>
+<td>掌控板引脚</td>
+<td>说明</td>
+</tr>
+<tr class="row-even"><td>TOUCH0</td>
+<td>GPIO4</td>
+<td>P28/Touch_N</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>TOUCH1</td>
+<td>GPIO0</td>
+<td>P5/Button_A</td>
+<td>引脚上拉不能使用</td>
+</tr>
+<tr class="row-even"><td>TOUCH2</td>
+<td>GPIO2</td>
+<td>P11/Button_B</td>
+<td>引脚上拉不能使用</td>
+</tr>
+<tr class="row-odd"><td>TOUCH3</td>
+<td>GPIO15</td>
+<td>P27/Touch_O</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>TOUCH4</td>
+<td>GPIO13</td>
+<td>P26/Touch_H</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>TOUCH5</td>
+<td>GPIO12</td>
+<td>P25/Touch_T</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>TOUCH6</td>
+<td>GPIO14</td>
+<td>P24/Touch_Y</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>TOUCH7</td>
+<td>GPIO27</td>
+<td>P23/Touch_P</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>TOUCH8</td>
+<td>GPIO33</td>
+<td>P0</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>TOUCH9</td>
+<td>GPIO32</td>
+<td>P1</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ESP32有10个触摸传感。掌控板有8个触摸能用,其中6个引出至掌控板的正面的触摸盘。有关更多信息，请查看 <a class="reference internal" href="../../../board/Microbit/Micro：bitV2.html#mpythonpindesc"><span class="std std-ref">掌控板引脚定义</span></a> 。</p>
+</div>
+</div></blockquote>
+<p>示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">TouchPad</span><span class="p">,</span> <span class="n">Pin</span>
+
+<span class="n">tp</span> <span class="o">=</span> <span class="n">TouchPad</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">14</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="TouchPad.TouchPad.read">
+<code class="descclassname">TouchPad.</code><code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TouchPad.TouchPad.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>读取TouchPad的电平。</p>
+<p><code class="docutils literal"><span class="pre">TouchPad.read</span></code> 返回相对于电容性变量的值。当触摸时，是个较小数字(通常在 <em>10</em> 内)，当没有触摸时，是较大数字(大于 <em>1000</em>)是常见的。然而，这些值是“相对的”，可以根据电路板和周围不同而变化，因此可能的需要进行一些校准。
+注意,如果如果调用其他的非触摸引脚将会导致 <code class="docutils literal"><span class="pre">ValueError</span></code> 。</p>
+<dl class="method">
+<dt id="TouchPad.TouchPad.config">
+<code class="descclassname">TouchPad.</code><code class="descname">config</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#TouchPad.TouchPad.config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>设置触摸的阈值</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">value</span></code> 整数</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

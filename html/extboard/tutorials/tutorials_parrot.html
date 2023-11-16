@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拓展板入门教程 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">拓展板入门教程</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="extboard-tutorials">
+<span id="id1"></span><h1>拓展板入门教程<a class="headerlink" href="#extboard-tutorials" title="Permalink to this headline">¶</a></h1>
+<p>本章节将讲解掌控拓展板parrot基本的使用,如电机驱动、语音播放、TTS语音合成、红外发射等功能。有关,掌控拓展板技术参数详细说明,请查阅 <a class="reference internal" href="../parrot.html#extboard-introduce"><span class="std std-ref">掌控拓展板介绍</span></a> 章节。</p>
+<img alt="../../_images/extboard_back.png" src="../../_images/extboard_back.png" />
+<div class="section" id="id2">
+<h2>电机驱动<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>拓展板支持2路的PWM电机驱动,你可以使用直流电机马达,如TT马达,N20等。</p>
+<p>下面讲解,使用电机如何编程</p>
+<p>首先导入parrot模块:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">parrot</span>
+</pre></div>
+</div>
+<p>M1、M2,正转速度设为80:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">parrot</span>                           <span class="c1"># 导入parrot 模块</span>
+
+<span class="n">parrot</span><span class="o">.</span><span class="n">set_speed</span><span class="p">(</span><span class="n">parrot</span><span class="o">.</span><span class="n">MOTOR_1</span><span class="p">,</span><span class="mi">80</span><span class="p">)</span>       <span class="c1">#  设置M1正转,速度为80</span>
+<span class="n">parrot</span><span class="o">.</span><span class="n">set_speed</span><span class="p">(</span><span class="n">parrot</span><span class="o">.</span><span class="n">MOTOR_2</span><span class="p">,</span><span class="mi">80</span><span class="p">)</span>       <span class="c1">#  设置M2正转,速度为80</span>
+</pre></div>
+</div>
+<p>反转:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">parrot</span><span class="o">.</span><span class="n">set_speed</span><span class="p">(</span><span class="n">parrot</span><span class="o">.</span><span class="n">MOTOR_1</span><span class="p">,</span><span class="o">-</span><span class="mi">80</span><span class="p">)</span>      <span class="c1">#  设置M1反转,速度为80</span>
+<span class="n">parrot</span><span class="o">.</span><span class="n">set_speed</span><span class="p">(</span><span class="n">parrot</span><span class="o">.</span><span class="n">MOTOR_2</span><span class="p">,</span><span class="o">-</span><span class="mi">80</span><span class="p">)</span>      <span class="c1">#  设置M2反转,速度为80</span>
+</pre></div>
+</div>
+<p>停止:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">parrot</span><span class="o">.</span><span class="n">set_speed</span><span class="p">(</span><span class="n">parrot</span><span class="o">.</span><span class="n">MOTOR_1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>        <span class="c1"># 停止</span>
+<span class="n">parrot</span><span class="o">.</span><span class="n">set_speed</span><span class="p">(</span><span class="n">parrot</span><span class="o">.</span><span class="n">MOTOR_2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>        <span class="c1"># 停止</span>
+</pre></div>
+</div>
+<p>控制电机速度使用到函数 <code class="docutils literal"><span class="pre">set_speed(motor_no,</span> <span class="pre">speed)</span></code> 。<code class="docutils literal"><span class="pre">motor_no</span></code> 参数为电机编号,可选编号常量有 <code class="docutils literal"><span class="pre">MOTOR_1</span></code> 、<code class="docutils literal"><span class="pre">MOTOR_2</span></code> 。 <code class="docutils literal"><span class="pre">speed</span></code> 参数为速度,范围-100~100,正值表示正转,负值时表示负转。
+当某些时候你需要知道当前设置的速度值,你可以用 <code class="docutils literal"><span class="pre">get_speed(motor_no)</span></code> 返回当前电机速度。</p>
+</div>
+<div class="section" id="id3">
+<h2>音频播放<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>拓展板内置扬声器,支持wav、MP3格式为音频播放。可以播放掌控板文件系统的音频,或者网络的音频资源。</p>
+<div class="section" id="id4">
+<h3>播放本地音频<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">播放本地mp3音频由于受micropython文件系统限制和RAM大小限制,当文件大于1M基本很难下载下去。所以对音频文件的大小有所限制,应尽可能的小。</p>
+</div>
+<p>首先,将 <a class="reference download internal" href="../../_downloads/extboad_audio.rar" download=""><code class="xref download docutils literal"><span class="pre">音频素材</span></code></a> 上传至掌控板的文件系统。</p>
+<p>首先导入audio模块:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>
+</pre></div>
+</div>
+<p>播放本地mp3音频:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>                            <span class="c1"># 导入audio对象</span>
+<span class="n">audio</span><span class="o">.</span><span class="n">player_init</span><span class="p">()</span>                     <span class="c1"># 播放初始化</span>
+<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s2">&quot;music_1.mp3&quot;</span><span class="p">)</span>               <span class="c1"># 播放&quot;music_1.mp3&quot;音频</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p>可在以下网站获取自己需要的音频。注意，最终上传至文件系统上的音频还需要压缩下，减低文件大小！</p>
+<ul class="last simple">
+<li>音效素材：<a class="reference external" href="http://www.aigei.com/sound/">http://www.aigei.com/sound/</a></li>
+<li>音频压缩：<a class="reference external" href="https://online-audio-converter.com/cn/">https://online-audio-converter.com/cn/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>播放本网络音频<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>要播放网络上mp3音频文件，需要知道音频的URL地址。目前，大部分的音乐网受版权保护，并不直接提供音乐的URL，你可以通过一些插件爬取音频的URL地址。</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">播放MP3音频</span><a class="headerlink" href="#id7" title="Permalink to this code">¶</a></div>
+<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>                                    <span class="c1"># 导入audio</span>
+<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="n">wifi</span>                        <span class="c1"># 导入wifi</span>
+
+<span class="n">mywifi</span><span class="o">=</span><span class="n">wifi</span><span class="p">()</span>                                   <span class="c1"># 实例wifi类</span>
+<span class="n">mywifi</span><span class="o">.</span><span class="n">connectWiFi</span><span class="p">(</span><span class="s1">&#39;ssid&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">)</span>           <span class="c1"># 连接 WiFi 网络</span>
+
+<span class="n">audio</span><span class="o">.</span><span class="n">player_init</span><span class="p">()</span>                                   <span class="c1"># 播放初始化</span>
+<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;music.mp3&#39;</span><span class="p">)</span>                                      <span class="c1"># 本地音频解码                   </span>
+<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s2">&quot;http://wiki.labplus.cn/images/4/4e/Music_test.mp3&quot;</span><span class="p">)</span>          <span class="c1"># 播放网络音频url</span>
+<span class="n">audio</span><span class="o">.</span><span class="n">player_deinit</span><span class="p">()</span>                            <span class="c1"># 播放结束,释放资源</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">掌控板需要确保连接网络通畅。URL必须是完整的网络地址，否则无法解析。</p>
+</div>
+<p>音频解码功能使用到 <code class="docutils literal"><span class="pre">audio</span></code> 模块的 <code class="docutils literal"><span class="pre">audio.play(url)</span></code> 函数, <code class="docutils literal"><span class="pre">url</span></code> 参数可以为音源的本地文件系统的路径或网络URL地址。有关 <code class="docutils literal"><span class="pre">audio</span></code> 模块更详细使用,请查阅
+<a class="reference internal" href="../../library/mPython/audio.html#audio"><span class="std std-ref">audio章节</span></a> 。</p>
+</div>
+</div>
+<div class="section" id="tts">
+<h2>语音合成(TTS)<a class="headerlink" href="#tts" title="Permalink to this headline">¶</a></h2>
+<p>TTS是Text To Speech的缩写，即“从文本到语音”，是人机对话的一部分，将文本转化问文字，让机器能够说话。</p>
+</div>
+<div class="section" id="id6">
+<h2>红外发射<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>我们生活中用到不少红外技术，如电视、空调等家电的遥控器。将编码数据经过载波后，通过红外管发射出去。红外接收设备，对编码数据进行解码，得到有效数据。实现控制。</p>
+<p>简单来说，红外编码的有效数据由1 Btyes 用户码 + 1 Btyes 命令码。一般用户码用于区分厂家或供应商，实际对应按键的键值的是命令码。</p>
+<p>在红外发射前，需要生成红外编码的数据,此处用到NEC编码:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">parrot</span> <span class="k">import</span> <span class="n">IR_encode</span><span class="p">,</span> <span class="n">IR</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ir_buf</span> <span class="o">=</span> <span class="n">ir_code</span><span class="o">.</span><span class="n">encode_nec</span><span class="p">(</span><span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">)</span>  <span class="c1"># 用户码0x01 , 命令码0x01</span>
+</pre></div>
+</div>
+<p>得到红外编码数据后，我们就可以发送红外数据了:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ir</span> <span class="o">=</span> <span class="n">IR</span><span class="p">()</span>  <span class="c1"># 实例红外抽象类</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ir</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">ir_buf</span><span class="p">)</span>  <span class="c1">#发送预先编译好的红外编码</span>
+</pre></div>
+</div>
+<p>由于红外的编码协议很多。或者在不知道红外遥控器的码值时，怎么才可能复刻它的码呢？这时，你需要用到红外学习功能。
+它，可以记录下红外的信号。再将记录的红外信号，发送出去。</p>
+<p>拓展板的红外管与被学习对象的红外管正对着，距离应在1CM内（信号的强度，直接影响到学习的成功率）</p>
+<p>开始学习:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ir</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>在5秒内常按住，要学习的按键。等待返回结果。</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ir</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kc">True</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>返回为True时，说明学习成功，Fail则说明学习失败，重复以上步骤重新学习即可。</p>
+<p>获取学习的红外编码数据:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ir_learn</span> <span class="o">=</span> <span class="n">ir</span><span class="o">.</span><span class="n">get_learn_data</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>得到学习数据后，就可以红外发射啦:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ir</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">ir_learn</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

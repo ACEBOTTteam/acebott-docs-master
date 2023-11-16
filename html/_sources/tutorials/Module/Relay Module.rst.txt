@@ -1,0 +1,69 @@
+Relay Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Relay-1.png
+    :align: center
+    :width: 300
+    :height: 200
+
+The relay is composed of iron core, coil, armature, contact reed and so on.
+
+When a certain voltage is added to both ends of the coil, a certain current will flow through the coil, resulting in an electromagnetic effect, 
+and the armature will overcome the pull of the return spring to attract the core under the action of the electromagnetic force, 
+thus driving the moving contact of the armature and the static contact (normally open contact). 
+When the coil is powered off, the electromagnetic suction also disappears, and the armature will return to the original position in the spring's reaction force, so that the moving contact and the original static contact (normally closed contact) are released. 
+This suction, release, so as to achieve the purpose of conduction in the circuit, cut off.
+
+For the "normally open, normally closed" contact of the relay, it can be distinguished as follows:
+
+The static contact in the disconnected state when the relay coil is not energized is called "normally open contact" (NO).
+
+The static contact in the on state when the relay coil is not powered on is called the "normally closed contact" (NC).
+
+Relays generally have two circuits, low voltage control circuit and high voltage working circuit.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 5V                    |
++-----------------------+-----------------------+
+| Rated load            | 10A 250VAC/10A 24VDC  |
++-----------------------+-----------------------+
+| Control signal        | digital signal        |
++-----------------------+-----------------------+
+| Size                  | 4.72cm*2.38cm         |
++-----------------------+-----------------------+
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Relay-2.png
+    :align: center
++-----------------------+-----------------------+
+|Relay Module           | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 11        |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+
+.. literalinclude:: /../../examples/Relay_Module/Relay_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+
+After you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program, your machine will turn for 1 second and stop for 1 second.
+
+.. figure:: /../images/Relay-3.png
+    :align: center
+
+**6.Related Resources**

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>select – 高效地等待I/O &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">select</span></code> – 高效地等待I/O</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-select">
+<span id="select-i-o"></span><h1><a class="reference internal" href="#module-select" title="select: wait for events on a set of streams"><code class="xref py py-mod docutils literal"><span class="pre">select</span></code></a> – 高效地等待I/O<a class="headerlink" href="#module-select" title="Permalink to this headline">¶</a></h1>
+<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-cpython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/select.html#module-select">select</a></p>
+<p>该模块提供了有效等待多个事件 <a href="#id1"><span class="problematic" id="id2">``</span></a>streams``（准备好操作的选择流）的功能。</p>
+<div class="section" id="id3">
+<h2>函数<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="select.poll">
+<code class="descclassname">select.</code><code class="descname">poll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#select.poll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>创建Poll类的实例。</p>
+<dl class="function">
+<dt id="select.select">
+<code class="descclassname">select.</code><code class="descname">select</code><span class="sig-paren">(</span><em>rlist</em>, <em>wlist</em>, <em>xlist</em><span class="optional">[</span>, <em>timeout</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#select.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>监控对象何时可读或可写，一旦监控的对象状态改变，返回结果（阻塞线程）。
+这个函数是为了兼容，效率不高，推荐用 poll 函数。</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">rlist</span></code>：等待读就绪的文件描述符数组</li>
+<li><code class="docutils literal"><span class="pre">wlist</span></code>：等待写就绪的文件描述符数组</li>
+<li><code class="docutils literal"><span class="pre">xlist</span></code>：等待异常的数组</li>
+<li><code class="docutils literal"><span class="pre">timeout</span></code>：等待时间（单位：秒）</li>
+</ul>
+</div>
+<div class="section" id="poll">
+<h2>类 Poll<a class="headerlink" href="#poll" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>方法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="select.poll.register">
+<code class="descclassname">poll.</code><code class="descname">register</code><span class="sig-paren">(</span><em>obj</em><span class="optional">[</span>, <em>eventmask</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#select.poll.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>注册一个用以监控的对象, <cite>eventmask</cite> 是逻辑OR：stream</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">obj</span></code> :被监控的对象</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">select.POLLIN</span></code>  - 读取可用数据</li>
+<li><code class="docutils literal"><span class="pre">select.POLLOUT</span></code> - 写入更多数据</li>
+<li><code class="docutils literal"><span class="pre">select.POLLERR</span></code> - 发生错误</li>
+<li><code class="docutils literal"><span class="pre">select.POLLHUP</span></code> - 流结束/连接终止检测</li>
+</ul>
+<p>需要注意的是像标志 <code class="docutils literal"><span class="pre">uselect.POLLHUP</span></code> 和 <code class="docutils literal"><span class="pre">uselect.POLLERR</span></code> 是不是为输入 <cite>eventmask</cite> 有效（这些是从返回不请自来的事件poll()，无论他们是否被要求）。
+这个语义是按POSIX。</p>
+</div></blockquote>
+</li>
+</ul>
+<p><code class="docutils literal"><span class="pre">eventmask</span></code> 默认为 <code class="docutils literal"><span class="pre">select.POLLIN</span> <span class="pre">|</span> <span class="pre">select.POLLOUT</span></code>.</p>
+<p>可以多次为同一个 <cite>obj</cite> 调用此函数。连续调用将更新OBJ的 <cite>eventmask</cite> 到的值 <cite>eventmask`（即会表现为 ``modify()`</cite> ）。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="select.poll.unregister">
+<code class="descclassname">poll.</code><code class="descname">unregister</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#select.poll.unregister" title="Permalink to this definition">¶</a></dt>
+<dd><p>从轮询中取消注册obj。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="select.poll.modify">
+<code class="descclassname">poll.</code><code class="descname">modify</code><span class="sig-paren">(</span><em>obj</em>, <em>eventmask</em><span class="sig-paren">)</span><a class="headerlink" href="#select.poll.modify" title="Permalink to this definition">¶</a></dt>
+<dd><p>修改已注册的对象 <code class="docutils literal"><span class="pre">obj</span></code> ,如果未注册obj，OSError 则会出现ENOENT错误。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="select.poll.poll">
+<code class="descclassname">poll.</code><code class="descname">poll</code><span class="sig-paren">(</span><span class="optional">[</span><em>timeout</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#select.poll.poll" title="Permalink to this definition">¶</a></dt>
+<dd><p>等待至少一个已注册的对象准备就绪或具有异常条件，可选的超时（以毫秒为单位）（如果 未指定超时 arg或-1，则没有超时）。</p>
+<p>返回列表( <code class="docutils literal"><span class="pre">obj</span></code>, <code class="docutils literal"><span class="pre">event</span></code>, …)的元组。元组中可能还有其他元素，具体取决于平台和版本，因此不要假设其大小为2.</p>
+<p>event元素指定流发生的事件，并且是 <code class="docutils literal"><span class="pre">uselect.POLL*</span></code> 上述常量的组合。需要注意的是标志 <code class="docutils literal"><span class="pre">uselect.POLLHUP</span></code> ，并 <code class="docutils literal"><span class="pre">uselect.POLLERR</span></code> 可以在任何时候（即使不要求）返回的，必须采取相应的行动（从调查未注册并有可能关闭相应的流），否则所有的进一步调用 <code class="docutils literal"><span class="pre">poll()</span></code> 可以用这些标志设置立即返回再次为这个流。</p>
+<p>如果超时，则返回空列表。</p>
+<div class="attention admonition">
+<p class="first admonition-title">Difference to CPython</p>
+<p class="last">返回的元组可能包含超过2个元素，如上所述。</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="select.poll.ipoll">
+<code class="descclassname">poll.</code><code class="descname">ipoll</code><span class="sig-paren">(</span><span class="optional">[</span><em>timeout</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#select.poll.ipoll" title="Permalink to this definition">¶</a></dt>
+<dd><p>与 <a class="reference internal" href="#select.poll.poll" title="select.poll.poll"><code class="xref py py-meth docutils literal"><span class="pre">poll.poll()</span></code></a> 类似，但是返回一个产生被调用函数所有元组的迭代器。该函数提供高效的、无位置的在流中进行轮询的方法。</p>
+<div class="attention admonition">
+<p class="first admonition-title">与CPython区别</p>
+<p class="last">该函数是MicroPython的扩展。</p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

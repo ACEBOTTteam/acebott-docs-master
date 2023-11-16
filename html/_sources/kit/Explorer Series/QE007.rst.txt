@@ -1,0 +1,50 @@
+QE007 IOT Smart Home Starter Kit for ESP32
+====================
+
+一、Product Introduction
+------
+
+Lumi's Home is an intelligent home system that combines features such as Wi-Fi control, voice control, and app control. 
+
+It incorporates interactive controls such as RFID door access, automatic window closure when it rains, 
+and control over LED lights, RGB and more.
+
+.. figure:: /../images/QE007-1.png
+    :align: center
+
+二、The value of starer kit
+------
+
+1.The concept of smart home
+
+2.Sensor control and application
+
+3.Speech recognition experience
+
+4.Knowledge of WI-FI LAN
+
+5.Interactive control of APP
+
+6.Artistic structural design enlightenment
+
+三、Course Description
+------
+
+.. figure:: /../images/QE007-2.png
+    :align: center
+
+四、Part List
+------
+.. figure:: /../images/QE007-3.png
+    :align: center
+
+
+五、Product Standard
+------
+
+.. figure:: /../images/QE007-4.png
+    :align: center
+
+六、Related Resources
+------
+

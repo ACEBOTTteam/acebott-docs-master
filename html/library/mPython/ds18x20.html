@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ds18x20 — ds18b20温度传感器驱动 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">ds18x20</span></code> — ds18b20温度传感器驱动</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-ds18x20"></span><div class="section" id="ds18x20-ds18b20">
+<h1><a class="reference internal" href="#module-ds18x20" title="ds18x20: ds18b20温度传感器驱动"><code class="xref py py-mod docutils literal"><span class="pre">ds18x20</span></code></a> — ds18b20温度传感器驱动<a class="headerlink" href="#ds18x20-ds18b20" title="Permalink to this headline">¶</a></h1>
+<p>one wire总线是一种串行总线，仅使用一根电线进行通信（除了用于接地和电源的电线）。DS18B20温度传感器是一种非常流行的单线设备,具有体积小，硬件开销低，抗干扰能力强，精度高的特点。</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="https://potentiallabs.com/cart/image/cache/catalog/nov-dec/DS18B20-500x500-800x800.jpg"><img alt="https://potentiallabs.com/cart/image/cache/catalog/nov-dec/DS18B20-500x500-800x800.jpg" src="https://potentiallabs.com/cart/image/cache/catalog/nov-dec/DS18B20-500x500-800x800.jpg" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="https://www.botshop.co.za/wp-content/uploads/2018/06/ds18b20-module.png"><img alt="https://www.botshop.co.za/wp-content/uploads/2018/06/ds18b20-module.png" src="https://www.botshop.co.za/wp-content/uploads/2018/06/ds18b20-module.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/89/FC/cebe2df9-a7d2-4f28-8477-9fd5ffc0ab46.jpg"><img alt="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/89/FC/cebe2df9-a7d2-4f28-8477-9fd5ffc0ab46.jpg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/89/FC/cebe2df9-a7d2-4f28-8477-9fd5ffc0ab46.jpg" style="width: 200px;" /></a>
+<ul class="simple">
+<li>独特的onewire(单总线)接口方式，DS18B20在与微处理器连接时仅需要一条口线即可实现微处理器与DS18B20的双向通讯。</li>
+<li>测温范围 －55℃～+125℃，</li>
+<li>支持多点组网功能，多个DS18B20可以并联在唯一的三线上，最多只能并联8个，实现多点测温，如果数量过多，会使供电电源电压过低，从而造成信号传输的不稳定。</li>
+<li>工作电源: 3.0~5.5V/DC</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/ds18x20_res.jpeg"><img alt="../../_images/ds18x20_res.jpeg" src="../../_images/ds18x20_res.jpeg" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">如果你使用的ds18b20单个器件,为保证数据传输稳定，信号OUT引脚需接4.7K的上拉电阻。</span></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="ds18x20">
+<h2>DS18X20类<a class="headerlink" href="#ds18x20" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ds18x20.DS18X20">
+<em class="property">class </em><code class="descclassname">ds18x20.</code><code class="descname">DS18X20</code><span class="sig-paren">(</span><em>onewire</em><span class="sig-paren">)</span><a class="headerlink" href="#ds18x20.DS18X20" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>构建DS18X20类。</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">onewire</span></code> - one wire实例对象</li>
+</ul>
+<dl class="method">
+<dt id="ds18x20.DS18X20.scan">
+<code class="descclassname">DS18X20.</code><code class="descname">scan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ds18x20.DS18X20.scan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>扫描单总线上的ds18b20设备,返回设备地址的列表。</p>
+<dl class="method">
+<dt id="ds18x20.DS18X20.convert_temp">
+<code class="descclassname">DS18X20.</code><code class="descname">convert_temp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ds18x20.DS18X20.convert_temp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>获取采样温度并进行温度单位转换。</p>
+<dl class="method">
+<dt id="ds18x20.DS18X20.read_temp">
+<code class="descclassname">DS18X20.</code><code class="descname">read_temp</code><span class="sig-paren">(</span><em>rom</em><span class="sig-paren">)</span><a class="headerlink" href="#ds18x20.DS18X20.read_temp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>返回该设备的温度值。注意,在 <code class="docutils literal"><span class="pre">convert_temp()</span></code> 转换温度后,至少需要等待750毫秒,才能读取温度值。</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">rom</span></code> - 设备地址</li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">示例-ds18b20</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">Pin</span>
+<span class="kn">import</span> <span class="nn">onewire</span> 
+<span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">ds18x20</span>
+<span class="c1"># 创建one wire总线,引脚为P0</span>
+<span class="n">ow</span> <span class="o">=</span> <span class="n">onewire</span><span class="o">.</span><span class="n">OneWire</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P0</span><span class="p">))</span> 
+<span class="c1"># 实例DS18X20类</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">ds18x20</span><span class="o">.</span><span class="n">DS18X20</span><span class="p">(</span><span class="n">ow</span><span class="p">)</span>
+<span class="c1"># 扫描总线上的DS18B20，获取设备列表</span>
+<span class="n">roms</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">scan</span><span class="p">()</span>  
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># 转换温度值,每次获取温度前必须调用convert_temp，否则温度数据不会更新</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">convert_temp</span><span class="p">()</span>
+    <span class="c1"># convert_temp后至少等待750ms</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">750</span><span class="p">)</span>
+    <span class="c1"># 返回总线的上ds18b20设备的温度值</span>
+    <span class="k">for</span> <span class="n">rom</span> <span class="ow">in</span> <span class="n">roms</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Device </span><span class="si">%s</span><span class="s1"> temperature is </span><span class="si">%d</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">rom</span><span class="p">),</span><span class="n">ds</span><span class="o">.</span><span class="n">read_temp</span><span class="p">(</span><span class="n">rom</span><span class="p">)))</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

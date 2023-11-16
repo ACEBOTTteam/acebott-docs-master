@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>烧录固件 &mdash; mPython掌控 2.2.2 文档</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'zh_CN',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="输出类" href="../../tutorials/basics/index.html" />
+    <link rel="prev" title="mPython IDE" href="mPython.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Arduino/index.html">Arduino控制板</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ESP32控制板</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware.html">硬件概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">驱动下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mPython.html">mPython IDE</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">烧录固件</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/basics/index.html">输出类</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/advance/index.html">输入类</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">mPython掌控</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">ESP32控制板</a></li>
+      <li class="breadcrumb-item active">烧录固件</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>烧录固件<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li>烧录工具使用乐鑫官网提供的 <a class="reference external" href="https://www.espressif.com/zh-hans/support/download/other-tools">Flash下载软件</a>。</li>
+<li>掌控板固件可到 <a class="reference internal" href="../../release.html#release"><span class="std std-ref">掌控固件发布</span></a> 章节获取。</li>
+</ul>
+<hr class="docutils" />
+<p>选择 <strong>ESP32 DownloadTool</strong></p>
+<img alt="../../_images/flashDownload_1.png" src="../../_images/flashDownload_1.png" />
+<p>选择 <strong>SPIDownload</strong> ，然后浏览并选中刚下载的掌控板固件mpython_v2.0.0.bin，并设置地址是0x00。
+将CrystallFreq设为40M，SPI SPEED 设为40MHz，SPI MODE设为DIO，FLASH SIZE改为64MBit，串口号设置为实际串口，波特率1152000。</p>
+<div class="admonition caution">
+<p class="first admonition-title">警告</p>
+<ul class="last simple">
+<li>v1.1.1以后的固件版本,firmware烧录起始地址改为0x00!</li>
+<li>v1.5.0以后的固件版本,集成Noto字库!v1.5.0以前固件或者需要重刷字库的,可以在Flash Tool上选中字库Noto_Sans_CJK_SC_Light16.xbf，并设置0x400000烧录,方法同固件烧录方法一样。</li>
+</ul>
+</div>
+<img alt="../../_images/flashDownload_2.png" src="../../_images/flashDownload_2.png" />
+<p>点击START，此时掌控板将进入Download模式。固件下载中，如下图。</p>
+<div class="admonition hint">
+<p class="first admonition-title">提示</p>
+<p class="last">掌控板硬件版本v1.0.1前的,须要同时按下a，b键持续2秒后松开,手动进入Download模式</p>
+</div>
+<img alt="../../_images/flashDownload_3.png" src="../../_images/flashDownload_3.png" />
+<p>下载完成后，如下图。</p>
+<img alt="../../_images/flashDownload_4.png" src="../../_images/flashDownload_4.png" />
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mPython.html" class="btn btn-neutral float-left" title="mPython IDE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../tutorials/basics/index.html" class="btn btn-neutral float-right" title="输出类" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018-2023 labplus.All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

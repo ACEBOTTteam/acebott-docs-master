@@ -1,0 +1,85 @@
+DS1307 Clock Module
+======================================
+
+**1.Product Introduction**
+
+
+.. figure:: /../images/DS1307-1.png
+    :align: center
+    :width: 300
+    :height: 200
+
+The DS1307 is a common real-time clock (RTC) module that integrates clock and calendar functions and provides accurate time and date information. 
+It is often used with a controller to get an accurate timestamp or perform timed tasks when there is no network connection.
+
+The DS1307 module uses the I2C bus for communication and can be connected to the I2C bus of the microcontroller. 
+It contains a 32kHz real-time clock crystal to provide a high precision time reference. 
+The module also has a battery backup power interface to keep time data stable when the main power is disconnected.
+The DS1307 module stores the year, month, date, hour, minute and second information, which can be set and obtained by reading and writing registers.
+
+Application reference: electronic clocks, timers, timing switches, temperature monitoring and other scenarios that need to achieve accurate time.
+
+**2.Parameter Specification**
+
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 5V                    |
++-----------------------+-----------------------+
+| Operating temperature | -40°C~+85°C           |
++-----------------------+-----------------------+
+| Storage capacity      | 56Byte                |
++-----------------------+-----------------------+
+| Clock frequency       | 32.768KHz             |
++-----------------------+-----------------------+
+| Communication mode    | IIC                   |
++-----------------------+-----------------------+
+| Size                  | 4.72cm*2.38cm         |
++-----------------------+-----------------------+
+
+**3.Wiring Diagram**
+
+
+.. figure:: /../images/DS1307-2.png
+    :align: center
+
++-----------------------+-----------------------+
+|PIR Motion Sensor      | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| SCL                   | SCL                   |
++-----------------------+-----------------------+
+| SDA                   | SDA                   |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+
+.. literalinclude:: /../../examples/DS1307_Clock_Module/DS1307_Clock_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE and set the baud rate to 9600.
+
+The serial port will print out the current time.
+
+.. figure:: /../images/DS1307-3.png
+    :align: center
+.. figure:: /../images/DS1307-4.png
+    :align: center
+    
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/aler6ehluoc0ravv08q6n/h?rlkey=y4x63kj0gt8dbme8k4fp4bl6n&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

@@ -1,0 +1,57 @@
+130 DC Motor Module
+======================================
+一、Product Introduction
+------
+.. figure:: /../images/130-1.png
+    :align: center
+    :width: 300
+    :height: 200
+The 130 motor module is a common DC motor module that can convert electrical energy into mechanical energy to make your equipment move.
+The 130 motor module controls the rotation direction and speed of the motor by controlling the input signal. There will be two control pins on the module, one for forward turn (IN+) and one for reverse control (IN-). By applying different level signals (high or low) to these pins, operations such as forward, backward, and stop can be achieved.
+Application reference: small robot, intelligent car, fan and other projects.
+
+二、Parameter Specification
+------
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -10°C~+50°C           |
++-----------------------+-----------------------+
+| Output current        | 200mA                 |
++-----------------------+-----------------------+
+| Size                  | 4.72cm*2.38cm         |
++-----------------------+-----------------------+
+
+三、Wiring Diagram
+------
+.. figure:: /../images/130-2.png
+    :align: center
++-----------------------+-----------------------+
+| 130 DC Motor Module   | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| NI+                   | Digital Pin 5         |
++-----------------------+-----------------------+
+| NI-                   | Digital Pin 6         |
++-----------------------+-----------------------+
+
+四、Sample Program
+------
+.. literalinclude:: /../../examples/130_DC_Motor_Module/130_DC_Motor_Module.ino
+    :linenos:
+
+五、Test Result
+------
+After the code is uploaded to the motherboard, the 130 DC Motor Module will turn forward for 1 second, stop for 1 second, reverse for 1 second, stop for 1 second.
+
+.. figure:: /../images/130-3.png
+    :align: center
+
+六、Related Resources
+------

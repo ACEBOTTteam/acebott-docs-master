@@ -6,7 +6,7 @@ Moisture Sensor
 .. figure:: /../images/Moisture-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Soil moisture sensor is a sensor used to detect soil moisture, which can sense the soil condition in time to make plants grow better.
 
@@ -29,6 +29,11 @@ Application reference: smart agriculture, plant research and other scenarios tha
 | Size                  | 2.3cm*6.28cm          |
 +-----------------------+-----------------------+
 
+.. figure:: /../images/Moisture-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+        
 **3.Wiring Diagram**
 
 

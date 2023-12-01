@@ -6,7 +6,7 @@ Button Module
 .. figure:: /../images/Button-1.jpeg
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Button module is a common electronic component used to achieve key operation in electronic devices.
 
@@ -28,6 +28,11 @@ Application reference: keyboard, control switch, etc.
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
 
+.. figure:: /../images/Button-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+    
 **3.Wiring Diagram**
 
 .. figure:: /../images/Button-2.png

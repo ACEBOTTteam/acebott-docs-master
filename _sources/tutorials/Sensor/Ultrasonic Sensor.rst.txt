@@ -6,7 +6,7 @@ Ultrasonic Sensor
 .. figure:: /../images/Ultrasonic-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Ultrasonic sensor is a sensor used to measure distance, can be used to help the car to avoid obstacles or other related distance obstacle avoidance projects.
 
@@ -37,6 +37,11 @@ Application reference: obstacle avoidance car, handheld range finder, water leve
 +-------------------------------+-----------------------+
 | Size                          | 4.9cm*2.2cm           |
 +-------------------------------+-----------------------+
+
+.. figure:: /../images/Ultrasonic-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

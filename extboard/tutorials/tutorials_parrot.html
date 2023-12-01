@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -139,7 +140,7 @@
 <p class="first admonition-title">Attention</p>
 <p class="last">播放本地mp3音频由于受micropython文件系统限制和RAM大小限制,当文件大于1M基本很难下载下去。所以对音频文件的大小有所限制,应尽可能的小。</p>
 </div>
-<p>首先,将 <a class="reference download internal" href="../../_downloads/extboad_audio.rar" download=""><code class="xref download docutils literal"><span class="pre">音频素材</span></code></a> 上传至掌控板的文件系统。</p>
+<p>首先,将 <code class="xref download docutils literal"><span class="pre">音频素材</span></code> 上传至掌控板的文件系统。</p>
 <p>首先导入audio模块:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>
 </pre></div>
@@ -162,30 +163,6 @@
 <div class="section" id="id5">
 <h3>播放本网络音频<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>要播放网络上mp3音频文件，需要知道音频的URL地址。目前，大部分的音乐网受版权保护，并不直接提供音乐的URL，你可以通过一些插件爬取音频的URL地址。</p>
-<div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">播放MP3音频</span><a class="headerlink" href="#id7" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>                                    <span class="c1"># 导入audio</span>
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="n">wifi</span>                        <span class="c1"># 导入wifi</span>
-
-<span class="n">mywifi</span><span class="o">=</span><span class="n">wifi</span><span class="p">()</span>                                   <span class="c1"># 实例wifi类</span>
-<span class="n">mywifi</span><span class="o">.</span><span class="n">connectWiFi</span><span class="p">(</span><span class="s1">&#39;ssid&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">)</span>           <span class="c1"># 连接 WiFi 网络</span>
-
-<span class="n">audio</span><span class="o">.</span><span class="n">player_init</span><span class="p">()</span>                                   <span class="c1"># 播放初始化</span>
-<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;music.mp3&#39;</span><span class="p">)</span>                                      <span class="c1"># 本地音频解码                   </span>
-<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s2">&quot;http://wiki.labplus.cn/images/4/4e/Music_test.mp3&quot;</span><span class="p">)</span>          <span class="c1"># 播放网络音频url</span>
-<span class="n">audio</span><span class="o">.</span><span class="n">player_deinit</span><span class="p">()</span>                            <span class="c1"># 播放结束,释放资源</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">掌控板需要确保连接网络通畅。URL必须是完整的网络地址，否则无法解析。</p>

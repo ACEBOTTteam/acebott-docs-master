@@ -7,7 +7,7 @@ Vibrating Motor Module
 .. figure:: /../images/Vibrating-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Vibration module is an electronic component that produces a vibration or vibration effect.
 
@@ -35,6 +35,11 @@ Application reference: mobile devices, game controllers, vibration feedback syst
 +-----------------------+--------------------------+
 | Size                  | 3.16cm*2.38cm            |
 +-----------------------+--------------------------+
+
+.. figure:: /../images/Vibrating-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

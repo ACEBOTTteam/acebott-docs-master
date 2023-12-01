@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -177,70 +178,6 @@ MicroPython的Timer类定义了在给定时间段内（或在一段延迟后执�
 <code class="descclassname">Timer.</code><code class="descname">PERIODIC</code><a class="headerlink" href="#machine.Timer.PERIODIC" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">定时器控制LED闪烁</span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># fork by http://www.1zlab.com/wiki/micropython-esp32/timer/</span>
-
-<span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">Timer</span><span class="p">,</span> <span class="n">Pin</span>
-<span class="kn">import</span> <span class="nn">utime</span>
-
-
-<span class="k">def</span> <span class="nf">toggle_led</span><span class="p">(</span><span class="n">led_pin</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    LED状态反转</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="n">led_pin</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="ow">not</span> <span class="n">led_pin</span><span class="o">.</span><span class="n">value</span><span class="p">())</span>
-
-
-<span class="k">def</span> <span class="nf">led_blink_timed</span><span class="p">(</span><span class="n">timer</span><span class="p">,</span> <span class="n">led_pin</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    led 按照特定的频率进行闪烁</span>
-<span class="sd">    LED闪烁周期 = 1000ms / 频率</span>
-<span class="sd">    状态变换间隔（period） = LED闪烁周期/ 2 </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># 计算状态变换间隔时间 ms</span>
-    <span class="n">period</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">/</span> <span class="n">freq</span><span class="p">)</span>
-    <span class="c1"># 初始化定时器</span>
-    <span class="c1"># 这里回调是使用了lambada表达式，因为回调函数需要传入led_pin</span>
-    <span class="n">timer</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">Timer</span><span class="o">.</span><span class="n">PERIODIC</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">toggle_led</span><span class="p">(</span><span class="n">led_pin</span><span class="p">))</span>
-
-
-<span class="c1"># 声明引脚 D2 作为LED的引脚</span>
-<span class="n">led_pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-<span class="n">timer</span> <span class="o">=</span> <span class="n">Timer</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 创建定时器对象</span>
-<span class="n">led_blink_timed</span><span class="p">(</span><span class="n">timer</span><span class="p">,</span> <span class="n">led_pin</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 </div>
 </div>
 

@@ -7,7 +7,7 @@ DS1307 Clock Module
 .. figure:: /../images/DS1307-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 The DS1307 is a common real-time clock (RTC) module that integrates clock and calendar functions and provides accurate time and date information. 
 It is often used with a controller to get an accurate timestamp or perform timed tasks when there is no network connection.
@@ -37,6 +37,11 @@ Application reference: electronic clocks, timers, timing switches, temperature m
 +-----------------------+-----------------------+
 | Size                  | 4.72cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/DS1307-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

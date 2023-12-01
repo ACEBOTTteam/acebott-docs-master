@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -100,57 +101,6 @@
              
   <div class="section" id="id1">
 <h1>1. 呼吸灯<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># 源码来源 http://www.1zlab.com/wiki/micropython-esp32/pwm/</span>
-
-<span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">math</span>
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-
-
-<span class="k">def</span> <span class="nf">pulse</span><span class="p">(</span><span class="n">switch</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">gears</span><span class="p">):</span>
-    <span class="c1"># 呼吸灯核心代码</span>
-    <span class="c1"># 借用sin正弦函数，将PWM范围控制在 23 - 1023范围内</span>
-    <span class="c1"># switch 开关对象</span>
-    <span class="c1"># period 呼吸一次的周期 单位/毫秒</span>
-    <span class="c1"># gears 呼吸过程中经历的亮度档位数</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">gears</span><span class="p">):</span>
-        <span class="n">switch</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="n">gears</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="mi">500</span><span class="p">)</span> <span class="o">+</span> <span class="mi">523</span><span class="p">)</span>
-        <span class="c1"># 延时</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">period</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">gears</span><span class="p">)))</span>
-
-
-<span class="c1">#  led 灯对象</span>
-<span class="n">switch_led</span> <span class="o">=</span> <span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">PinMode</span><span class="o">.</span><span class="n">PWM</span><span class="p">)</span>
-
-<span class="c1"># 呼吸十次</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="n">pulse</span><span class="p">(</span><span class="n">switch_led</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-</pre></div>
-</td></tr></table></div>
 </div>
 
 

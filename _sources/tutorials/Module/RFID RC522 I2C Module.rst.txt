@@ -6,7 +6,7 @@ RFID RC522 I2C Module
 .. figure:: /../images/RFID-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Radio-Frequency Identification (RFID) is a technology used to wirelessly identify and track objects, which is based on the principle of wireless communication through the use of RFID tags and RFID readers.
 
@@ -37,6 +37,12 @@ Application reference: Scenarios requiring object recognition such as management
 +-----------------------+-----------------------+
 | Size                  |4.72cm*2.38cm          |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/RFID-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
 **3.Wiring Diagram**
 
 .. figure:: /../images/RFID-2.png

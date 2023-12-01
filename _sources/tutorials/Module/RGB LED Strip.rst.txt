@@ -34,6 +34,9 @@ Application reference: This module can be used for home decoration, festivals an
 | Size                  | 13cm                  |
 +-----------------------+-----------------------+
 
+.. figure:: /../images/RGB_LED_Strip-4.png
+    :align: center
+
 **3.Wiring Diagram**
 
 .. figure:: /../images/RGB_LED_Strip-2.png
@@ -61,3 +64,12 @@ When you have successfully connected the line according to the wiring diagram an
     :align: center
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/fzdeqz6dpag4z438h7ojs/h?rlkey=c53qahprhcknsqjiqas1gsr0q&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_
+

@@ -7,7 +7,7 @@ Temperature Sensor
 .. figure:: /../images/Temperature-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Temperature sensor is a device used to measure the temperature of an environment or object. They can convert the temperature into an electrical signal or a digital signal, 
 this product uses a thermistor MF52A103J3435 temperature sensor.
@@ -37,6 +37,11 @@ Application reference: This module can be used for refrigerator, air conditioner
 +-----------------------+-----------------------+
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/Temperature-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

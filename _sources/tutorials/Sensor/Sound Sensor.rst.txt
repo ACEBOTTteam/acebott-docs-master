@@ -7,7 +7,7 @@ Sound Sensor
 .. figure:: /../images/Sound-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Sound sensor is a sensor used to detect the strength or frequency of sound signals in the environment.
 
@@ -17,6 +17,10 @@ Application reference: voice control switch, noise detection, etc.
 
 **2.Parameter Specification**
 
+.. figure:: /../images/Sound-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 +-----------------------+-----------------------+
 | Parameter             | Value/Representation  |
@@ -67,3 +71,11 @@ Speak into the sound sensor, the louder the sound, the higher the number.
     :align: center
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/5fnq9g5bg3nj1rnc9ppsm/h?rlkey=6k7l5sgheca35fq36n1xj3wy0&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

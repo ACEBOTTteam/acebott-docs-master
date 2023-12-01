@@ -6,7 +6,7 @@ Photosensitive Sensor
 .. figure:: /../images/Photosensitive-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 Light sensor is a sensor used to detect light intensity, which is used to measure the properties of light in various scenes.
 
 Photosensitive sensor is the use of photosensitive resistance resistance will change with the change of light intensity characteristics, 
@@ -30,6 +30,11 @@ Application reference: lighting control, photoelectric switch, solar tracking an
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
 
+.. figure:: /../images/Photosensitive-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+    
 **3.Wiring Diagram**
 
 

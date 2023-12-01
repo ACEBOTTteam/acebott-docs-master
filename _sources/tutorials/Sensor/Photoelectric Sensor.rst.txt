@@ -6,7 +6,7 @@ Photoelectric Sensor
 .. figure:: /../images/Photoelectric-1.jpeg
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Photoelectric sensor are commonly used to detect the presence, position, or motion of an object.
 
@@ -26,6 +26,11 @@ When the middle is blocked, the receiver cannot receive the light signal, so as 
 +-----------------------+-----------------------+
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/Photoelectric-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

@@ -7,7 +7,7 @@ PIR Motion Sensor
 .. figure:: /../images/PIR-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Human infrared sensor is used to detect the infrared radiation emitted by the human or animal body module, when someone or other hot objects enter the sensor's sensing range, the object will cause changes in the infrared radiation.
 
@@ -31,6 +31,11 @@ Application reference: human body sensor light, automatic door, automatic faucet
 +-----------------------+-----------------------+
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/PIR-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

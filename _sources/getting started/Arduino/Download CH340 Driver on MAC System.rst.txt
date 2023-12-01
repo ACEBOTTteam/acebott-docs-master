@@ -1,0 +1,86 @@
+Download CH340 Driver on MAC System
+======================================
+
+**Download CH340 driver**
+
+
+
+ `Download CH340 driver <https://www.dropbox.com/scl/fo/7nfuhsc49zno712f7632h/h?rlkey=rjxhfuirqatf7u32f622wxuhi&dl=0>`_
+
+**Installation**
+
+
+**1.Download drivers**
+
+Download the driver from the website and unpack it into your local installation directory. 
+
+.. figure:: /../images/MAC_driver1.png
+    :align: center
+
+**2.Prepare to install the driver**
+
+①The instructions for installing the pkg format driver by default can be found in the document titled "Installing the pkg Format Driver."
+
+②If Rosetta is not supported in OS X 11.0 or later, see "4. Install the dmg driver."
+
+③Before installation, go to "System Preferences" -> "Security and Privacy" -> "General" page. Under the section titled "Allow apps downloaded from," 
+choose the option for "Mac App Store and identified developers" to ensure proper functionality of the driver.
+
+.. figure:: /../images/MAC_driver2.png
+    :align: center
+
+**3.Install the pkg format driver**
+
+①Install pkg format driver, click driver file -> Continue -> Install.
+
+.. figure:: /../images/MAC_driver3.png
+    :align: center
+
+.. figure:: /../images/MAC_driver4.png
+    :align: center
+
+②Then install successfully.
+
+.. figure:: /../images/MAC_driver5.png
+    :align: center
+
+.. figure:: /../images/MAC_driver6.png
+    :align: center
+
+③Install the pkg format driver on OS X 11.0 and later: open "LaunchPad" -> "CH34xVCPDriver" -> Install.
+
+.. figure:: /../images/MAC_driver7.png
+    :align: center
+
+④When using OS X 10.9 through OS X 10.15, click Restart to restart your computer, and perform the following steps after restarting.
+
+.. figure:: /../images/MAC_driver8.png
+    :align: center
+
+**4.Install the dmg format driver**
+
+①Install the dmg driver, click the dmg file and drag "CH34xVCPDriver" into the application folder of the operating system.
+
+.. figure:: /../images/MAC_driver9.png
+    :align: center
+
+②Then open "LaunchPad" -> "CH34xVCPDriver" -> Install.
+
+.. figure:: /../images/MAC_driver10.png
+    :align: center
+
+.. figure:: /../images/MAC_driver11.png
+    :align: center 
+
+③Then install successfully.
+
+ .. figure:: /../images/MAC_driver12.png
+    :align: center    
+
+**5.Check whether the CH340 serial port driver is installed**  
+
+When the control board is inserted into the USB port, open the system report -> Hardware -> USB. On the right is the USB device.
+If the USB device is working correctly, you can find a device with a "Vendor ID" of [0x1a86].
+
+.. figure:: /../images/MAC_driver13.png
+    :align: center   

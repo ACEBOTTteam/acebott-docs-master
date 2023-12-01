@@ -6,7 +6,7 @@ Laser Module
 .. figure:: /../images/Laser-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 The laser module is composed of a 650nm red laser diode head, driving circuit and three male pins, whose role is to generate a red dot shaped laser beam. 
 It should be noted that the laser has powerful energy and highly concentrated beam, laser beam will cause damage to the human eye, do not directly illuminate the laser eyes.
@@ -30,6 +30,11 @@ Application reference: This module can be used in laser alarm, laser sight, smar
 +----------------------------+----------------------------+
 | Size                       | 3.16cm*2.38cm              |
 +----------------------------+----------------------------+
+
+.. figure:: /../images/Laser-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 
@@ -62,3 +67,11 @@ When you have successfully connected the line according to the wiring diagram an
    After the laser module is lit, do not direct eyes.
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/gejk6lckfhxucx6twlcpo/h?rlkey=uv0m0u32bt3a77i99ehkaq9gl&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -148,46 +149,6 @@
 <dd></dd></dl>
 
 <p>发送无线广播消息,发送数据类型为字节。当发送成功后返回True,否则返回False。</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">无线广播示例</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">radio</span>
-<span class="kn">import</span> <span class="nn">_thread</span>
-
-<span class="n">channel</span><span class="o">=</span><span class="mi">2</span>
-
-<span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<span class="n">radio</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">channel</span><span class="o">=</span><span class="n">channel</span><span class="p">)</span>               <span class="c1"># radio通道设置</span>
-
-<span class="k">def</span> <span class="nf">rec_loop</span><span class="p">():</span>                             <span class="c1"># radio接收循环</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">temp</span><span class="o">=</span><span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>           <span class="c1"># radio 接收数据,返回(msg,mac)</span>
-        <span class="c1"># temp=radio.receive()             # radio 接收数据,返回msg</span>
-        <span class="k">if</span> <span class="n">temp</span><span class="p">:</span>                           <span class="c1"># 当接收到数据时打印</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-
-<span class="n">_thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span><span class="n">rec_loop</span><span class="p">,</span> <span class="p">())</span>      <span class="c1"># radio接收线程</span>
-
-<span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;hello mPython!&quot;</span><span class="p">)</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 </div>
 </div>
 

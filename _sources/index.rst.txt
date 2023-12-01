@@ -12,7 +12,7 @@ Thank you for choosing ACEBOTT! We hope that the information provided here will 
    :caption: Getting Started
 
    getting started/Arduino/index.rst
-
+   getting started/ESP32/index.rst
 
 ---------
 

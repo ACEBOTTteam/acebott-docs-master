@@ -6,7 +6,7 @@ LCD 1602 I2C Module
 .. figure:: /../images/LCD-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 LCD (Liquid Crystal Display) is a passive display, that is, the liquid crystal itself does not emit light, it needs a backlight to provide background brightness, 
 the use of electric fields to control the arrangement of liquid crystal molecules, so as to change the transmission of light and block, to achieve image display.
@@ -34,6 +34,11 @@ Application reference: This module can be used for data display of control panel
 +-----------------------+-----------------------+
 | Size                  | 80cm*36cm*11cm        |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/LCD-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 
@@ -70,3 +75,11 @@ Your lcd screen will light up with "HELLO" on the first line and "ACEBOTT" on th
     If the lcd screen cannot display characters normally, check whether the line is connected correctly and adjust the sliding rheostat behind to adjust the backlight.
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/q2ex9cog6eofisbufd6sf/h?rlkey=shsofyricbbxh47rku6o0llua&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

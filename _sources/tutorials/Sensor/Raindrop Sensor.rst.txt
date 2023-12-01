@@ -6,7 +6,7 @@ Raindrop Sensor
 .. figure:: /../images/Raindrop-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 Raindrop sensor is a device used to detect the falling of raindrops, which is commonly used in automotive, smart home, and meteorological fields. 
 It can sense the presence of precipitation and trigger the corresponding operation or feedback.
@@ -29,6 +29,11 @@ Application reference: This module can be used for car wiper, smart home and wea
 +-----------------------+-----------------------+
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/Raindrop-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 
@@ -62,3 +67,11 @@ You can see that the more water on the raindrop sensor, the greater the value of
     :align: center
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/41aceyd5shb0er6igvw83/h?rlkey=u8by8dds0uy2v5bha189yv2tt&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/41aceyd5shb0er6igvw83/h?rlkey=u8by8dds0uy2v5bha189yv2tt&dl=0>`_

@@ -21,10 +21,10 @@ The Arduino Platform
 ------------------------------
 Arduino is composed of two major parts:
 
-The Arduino board , which is the piece of hardware you work on when you build your objects. Arduino senses the environment by receiving inputs from many sensors, 
+`The Arduino board <https://www.arduino.cc/en/hardware>`_, which is the piece of hardware you work on when you build your objects. Arduino senses the environment by receiving inputs from many sensors, 
 and affects its surroundings by controlling lights, motors, and other actuators.
 
-The Arduino IDE , the piece of software you run on your computer. You use the IDE to create a sketch (a little computer program) that you upload to the Arduino board. 
+`The Arduino IDE <https://www.arduino.cc/en/software>`_, the piece of software you run on your computer. You use the IDE to create a sketch (a little computer program) that you upload to the Arduino board. 
 The sketch tells the board what to do.
-You can tell your Arduino what to do by writing code in the Arduino programming language and using the Arduino development environment .
+You can tell your Arduino what to do by writing code in the `Arduino programming language <https://www.arduino.cc/reference/en/>`_ and using the Arduino development environment.
 

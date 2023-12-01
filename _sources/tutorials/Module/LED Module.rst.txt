@@ -7,7 +7,7 @@ LED Module
 .. figure:: /../images/LED-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 The LED module is a component that integrates LED lamp beads, drive circuits, and housing. Used to provide lighting, indication, or display functions. 
 According to the specific application requirements, the LED module can be a wide variety of shapes, sizes and colors, 
@@ -33,6 +33,11 @@ Application reference: warning lights, floodlights, etc.
 +-----------------------+-----------------------------+
 | Size                  | 3.16cm*2.38cm               |
 +-----------------------+-----------------------------+
+
+.. figure:: /../images/LED-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 
@@ -65,3 +70,12 @@ When you have successfully connected the line according to the wiring diagram an
     :align: center
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/u547a5vhv6owdd6yi3t3u/h?rlkey=0pic94davhcy795thqrcxp8d3&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_
+

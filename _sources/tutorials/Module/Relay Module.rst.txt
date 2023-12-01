@@ -6,7 +6,7 @@ Relay Module
 .. figure:: /../images/Relay-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 The relay is composed of iron core, coil, armature, contact reed and so on.
 
@@ -38,6 +38,11 @@ Relays generally have two circuits, low voltage control circuit and high voltage
 | Size                  | 4.72cm*2.38cm         |
 +-----------------------+-----------------------+
 
+.. figure:: /../images/Relay-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
 **3.Wiring Diagram**
 
 .. figure:: /../images/Relay-2.png
@@ -67,3 +72,12 @@ After you have successfully connected the line according to the wiring diagram a
     :align: center
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/up9nm05mipdtfcg833xnh/h?rlkey=62t7wjarx40zd1ymqif8xgoem&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_
+

@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -120,7 +121,7 @@
 <div class="line"><br /></div>
 </div>
 <div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/ds18x20_res.jpeg"><img alt="../../_images/ds18x20_res.jpeg" src="../../_images/ds18x20_res.jpeg" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../images/tutorials/ds18x20_res.jpeg"><img alt="../images/tutorials/ds18x20_res.jpeg" src="../images/tutorials/ds18x20_res.jpeg" style="width: 300px;" /></a>
 <p class="caption"><span class="caption-text">如果你使用的ds18b20单个器件,为保证数据传输稳定，信号OUT引脚需接4.7K的上拉电阻。</span></p>
 </div>
 <hr class="docutils" />
@@ -156,46 +157,6 @@
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">rom</span></code> - 设备地址</li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">示例-ds18b20</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">Pin</span>
-<span class="kn">import</span> <span class="nn">onewire</span> 
-<span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">ds18x20</span>
-<span class="c1"># 创建one wire总线,引脚为P0</span>
-<span class="n">ow</span> <span class="o">=</span> <span class="n">onewire</span><span class="o">.</span><span class="n">OneWire</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P0</span><span class="p">))</span> 
-<span class="c1"># 实例DS18X20类</span>
-<span class="n">ds</span> <span class="o">=</span> <span class="n">ds18x20</span><span class="o">.</span><span class="n">DS18X20</span><span class="p">(</span><span class="n">ow</span><span class="p">)</span>
-<span class="c1"># 扫描总线上的DS18B20，获取设备列表</span>
-<span class="n">roms</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">scan</span><span class="p">()</span>  
-
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="c1"># 转换温度值,每次获取温度前必须调用convert_temp，否则温度数据不会更新</span>
-    <span class="n">ds</span><span class="o">.</span><span class="n">convert_temp</span><span class="p">()</span>
-    <span class="c1"># convert_temp后至少等待750ms</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">750</span><span class="p">)</span>
-    <span class="c1"># 返回总线的上ds18b20设备的温度值</span>
-    <span class="k">for</span> <span class="n">rom</span> <span class="ow">in</span> <span class="n">roms</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Device </span><span class="si">%s</span><span class="s1"> temperature is </span><span class="si">%d</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">rom</span><span class="p">),</span><span class="n">ds</span><span class="o">.</span><span class="n">read_temp</span><span class="p">(</span><span class="n">rom</span><span class="p">)))</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 </div>
 </div>
 

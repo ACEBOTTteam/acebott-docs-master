@@ -6,7 +6,7 @@ Potentiometer Module
 .. figure:: /../images/Potentiometer-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 The potentiometer module is a linear rotating variable resistor with a maximum resistance of 10KΩ. We sense the state of the knob by detecting the voltage change caused by the change of its resistance, so as to control the movement of other modules.
 
 The potentiometer module is composed of a circular shaft and a knob, which usually has three pins: two fixed terminals and a sliding terminal. When the knob rotates, it is equivalent to adjusting the position of the sliding terminal with respect to the two fixed terminals, which in turn changes the resistance of the module.
@@ -27,6 +27,11 @@ Application reference: volume regulator, fan speed regulator, brightness regulat
 +-----------------------+-----------------------+
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/Potentiometer-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 

@@ -6,7 +6,7 @@ DHT11 Humidity Temperature Sensor
 .. figure:: /../images/DHT11-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 DHT11 Temperature and humidity sensor is a sensor based on the digital temperature and humidity sensor DHT11, it is a combination of temperature and humidity sensor, 
 it converts the physical temperature and humidity through the temperature, humidity sensor and the corresponding circuit into a digital quantity that is convenient 
@@ -34,6 +34,11 @@ Application reference: This module can be used for weather station, temperature 
 +-----------------------+-----------------------+
 | Size                  | 3.16cm*2.38cm         |
 +-----------------------+-----------------------+
+
+.. figure:: /../images/DHT11-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
 
 **3.Wiring Diagram**
 
@@ -71,3 +76,11 @@ By placing the module in the air, you can see the measured values of temperature
     The module is non-contact, do not put it in water.
 
 **6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/9bqs2me5lncvra1anzr5c/h?rlkey=yjtzkhhqza4q4599lhut4g1so&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

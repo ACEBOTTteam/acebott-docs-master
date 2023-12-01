@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -107,7 +108,7 @@
 <li>P9  – 右声道</li>
 <li>GND – GND</li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/audio_interface.png"><img alt="../../_images/audio_interface.png" src="../../_images/audio_interface.png" style="width: 363.59999999999997px; height: 147.6px;" /></a>
+<a class="reference internal image-reference" href="../images/tutorials/audio_interface.png"><img alt="../images/tutorials/audio_interface.png" src="../images/tutorials/audio_interface.png" /></a>
 <div class="section" id="id2">
 <h2>函数<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id3">
@@ -133,30 +134,6 @@
 <li><code class="docutils literal"><span class="pre">url</span></code> (str): 音频文件路径,类型为字符串。可以是本地路径地址,也可以是网络上的URL地址。</li>
 </ul>
 </div></blockquote>
-<div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">播放MP3音频</span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>                                    <span class="c1"># 导入audio</span>
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="n">wifi</span>                        <span class="c1"># 导入wifi</span>
-
-<span class="n">mywifi</span><span class="o">=</span><span class="n">wifi</span><span class="p">()</span>                                   <span class="c1"># 实例wifi类</span>
-<span class="n">mywifi</span><span class="o">.</span><span class="n">connectWiFi</span><span class="p">(</span><span class="s1">&#39;ssid&#39;</span><span class="p">,</span><span class="s1">&#39;password&#39;</span><span class="p">)</span>           <span class="c1"># 连接 WiFi 网络</span>
-
-<span class="n">audio</span><span class="o">.</span><span class="n">player_init</span><span class="p">()</span>                                   <span class="c1"># 播放初始化</span>
-<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s1">&#39;music.mp3&#39;</span><span class="p">)</span>                                      <span class="c1"># 本地音频解码                   </span>
-<span class="n">audio</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s2">&quot;http://wiki.labplus.cn/images/4/4e/Music_test.mp3&quot;</span><span class="p">)</span>          <span class="c1"># 播放网络音频url</span>
-<span class="n">audio</span><span class="o">.</span><span class="n">player_deinit</span><span class="p">()</span>                            <span class="c1"># 播放结束,释放资源</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 <dl class="method">
 <dt id="audio.audio.set_volume">
 <code class="descclassname">audio.</code><code class="descname">set_volume</code><span class="sig-paren">(</span><em>vol</em><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.set_volume" title="Permalink to this definition">¶</a></dt>

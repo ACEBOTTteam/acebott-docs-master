@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started with ESP32 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Install the ESP32 plugin in the Arduino IDE" href="Install the ESP32 plugin in the Arduino IDE.html" />
+    <link rel="prev" title="ESP32" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ESP32</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started with ESP32</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-esp32">What is ESP32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-esp32-platform">The ESP32 Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Install the ESP32 plugin in the Arduino IDE.html">Install the ESP32 plugin in the Arduino IDE</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">ESP32</a></li>
+      <li class="breadcrumb-item active">Getting Started with ESP32</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="getting-started-with-esp32">
+<h1>Getting Started with ESP32<a class="headerlink" href="#getting-started-with-esp32" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-esp32">
+<h2>What is ESP32<a class="headerlink" href="#what-is-esp32" title="Permalink to this headline">¶</a></h2>
+<p>ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth.
+The ESP32 series employs either a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations,
+Xtensa LX7 dual-core microprocessor or a single-core RISC-V microprocessor and includes built-in antenna switches,
+RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems,
+a Chinese company based in Shanghai, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.</p>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<p>Features of the ESP32 include the following:</p>
+</div>
+<div class="section" id="the-esp32-platform">
+<h2>The ESP32 Platform<a class="headerlink" href="#the-esp32-platform" title="Permalink to this headline">¶</a></h2>
+<p><strong>Processors:</strong></p>
+<blockquote>
+<div><p>CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS</p>
+<p>Ultra low power (ULP) co-processor</p>
+</div></blockquote>
+<p><strong>Memory:</strong> 520 KiB RAM, 448 KiB ROM</p>
+<p><strong>Wireless connectivity:</strong></p>
+<blockquote>
+<div><p>Wi-Fi: 802.11 b/g/n</p>
+<p>Bluetooth: v4.2 BR/EDR and BLE (shares the radio with Wi-Fi)</p>
+</div></blockquote>
+<p><strong>Peripheral interfaces:</strong></p>
+<blockquote>
+<div><p>34 × programmable GPIOs</p>
+<p>12-bit SAR ADC up to 18 channels</p>
+<p>2 × 8-bit DACs</p>
+<p>10 × touch sensors (capacitive sensing GPIOs)</p>
+<p>4 × SPI</p>
+<p>2 × I²S interfaces</p>
+<p>2 × I²C interfaces</p>
+<p>3 × UART</p>
+<p>SD/SDIO/CE-ATA/MMC/eMMC host controller</p>
+<p>SDIO/SPI slave controller</p>
+<p>Ethernet MAC interface with dedicated DMA and planned IEEE 1588 Precision Time Protocol support</p>
+<p>CAN bus 2.0</p>
+<p>Infrared remote controller (TX/RX, up to 8 channels)</p>
+<p>Pulse counter (capable of full quadrature decoding)</p>
+<p>Motor PWM</p>
+<p>LED PWM (up to 16 channels)</p>
+<p>Ultra low power analog pre-amplifier</p>
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>Security:</strong></dt>
+<dd><p class="first">IEEE 802.11 standard security features all supported, including WPA, WPA2, WPA3 (depending on version)[5] and WLAN Authentication and Privacy Infrastructure (WAPI)</p>
+<p>Secure boot</p>
+<p>Flash encryption</p>
+<p>1024-bit OTP, up to 768-bit for customers</p>
+<p class="last">Cryptographic hardware acceleration: AES, SHA-2, RSA, elliptic curve cryptography (ECC), random number generator (RNG)</p>
+</dd>
+</dl>
+<p><strong>Power management:</strong></p>
+<blockquote>
+<div><p>Internal low-dropout regulator</p>
+<p>Individual power domain for RTC</p>
+<p>5 μA deep sleep current</p>
+<p>Wake up from GPIO interrupt, timer, ADC measurements, capacitive touch sensor interrupt</p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="ESP32" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Install the ESP32 plugin in the Arduino IDE.html" class="btn btn-neutral float-right" title="Install the ESP32 plugin in the Arduino IDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

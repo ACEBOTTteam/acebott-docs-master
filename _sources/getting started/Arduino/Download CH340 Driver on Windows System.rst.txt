@@ -1,0 +1,53 @@
+Download CH340 Driver on Windows System
+======================================
+
+**Download CH340 driver**
+
+`Download CH340 driver <https://www.dropbox.com/scl/fo/lep845v1k6pmp8rvrc3ac/h?rlkey=t1aolaftfu1du4labkr23a91f&dl=0>`_
+
+
+**Installation**
+
+Connect the main control board to your computer with a USB cable, and the driver will be installed automatically on MacOS and Windows systems. If the driver installation fails, you need to install the driver manually.
+
+The USB to serial port chip of ESP32 control board is CH340C. Therefore, you need to install the driver for the chip.
+
+The driver installation process is much the same on different systems. Here, we demonstrate the driver installation on a Win10 system. You can find the "USB_Drive_CH341_3_1" folder in the resources package we provided. This is the driver file we want to install.
+
+**1.Check whether CH340 serial port driver is installed (if it is installed, skip it)**
+
+①Plug one end of the USB cable into the ESP32 control board and the other end into the USB port on the computer.
+
+②The first time you connect the ESP32 console to your computer, right-click "My Computer" -> "Attribute" -> Click Device Manager, and under Other Devices, you will see either USB-Serial or Unknown Device.
+
+.. figure:: /../images/Windows_driver1.png
+    :align: center
+
+**2.Install CH340 serial port driver**
+
+①First right click on the device and select the top menu option (Update Driver Software) as shown below.
+
+.. figure:: /../images/Windows_driver2.png
+    :align: center
+
+②Then you will be prompted to "Automatically search for updated driver software" or "Browse my computer to find driver software" as shown below. On this page, select "Browse My Computer to find driver software".
+
+.. figure:: /../images/Windows_driver3.png
+    :align: center
+
+③Then, add the path to the driver file.
+
+.. figure:: /../images/Windows_driver4.png
+    :align: center
+
+④You will receive a confirmation message after the software installation is complete. Once the installation is complete, click "Close".
+
+.. figure:: /../images/Windows_driver5.png
+    :align: center
+
+**3.Confirm that the CH340 serial port driver has been installed successfully**
+
+Plug one end of the USB cable into the ESP32 control board and the other end into the USB port on the computer. Right click "My Computer " -> " Attribute " -> Click "Device Manager" and connect to the control panel. The following picture shows that the installation is successful.
+
+.. figure:: /../images/Windows_driver6.png
+    :align: center

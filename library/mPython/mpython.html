@@ -56,6 +56,7 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -389,90 +390,6 @@
 <p class="first admonition-title">Attention</p>
 <p class="last">掌控板v2.3版本以上,去除加速度计运动侦测事件</p>
 </div>
-<div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">accelerometer 事件的简单应用</span><a class="headerlink" href="#id9" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># The MIT License (MIT)</span>
-<span class="c1"># Copyright (c) 2020, Tangliufeng for labplus Industries</span>
-
-<span class="c1"># accelerometer event simple example</span>
-
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-
-<span class="k">def</span> <span class="nf">motion_callback_function</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; 运动事件回调函数 &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">TILT_LEFT</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tilt left&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">TILT_RIGHT</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tilt right&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">TILT_UP</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tilt up&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">TILT_DOWN</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tilt down&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">FACE_UP</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;face up&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">FACE_DOWN</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;face down&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">SINGLE_CLICK</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;single click&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">DOUBLE_CLICK</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;double click&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">event</span> <span class="o">==</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">FREEFALL</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;freefall&quot;</span><span class="p">)</span>
-
-<span class="c1"># 事件回调注册</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_tilt_up</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_tilt_down</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_tilt_left</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_tilt_right</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_face_up</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_face_down</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_single_click</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_double_click</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-<span class="n">accelerometer</span><span class="o">.</span><span class="n">event_freefall</span> <span class="o">=</span> <span class="n">motion_callback_function</span>
-
-
-</pre></div>
-</td></tr></table></div>
-</div>
 </div>
 </div>
 </div>
@@ -634,84 +551,6 @@
 <li>掌控板垂直放置,沿着垂直于地面轴旋转数圈,过程约15秒。</li>
 </ol>
 </div></blockquote>
-<div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">磁力计应用–指北针</span><a class="headerlink" href="#id10" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># The MIT License (MIT)</span>
-<span class="c1"># Copyright (c) 2019, Tangliufeng for labplus Industries</span>
-
-<span class="c1"># 掌控板磁力计Magnetic应用--指北针 </span>
-
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">math</span>
-
-<span class="c1"># 绘制罗盘中心坐标和半径</span>
-<span class="n">xc</span><span class="p">,</span><span class="n">yc</span><span class="p">,</span><span class="n">r</span><span class="o">=</span> <span class="mi">64</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">30</span>
-
-
-<span class="k">def</span> <span class="nf">draw_heading</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;绘制磁北指针&quot;&quot;&quot;</span>
-    <span class="k">global</span> <span class="n">xc</span><span class="p">,</span><span class="n">yc</span><span class="p">,</span><span class="n">r</span>
-    <span class="n">angle</span> <span class="o">=</span> <span class="mi">360</span> <span class="o">-</span> <span class="n">angle</span>
-    <span class="n">am</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">angle</span> <span class="o">/</span> <span class="mi">360</span>
-    <span class="n">xm</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">xc</span> <span class="o">+</span> <span class="n">r</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">am</span><span class="p">))</span>
-    <span class="n">ym</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">yc</span> <span class="o">-</span> <span class="n">r</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">am</span><span class="p">))</span>
-    <span class="n">oled</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="n">xm</span><span class="p">,</span> <span class="n">ym</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># 电子罗盘校准</span>
-<span class="n">magnetic</span><span class="o">.</span><span class="n">calibrate</span><span class="p">()</span>
-<span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;指北针&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="c1"># 绘制罗盘轮廓</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="c1"># 获取磁力计电子罗盘角度</span>
-    <span class="n">angle</span> <span class="o">=</span> <span class="n">magnetic</span><span class="o">.</span><span class="n">get_heading</span><span class="p">()</span>
-    <span class="c1"># 清除指针</span>
-    <span class="n">oled</span><span class="o">.</span><span class="n">fill_circle</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="c1"># 显示罗盘指针</span>
-    <span class="n">draw_heading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
-    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;磁北极夹角: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">angle</span><span class="p">)</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 </div>
 <div class="section" id="bme280">
 <h2>bme280<a class="headerlink" href="#bme280" title="Permalink to this headline">¶</a></h2>
@@ -783,46 +622,6 @@
 <dd></dd></dl>
 
 <p>按键释放事件。</p>
-<div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">Button 事件回调的简单应用</span><a class="headerlink" href="#id11" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># The MIT License (MIT)</span>
-<span class="c1"># Copyright (c) 2020, Tangliufeng for labplus Industries</span>
-
-<span class="c1"># 按键事件回调简单的示例</span>
-
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-
-<span class="k">def</span> <span class="nf">on_button_a_pressed</span><span class="p">(</span><span class="n">pin</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; a键按下事件回调函数 &quot;&quot;&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;按键A，按下了。&quot;</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">on_button_b_pressed</span><span class="p">(</span><span class="n">pin</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; b键按下事件回调函数 &quot;&quot;&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;按键B，按下了。&quot;</span><span class="p">)</span>
-
-<span class="c1"># 按键事件注册</span>
-<span class="n">button_a</span><span class="o">.</span><span class="n">event_pressed</span> <span class="o">=</span> <span class="n">on_button_a_pressed</span>
-<span class="n">button_b</span><span class="o">.</span><span class="n">event_pressed</span> <span class="o">=</span> <span class="n">on_button_b_pressed</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 <dl class="method">
 <dt id="mpython.Button.value">
 <code class="descclassname">Button.</code><code class="descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpython.Button.value" title="Permalink to this definition">¶</a></dt>
@@ -1033,70 +832,6 @@
 <dd></dd></dl>
 
 <p>将frame缓存发送至oled显示。</p>
-<div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">hello world</span><a class="headerlink" href="#id12" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;你好世界&#39;</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;hello,world&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;안녕하세요&#39;</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;こんにちは世界&#39;</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">48</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">打字效果</span><a class="headerlink" href="#id13" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># 打字效果</span>
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># 显示的字符串</span>
-<span class="n">_str</span> <span class="o">=</span> <span class="s2">&quot;掌控板是创客教育专家委员会、猫友汇、广大一线老师共同提出需求并与创客教育行业优秀企业代表共同参与研发的教具、学具,是一块为教育而生的开源硬件，也是一个公益项目。mPython掌控板是一块MicroPython微控制器板，它集成ESP32高性能双核芯片,使用当下最流行的Python编程语言，以便您轻松地将代码从桌面传输到微控制器或嵌入式系统。&quot;</span>
-
-<span class="c1"># 起点坐标    </span>
-<span class="n">axis</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># 逐字显示,根据返回的坐标续接显示</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">_str</span><span class="p">:</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">axis</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">axis</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">char_width</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">axis</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-    <span class="c1"># 满屏时,清屏</span>
-    <span class="k">if</span> <span class="n">axis</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">64</span> <span class="o">-</span> <span class="mi">16</span> <span class="ow">and</span> <span class="n">char_width</span> <span class="o">&gt;=</span> <span class="mi">128</span><span class="o">-</span><span class="n">axis</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Clear screen&#39;</span><span class="p">)</span>
-        <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 <dl class="method">
 <dt id="mpython.oled.DispChar_font">
 <code class="descclassname">oled.</code><code class="descname">DispChar_font</code><span class="sig-paren">(</span><em>font</em>, <em>s</em>, <em>x</em>, <em>y</em>, <em>invert=False</em><span class="sig-paren">)</span><a class="headerlink" href="#mpython.oled.DispChar_font" title="Permalink to this definition">¶</a></dt>
@@ -1112,51 +847,11 @@
 <li><code class="docutils literal"><span class="pre">invert</span></code> - 显示像素点翻转。</li>
 </ul>
 </div></blockquote>
-<div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">自定义字体显示</span><a class="headerlink" href="#id14" title="Permalink to this code">¶</a></div>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># The MIT License (MIT)</span>
-<span class="c1"># Copyright (c) 2019, Tangliufeng for labplus Industries</span>
-
-<span class="c1"># 掌控板oled.DispChar_font()自定义字体显示的简单示例</span>
-
-<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-
-<span class="c1"># 导入转换好的字体</span>
-<span class="kn">import</span> <span class="nn">simfang16</span>
-<span class="kn">import</span> <span class="nn">freescpt18</span>
-<span class="kn">import</span> <span class="nn">stxingkai20</span>
-
-<span class="c1"># 使用自定义字体显示</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar_font</span><span class="p">(</span><span class="n">simfang16</span><span class="p">,</span><span class="s1">&#39;你好,世界&#39;</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar_font</span><span class="p">(</span><span class="n">stxingkai20</span><span class="p">,</span><span class="s1">&#39;你好,世界&#39;</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
-<span class="n">oled</span><span class="o">.</span><span class="n">DispChar_font</span><span class="p">(</span><span class="n">freescpt18</span><span class="p">,</span><span class="s1">&#39;hello,world&#39;</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
-
-<span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</td></tr></table></div>
-</div>
 <ul class="simple">
 <li><code class="xref download docutils literal"><span class="pre">以上自定义字体示例中simfang16、freescpt18、stxingkai20</span></code></li>
 </ul>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../../_images/helloworld_customfont.jpg"><img alt="../../_images/helloworld_customfont.jpg" src="../../_images/helloworld_customfont.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../images/tutorials/helloworld_customfont.jpg"><img alt="../images/tutorials/helloworld_customfont.jpg" src="../images/tutorials/helloworld_customfont.jpg" style="width: 400px;" /></a>
 </div>
 <div class="admonition-font-to-py-py admonition">
 <p class="first admonition-title"><cite>font_to_py.py</cite> 脚本使用说明</p>

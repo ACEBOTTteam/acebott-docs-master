@@ -7,7 +7,7 @@
 .. figure:: /../images/Display-1.png
     :align: center
     :width: 300
-    :height: 200
+    :height: 300
 
 The four-bit ninumber module is a module for displaying digits, which integrates a 4-bit common-anode ninumber module, and uses the driver chip TM1650 to reduce the difficulty of wiring.
 
@@ -32,6 +32,11 @@ Application reference: Numerical visualization projects, such as temperature, hu
 | Size                  | 4.72cm*2.38cm         |
 +-----------------------+-----------------------+
 
+.. figure:: /../images/Display-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
+    
 **3.Wiring Diagram**
 
 
@@ -51,7 +56,6 @@ Application reference: Numerical visualization projects, such as temperature, hu
 +----------------------------+-----------------------+
 
 **4.Sample Code**
-
 
 .. literalinclude:: /../../examples/4-Digit_Tube_Display_Module/4-Digit_Tube_Display_Module.ino
     :linenos:

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>掌控拓展板介绍 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">掌控拓展板介绍</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="extboard-introduce">
+<span id="id1"></span><h1>掌控拓展板介绍<a class="headerlink" href="#extboard-introduce" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>掌控拓展板(parrot)是掌控板衍生的一款体积小巧、易于携带的拓展板。支持电机驱动、语音播放、语音合成、红外发码（可学习）等功能的IO引脚扩展板,可扩展12路IO接口和2路I2C接口。
+通过连接掌控板，带来更加丰富多元的物联网应用与编程体验，你的奇思妙想也将进一步获得延伸，激发你的创意，造起来！</p>
+<img alt="../_images/extboard.png" src="../_images/extboard.png" />
+</div>
+<div class="section" id="id3">
+<h2>技术参数<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>该板具有以下特性:</p>
+<blockquote>
+<div><ul class="simple">
+<li>两路DC马达驱动,单路电流150mA</li>
+<li>支持音频功放和喇叭输出(掌控板P8，P9引脚)</li>
+<li>支持文字转语音(Text To Speech)的语音合成</li>
+<li>扩展12路IO接口、2路I2C接口</li>
+<li>红外发码，可支持红外学习功能</li>
+<li>体积小巧、便携,易于携带</li>
+<li>支持锂电池供电和外接USB电源供电两种方式</li>
+<li>内置330mAH锂电池,支持锂电池循环充电</li>
+<li>工作电压:3.3V</li>
+<li>最大输出电流: <cite>1A&#64;3.3V</cite> <cite>2A&#64;VCC</cite></li>
+<li>充电电流: 最大170mA</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h2>接口说明<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/parrot_description.png"><img alt="../_images/parrot_description.png" src="../_images/parrot_description.png" style="width: 800px;" /></a>
+</div>
+<ul>
+<li><p class="first">电源指示灯状态:</p>
+<blockquote>
+<div><ul class="simple">
+<li>电源输出指示功能: 3.3V输出,指示灯亮;无输出则灭。</li>
+<li>电池电量指示功能: 通过闪烁次数反馈电量,4档电量显示。</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">充电指示灯状态:</p>
+<blockquote>
+<div><ul class="simple">
+<li>充电指示功能: 充电中,指示灯闪烁；充满,指示灯熄灭；</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">VCC: VCC电源区别与其他3.3V电压电源。提供3.3V以上更高的电压和更大的电流驱动。用于应付较大的驱动需求。电源路径管理,当没接USB充电时,VCC由电池电压直接提供；接上USB充电时,VCC由USB提供电源。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>安装说明<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>掌控板和掌控拓展板都有3个孔，通过3个铜柱将两板连接连接，拧上螺丝固定，套入软质外壳即可，如图所示。</p>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/parrot_install.png"><img alt="../_images/parrot_install.png" src="../_images/parrot_install.png" style="width: 700.0px; height: 350.0px;" /></a>
+<p class="caption"><span class="caption-text">安装图</span></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>使用说明<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>功能说明<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p><strong>电机驱动</strong></p>
+<blockquote>
+<div>掌控拓展板支持2路的PWM电机驱动(掌控拓展板背面标记M1和M2)，你可以接入直流电机马达(如TT马达、N20)和LED灯(满天星灯带)</div></blockquote>
+<p><strong>I/O</strong></p>
+<blockquote>
+<div>掌控拓展板左右两侧扩展出12路I/O接口、2路I2C接口。可以通过这些接口接入经典的传感器输入模块，输出模块。例如：按键、人体红外、超声波、LED、马达、蜂鸣器、数码管……
+拓展板扩展引脚有P0、P1、P2、P3、P5、P6、P7、P11、P13、P14、P15、P16、P19(SCL)、P20(SDA)</div></blockquote>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<ul class="last simple">
+<li>由于P5、P11是掌控板的按键A、B的IO引脚,为避免冲突,限定拓展板的P5、P11引脚只能用于数字电平输入,且拓展板会对输入电平进行翻转。在使用时,须重点注意！</li>
+<li>内置锂电池只提供有限的驱动能力，如需驱动较大功率器件或者长时间稳定的应用。建议采用外接USB，外部供电。</li>
+</ul>
+</div>
+<p><strong>喇叭—音频播放</strong></p>
+<blockquote>
+<div>掌控拓展板内置喇叭,支持音频播放。</div></blockquote>
+<p><strong>语音合成(TTS)</strong></p>
+<blockquote>
+<div>将文本转化为文字，让机器能够说话。这样就可以给掌控板添上“嘴巴”。比如在程序内输入你想要说话的内容，让它说给你听。</div></blockquote>
+<p><strong>红外发码</strong></p>
+<blockquote>
+<div>掌控拓展板内置红外收发管，支持NEC编码的红外发码。还支持红外学习功能。</div></blockquote>
+</div>
+<div class="section" id="python">
+<h3>Python库<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="../library/mPython/parrot.html#module-parrot" title="parrot: 掌控拓展板驱动"><code class="xref py py-mod docutils literal"><span class="pre">parrot</span></code></a> 模块 : 用于电机驱动功能</li>
+<li><a class="reference internal" href="../library/mPython/audio.html#module-audio" title="audio: 提供音频播放录音的相关功能"><code class="xref py py-mod docutils literal"><span class="pre">audio</span></code></a> 模块 : 用于音频播放功能</li>
+</ul>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">注意,V2.1版本新增红外发码、学习功能！</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

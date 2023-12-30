@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>urequests — HTTP客户端的相关功能函数 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">urequests</span></code> — HTTP客户端的相关功能函数</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-urequests"><span id="urequests"></span></span><div class="section" id="urequests-http">
+<h1><a class="reference internal" href="#module-urequests" title="urequests: HTTP客户端的相关功能函数,提供各种HTTP请求方式"><code class="xref py py-mod docutils literal"><span class="pre">urequests</span></code></a> — HTTP客户端的相关功能函数<a class="headerlink" href="#urequests-http" title="Permalink to this headline">¶</a></h1>
+<p>之前我们用了 socket 库，这个作为入门的工具还是不错的，对了解一些爬虫的基本理念，掌握爬虫爬取的流程有所帮助。
+入门之后，我们就需要学习一些更加高级的内容和工具来方便我们的爬取。
+那么这一节来简单介绍一下 urequests 库的基本用法。</p>
+<div class="section" id="response">
+<h2>Response类<a class="headerlink" href="#response" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="urequests.Response">
+<em class="property">class </em><code class="descclassname">urequests.</code><code class="descname">Response</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.Response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>该Response类的对象，包含服务器对HTTP请求的响应。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">s</span></code>-ussl对象</li>
+</ul>
+</div></blockquote>
+<div class="section" id="id1">
+<h3>方法<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="urequests.close">
+<code class="descclassname">urequests.</code><code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#urequests.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>关闭socket。</p>
+<dl class="function">
+<dt id="urequests.content">
+<code class="descclassname">&#64;</code><code class="descclassname">urequests.</code><code class="descname">content</code><a class="headerlink" href="#urequests.content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>返回响应的内容，以字节为单位。</p>
+<dl class="function">
+<dt id="urequests.text">
+<code class="descclassname">&#64;</code><code class="descclassname">urequests.</code><code class="descname">text</code><a class="headerlink" href="#urequests.text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>以文本方式返回响应的内容，编码为unicode。</p>
+<dl class="method">
+<dt id="urequests.json">
+<code class="descclassname">urequests.</code><code class="descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#urequests.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>返回响应的json编码内容并转为dict类型。</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="urequests.request">
+<code class="descclassname">urequests.</code><code class="descname">request</code><span class="sig-paren">(</span><em>method</em>, <em>url</em>, <em>data=None</em>, <em>json=None</em>, <em>headers={}</em>, <em>params=None</em>, <em>files=None</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>向服务器发送HTTP请求。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">method</span></code> - 要使用的HTTP方法</li>
+<li><code class="docutils literal"><span class="pre">url</span></code> - 要发送的URL</li>
+<li><code class="docutils literal"><span class="pre">data</span></code> - 要附加到请求的正文。如果提供字典或元组列表，则将进行表单编码。</li>
+<li><code class="docutils literal"><span class="pre">json</span></code> - json用于附加到请求的主体。</li>
+<li><code class="docutils literal"><span class="pre">headers</span></code> - 要发送的标头字典。</li>
+<li><code class="docutils literal"><span class="pre">params</span></code> - 附加到URL的URL参数。如果提供字典或元组列表，则将进行表单编码。</li>
+<li><code class="docutils literal"><span class="pre">files</span></code> - 用于文件上传,类型为2元组,其中定义了文件名,文件路径和content类型。如下,{‘name’, (file directory,content-type)}</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="urequests.head">
+<code class="descclassname">urequests.</code><code class="descname">head</code><span class="sig-paren">(</span><em>url</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.head" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送HEAD请求,返回Response对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> - Request对象的URL</li>
+<li><code class="docutils literal"><span class="pre">**kw</span></code> - request方法的参数。</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="urequests.get">
+<code class="descclassname">urequests.</code><code class="descname">get</code><span class="sig-paren">(</span><em>url</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送GET请求,返回Response对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> - Request对象的URL</li>
+<li><code class="docutils literal"><span class="pre">**kw</span></code> - request方法的参数。</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="urequests.post">
+<code class="descclassname">urequests.</code><code class="descname">post</code><span class="sig-paren">(</span><em>url</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送POST请求,返回Response对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> - Request对象的URL</li>
+<li><code class="docutils literal"><span class="pre">**kw</span></code> - request方法的参数。</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="urequests.put">
+<code class="descclassname">urequests.</code><code class="descname">put</code><span class="sig-paren">(</span><em>url</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.put" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送PUT请求,返回Response对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> - Request对象的URL</li>
+<li><code class="docutils literal"><span class="pre">**kw</span></code> - request方法的参数。</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="urequests.patch">
+<code class="descclassname">urequests.</code><code class="descname">patch</code><span class="sig-paren">(</span><em>url</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>送PATCH请求,返回Response对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> - Request对象的URL</li>
+<li><code class="docutils literal"><span class="pre">**kw</span></code> - request方法的参数。</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="urequests.delete">
+<code class="descclassname">urequests.</code><code class="descname">delete</code><span class="sig-paren">(</span><em>url</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#urequests.delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送DELETE请求。,返回Response对象。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> - Request对象的URL</li>
+<li><code class="docutils literal"><span class="pre">**kw</span></code> - request方法的参数。</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

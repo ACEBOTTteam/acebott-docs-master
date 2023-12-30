@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>audio — 提供音频播放录音的相关功能 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">audio</span></code> — 提供音频播放录音的相关功能</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-audio"><span id="audio"></span></span><div class="section" id="id1">
+<h1><a class="reference internal" href="#module-audio" title="audio: 提供音频播放录音的相关功能"><code class="xref py py-mod docutils literal"><span class="pre">audio</span></code></a> — 提供音频播放录音的相关功能<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>该模块提供音频录音播放功能,使用P8和P9引脚作为音频解码输出。 由于掌控板无集成喇叭,并不能直接播放音源。你可以使用带集成喇叭的扩展板或自己将P8,P9外接至功放喇叭。</p>
+<p>掌控板接3.5mm耳机方法:</p>
+<ul class="simple">
+<li>P8  – 左声道</li>
+<li>P9  – 右声道</li>
+<li>GND – GND</li>
+</ul>
+<a class="reference internal image-reference" href="../images/tutorials/audio_interface.png"><img alt="../images/tutorials/audio_interface.png" src="../images/tutorials/audio_interface.png" /></a>
+<div class="section" id="id2">
+<h2>函数<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>基础音频函数<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h4>播放<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="audio.audio.player_init">
+<code class="descclassname">audio.</code><code class="descname">player_init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.player_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>音频播放初始化,为音频解码开辟缓存</p>
+<dl class="method">
+<dt id="audio.audio.play">
+<code class="descclassname">audio.</code><code class="descname">play</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.play" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>本地或网络音频播放,目前只支持wav,mp3格式音频。</p>
+<p>可以播放文件系统的MP3音频,或者网络的MP3音频资源。播放本地mp3音频由于受micropython文件系统限制和RAM大小限制,当文件大于1M基本很难下载下去。所以对音频文件的大小有所限制,应尽可能的小。
+当播放网络MP3音频,须先连接网络,URL必须是完整地址,如”<a class="reference external" href="http://wiki.labplus.cn/images/4/4e/Music_test.mp3">http://wiki.labplus.cn/images/4/4e/Music_test.mp3</a>” 。返回解码状态,当为0,说明可接受音频解码指令;当为1,说明当前正处解码状态,不能响应。</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">url</span></code> (str): 音频文件路径,类型为字符串。可以是本地路径地址,也可以是网络上的URL地址。</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="audio.audio.set_volume">
+<code class="descclassname">audio.</code><code class="descname">set_volume</code><span class="sig-paren">(</span><em>vol</em><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.set_volume" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>设置音频音量</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">vol</span></code> : 音量设置,范围0~100</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="audio.audio.stop">
+<code class="descclassname">audio.</code><code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>音频播放停止</p>
+<dl class="method">
+<dt id="audio.audio.pause">
+<code class="descclassname">audio.</code><code class="descname">pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.pause" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>音频播放暂停</p>
+<dl class="method">
+<dt id="audio.audio.resume">
+<code class="descclassname">audio.</code><code class="descname">resume</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.resume" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>音频播放恢复,用于暂停后的重新播放</p>
+<dl class="method">
+<dt id="audio.audio.player_status">
+<code class="descclassname">audio.</code><code class="descname">player_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.player_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>用于获取系统是否处于音频播放状态,返回1,说明正处于播放中,返回0,说明播放结束,处于空闲。</p>
+<dl class="method">
+<dt id="audio.audio.player_deinit">
+<code class="descclassname">audio.</code><code class="descname">player_deinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.player_deinit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>音频播放结束后,释放缓存</p>
+</div>
+<div class="section" id="id5">
+<h4>录音<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="audio.audio.recorder_init">
+<code class="descclassname">audio.</code><code class="descname">recorder_init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.recorder_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>录音初始化</p>
+<dl class="method">
+<dt id="audio.audio.record">
+<code class="descclassname">audio.</code><code class="descname">record</code><span class="sig-paren">(</span><em>file_name</em>, <em>record_time = 5</em><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>录制音频,并以 <cite>wav</cite> 格式存储。音频参数为8000Hz采样率,16位,单声道。</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">file_name</span></code> - wav文件存储路径</li>
+<li><code class="docutils literal"><span class="pre">record_time</span></code> - 录音时长,默认5秒。录音时长受文件系统空间限制,最大时长依实际情况而定。</li>
+</ul>
+<dl class="method">
+<dt id="audio.audio.recorder_deinit">
+<code class="descclassname">audio.</code><code class="descname">recorder_deinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#audio.audio.recorder_deinit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>录音结束后释放资源</p>
+<p>示例-录音:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">audio</span>
+<span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">audio</span><span class="o">.</span><span class="n">recorder_init</span><span class="p">()</span>
+<span class="n">rgb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 用LED指示录音开始结束</span>
+<span class="n">rgb</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="n">audio</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="s1">&#39;test.wav&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">rgb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">rgb</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="n">audio</span><span class="o">.</span><span class="n">recorder_deinit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

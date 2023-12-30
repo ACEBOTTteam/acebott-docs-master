@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>uio – 输入/输出流 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">uio</span></code> – 输入/输出流</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-uio">
+<span id="uio"></span><h1><a class="reference internal" href="#module-uio" title="uio: 输入/输出流"><code class="xref py py-mod docutils literal"><span class="pre">uio</span></code></a> – 输入/输出流<a class="headerlink" href="#module-uio" title="Permalink to this headline">¶</a></h1>
+<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-cpython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/io.html#module-io">io</a></p>
+<p>此模块包含其他类型的stream（类文件）对象和辅助函数。</p>
+<div class="section" id="id1">
+<h2>概念层次<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="first admonition-title">与CPython的区别</p>
+<p class="last">如本节所述，MicroPython中简化了流基类的概念层次结构。</p>
+</div>
+<p>（摘要）基本流类作为所有具体类行为的基础，在CPython中遵循少量二分法（成对分类）。
+在MicroPython中，它们稍微简化并隐含以实现更高的效率并节省资源。</p>
+<p>CPython中的一个重要的二分法是无缓冲流和缓冲流。在MicroPython中，所有流目前都是无缓冲的。这
+是因为所有现代操作系统，甚至许多RTOS和文件系统驱动程序都已经在他们身边执行缓冲。
+添加另一层缓冲是适得其反的（一个称为“bufferbloat”的问题）并占用宝贵的内存。
+请注意，仍然存在缓冲可能有用的情况，因此我们可能会在以后引入可选的缓冲支持。</p>
+<p>但是在CPython中，另一个重要的二分法与“缓冲”相关 - 这是一个流是否可能导致短读/写。
+短读取是指用户从流中请求例如10个字节，但是对于写入则类似。在CPython中，无缓冲流自动对短操作敏感，而缓冲是对它们的保证。
+无短读/写是一个重要的特性，因为它允许开发更简洁和有效的程序 - 这是MicroPython非常需要的东西。
+因此，虽然MicroPython不支持缓冲流，但它仍然提供非短操作流。
+是否会有短期操作取决于每个特定类别的需求，但强烈建议开发人员支持非短操作行为，原因如上所述。
+例如，MicroPython套接字保证避免短读/写。实际上，此时，核心中没有短操作流类的示例，并且一个是特定于端口的类，其中这种需求由硬件特性决定。</p>
+<p>在非阻塞流的情况下，非短操作行为变得棘手，阻塞与非阻塞行为是另一个CPython二分法，完全由MicroPython支持。
+非阻塞流永远不会等待数据到达或被写入 - 它们可能会读/写，或者表示缺少数据（或写入数据的能力）。
+显然，这与“非短操作”策略相冲突，实际上，在CPython中，非阻塞缓冲（以及此非短操作）流的情况令人费解 - 在某些地方，这种组合是禁止的，在某些情况下它是未定义的或只是没有记录，在某些情况下它会引发冗长的异常。这个问题在MicroPython中要简单得多：非阻塞流对于高效的异步操作很重要，因此这个属性在“no-short-ops”上占优势。所以，</p>
+<p>最后的二分法是二元对文本流。MicroPython当然支持这些，但在CPython中，文本流本身就是缓冲的，它们不在MicroPython中。
+（实际上，这是我们可能会引入缓冲支持的案例之一。）</p>
+<p>请注意，为了提高效率，MicroPython不提供与上面的层次结构相对应的抽象基类，并且不可能在纯Python中实现或子类化流类。</p>
+</div>
+<div class="section" id="id2">
+<h2>函数<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="uio.open">
+<code class="descclassname">uio.</code><code class="descname">open</code><span class="sig-paren">(</span><em>name</em>, <em>mode='r'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#uio.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开一个文件。内置 <code class="docutils literal"><span class="pre">open()</span></code> 函数是此函数的别名。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>类<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="uio.FileIO">
+<em class="property">class </em><code class="descclassname">uio.</code><code class="descname">FileIO</code><span class="sig-paren">(</span><em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#uio.FileIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>这是以二进制模式打开的文件类型，例如使用 <code class="docutils literal"><span class="pre">open(name,</span> <span class="pre">&quot;rb&quot;)</span></code>
+您不应该直接实例化这个类。</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="uio.TextIOWrapper">
+<em class="property">class </em><code class="descclassname">uio.</code><code class="descname">TextIOWrapper</code><span class="sig-paren">(</span><em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#uio.TextIOWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>这是在文本模式下打开的文件类型，例如使用 <code class="docutils literal"><span class="pre">open(name,</span> <span class="pre">&quot;rt&quot;)</span></code> 。
+您不应该直接实例化这个类。</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="uio.StringIO">
+<em class="property">class </em><code class="descclassname">uio.</code><code class="descname">StringIO</code><span class="sig-paren">(</span><span class="optional">[</span><em>string</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#uio.StringIO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="uio.BytesIO">
+<em class="property">class </em><code class="descclassname">uio.</code><code class="descname">BytesIO</code><span class="sig-paren">(</span><span class="optional">[</span><em>string</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#uio.BytesIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于输入/输出的内存文件类对象。 <code class="docutils literal"><span class="pre">StringIO</span></code> 用于文本模式I / O（类似于使用“t”修饰符打开的普通文件）。<code class="docutils literal"><span class="pre">BytesIO</span></code> 用于二进制模式I ​​/ O（类似于使用“b”修饰符打开的普通文件）。可以使用字符串参数指定类文件对象的初始内容（应为普通字符串StringIO或字节对象BytesIO）。
+所有常见的文件的方法，如 <code class="docutils literal"><span class="pre">read()</span></code> ， <code class="docutils literal"><span class="pre">write()</span></code> ， <code class="docutils literal"><span class="pre">seek()</span></code> ， <code class="docutils literal"><span class="pre">flush()</span></code> ， <code class="docutils literal"><span class="pre">close()</span></code>  在这些对象上可用以下的方法:</p>
+<dl class="method">
+<dt id="uio.BytesIO.getvalue">
+<code class="descname">getvalue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#uio.BytesIO.getvalue" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取保存数据的底层缓冲区的当前内容。</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt>
+<em class="property">class </em><code class="descclassname">uio.</code><code class="descname">StringIO</code><span class="sig-paren">(</span><em>alloc_size</em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt>
+<em class="property">class </em><code class="descclassname">uio.</code><code class="descname">BytesIO</code><span class="sig-paren">(</span><em>alloc_size</em><span class="sig-paren">)</span></dt>
+<dd><p>创建一个空 <cite>StringIO</cite>/ <cite>BytesIO</cite> 对象，预分配以容纳 <em>alloc_size</em> 字节数。这意味着写入该字节数不会导致缓冲区的重新分配，因此不会出现内存不足或导致内存碎片的情况。
+这些构造函数是MicroPython扩展，建议仅用于特殊情况和系统级库，而不是最终用户应用程序。</p>
+<div class="attention admonition">
+<p class="first admonition-title">Difference to CPython</p>
+<p class="last">这些构造函数是MicroPython扩展。</p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

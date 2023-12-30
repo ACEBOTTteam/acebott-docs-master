@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTTP &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">HTTP</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="http">
+<h1>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h1>
+<p>HTTP是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。</p>
+<p>一个HTTP”客户端”是一个应用程序（Web浏览器或其他任何客户端），通过连接到服务器达到向服务器发送一个或多个HTTP的请求的目的。</p>
+<div class="section" id="http-get-request">
+<h2>HTTP GET request<a class="headerlink" href="#http-get-request" title="Permalink to this headline">¶</a></h2>
+<p>以下示例显示了如何下载网页。HTTP使用端口80，您首先需要发送“GET”请求才能下载任何内容。作为请求的一部分，您需要指定要检索的页面。</p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">在使用socket模块时，请先连接wifi，并且确保可以访问互联网。有关如何wifi连接，请查看上章节 <a class="reference internal" href="network_basics.html#network-base"><span class="std std-ref">配置wifi</span></a> 。</p>
+</div>
+<p><code class="docutils literal"><span class="pre">http_get('http://micropython.org/ks/test.html')</span></code> ,掌控板客户端向 <cite>micropython.org</cite> 服务端发送范围test路径资源的get请求。服务端收到请求后将返回数据给客户端。</p>
+<div class="section" id="urequest">
+<h3>urequest 模块<a class="headerlink" href="#urequest" title="Permalink to this headline">¶</a></h3>
+<p>上面是使用socket来实现http的get请求。我们可以使用 <a class="reference internal" href="../../../library/mPython/urequests.html#module-urequests" title="urequests: HTTP客户端的相关功能函数,提供各种HTTP请求方式"><code class="xref py py-mod docutils literal"><span class="pre">urequests</span></code></a> 模块,里面已封装HTTP协议一些常用的请求方式,使用更为简便。</p>
+<p>有关更多的 <a class="reference internal" href="../../../library/mPython/urequests.html#module-urequests" title="urequests: HTTP客户端的相关功能函数,提供各种HTTP请求方式"><code class="xref py py-mod docutils literal"><span class="pre">urequests</span></code></a> 模块使用,请查阅该模块说明。</p>
+</div>
+</div>
+<div class="section" id="http-server">
+<h2>HTTP Server<a class="headerlink" href="#http-server" title="Permalink to this headline">¶</a></h2>
+<p>在REPL中运行main:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../images/tutorials/http_1.png" src="../images/tutorials/http_1.png" />
+<p>手机或笔记本电脑连接相同wifi，使其在同个局域网内。按打印提示或oled屏幕显示ip，使用浏览器访问掌控板主机IP地址。</p>
+<img alt="../images/tutorials/http_2.png" src="../images/tutorials/http_2.png" />
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

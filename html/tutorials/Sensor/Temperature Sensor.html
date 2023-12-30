@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Sensor &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Moisture Sensor" href="Moisture Sensor.html" />
+    <link rel="prev" title="Photosensitive Sensor" href="Photosensitive Sensor.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sensor</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Sound Sensor.html">Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PIR Motion Sensor.html">PIR Motion Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DHT11 Humidity Temperature Sensor.html">DHT11 Humidity Temperature Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Photoelectric Sensor.html">Photoelectric Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ultrasonic Sensor.html">Ultrasonic Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Photosensitive Sensor.html">Photosensitive Sensor</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Temperature Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Moisture Sensor.html">Moisture Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Raindrop Sensor.html">Raindrop Sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Sensor</a></li>
+      <li class="breadcrumb-item active">Temperature Sensor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="temperature-sensor">
+<h1>Temperature Sensor<a class="headerlink" href="#temperature-sensor" title="Permalink to this headline">¶</a></h1>
+<p><strong>1.Product Introduction</strong></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Temperature-1.png"><img alt="../../_images/Temperature-1.png" src="../../_images/Temperature-1.png" style="width: 300px; height: 300px;" /></a>
+</div>
+<p>Temperature sensor is a device used to measure the temperature of an environment or object. They can convert the temperature into an electrical signal or a digital signal,
+this product uses a thermistor MF52A103J3435 temperature sensor.</p>
+<p>Thermistors generally come in two types.</p>
+<p>Positive temperature coefficient (PTC) : With the increase of temperature, the resistance value increases, often used in overheating protection, temperature compensation, etc.</p>
+<p>Negative temperature coefficient (NTC) : As the temperature increases, the resistance value decreases, often used in temperature measurement, temperature control, etc.</p>
+<p>MF52A103J3435 is a negative temperature coefficient (NTC) thermistor, whose resistance decreases with increasing temperature.
+Its nominal resistance value is 10000 ohms and its temperature B value is 3435.</p>
+<p>Application reference: This module can be used for refrigerator, air conditioner, electronic blood pressure meter, thermometer, electric stove, etc.</p>
+<p><strong>2.Parameter Specification</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Value/Representation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Operating voltage</td>
+<td>3.3V~5V</td>
+</tr>
+<tr class="row-odd"><td>Operating temperature</td>
+<td>-55°C~+125°C</td>
+</tr>
+<tr class="row-even"><td>Output signal</td>
+<td>analog signal</td>
+</tr>
+<tr class="row-odd"><td>Size</td>
+<td>3.16cm*2.38cm</td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Temperature-5.jpg"><img alt="../../_images/Temperature-5.jpg" src="../../_images/Temperature-5.jpg" style="width: 300px; height: 300px;" /></a>
+</div>
+<p><strong>3.Wiring Diagram</strong></p>
+<div class="figure align-center">
+<img alt="../../_images/Temperature-2.png" src="../../_images/Temperature-2.png" />
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Temperature Sensor</th>
+<th class="head">UNO</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>VCC</td>
+<td>5V</td>
+</tr>
+<tr class="row-odd"><td>GND</td>
+<td>GND</td>
+</tr>
+<tr class="row-even"><td>S</td>
+<td>Analog Pin A0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4.Sample Code</strong></p>
+<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">acebott</span><span class="o">.</span><span class="n">com</span>
+<span class="c1">#include &lt;GyverNTC.h&gt;  </span>
+<span class="n">GyverNTC</span> <span class="n">therm</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="mi">3435</span><span class="p">);</span>
+<span class="o">/*</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">GyverNTC</span> <span class="nb">object</span>
+<span class="n">Parameter</span> <span class="mi">1</span><span class="p">:</span> <span class="n">Pin</span> <span class="n">of</span> <span class="n">thermistor</span> <span class="n">connection</span> <span class="p">(</span><span class="n">here</span> <span class="n">A0</span><span class="p">)</span>
+<span class="n">Parameter</span> <span class="mi">2</span><span class="p">:</span> <span class="n">Thermistor</span> <span class="n">reference</span> <span class="n">resistance</span> <span class="n">value</span> <span class="n">of</span> <span class="mi">10000</span> <span class="n">ohm</span><span class="p">,</span> <span class="n">MF52A103j3435</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">thermistor</span> <span class="n">model</span><span class="p">,</span> <span class="n">its</span> <span class="n">reference</span> <span class="n">resistance</span> <span class="ow">is</span> <span class="n">usually</span> <span class="mi">10</span><span class="n">K</span> <span class="n">ohm</span> <span class="p">(</span><span class="n">that</span> <span class="ow">is</span><span class="p">,</span> <span class="mi">10000</span> <span class="n">ohm</span><span class="p">),</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">its</span> <span class="n">standard</span> <span class="n">reference</span> <span class="n">resistance</span> <span class="n">value</span>
+<span class="n">Parameter</span> <span class="mi">3</span><span class="p">:</span> <span class="n">Thermistor</span> <span class="n">B</span> <span class="n">value</span> <span class="mi">3435</span><span class="p">,</span> <span class="n">MF52A103j3435</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">thermistor</span> <span class="n">model</span><span class="p">,</span> <span class="n">its</span> <span class="n">temperature</span> <span class="n">B</span> <span class="n">value</span> <span class="ow">is</span> <span class="mi">3435</span><span class="o">*/</span>
+<span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>  
+<span class="p">}</span>
+
+<span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Temperature &quot;</span><span class="p">);</span> 
+  <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">therm</span><span class="o">.</span><span class="n">getTempAverage</span><span class="p">());</span>  
+<span class="o">//</span><span class="n">Read</span> <span class="n">the</span> <span class="n">temperature</span> <span class="n">value</span>  <span class="ow">and</span> <span class="n">printed</span> <span class="n">to</span> <span class="n">the</span> <span class="n">serial</span> <span class="n">monitor</span>
+<span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot; *C&quot;</span><span class="p">);</span>  
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>  
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>5.Test Result</strong></p>
+<p>After uploading the code to the controller board, open the serial port monitor of the Arduino IDE and set the baud rate to 9600.</p>
+<p>Place the module in the air and you can see the measured temperature value.</p>
+<div class="figure align-center">
+<img alt="../../_images/Temperature-3.png" src="../../_images/Temperature-3.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../_images/Temperature-4.png" src="../../_images/Temperature-4.png" />
+</div>
+<p><strong>6.Related Resources</strong></p>
+<blockquote>
+<div><a class="reference external" href="https://www.dropbox.com/scl/fo/eslqt4yalspabxvfabb8o/h?rlkey=67fhm6b8xxdbkjg9d43r03axx&amp;dl=0">PDF and Code</a></div></blockquote>
+<p><strong>7.Get One Now</strong></p>
+<blockquote>
+<div><p>B2B Business: <a class="reference external" href="mailto:info&#37;&#52;&#48;acebott&#46;com">info<span>&#64;</span>acebott<span>&#46;</span>com</a></p>
+<p>Individual buyer: shop on  <a class="reference external" href="https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&amp;dl=0">aliexpress</a></p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Photosensitive Sensor.html" class="btn btn-neutral float-left" title="Photosensitive Sensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Moisture Sensor.html" class="btn btn-neutral float-right" title="Moisture Sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

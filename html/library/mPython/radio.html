@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>radio — radio 无线广播相关功能 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">radio</span></code> — radio 无线广播相关功能</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-radio"><span id="radio"></span></span><div class="section" id="radio-radio">
+<h1><a class="reference internal" href="#module-radio" title="radio: 无线广播相关功能"><code class="xref py py-mod docutils literal"><span class="pre">radio</span></code></a> — radio 无线广播相关功能<a class="headerlink" href="#radio-radio" title="Permalink to this headline">¶</a></h1>
+<p>radio 模块是基于 <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/network/esp_now.html">ESP-NOW</a> 无连接 Wi-Fi 通信协议而实现无线广播功能,支持13 Channel,在相同的Channel内能接收到成员发出的广播消息,适合30米范围内的多板组网的通讯。</p>
+<div class="section" id="id1">
+<h2>函数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="radio.radio.on">
+<code class="descclassname">radio.</code><code class="descname">on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.on" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>开启无线功能</p>
+<dl class="method">
+<dt id="radio.radio.off">
+<code class="descclassname">radio.</code><code class="descname">off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.off" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>关闭无线功能</p>
+<dl class="method">
+<dt id="radio.radio.config">
+<code class="descclassname">radio.</code><code class="descname">config</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>配置无线参数</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">channel</span></code> (int): 无线通道,范围1~13</li>
+</ul>
+<dl class="method">
+<dt id="radio.radio.receive">
+<code class="descclassname">radio.</code><code class="descname">receive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.receive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>接收无线广播消息,消息以字符串形式返回。最大可接收250字节数据。如果没有接收到消息,则返回 <code class="docutils literal"><span class="pre">None</span></code> 。当 <code class="docutils literal"><span class="pre">receive</span></code> 内参数为 <code class="docutils literal"><span class="pre">True</span></code> ,即 <code class="docutils literal"><span class="pre">receive(True)</span></code> ,返回(msg,mac)的二元组。默认缺省 <code class="docutils literal"><span class="pre">receive(False)</span></code> ,即只返回msg。</p>
+<dl class="method">
+<dt id="radio.radio.receive_bytes">
+<code class="descclassname">radio.</code><code class="descname">receive_bytes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.receive_bytes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>接收无线广播消息,消息以字节形式返回。其他同 <code class="docutils literal"><span class="pre">radio.receive()</span></code> 相同。</p>
+<dl class="method">
+<dt id="radio.radio.send">
+<code class="descclassname">radio.</code><code class="descname">send</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送无线广播消息,发送数据类型为字符串。当发送成功后返回True,否则返回False。</p>
+<dl class="method">
+<dt id="radio.radio.send_bytes">
+<code class="descclassname">radio.</code><code class="descname">send_bytes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#radio.radio.send_bytes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>发送无线广播消息,发送数据类型为字节。当发送成功后返回True,否则返回False。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

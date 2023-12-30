@@ -1,0 +1,82 @@
+QB048 Vibrating Motor Module
+======================================
+
+**1.Product Introduction**
+
+
+.. figure:: /../images/Vibrating-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+Vibration module is an electronic component that produces a vibration or vibration effect.
+
+The vibration module includes a small motor as the main vibration source, which is usually an eccentric rotating motor, 
+where the unbalanced load on the motor shaft (eccentric mass) will cause the motor to produce unbalanced centrifugal force when rotating,
+and this centrifugal force will be transmitted to the housing of the vibration part, resulting in vibration.
+
+Application reference: mobile devices, game controllers, vibration feedback system and other scenarios.
+
+**2.Parameter Specification**
+
+
++-----------------------+--------------------------+
+| Parameter             | Value/Representation     |
++=======================+==========================+
+| Operating voltage     | 3.3V~5V                  |
++-----------------------+--------------------------+
+| Operating temperature | -25°C~+65°C              |
++-----------------------+--------------------------+
+| operating current     | 35mA                     |
++-----------------------+--------------------------+
+| Maximum power         | 0.5W                     |
++-----------------------+--------------------------+
+| Control signal        |Digital signal /PWM signal|
++-----------------------+--------------------------+
+| Size                  | 3.16cm*2.38cm            |
++-----------------------+--------------------------+
+
+.. figure:: /../images/Vibrating-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+
+.. figure:: /../images/Vibrating-2.png
+    :align: center
+
++-----------------------+-----------------------+
+|Vibrating Motor Module | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 3         |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+
+.. literalinclude:: /../../examples/Vibrating_Motor_Module/Vibrating_Motor_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+
+After uploading the code to the controller board, we can feel the shock of the vibration module will be strong, then weak, and repeated.
+
+.. figure:: /../images/Vibrating-3.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/67urbmrh2cgtvspfom64k/h?rlkey=fs3c8ph3hwgba5pn1yoaz3bxe&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

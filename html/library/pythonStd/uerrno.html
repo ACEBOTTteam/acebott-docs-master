@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>uerrno – 系统错误代码 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">uerrno</span></code> – 系统错误代码</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-uerrno">
+<span id="uerrno"></span><h1><a class="reference internal" href="#module-uerrno" title="uerrno: 系统错误代码"><code class="xref py py-mod docutils literal"><span class="pre">uerrno</span></code></a> – 系统错误代码<a class="headerlink" href="#module-uerrno" title="Permalink to this headline">¶</a></h1>
+<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-cpython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/errno.html#module-errno">errno</a></p>
+<p>此模块提供访问符号错误代码以进行 <a class="reference internal" href="builtins.html#oserror"><span class="std std-ref">OSError</span></a>  异常。特定的代码清单依赖于 <a class="reference internal" href="../../reference/glossary.html#term-micropython-port"><span class="xref std std-term">MicroPython port</span></a>.</p>
+<div class="section" id="id1">
+<h2>常量<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt>
+<code class="descname">EEXIST, EAGAIN, etc.</code></dt>
+<dd><p>错误代码，基于ANSI C/POSIX标准。所有错误代码开头都有“E”。错误通常可以访问为 <code class="docutils literal"><span class="pre">exc.args[0]</span></code> ，其中 <code class="docutils literal"><span class="pre">exc</span></code> 是 <code class="docutils literal"><span class="pre">OSError</span></code> 的一个实例</p>
+<p>示例:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">uos</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;my_dir&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">exc</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">uerrno</span><span class="o">.</span><span class="n">EEXIST</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Directory already exists&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="uerrno.errorcode">
+<code class="descclassname">uerrno.</code><code class="descname">errorcode</code><a class="headerlink" href="#uerrno.errorcode" title="Permalink to this definition">¶</a></dt>
+<dd><p>字典将数字错误代码映射到带有符号错误代码的字符串（参见上文）:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">uerrno</span><span class="o">.</span><span class="n">errorcode</span><span class="p">[</span><span class="n">uerrno</span><span class="o">.</span><span class="n">EEXIST</span><span class="p">])</span>
+<span class="go">EEXIST</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="17%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>异常</td>
+<td>值</td>
+<td>描述</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EPERM</span></code></td>
+<td>1</td>
+<td>Operation not permitted</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ENOENT</span></code></td>
+<td>2</td>
+<td>No such file or directory</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ESRCH</span></code></td>
+<td>3</td>
+<td>No such process</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EINTR</span></code></td>
+<td>4</td>
+<td>Interrupted system call</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EIO</span></code></td>
+<td>5</td>
+<td>I/O error</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ENXIO</span></code></td>
+<td>6</td>
+<td>No such device or address</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.E2BIG</span></code></td>
+<td>7</td>
+<td>Argument list too long</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ENOEXEC</span></code></td>
+<td>8</td>
+<td>Exec format error</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EBADF</span></code></td>
+<td>9</td>
+<td>Bad file number</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ECHILD</span></code></td>
+<td>10</td>
+<td>No child processes</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EAGAIN</span></code></td>
+<td>11</td>
+<td>Try again</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ENOMEM</span></code></td>
+<td>12</td>
+<td>Out of memory</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EACCES</span></code></td>
+<td>13</td>
+<td>Permission denied</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EFAULT</span></code></td>
+<td>14</td>
+<td>Bad address</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ENOTBLK</span></code></td>
+<td>15</td>
+<td>Block device required</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EBUSY</span></code></td>
+<td>16</td>
+<td>Device or resource busy</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EEXIST</span></code></td>
+<td>17</td>
+<td>File exists</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EXDEV</span></code></td>
+<td>18</td>
+<td>Cross-device link</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ENODEV</span></code></td>
+<td>19</td>
+<td>No such device</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ENOTDIR</span></code></td>
+<td>20</td>
+<td>Not a directory</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EISDIR</span></code></td>
+<td>21</td>
+<td>Is a directory</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EINVAL</span></code></td>
+<td>22</td>
+<td>Invalid argument</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ENFILE</span></code></td>
+<td>23</td>
+<td>File table overflow</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EMFILE</span></code></td>
+<td>24</td>
+<td>Too many open files</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ENOTTY</span></code></td>
+<td>25</td>
+<td>Not a typewriter</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ETXTBSY</span></code></td>
+<td>26</td>
+<td>Text file busy</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EFBIG</span></code></td>
+<td>27</td>
+<td>File too large</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ENOSPC</span></code></td>
+<td>28</td>
+<td>No space left on device</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ESPIPE</span></code></td>
+<td>29</td>
+<td>Illegal seek</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EROFS</span></code></td>
+<td>30</td>
+<td>Read-only file system</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EMLINK</span></code></td>
+<td>31</td>
+<td>Too many links</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EPIPE</span></code></td>
+<td>32</td>
+<td>Broken pipe</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EDOM</span></code></td>
+<td>33</td>
+<td>Math argument out of domain of func</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ERANGE</span></code></td>
+<td>34</td>
+<td>Math result not representable</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EWOULDBLOCK</span></code></td>
+<td>11</td>
+<td>Operation would block</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EOPNOTSUPP</span></code></td>
+<td>95</td>
+<td>Operation not supported on transport endpoint</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EAFNOSUPPORT</span></code></td>
+<td>97</td>
+<td>Address family not supported by protocol</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EADDRINUSE</span></code></td>
+<td>98</td>
+<td>Address already in use</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ECONNABORTED</span></code></td>
+<td>99</td>
+<td>Software caused connection abort</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ECONNRESET</span></code></td>
+<td>104</td>
+<td>Connection reset by peer</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ENOBUFS</span></code></td>
+<td>105</td>
+<td>No buffer space available</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EISCONN</span></code></td>
+<td>106</td>
+<td>Transport endpoint is already connected</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ENOTCONN</span></code></td>
+<td>107</td>
+<td>Transport endpoint is not connected</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.ETIMEDOUT</span></code></td>
+<td>110</td>
+<td>Connection timed out</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.ECONNREFUSED</span></code></td>
+<td>111</td>
+<td>Connection refused</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EHOSTUNREACH</span></code></td>
+<td>113</td>
+<td>No route to host</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">uerrno.EALREADY</span></code></td>
+<td>114</td>
+<td>Operation already in progress</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">uerrno.EINPROGRESS</span></code></td>
+<td>115</td>
+<td>Operation now in progress</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+QB003 Temperature Sensor
+======================================
+
+**1.Product Introduction**
+
+
+.. figure:: /../images/Temperature-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+Temperature sensor is a device used to measure the temperature of an environment or object. They can convert the temperature into an electrical signal or a digital signal, 
+this product uses a thermistor MF52A103J3435 temperature sensor.
+
+Thermistors generally come in two types.
+
+Positive temperature coefficient (PTC) : With the increase of temperature, the resistance value increases, often used in overheating protection, temperature compensation, etc.
+
+Negative temperature coefficient (NTC) : As the temperature increases, the resistance value decreases, often used in temperature measurement, temperature control, etc.
+
+MF52A103J3435 is a negative temperature coefficient (NTC) thermistor, whose resistance decreases with increasing temperature. 
+Its nominal resistance value is 10000 ohms and its temperature B value is 3435.
+
+Application reference: This module can be used for refrigerator, air conditioner, electronic blood pressure meter, thermometer, electric stove, etc.
+
+**2.Parameter Specification**
+
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -55°C~+125°C          |
++-----------------------+-----------------------+
+| Output signal         | analog signal         |
++-----------------------+-----------------------+
+| Size                  | 3.16cm*2.38cm         |
++-----------------------+-----------------------+
+
+.. figure:: /../images/Temperature-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+
+.. figure:: /../images/Temperature-2.png
+    :align: center
++-----------------------+-----------------------+
+|Temperature Sensor     | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Analog Pin A0         |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Temperature_Sensor/Temperature_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE and set the baud rate to 9600.
+
+Place the module in the air and you can see the measured temperature value.
+
+.. figure:: /../images/Temperature-3.png
+    :align: center
+.. figure:: /../images/Temperature-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/eslqt4yalspabxvfabb8o/h?rlkey=67fhm6b8xxdbkjg9d43r03axx&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

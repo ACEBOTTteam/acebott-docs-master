@@ -1,0 +1,77 @@
+QB043 Raindrop Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Raindrop-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+Raindrop sensor is a device used to detect the falling of raindrops, which is commonly used in automotive, smart home, and meteorological fields. 
+It can sense the presence of precipitation and trigger the corresponding operation or feedback.
+
+The working principle of the raindrop sensor is to use the resistance between two electrodes to sense the landing of raindrops. 
+When the raindrop falls to form a conductive path between the electrodes, the resistance value will change accordingly, and the sensor determines whether there is a raindrop by measuring the resistance change.
+
+Application reference: This module can be used for car wiper, smart home and weather detection station.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -25°C~+85°C           |
++-----------------------+-----------------------+
+| Output signal         | analog signal         |
++-----------------------+-----------------------+
+| Size                  | 3.16cm*2.38cm         |
++-----------------------+-----------------------+
+
+.. figure:: /../images/Raindrop-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Raindrop-2.png
+    :align: center
++-----------------------+-----------------------+
+|Raindrop Sensor        | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Analog pin A0         |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Raindrop_Sensor/Raindrop_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to automatic scrolling mode.
+
+Drop water on the module and check the value of the serial port monitor with and without water on the raindrop sensor. 
+You can see that the more water on the raindrop sensor, the greater the value of the serial port monitor.
+
+.. figure:: /../images/Raindrop-3.png
+    :align: center
+.. figure:: /../images/Raindrop-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/41aceyd5shb0er6igvw83/h?rlkey=u8by8dds0uy2v5bha189yv2tt&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/41aceyd5shb0er6igvw83/h?rlkey=u8by8dds0uy2v5bha189yv2tt&dl=0>`_

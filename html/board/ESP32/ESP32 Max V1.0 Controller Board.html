@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32 Max V1.0 Controller Board &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Microbit" href="../Microbit/index.html" />
+    <link rel="prev" title="ESP32" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ESP32</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ESP32 Max V1.0 Controller Board</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#design-of-power-supply">Design of Power Supply</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tech-specs">TECH SPECS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcb-dimensions">PCB Dimensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#package-list">Package List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extensions">Extensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-one-now">Get One Now</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">ESP32</a></li>
+      <li class="breadcrumb-item active">ESP32 Max V1.0 Controller Board</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="esp32-max-v1-0-controller-board">
+<h1>ESP32 Max V1.0 Controller Board<a class="headerlink" href="#esp32-max-v1-0-controller-board" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/ESP32-1.png" class="align-center" src="../../_images/ESP32-1.png" />
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="design-of-power-supply">
+<h2>Design of Power Supply<a class="headerlink" href="#design-of-power-supply" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tech-specs">
+<h2>TECH SPECS<a class="headerlink" href="#tech-specs" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Connectivity</th>
+<th class="head">WI-FI                 | Bluetooth LE</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Chip</td>
+<td>ESP-WROOM-32</td>
+</tr>
+<tr class="row-odd"><td>Clock</td>
+<td>240MHz</td>
+</tr>
+<tr class="row-even"><td>Ram</td>
+<td>448KB</td>
+</tr>
+<tr class="row-odd"><td>FLASH</td>
+<td>4MB</td>
+</tr>
+<tr class="row-even"><td>Interfaces</td>
+<td>UART | I2C | SPI | CAN</td>
+</tr>
+<tr class="row-odd"><td>Input Voltages</td>
+<td>6-18V</td>
+</tr>
+<tr class="row-even"><td>Pinout</td>
+<td>25(DIGITAL) | 15(ANALOG)| 25(PWM) | 2(DAC) | 2(UART) | 2(SPI) | 1（I2C）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pcb-dimensions">
+<h2>PCB Dimensions<a class="headerlink" href="#pcb-dimensions" title="Permalink to this headline">¶</a></h2>
+<p>Element and Pin Interfaces
+Here is an explanation of what every element and interface of the board does:</p>
+<img alt="../../_images/ESP32-2.png" class="align-center" src="../../_images/ESP32-2.png" />
+</div>
+<div class="section" id="package-list">
+<h2>Package List<a class="headerlink" href="#package-list" title="Permalink to this headline">¶</a></h2>
+<p>ESP32 Max V1.0 Controller Board * 1pcs</p>
+<p>USB cable * 1pcs</p>
+</div>
+<div class="section" id="extensions">
+<h2>Extensions<a class="headerlink" href="#extensions" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="get-one-now">
+<h2>Get One Now<a class="headerlink" href="#get-one-now" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="ESP32" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Microbit/index.html" class="btn btn-neutral float-right" title="Microbit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

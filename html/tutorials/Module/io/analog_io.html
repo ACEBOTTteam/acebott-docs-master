@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>模拟IO &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ESP32/index.html">ESP32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">模拟IO</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="io">
+<h1>模拟IO<a class="headerlink" href="#io" title="Permalink to this headline">¶</a></h1>
+<p>本章节介绍掌控板引脚的模拟输入输出的使用方法。引脚是您的电路板与连接到它的外部设备进行通信的方式。掌控板可以通过拓展板将IO引脚拓展并连接控制或读取其他元器件或模块。</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">你可以查阅 <a class="reference internal" href="../../../board/Microbit/Micro：bitV2.html#mpythonpindesc"><span class="std std-ref">掌控板接口引脚说明</span></a> ,了解可供使用的模拟引脚 。</p>
+</div>
+<div class="section" id="analog-in">
+<span id="id1"></span><h2>模拟输入<a class="headerlink" href="#analog-in" title="Permalink to this headline">¶</a></h2>
+<p>掌控板可供使用的模拟输入引脚有 <strong>P0</strong>、<strong>P1</strong>、<strong>P2</strong>、<strong>P3</strong>、P4、P10,其中P4,P10分别被掌控板的光线和麦克风传感器使用。</p>
+<div class="admonition- admonition">
+<p class="first admonition-title">什么是模拟输入呢？</p>
+<p class="last">模拟输入是将模拟信号转换为数字信号，简称ADC。</p>
+</div>
+<p>以下是使用P0引脚读取模拟输入:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>           <span class="c1"># 导入mpython模块</span>
+
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">ANALOG</span><span class="p">)</span>     <span class="c1"># 实例化MPythonPin,将P0设置为&quot;PinMode.ANALOG&quot;模式</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">p0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>          <span class="c1"># 读取P0引脚模拟量</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s2">&quot;analog:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">value</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">ANALOG</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">MPythonPin</span></code> 实例化。<code class="docutils literal"><span class="pre">mode</span></code> 设置为 <code class="docutils literal"><span class="pre">PinMode.ANALOG</span></code> 模拟输入模式。</p>
+</div>
+<p>读模拟输入:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">p0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">因为adc采样数据宽度为12bit，所以满量程为4095。</p>
+</div>
+<div class="section" id="ext">
+<h3>EXT鳄鱼夹<a class="headerlink" href="#ext" title="Permalink to this headline">¶</a></h3>
+<p>接下来，你可以通过鳄鱼夹线将阻性元件(如光敏、热敏电阻)接到掌控板的 <code class="docutils literal"><span class="pre">EXT</span></code> 和 <code class="docutils literal"><span class="pre">GND</span></code> 焊盘 ,测量传感器的输入值变化……</p>
+<p>EXT连接是掌控板的P3引脚:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>           <span class="c1"># 导入mpython模块</span>
+
+    <span class="n">p3</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">ANALOG</span><span class="p">)</span>     <span class="c1"># 实例化MPythonPin,将P3设置为&quot;PinMode.ANALOG&quot;模式</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">p3</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>          <span class="c1"># 读取EXT(P3)引脚模拟量</span>
+        <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s2">&quot;analog:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">value</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+        <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../images/tutorials/ext.png"><img alt="../images/tutorials/ext.png" class="align-center" src="../images/tutorials/ext.png" style="width: 180px;" /></a>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>模拟输出<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="admonition- admonition">
+<p class="first admonition-title">什么是模拟输出呢？</p>
+<p class="last">电路板的引脚不能像音频放大器那样输出模拟信号 - 通过调制引脚上的电压。这些引脚只能使能全3.3V输出，或者将其下拉至0V。
+然而，仍然可以通过非常快速地接通和断开该电压来控制LED的亮度或电动机的速度，并控制它的开启时间和关闭时间。
+这种技术称为脉冲宽度调制（PWM），这就是 <code class="docutils literal"><span class="pre">write_analog</span></code> 的方法。</p>
+</div>
+<p>输出某电压的PWM信号:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>           <span class="c1"># 导入mpython模块</span>
+
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">PWM</span><span class="p">)</span>     <span class="c1"># 实例化MPythonPin,将P0设置为&quot;PinMode.PWM&quot;模式</span>
+
+<span class="n">voltage</span><span class="o">=</span><span class="mf">2.0</span>                      <span class="c1"># 电压2V</span>
+<span class="n">p0</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">voltage</span><span class="o">/</span><span class="mf">3.3</span><span class="o">*</span><span class="mi">1023</span><span class="p">))</span>    <span class="c1">#计算对应电压PWM的占空比</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li><code class="docutils literal"><span class="pre">write_analog(value)</span></code> 中的 <code class="docutils literal"><span class="pre">value</span></code> 为PWM信号的占空比。</li>
+<li>由于IO引脚电压为3.3V，我们需要输出电压为2V。因此，映射值是2/3*1023。</li>
+<li>由于计算出来的为浮点型数，我们还需要使用 <code class="docutils literal"><span class="pre">int()</span></code> 转成整型。</li>
+</ul>
+</div>
+<img alt="../images/tutorials/pwm.png" src="../images/tutorials/pwm.png" />
+<p>您可以在上面看到三种不同PWM信号的图表。它们都具有相同的周期（因此具有频率），但它们具有不同的占空比。</p>
+<ul class="simple">
+<li>第一个产生的是 <code class="docutils literal"><span class="pre">write_analog(511)</span></code> ，因为它具有恰好50％的占空比 - 功率在一半的时间内，而在一半的时间内。结果是该信号的总能量是相同的，就好像它是1.65V而不是3.3V。</li>
+<li>第二个信号具有25％的占空比，可以用 <code class="docutils literal"><span class="pre">write_analog(255)</span></code> 。它具有类似的效果，就好像在该引脚上输出0.825V一样。</li>
+<li>第三个信号具有75％的占空比，并且可以生成 <code class="docutils literal"><span class="pre">write_analog(767)</span></code>。它的能量是第二个信号的三倍，相当于在第二个引脚输出2.475V。</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

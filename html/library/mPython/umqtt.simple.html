@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>umqtt.simple — 简单MQTT客户端功能函数 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">umqtt.simple</span></code> — 简单MQTT客户端功能函数</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-umqtt.simple"><span id="umqtt-simple"></span></span><div class="section" id="umqtt-simple-mqtt">
+<h1><a class="reference internal" href="#module-umqtt.simple" title="umqtt.simple: 简单MQTT客户端功能函数"><code class="xref py py-mod docutils literal"><span class="pre">umqtt.simple</span></code></a> — 简单MQTT客户端功能函数<a class="headerlink" href="#umqtt-simple-mqtt" title="Permalink to this headline">¶</a></h1>
+<p>MQTT是一种基于发布 - 订阅的“轻量级”消息传递协议，用于在TCP / IP协议之上使用。
+提供订阅/发布模式，更为简约、轻量，易于使用，针对受限环境（带宽低、网络延迟高、网络通信不稳定），可以简单概括为物联网打造。</p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">该模块来源于 <code class="docutils literal"><span class="pre">MicroPython-lib</span></code> : <a class="reference external" href="https://github.com/micropython/micropython-lib/tree/master/umqtt.simple">https://github.com/micropython/micropython-lib/tree/master/umqtt.simple</a></p>
+</div>
+<div class="section" id="id1">
+<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="umqtt.simple.MQTTClient">
+<em class="property">class </em><code class="descclassname">umqtt.simple.</code><code class="descname">MQTTClient</code><span class="sig-paren">(</span><em>client_id</em>, <em>server</em>, <em>port=0</em>, <em>user=None</em>, <em>password=None</em>, <em>keepalive=0</em>, <em>ssl=False</em>, <em>ssl_params={}</em><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><code class="docutils literal"><span class="pre">client_id</span></code></li>
+<li><code class="docutils literal"><span class="pre">server</span></code></li>
+<li><code class="docutils literal"><span class="pre">port</span></code></li>
+<li><code class="docutils literal"><span class="pre">user</span></code></li>
+<li><code class="docutils literal"><span class="pre">password</span></code></li>
+<li><code class="docutils literal"><span class="pre">keepalive</span></code></li>
+<li><code class="docutils literal"><span class="pre">ssl</span></code></li>
+<li><code class="docutils literal"><span class="pre">ssl_params</span></code></li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="id2">
+<h2>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.set_callback">
+<code class="descclassname">MQTTClient.</code><code class="descname">set_callback</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.set_callback" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><code class="docutils literal"><span class="pre">f</span></code> - f(topic, msg) 为回调函数,第1参数为 <code class="docutils literal"><span class="pre">topic</span></code> 接收到的主题,第2参数为 <code class="docutils literal"><span class="pre">msg</span></code> 为该主题消息</li>
+</ul>
+</dd></dl>
+
+<p>为收到的订阅消息设置回调</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.set_last_will">
+<code class="descclassname">MQTTClient.</code><code class="descname">set_last_will</code><span class="sig-paren">(</span><em>topic</em>, <em>msg</em>, <em>retain=False</em>, <em>qos=0</em><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.set_last_will" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal"><span class="pre">topic</span></code> 和 <code class="docutils literal"><span class="pre">msg</span></code> 为字节类型</p>
+</dd></dl>
+
+<p>设置MQTT“last will”消息。应该在 connect()之前调用。</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.connect">
+<code class="descclassname">MQTTClient.</code><code class="descname">connect</code><span class="sig-paren">(</span><em>clean_session=True</em><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.connect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>连接到服务器。如果此连接使用存储在服务器上的持久会话，则返回True（如果使用clean_session = True参数，则返回False（默认值））。</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.disconnect">
+<code class="descclassname">MQTTClient.</code><code class="descname">disconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.disconnect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>断开与服务器的连接，释放资源。</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.ping">
+<code class="descclassname">MQTTClient.</code><code class="descname">ping</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.ping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Ping服务器（响应由wait_msg（）自动处理）</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.publish">
+<code class="descclassname">MQTTClient.</code><code class="descname">publish</code><span class="sig-paren">(</span><em>topic</em>, <em>msg</em>, <em>retain=False</em>, <em>qos=0</em><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.publish" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal"><span class="pre">topic</span></code> 和 <code class="docutils literal"><span class="pre">msg</span></code> 为字节类型</p>
+</dd></dl>
+
+<p>发布消息</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.subscribe">
+<code class="descclassname">MQTTClient.</code><code class="descname">subscribe</code><span class="sig-paren">(</span><em>topic</em>, <em>qos=0</em><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.subscribe" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal"><span class="pre">topic</span></code> 为字节类型</p>
+</dd></dl>
+
+<p>订阅主题</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.wait_msg">
+<code class="descclassname">MQTTClient.</code><code class="descname">wait_msg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.wait_msg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>等待服务器消息。订阅消息将通过set_callback（）传递给回调集，任何其他消息都将在内部处理。</p>
+<dl class="method">
+<dt id="umqtt.simple.MQTTClient.check_msg">
+<code class="descclassname">MQTTClient.</code><code class="descname">check_msg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#umqtt.simple.MQTTClient.check_msg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>检查服务器是否有待处理的消息。如果是，则以与wait_msg（）相同的方式处理，如果不是，则立即返回。</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<ul class="last simple">
+<li>wait_msg()并且check_msg()是“主循环迭代”方法，阻塞和非阻塞版本。wait_msg()如果您没有任何其他前台任务要执行（即您的应用只响应订阅的MQTT消息），check_msg() 如果您也处理其他前台任务，则应定期在循环中调用它们 。</li>
+<li>请注意，如果您只发布消息，则不需要调用wait_msg()/ check_msg()，也不要订阅消息。</li>
+<li>发布和订阅都支持QoS 0和1。不支持QoS2以保持较小的代码大小。除ClientID外，目前只支持“clean session”参数进行连接。</li>
+<li>与MQTT消息相关的所有数据均编码为字节。这包括消息内容和主题名称（即使MQTT规范指出主题名称是UTF-8编码的）。原因很简单：通过网络套接字接收的是二进制数据（字节）</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

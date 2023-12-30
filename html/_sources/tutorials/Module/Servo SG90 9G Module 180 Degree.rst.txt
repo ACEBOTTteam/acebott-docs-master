@@ -1,0 +1,75 @@
+Servo SG90 9G Module 180 Degree
+======================================
+
+**1.Product Introduction**
+
+
+.. figure:: /../images/Servo-1.png
+    :align: center
+    :width: 300
+    :height: 200
+
+Servo is a device that converts electrical energy into mechanical energy. It is different from DC motor in that it has a precise control Angle.
+
+The steering gear is composed of shell, variable speed gear set, motor, adjustable potentiometer, electronic control board and steering wheel.
+
+Its working principle is that the electronic control board receives the control signal from the signal source and drives the motor to rotate; 
+The gear set reduces the speed of the motor by a large factor, and magnifies the output torque of the motor by a corresponding factor, and then outputs;
+The potentiometer and the last stage of the gear group rotate together to measure the rotation Angle of the servo shaft; 
+The circuit board detects and judges the steering gear rotation Angle according to the potentiometer, 
+and then controls the steering gear to rotate to the target Angle or stay at the target Angle.
+
+Application reference: robots, model airplanes, automated production lines and other applications requiring precise position control or motion control.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -30°C~+60°C           |
++-----------------------+-----------------------+
+| Torque                | 1.6KG/cm              |
++-----------------------+-----------------------+
+| Angle of rotation     | 180                   |
++-----------------------+-----------------------+
+| Type of servo         | Digital servo         |
++-----------------------+-----------------------+
+| Control signal        | PWM signal            |
++-----------------------+-----------------------+
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Servo-2.png
+    :align: center
+
++----------------------------------+-----------------------+
+|Servo SG90 9G Module 180 Degree   | UNO                   |
++==================================+=======================+
+| VCC                              | 5V                    |
++----------------------------------+-----------------------+
+| GND                              | GND                   |
++----------------------------------+-----------------------+
+| S                                | Digital Pin 9         |
++----------------------------------+-----------------------+
+
+
+**4.Sample Code**
+
+
+.. literalinclude:: /../../examples/Servo_SG90_9G_Module_180_Degree/Servo_SG90_9G_Module_180_Degree.ino
+    :linenos:
+
+**5.Test Result**
+
+When you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program, your servo motor will start to turn.
+
+.. figure:: /../images/Servo-3.png
+    :align: center
+
+.. Hint:: 
+
+   When the servo motor controls its rotation, it should be noted that it cannot be stuck, otherwise the servo motor  is easy to burn out.
+
+**6.Related Resources**

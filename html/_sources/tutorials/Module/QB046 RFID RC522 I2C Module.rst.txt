@@ -1,0 +1,85 @@
+QB046 RFID RC522 I2C Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/RFID-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+Radio-Frequency Identification (RFID) is a technology used to wirelessly identify and track objects, which is based on the principle of wireless communication through the use of RFID tags and RFID readers.
+
+RFID tag: An RFID tag is a small chip that contains a unique identifier UID (usually a numeric code) along with some memory for storing additional information. These tags usually consist of an RFID chip and an antenna.
+
+RFID Reader: An RFID reader is an electronic device that generates a radio frequency signal and sends it to a nearby RFID tag. The reader is also responsible for receiving the response signal from the tag and decoding the tag's information.
+
+Rf communication: When an RFID reader sends an RF signal, it activates nearby RFID tags. Passive RFID tags get energy from the reader's signal as well as operational commands and use it to send their own response signals. Active RFID tags have their own electricity supply, so they can actively send signals.
+
+Application reference: Scenarios requiring object recognition such as management systems and security systems.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -40°C~+80°C           |
++-----------------------+-----------------------+
+| Protocol standard     | ISO 14443A,ISO 14443B |
++-----------------------+-----------------------+
+| Support card type     | mifare S50, mifare S70|
++-----------------------+-----------------------+
+| Frequency             | 13.56MHz              |
++-----------------------+-----------------------+
+| Communication mode    | IIC                   |
++-----------------------+-----------------------+
+| Size                  |4.72cm*2.38cm          |
++-----------------------+-----------------------+
+
+.. figure:: /../images/RFID-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/RFID-2.png
+    :align: center
+
++----------------------------------+-----------------------+
+|RFID RC522 I2C Module             | UNO                   |
++==================================+=======================+
+| VCC                              | 5V                    |
++----------------------------------+-----------------------+
+| GND                              | GND                   |
++----------------------------------+-----------------------+
+| SCL                              | Analog Pin A5         |
++----------------------------------+-----------------------+
+| SDA                              | Analog Pin A4         |
++----------------------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/RFID_RC522_I2C_Module/RFID_RC522_I2C_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 115200, and switch to scroll mode.
+
+When we put the RFID tag on the RFID reader, the serial port will display the unique identifier of the RFID tag, UID.
+
+.. figure:: /../images/RFID-3.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/hyskhkeuydvz58lzaiz9m/h?rlkey=oz8guwl35rczk80827mhde4of&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

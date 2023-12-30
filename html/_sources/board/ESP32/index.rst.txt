@@ -1,8 +1,0 @@
-ESP32
-==================
-
-.. toctree::
-   :maxdepth: 1
-
-   ESP32 Max V1.0 Controller Board.rst
-

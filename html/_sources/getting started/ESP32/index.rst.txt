@@ -1,9 +1,0 @@
-ESP32
-==================
-
-.. toctree::
-   :maxdepth: 1
-
-   Getting Started with ESP32.rst
-   Install the ESP32 plugin in the Arduino IDE.rst
-   

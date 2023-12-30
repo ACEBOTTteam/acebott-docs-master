@@ -1,8 +1,0 @@
-Explorer Series
-==================
-
-.. toctree::
-   :maxdepth: 1
-
-   QE007.rst
-

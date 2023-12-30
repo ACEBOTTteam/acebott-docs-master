@@ -3,8 +3,6 @@ Download CH340 Driver on MAC System
 
 **Download CH340 driver**
 
-
-
  `Download CH340 driver <https://www.dropbox.com/scl/fo/7nfuhsc49zno712f7632h/h?rlkey=rjxhfuirqatf7u32f622wxuhi&dl=0>`_
 
 **Installation**

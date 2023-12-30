@@ -5,12 +5,18 @@ Sensor
     :maxdepth: 1
     :numbered:
 
-   Sound Sensor.rst
-   PIR Motion Sensor.rst
-   DHT11 Humidity Temperature Sensor.rst
-   Photoelectric Sensor.rst
-   Ultrasonic Sensor.rst
-   Photosensitive Sensor.rst
-   Temperature Sensor.rst
-   Moisture Sensor.rst
-   Raindrop Sensor.rst
+   QB002 DHT11 Humidity Temperature Sensor.rst
+   QB003 Temperature Sensor.rst
+   QB005 Photoresistor Sensor.rst
+   QB039 Sound Sensor.rst
+   QB040 Moisture Sensor.rst
+   QB041 PIR Motion Sensor.rst
+   QB042 Ultrasonic Sensor.rst
+   QB043 Raindrop Sensor.rst
+   QB050 Photoelectric Sensor.rst
+
+
+
+
+
+   

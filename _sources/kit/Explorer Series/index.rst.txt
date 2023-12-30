@@ -4,5 +4,7 @@ Explorer Series
 .. toctree::
    :maxdepth: 1
 
+   QE004.rst
    QE007.rst
+   
 

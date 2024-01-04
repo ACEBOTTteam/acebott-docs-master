@@ -5,6 +5,6 @@ Explorer Series
    :maxdepth: 1
 
    QE004.rst
+   QE005-QE006.rst
    QE007.rst
-   
 

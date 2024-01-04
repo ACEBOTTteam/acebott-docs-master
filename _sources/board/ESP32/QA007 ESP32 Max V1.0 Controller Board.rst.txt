@@ -1,0 +1,80 @@
+QA007 ESP32 Max V1.0 Controller Board
+=======
+
+.. image:: /../images/ESP32-1.jpg
+    :align: center
+
+**1.Introduction**
+
+This is a general WIFI + Bluetooth controller board based on ESP32, integrated ESP32-Room-32 module and compatible with Arduino.
+
+It has high-speed SDIO/SPI, UART, I2S and I2C. In addition, it is equipped with freeRTOS operating system, which is quite suitable for Internet of things and smart home.
+
+Provides a rich fast interface, convenient for developers to use.
+
+If you want to know more about ESP32, `click here <https://acebottteam.github.io/mpython-docs-master/getting%20started/ESP32/Getting%20Started%20with%20ESP32.html>`_
+
+If you want to program the esp32 with Arduino, `click here <https://acebottteam.github.io/mpython-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
+
+**2.Specifications**
+
++-----------------------+-------------------------------------------------------------------------+
+| Connectivity          | WI-FI                 | Bluetooth LE                                    |
++=======================+=========================================================================+
+| Chip                  | ESP-WROOM-32                                                            |
++-----------------------+-------------------------------------------------------------------------+
+| Clock                 | 240MHz                                                                  |
++-----------------------+-------------------------------------------------------------------------+
+| Ram                   | 448KB                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| FLASH                 | 4MB                                                                     |
++-----------------------+-------------------------------------------------------------------------+
+| Interfaces            | UART | I2C | SPI | CAN                                                  |
++-----------------------+-------------------------------------------------------------------------+
+| Input Voltages        | 6-18V                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| Pinout                | 25(DIGITAL) | 15(ANALOG)| 25(PWM) | 2(DAC) | 2(UART) | 2(SPI) | 1（I2C）|                      
++-----------------------+-------------------------------------------------------------------------+
+
+**3.PCB Dimensions**
+
+.. image:: /../images/ESP32-2.jpg
+    :align: center
+
+**4.Pin Interfaces**
+
+Here is an explanation of what every element and interface of the board does:
+
+.. image:: /../images/ESP32-3.png
+    :align: center
+
+
+**5.Sample Code**
+
+.. literalinclude:: /../../examples/TEST_esp32/TEST_esp32.ino
+    :linenos:
+
+**6.Test Result**
+
+When a network is found in the environment, the number and name of all nearby networks will be obtained and displayed in the serial port, 
+and the blue indicator will light up.
+
+.. image:: /../images/ESP32-4.png
+    :align: center
+
+The serial port display effect diagram is as follows：
+
+.. image:: /../images/ESP32-5.png
+    :align: center
+
+**7.Package List**
+
+    ESP32 Max V1.0 Controller Board * 1pcs
+
+    USB cable * 1pcs
+
+**8.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

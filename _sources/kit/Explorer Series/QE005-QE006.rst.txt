@@ -1,14 +1,14 @@
-QE004 IOT Smart Home Basic Starter Kit for ESP32
+QE005-QE006 IOT Smart Home Basic Starter Kit for micro:bit
 ====================
 
 1.Product Introduction
 ------
 
-Lumi's Home is an intelligent home system that combines features such as Wi-Fi control and app control. 
+Lumi's Home is an intelligent home system that combines features such as Wi-Fi control, voice control, and app control. 
 
 It incorporates interactive controls such as RFID door access, human body sensor lamp, and Combustible gas alarm and more.
 
-.. figure:: /../images/QE004-1.png
+.. figure:: /../images/QE005-1.png
     :align: center
 
 2.The value of starer kit
@@ -27,29 +27,29 @@ It incorporates interactive controls such as RFID door access, human body sensor
 3.Course Description
 ------
 
-.. figure:: /../images/QE004-2.png
+.. figure:: /../images/QE005-2.png
     :align: center
 
 4.Part List
 ------
-.. figure:: /../images/QE004-3.png
+.. figure:: /../images/QE005-3.png
     :align: center
 
 
 5.Product Standard
 ------
 
-.. figure:: /../images/QE004-4.png
+.. figure:: /../images/QE005-4.png
     :align: center
 
 6.Related Resources
 ------
 
- `PDF and Code <https://www.dropbox.com/scl/fo/ik1b2ue0qxa4obkjyg0fy/h?rlkey=hsxvblero3w1koow26rboczwj&dl=0>`_
+ `PDF and Code <https://www.dropbox.com/scl/fo/pkoem0fvsi0dsxtvptpxv/h?rlkey=uurqqtydoqt0tl8dz0y61a00u&dl=0>`_
 
 7.Get One Now
 ------
 
     B2B Business: info@acebott.com
 
-    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/ik1b2ue0qxa4obkjyg0fy/h?rlkey=hsxvblero3w1koow26rboczwj&dl=0>`_
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/pkoem0fvsi0dsxtvptpxv/h?rlkey=uurqqtydoqt0tl8dz0y61a00u&dl=0>`_

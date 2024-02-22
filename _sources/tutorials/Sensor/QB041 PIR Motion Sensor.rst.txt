@@ -19,7 +19,7 @@ Application reference: human body sensor light, automatic door, automatic faucet
 
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 3.3V~5V               |
 +-----------------------+-----------------------+

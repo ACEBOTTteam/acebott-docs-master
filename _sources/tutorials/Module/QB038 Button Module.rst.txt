@@ -17,7 +17,7 @@ Application reference: keyboard, control switch, etc.
 **2.Parameter Specification**
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 3.3V~5V               |
 +-----------------------+-----------------------+

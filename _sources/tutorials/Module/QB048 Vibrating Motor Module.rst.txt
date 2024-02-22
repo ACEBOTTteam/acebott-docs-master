@@ -21,7 +21,7 @@ Application reference: mobile devices, game controllers, vibration feedback syst
 
 
 +-----------------------+--------------------------+
-| Parameter             | Value/Representation     |
+| Parameter             | Value//Description       |
 +=======================+==========================+
 | Operating voltage     | 3.3V~5V                  |
 +-----------------------+--------------------------+

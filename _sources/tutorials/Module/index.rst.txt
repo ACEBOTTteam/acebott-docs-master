@@ -16,7 +16,11 @@ Module
    QB051 4-Digit Tube Display Module.rst
    QB054 Servo SG90 9G Module 180 Degree.rst
    QZ004 RGB LED Strip.rst
-   QZ005 LCD 1602 I2C Module.rst
+   QB059 LCD 1602 I2C Module.rst
+   QB010 P-Buzzer Module.rst
+   QB014 RGB Module.rst
+   QB062 Humidifier Module.rst
+   QB064 OLED Module.rst
 
 
 

@@ -1,0 +1,74 @@
+QB012 Touch Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Touch-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+Touch sensor is a kind of capacitive touch switch module, which can detect and respond to human touch. It has a built-in touch detection IC (TTP223B), which is able to convert the user's touch action into electrical signals for interactive interaction with the device. The touch sensor outputs a low level when we touch a specific location with our finger, and switches to output a high level when there is no touch.
+
+Widely used in touch screen mobile phones, tablet computers, smart watches, smart home, etc.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -10°C~+60°C             |
++-------------------------+-------------------------+
+|Default output level     | High level              |
++-------------------------+-------------------------+
+| Output signal           | Digital signal          |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Touch-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Touch-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|Touch Sensor           | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Touch-Sensor/Touch-Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to the scroll mode. When our finger touches a specific position of the touch sensor, the sensor indicator turns on and the serial port monitor displays "0", and when the finger does not touch, the sensor indicator turns off and the serial port monitor displays "1".
+
+.. figure:: /../images/Touch-4.png
+    :align: center
+.. figure:: /../images/Touch-5.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/vhen9z9roik4u2vwdsdzh/h?rlkey=vkzfqjcgkmb6uyf64rr9bieup&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/vhen9z9roik4u2vwdsdzh/h?rlkey=vkzfqjcgkmb6uyf64rr9bieup&dl=0>`_

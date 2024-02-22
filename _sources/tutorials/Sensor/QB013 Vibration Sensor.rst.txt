@@ -1,0 +1,83 @@
+QB013 Vibration Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Vibration-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+The vibration sensor adopts SW-18010P high sensitive vibration switch, a kind of spring non-directional vibration sensing device, which can be triggered at any Angle.
+
+When the module is static without vibration, the two internal pins are disconnected, and the signal S port will output a high level.
+
+When subjected to external force collision or shaking vigorously, spring deformation and central electrode contact conduction make two pins instantaneous conduction state, signal S port will output low level. When the external force disappears, the circuit resumes to the disconnected state, and the signal S port will output a high level.
+
+Application reference: security system, smart home, vehicle anti-theft system, etc.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -20°C~+70°C             |
++-------------------------+-------------------------+
+| Output signal           | Digital signal          |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Vibration-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Vibration-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|Vibration Sensor       | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Vibration-Sensor/Vibration-Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to the scroll mode.
+
+When we shake the vibration sensor, it returns 0; When we don't shake it, the sensor returns 1.
+
+.. figure:: /../images/Vibration-4.png
+    :align: center
+.. figure:: /../images/Vibration-5.png
+    :align: center
+
+.. Hint:: 
+    The SW-18010P pin is relatively thin, do not break it, just shake the test.
+
+    When the vibration sensor is shaking, it is instantly on and then off, so the data 0 May be difficult to capture.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/v11s59mdz6t1sasfw5lvf/h?rlkey=2nti0xxe580smim7dw7t0p4av&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/v11s59mdz6t1sasfw5lvf/h?rlkey=2nti0xxe580smim7dw7t0p4av&dl=0>`_

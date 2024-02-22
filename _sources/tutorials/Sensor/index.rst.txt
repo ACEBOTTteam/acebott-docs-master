@@ -14,6 +14,12 @@ Sensor
    QB042 Ultrasonic Sensor.rst
    QB043 Raindrop Sensor.rst
    QB050 Photoelectric Sensor.rst
+   QB055 MQ-4 Gas Sensor.rst
+   QB011 Flame Sensor.rst
+   QB012 Touch Sensor.rst
+   QB013 Vibration Sensor.rst
+   QB060 Trace Sensor.rst
+   QB063 Water Sensor.rst
 
 
 

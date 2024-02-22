@@ -23,7 +23,7 @@ Application reference: voice control switch, noise detection, etc.
     :height: 300
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 5V                    |
 +-----------------------+-----------------------+

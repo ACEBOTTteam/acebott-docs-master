@@ -16,7 +16,7 @@ When the middle is blocked, the receiver cannot receive the light signal, so as 
 **2.Parameter Specification**
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 3.3V~5V               |
 +-----------------------+-----------------------+

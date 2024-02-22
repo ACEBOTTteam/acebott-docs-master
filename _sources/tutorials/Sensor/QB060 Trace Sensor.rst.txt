@@ -1,0 +1,78 @@
+QB060 Trace Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Trace-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+Trace sensor is a sensor system specially designed for intelligent vehicles, which can help intelligent vehicles to accurately trace and navigate routes. The system consists of three infrared sensors, which can detect the black line on the ground by transmitting and receiving infrared signals, and make corresponding control actions according to the detection results.
+
+Specifically, each infrared sensor has a pair of infrared transmitter and receiver tubes, and the transmitter tube will emit infrared rays at a specific frequency. Objects with different colors have different absorption capabilities for infrared light, so the intensity of the reflected infrared signal received by the receiver tube will also be different. We can judge what color line the intelligent vehicle is on according to the strength of the received reflected infrared signal. In this way, the system can determine whether the intelligent vehicle is following the line, so as to achieve accurate line tracking and navigation functions.
+
+Application references: robotics competitions, intelligent vehicle projects, industrial automation, and other fields.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -10°C~+50°C             |
++-------------------------+-------------------------+
+| Output signal           | Analog signal           |
++-------------------------+-------------------------+
+| Size                    | 3.31cm*3.11cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Trace-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Trace-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|Trace Sensor           | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| L                     | Analog Pin A0         |
++-----------------------+-----------------------+
+| M                     | Analog Pin A1         |
++-----------------------+-----------------------+
+| R                     | Analog Pin A2         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Trace-Sensor/Trace-Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to the scroll mode. The following data can be seen when placing the three infrared sensor ports of the trace sensor on the black line or on the white background.
+
+.. figure:: /../images/Trace-4.png
+    :align: center
+.. figure:: /../images/Trace-5.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/dvre6snw17pcz2lrau9t8/h?rlkey=15dftc5o26d1wy6e5oj7ryzr6&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/dvre6snw17pcz2lrau9t8/h?rlkey=15dftc5o26d1wy6e5oj7ryzr6&dl=0>`_

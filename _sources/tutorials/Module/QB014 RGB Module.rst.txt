@@ -1,0 +1,73 @@
+QB014 RGB Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/RGB-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+RGB module is a kind of integrated red, green, blue three basic color LED (Light Emitting Diode) module, composed of red, green and blue three independent lamp beads, common has four pins, a public port and three color control ports. We can control the red, green and blue three independent lamp beads separately through the control port, so as to realize the light mixing effect and produce a variety of different color effects.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -30°C~+70°C             |
++-------------------------+-------------------------+
+| Color of light          | RGB three colors        |
++-------------------------+-------------------------+
+| Peak wavelength         | 625nm; 470nm; 530nm     |           
++-------------------------+-------------------------+
+| Control signal          | Digital signal          |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/RGB-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/RGB-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|RGB Module             | UNO                   |
++=======================+=======================+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| G                     | Digital Pin 4         |
++-----------------------+-----------------------+
+| R                     | Digital Pin 5         |
++-----------------------+-----------------------+
+| B                     | Digital Pin 3         |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/RGB-Module/RGB-Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After the code is uploaded to the controller board, the RGB light will light up and the display light color will change in the order of cyan and pink.
+
+.. figure:: /../images/RGB-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/2umik53smzxltf579vb22/h?rlkey=ej7ij3l90vt8g6na264tbixnw&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/2umik53smzxltf579vb22/h?rlkey=ej7ij3l90vt8g6na264tbixnw&dl=0>`_

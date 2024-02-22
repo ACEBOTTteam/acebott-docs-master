@@ -18,7 +18,7 @@ Application reference: smart agriculture, plant research and other scenarios tha
 
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 3.3V~5V               |
 +-----------------------+-----------------------+

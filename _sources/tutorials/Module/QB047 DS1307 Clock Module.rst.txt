@@ -23,7 +23,7 @@ Application reference: electronic clocks, timers, timing switches, temperature m
 
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 5V                    |
 +-----------------------+-----------------------+

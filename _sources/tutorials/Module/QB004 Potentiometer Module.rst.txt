@@ -17,7 +17,7 @@ Application reference: volume regulator, fan speed regulator, brightness regulat
 
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 3.3V~5V               |
 +-----------------------+-----------------------+

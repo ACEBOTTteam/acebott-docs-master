@@ -7,4 +7,5 @@ Explorer Series
    QE004.rst
    QE005-QE006.rst
    QE007.rst
+   QD001.rst
 

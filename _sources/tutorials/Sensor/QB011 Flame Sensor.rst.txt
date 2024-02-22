@@ -1,0 +1,78 @@
+QB011 Flame Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Flame-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+The flame sensor can detect light sources with wavelengths ranging from 760 nm to 1100 nm to detect fire sources or other radiation sources. Its working principle is based on the flame in the combustion process, will emit a specific frequency of infrared radiation and visible light, using a special infrared receiver tube to capture the infrared wavelength in the flame to detect the existence of flame.
+
+Application reference: fire extinguishing robot, flame alarm, etc.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -10°C~+60°C             |
++-------------------------+-------------------------+
+| Wavelength              | 760nm~1100nm            |
++-------------------------+-------------------------+
+|Default output level     | High level              |
++-------------------------+-------------------------+
+| Output signal           | Digital signal          |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Flame-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Flame-3.jpg
+    :align: center
+
++-----------------------+-----------------------+
+|Flame Sensor           | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Flame-Sensor/Flame-Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to the scroll mode.
+
+When there is a flame in front of the flame sensor, the sensor returns data 1; When there is no flame in front of the flame sensor, the sensor returns the data 0.
+
+.. figure:: /../images/Flame-4.png
+    :align: center
+.. figure:: /../images/Flame-5.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/t8c1ujijohfydbx9hhsph/h?rlkey=sysrcnxcal6vk3wwc6uekus29&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/t8c1ujijohfydbx9hhsph/h?rlkey=sysrcnxcal6vk3wwc6uekus29&dl=0>`_

@@ -27,7 +27,7 @@ Relays generally have two circuits, low voltage control circuit and high voltage
 **2.Parameter Specification**
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 5V                    |
 +-----------------------+-----------------------+

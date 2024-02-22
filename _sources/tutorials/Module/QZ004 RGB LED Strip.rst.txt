@@ -17,7 +17,7 @@ Application reference: This module can be used for home decoration, festivals an
 **2.Parameter Specification**
 
 +-----------------------+-----------------------+
-| Parameter             | Value/Representation  |
+| Parameter             | Value//Description    |
 +=======================+=======================+
 | Operating voltage     | 5V                    |
 +-----------------------+-----------------------+

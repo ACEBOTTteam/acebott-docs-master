@@ -12,9 +12,9 @@ It has high-speed SDIO/SPI, UART, I2S and I2C. In addition, it is equipped with 
 
 Provides a rich fast interface, convenient for developers to use.
 
-If you want to know more about ESP32, `click here <https://acebottteam.github.io/mpython-docs-master/getting%20started/ESP32/Getting%20Started%20with%20ESP32.html>`_
+If you want to know more about ESP32, `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Getting%20Started%20with%20ESP32.html>`_
 
-If you want to program the esp32 with Arduino, `click here <https://acebottteam.github.io/mpython-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
+If you want to program the esp32 with Arduino, `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
 
 **2.Specifications**
 

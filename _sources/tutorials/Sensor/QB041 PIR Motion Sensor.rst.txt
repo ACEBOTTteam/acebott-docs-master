@@ -62,8 +62,9 @@ Application reference: human body sensor light, automatic door, automatic faucet
 
 **5.Test Result**
 
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to scroll mode.
 
-After you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program, open the serial port, set the baud rate (9600 baud rate), and switch to the rolling mode. Speak into the sound sensor, the louder the sound, the higher the number.
+When we move, the sensor returns data 1; When we are at rest, the sensor returns data 0.
 
 .. figure:: /../images/PIR-3.png
     :align: center

@@ -42,7 +42,7 @@ Application reference: This module can be used for weather station, temperature 
 
 **3.Wiring Diagram**
 
-.. figure:: /../images/Button-2.png
+.. figure:: /../images/DHT11-2.png
     :align: center
 
 +-----------------------+-----------------------+

@@ -5,8 +5,7 @@ QB008 Relay Module
 
 .. figure:: /../images/Relay-1.png
     :align: center
-    :width: 300
-    :height: 300
+
 
 The relay is composed of iron core, coil, armature, contact reed and so on.
 
@@ -38,10 +37,9 @@ Relays generally have two circuits, low voltage control circuit and high voltage
 | Size                  | 4.72cm*2.38cm         |
 +-----------------------+-----------------------+
 
-.. figure:: /../images/Relay-4.jpg
+.. figure:: /../images/Relay-4.png
     :align: center
-    :width: 300
-    :height: 300
+
 
 **3.Wiring Diagram**
 
@@ -68,7 +66,7 @@ Relays generally have two circuits, low voltage control circuit and high voltage
 
 After you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program, your machine will turn for 1 second and stop for 1 second.
 
-.. figure:: /../images/Relay-3.png
+.. figure:: /../images/Relay-3.jpg
     :align: center
 
 **6.Related Resources**

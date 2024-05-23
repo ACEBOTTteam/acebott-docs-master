@@ -11,7 +11,7 @@ It incorporates interactive controls such as RFID door access, human body sensor
 .. figure:: /../images/QE004-1.png
     :align: center
 
-2.The value of starer kit
+2.The Value of Starer Kit
 ------
 
 1.The concept of smart home

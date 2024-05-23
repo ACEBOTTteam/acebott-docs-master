@@ -4,5 +4,6 @@ STEM Education Series
 .. toctree::
    :maxdepth: 1
 
+   QE021-QE022.rst
 
 

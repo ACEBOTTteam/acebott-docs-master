@@ -14,7 +14,7 @@ We've included 16 detailed, story-based tutorials so you can learn better.It wil
 .. figure:: /../images/QD001-1.png
     :align: center
 
-2.The value of starer kit
+2.The Value of Starer Kit
 ------
 
 1.4WD Mecanum Wheel

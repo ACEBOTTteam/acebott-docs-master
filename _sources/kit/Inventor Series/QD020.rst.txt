@@ -12,7 +12,7 @@ With this suite, you can have a good understanding of the walking posture of the
 .. figure:: /../images/QD020-1.png
     :align: center
 
-2.The value of starer kit
+2.The Value of kit
 ------
 
 1.Structure Building

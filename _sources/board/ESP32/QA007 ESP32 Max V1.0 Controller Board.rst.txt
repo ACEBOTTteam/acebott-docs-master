@@ -71,7 +71,7 @@ The serial port display effect diagram is as follows：
 
     ESP32 Max V1.0 Controller Board * 1pcs
 
-    USB cable * 1pcs
+    Type-C cable * 1pcs
 
 **8.Get One Now**
 

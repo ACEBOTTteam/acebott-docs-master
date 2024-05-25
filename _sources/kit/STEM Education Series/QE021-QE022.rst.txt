@@ -20,9 +20,18 @@ It has 2 academic years and 4 semesters of teaching package.
 
 It is a STEM education kit designed for students aged 8 years and above. And participate in the construction of comprehensive practice project.
 
+It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 comprehensive display projects.
+
+.. container:: custom-hint
+.. Hint:: 
+
+    All works can only exist one at a time, that is, the material can only be used to make one project.
+
 .. figure:: /../images/QE021-QE022-2.png
     :align: center
 
+.. figure:: /../images/QE021-QE022-8.png
+    :align: center
 3.The Value of Kit
 ------
 

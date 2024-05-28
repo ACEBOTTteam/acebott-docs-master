@@ -4,5 +4,7 @@ Arduino
 .. toctree::
    :maxdepth: 1
 
+   QA005 NANO Development Board.rst
+   QA006 Leonardo R3 Development board.rst
  
 

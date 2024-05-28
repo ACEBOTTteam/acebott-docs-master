@@ -1,4 +1,4 @@
-QA007 ESP32 Max V1.0 Controller Board
+QA007/QA008 ESP32 Max V1.0 Controller Board
 =======
 
 .. image:: /../images/ESP32-1.jpg

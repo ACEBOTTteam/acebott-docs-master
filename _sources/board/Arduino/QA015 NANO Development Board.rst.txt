@@ -1,3 +1,3 @@
-QA003 Mega 2560 R3 Development Board
+QA015 Nano Development Board
 ====================
 

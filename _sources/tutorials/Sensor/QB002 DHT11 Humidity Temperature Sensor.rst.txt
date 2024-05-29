@@ -1,4 +1,4 @@
-QB002 DHT11 Humidity Temperature Sensor
+QB002 DHT11 Sensor
 ======================================
 
 **1.Product Introduction**

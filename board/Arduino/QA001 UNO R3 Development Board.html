@@ -27,7 +27,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QA003 Mega 2560 R3 Development Board" href="QA003 Mega 2560 R3 Development Board.html" />
+    <link rel="prev" title="Arduino" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,8 +67,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Controller Board</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Arduino</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">QA001 UNO R3 Development Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA003 Mega 2560 R3 Development Board.html">QA003 Mega 2560 R3 Development Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA015 Nano Development Board.html">QA015 Nano Development Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA016 Leonardo R3 Development Board.html">QA016 Leonardo R3 Development Board</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">Microbit</a></li>
 </ul>
@@ -90,6 +98,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Arduino</a></li>
       <li class="breadcrumb-item active">QA001 UNO R3 Development Board</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -101,12 +110,46 @@
              
   <div class="section" id="qa001-uno-r3-development-board">
 <h1>QA001 UNO R3 Development Board<a class="headerlink" href="#qa001-uno-r3-development-board" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/QA001-1.png" class="align-center" src="../../_images/QA001-1.png" />
+<p><strong>1.Introduction</strong></p>
+<p>The ACEBOTT QA001 UNO R3 development board is a micro controller board based on ATMEGA328P. It features 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header, and a reset button.</p>
+<p><strong>2.Features</strong></p>
+<p>Microcontroller: ATmega328P</p>
+<p>Operating Voltage: 5V</p>
+<p>Input Voltage (Recommended): 7-12V</p>
+<p>Input Voltage (Limit): 6-20V</p>
+<p>Digital I/O Pins: 14 (of which 6 can be used as PWM outputs)</p>
+<p>Analog Input Channels: 6</p>
+<p>DC Current per I/O Pin: 40 mA</p>
+<p>3.3V Port Output Current: 50 mA</p>
+<p>Flash Memory: 32KB (0.25KB used by bootloader)</p>
+<p>SRAM: 2KB</p>
+<p>EEPROM: 1KB</p>
+<p>Clock Speed: 16MHz</p>
+<p><strong>3.Specifications</strong></p>
+<img alt="../../_images/QA001-2.png" class="align-center" src="../../_images/QA001-2.png" />
+<img alt="../../_images/QA001-3.png" class="align-center" src="../../_images/QA001-3.png" />
+<p><strong>4.Sample Code</strong></p>
+<p>Connect the ACEBOTT QA001 UNO R3 controller board to the computer using a Type-C data cable, and then upload the program for controlling serial port printing.</p>
+<p>（1）Wiring Diagram</p>
+<img alt="../../_images/QA001-4.png" class="align-center" src="../../_images/QA001-4.png" />
+<p>（2）Sample Code</p>
+<p><strong>5.Test Result</strong></p>
+<p>After uploading the program, open the serial monitor in the Arduino IDE to observe the continuous serial printing of “Hello,ACEBOTT QA001 UNO R3”.</p>
+<img alt="../../_images/QA001-5.png" class="align-center" src="../../_images/QA001-5.png" />
+<img alt="../../_images/QA001-6.png" class="align-center" src="../../_images/QA001-6.png" />
+<p><strong>6.Related Resources</strong></p>
+<blockquote>
+<div><a class="reference external" href="https://www.dropbox.com/scl/fo/t00zr1prvqqkra6lt9ofh/AOLQGNysVIpC8Sx1BP9ZEhA?rlkey=j5veglc0u7nvra0c52reyof34&amp;st=sd085i76&amp;dl=0">PDF and Code</a></div></blockquote>
 </div>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="QA003 Mega 2560 R3 Development Board.html" class="btn btn-neutral float-right" title="QA003 Mega 2560 R3 Development Board" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

@@ -1,3 +1,91 @@
 QA016 Leonardo R3 Development Board
 ====================
 
+.. image:: /../images/QA016-1.png
+    :align: center
+
+**1.Introduction**
+
+The ACEBOTT QA016 Leonardo development board is a microcontroller board based on the ATmega32u4, featuring 12 analog input pins, 20 digital I/O pins, and a built-in USB communication interface.
+
+The ACEBOTT QA016 Leonardo development board includes digital I/O pins, analog input pins, PWM output pins, UART, I2C, and SPI interfaces, among others.
+
+**2.Features**
+
+Microcontroller: ATmega32u4
+
+Operating Voltage: 5V
+
+Input Voltage (Recommended): 7-12V
+
+Input Voltage (Limit): 6-20V
+
+Digital I/O Pins: 20
+
+PWM Channels: 7
+
+Analog Input Channels: 12
+
+DC Current per I/O Pin: 40 mA
+
+3.3V Port Output Current: 50 mA
+
+Flash Memory: 32KB (ATmega32u4) - 4KB used by bootloader
+
+SRAM: 2.5KB (ATmega32u4)
+
+EEPROM: 1KB (ATmega32u4)
+
+Clock Speed: 16MHz
+
+**3.Specifications**
+
++-----------------------+-------------------------------------------------------------------------+
+| Parameters            | Value/Description                                                       |
++=======================+=========================================================================+
+| Size                  | 68.6X53.3(mm)                                                           |
++-----------------------+-------------------------------------------------------------------------+
+|Power supply           | Type-c                                                                  | 
++-----------------------+-------------------------------------------------------------------------+
+| Operating temperature | 10°C - 30°C                                                             |
++-----------------------+-------------------------------------------------------------------------+
+| Supported interfaces  | UART/GPIO/ADC/PWM/SPI/I2C                                               |
++-----------------------+-------------------------------------------------------------------------+
+| Number of I/O ports   | 20                                                                      |
++-----------------------+-------------------------------------------------------------------------+
+| Serial port baud rate | Supports baud rates from 110 to 4608000 bps, defaulting to 115200 bps   |
++-----------------------+-------------------------------------------------------------------------+
+
+.. image:: /../images/QA016-2.png
+    :align: center
+
+.. image:: /../images/QA016-3.png
+    :align: center
+
+**4.Sample Code**
+
+Connect the ACEBOTT QA016 Leonardo controller board to the computer using a Type-C data cable, and then upload the program for controlling serial port printing.
+
+（1）Wiring Diagram
+
+.. image:: /../images/QA016-4.png
+    :align: center
+
+（2）Sample Code
+
+.. literalinclude:: /../../examples/TEST_QA016/TEST_QA016.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the program, open the serial monitor in the Arduino IDE to observe the continuous serial printing of "Hello,ACEBOTT Leonardo".
+
+.. image:: /../images/QA016-5.png
+    :align: center
+
+.. image:: /../images/QA016-6.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/t81vnn5334bwu696fgd4l/AMI_yjdUFpArOLPghal69Vs?rlkey=ejg395ngy670oto2tx328tqmp&st=3zg9a4p0&dl=0>`_

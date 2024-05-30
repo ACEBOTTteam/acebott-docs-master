@@ -27,7 +27,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QA015 Nano Development Board" href="QA015 Nano Development Board.html" />
+    <link rel="prev" title="QA001 UNO R3 Development Board" href="QA001 UNO R3 Development Board.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,8 +67,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Controller Board</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Arduino</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="QA001 UNO R3 Development Board.html">QA001 UNO R3 Development Board</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">QA003 Mega 2560 R3 Development Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA015 Nano Development Board.html">QA015 Nano Development Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA016 Leonardo R3 Development Board.html">QA016 Leonardo R3 Development Board</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">Microbit</a></li>
 </ul>
@@ -90,6 +98,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Arduino</a></li>
       <li class="breadcrumb-item active">QA003 Mega 2560 R3 Development Board</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -101,12 +110,82 @@
              
   <div class="section" id="qa003-mega-2560-r3-development-board">
 <h1>QA003 Mega 2560 R3 Development Board<a class="headerlink" href="#qa003-mega-2560-r3-development-board" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/QA003-1.png" class="align-center" src="../../_images/QA003-1.png" />
+<p><strong>1.Introduction</strong></p>
+<p>The ACEBOTT QA003 MEGA 2560 R3 development board is a micro controller board based on the ATMEGA2560, featuring 54 digital input/output pins, suitable for designs requiring a large number of IO interfaces.
+Its processor core is the ATmega2560, with 54 digital input/output pins (of which 15 can be used as PWM outputs), 15 analog inputs, 4 UART interfaces, a 16MHz crystal oscillator, a USB port, a power socket, an ICSP header, and a reset button.
+It includes everything the micro controller needs, and you can easily drive it by simply connecting it to the computer’s USB port, using an AC-DC adapter, or using batteries. Compared to the UNO, it provides more IO ports, and its form and function are almost compatible with the UNO.</p>
+<p><strong>2.Features</strong></p>
+<p>Micro controller: ATmega2560</p>
+<p>Operating Voltage: 5V</p>
+<p>Input Voltage (Recommended): 7-12V</p>
+<p>Input Voltage (Limit): 6-20V</p>
+<p>Digital I/O Pins: 54 (including 15 PWM outputs)</p>
+<p>Analog Input Channels: 16</p>
+<p>DC Current per I/O Pin: 40 mA</p>
+<p>3.3V Port Output Current: 50 mA</p>
+<p>Flash Memory: 256 KB (8 KB used by boot loader)</p>
+<p>SRAM: 8 KB</p>
+<p>EEPROM: 4 KB</p>
+<p>Clock Speed: 16 MHz</p>
+<p><strong>3.Specifications</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Value/Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Size</td>
+<td>101.5X53.3(mm)</td>
+</tr>
+<tr class="row-odd"><td>Power supply</td>
+<td>Type-b</td>
+</tr>
+<tr class="row-even"><td>Operating temperature</td>
+<td>10°C - 30°C</td>
+</tr>
+<tr class="row-odd"><td>Supported interfaces</td>
+<td>UART/GPIO/ADC/PWM/SPI/I2C</td>
+</tr>
+<tr class="row-even"><td>Number of I/O ports</td>
+<td>54</td>
+</tr>
+<tr class="row-odd"><td>PWM Channels</td>
+<td>15</td>
+</tr>
+<tr class="row-even"><td>Falsh</td>
+<td>256KB</td>
+</tr>
+</tbody>
+</table>
+<img alt="../../_images/QA003-2.png" class="align-center" src="../../_images/QA003-2.png" />
+<img alt="../../_images/QA003-3.png" class="align-center" src="../../_images/QA003-3.png" />
+<p><strong>4.Sample Code</strong></p>
+<p>Connect the ACEBOTT QA003 MEGA 2560 R3 controller board to the computer using a Type-C data cable, and then upload the program for controlling serial port printing.</p>
+<p>（1）Wiring Diagram</p>
+<img alt="../../_images/QA003-4.png" class="align-center" src="../../_images/QA003-4.png" />
+<p>（2）Sample Code</p>
+<p><strong>5.Test Result</strong></p>
+<p>After uploading the program, open the serial monitor in the Arduino IDE to observe the continuous serial printing of “Hello,ACEBOTT QA003 MEGA 2560 R3”.</p>
+<img alt="../../_images/QA003-5.png" class="align-center" src="../../_images/QA003-5.png" />
+<img alt="../../_images/QA003-6.png" class="align-center" src="../../_images/QA003-6.png" />
+<p><strong>6.Related Resources</strong></p>
+<blockquote>
+<div><a class="reference external" href="https://www.dropbox.com/scl/fo/pj9t8kcgij97sa1dkptou/AL2H0tuVeseSCm9FaiX_aco?rlkey=tiivjdp88f300xip3der5xd3k&amp;st=gv0f8spp&amp;dl=0">PDF and Code</a></div></blockquote>
 </div>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="QA001 UNO R3 Development Board.html" class="btn btn-neutral float-left" title="QA001 UNO R3 Development Board" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="QA015 Nano Development Board.html" class="btn btn-neutral float-right" title="QA015 Nano Development Board" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

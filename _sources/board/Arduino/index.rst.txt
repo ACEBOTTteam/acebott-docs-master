@@ -6,7 +6,7 @@ Arduino
    
    QA001 UNO R3 Development Board.rst
    QA003 Mega 2560 R3 Development Board.rst
-   QA017 Nano Development Board.rst
+   QA015 Nano Development Board.rst
    QA016 Leonardo R3 Development Board.rst
 
  

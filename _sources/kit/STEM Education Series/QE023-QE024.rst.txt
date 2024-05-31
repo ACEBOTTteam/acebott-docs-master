@@ -77,7 +77,7 @@ It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 compr
 7.Related Resources
 ------
 
- `QE023 Tutorial <>`_
+ `QE023 Tutorial <https://www.dropbox.com/scl/fo/iiete91rvu3mzm9jul25z/AIqErZ2o6d7DucfDoTTw5C8?rlkey=pc39uscj4ps2sj4r3ibbpclbs&st=y2lkquqf&dl=0>`_
  
- `QE024 Tutorial <>`_
+ `QE024 Tutorial <https://www.dropbox.com/scl/fo/yhal2gx3q32ktc09396nx/ALLlIV66YzYvJwtl8fBbAGA?rlkey=7xczvmxlwns04g6mdzh8rfszf&st=4tfxkg9h&dl=0>`_
 

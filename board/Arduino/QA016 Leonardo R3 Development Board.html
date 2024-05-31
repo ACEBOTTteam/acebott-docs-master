@@ -167,6 +167,21 @@
 <p>（1）Wiring Diagram</p>
 <img alt="../../_images/QA016-4.png" class="align-center" src="../../_images/QA016-4.png" />
 <p>（2）Sample Code</p>
+<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="o">//</span><span class="n">The</span> <span class="n">serial</span> <span class="n">port</span> <span class="n">baud</span> <span class="n">rate</span> <span class="ow">is</span> <span class="nb">set</span> <span class="n">to</span> <span class="mi">9600</span>
+<span class="p">}</span>
+<span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Hello,ACEBOTT Leonardo&quot;</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="o">//</span><span class="n">Delay</span> <span class="k">for</span> <span class="mi">1</span> <span class="n">second</span><span class="o">.</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 <p><strong>5.Test Result</strong></p>
 <p>After uploading the program, open the serial monitor in the Arduino IDE to observe the continuous serial printing of “Hello,ACEBOTT Leonardo”.</p>
 <img alt="../../_images/QA016-5.png" class="align-center" src="../../_images/QA016-5.png" />

@@ -67,7 +67,7 @@
 <p class="caption"><span class="caption-text">Controller Board</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Electronic Module</span></p>
@@ -136,7 +136,7 @@
     <span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>舵机和掌控板的连接需要借助掌控扩展板。你可以查阅 <a class="reference internal" href="../board/Microbit/Micro：bitV2.html#mpythonpindesc"><span class="std std-ref">掌控板接口引脚说明</span></a> ,了解可供使用的PWM模拟输出的引脚 。在这里使用引脚P0。将掌控板插在掌控扩展板上，通过双母头杜邦线将舵机和扩展板进行连接，舵机上的电源线Vcc（舵机连接线的红色）连接扩展板的电源口“V”，地线GND(舵机连接线的棕色)连接扩展板的地线口“G”，控制信号线(舵机连接线的橙色)连接扩展板的引脚“0”。</p>
+<p>舵机和掌控板的连接需要借助掌控扩展板。你可以查阅 <span class="xref std std-ref">掌控板接口引脚说明</span> ,了解可供使用的PWM模拟输出的引脚 。在这里使用引脚P0。将掌控板插在掌控扩展板上，通过双母头杜邦线将舵机和扩展板进行连接，舵机上的电源线Vcc（舵机连接线的红色）连接扩展板的电源口“V”，地线GND(舵机连接线的棕色)连接扩展板的地线口“G”，控制信号线(舵机连接线的橙色)连接扩展板的引脚“0”。</p>
 <a class="reference internal image-reference" href="../images/classic/Servoconnect.jpg"><img alt="../images/classic/Servoconnect.jpg" class="align-center" src="../images/classic/Servoconnect.jpg" /></a>
 <p>使用前，导入mpython、servo模块:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>

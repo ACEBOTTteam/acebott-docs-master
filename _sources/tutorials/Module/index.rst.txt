@@ -21,6 +21,7 @@ Module
    QB014 RGB Module.rst
    QB062 Humidifier Module.rst
    QB064 OLED Module.rst
+   QB001+QB053 Infrared Remote Control Module.rst
 
 
 

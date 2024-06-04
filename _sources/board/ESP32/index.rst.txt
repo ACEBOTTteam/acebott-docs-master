@@ -1,8 +1,9 @@
-ESP32
+ESP32/ESP8266
 ==================
 
 .. toctree::
    :maxdepth: 1
 
    QA007 ESP32 Max V1.0 Controller Board.rst
-
+   QA010 ESP8266 V1.0.rst
+   QZ041 Spider Shield V1.0.rst

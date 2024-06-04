@@ -1,0 +1,99 @@
+QB001+QB053 Infrared Remote Control Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/IR-1.png
+    :align: center
+    :width: 200
+    :height: 350
+
+.. figure:: /../images/IR-2.png
+    :align: center
+    :width: 200
+    :height: 200
+
+
+Infrared remote control module is an electronic module that receives and sends infrared signal to realize wireless remote control function. It usually consists of an infrared transmitting module (infrared remote control) and an infrared receiving module.
+
+As the transmitting part, the infrared remote control can emit infrared light signal. Infrared light signal is a kind of electromagnetic wave, its wavelength is long, the human eye can not see. When the button in the infrared remote control is pressed, the infrared remote control will emit a specific infrared light signal, and each key corresponds to a specific infrared code.
+
+The infrared receiving module has an integrated infrared receiving component that can detect infrared light about 38kH, and can receive the infrared signal emitted by the infrared remote control. When the infrared signal is received, it is parsed into a specific infrared code by the decoder according to the communication protocol.
+
+Application reference: remote control, game control, etc.
+
+**2.Parameter Specification**
+
+(1)Parameters of the infrared receiver module
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3V~5V                 |
++-------------------------+-------------------------+
+| Operating temperature   | -20°C~+80°C             |
++-------------------------+-------------------------+
+| Frequency               | 38KHz                   |
++-------------------------+-------------------------+
+| Receiving Angle         | ±35°                    |           
++-------------------------+-------------------------+
+| Receiving distance      | 15m                     |           
++-------------------------+-------------------------+
+| Output signal           | Digital signal          |           
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+(2)Corresponding coding value of infrared transmitting module
+
+.. figure:: /../images/IR-3.png
+    :align: center
+
+.. figure:: /../images/IR-4.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/IR-5.png
+    :align: center
+
++-----------------------+-----------------------+
+|Humidifier Module      | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 11        |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Infrared_Remote_Control_Module/Infrared_Remote_Control_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the motherboard, open the serial port monitor of the Arduino IDE and set the baud rate to 9600.
+
+When we press the remote control key, the serial port returns the hexadecimal code value of the key.
+
+.. figure:: /../images/IR-6.png
+    :align: center
+
+.. figure:: /../images/IR-7.png
+    :align: center
+
+.. Hint:: 
+    If the light in the surrounding environment is strong and interferes with the data reception of the infrared receiver, you can block the strong light with your hand at an appropriate distance above the receiver.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/lnftf33jbg5y3njmmh60y/AHo4WfJyThgyYA7NrzcD0NU?rlkey=x9z62ov9b3izlrsrbtxtmh4vk&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/lnftf33jbg5y3njmmh60y/AHo4WfJyThgyYA7NrzcD0NU?rlkey=x9z62ov9b3izlrsrbtxtmh4vk&dl=0>`_

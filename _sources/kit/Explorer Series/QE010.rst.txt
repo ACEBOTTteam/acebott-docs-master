@@ -12,7 +12,7 @@ It simulates the process of smarter modern agricultural production management, a
 .. figure:: /../images/QE010-1.png
     :align: center
 
-2.The Value of Starer Kit
+2.The Value of Starter Kit
 ------
 
 1.Simulated Planting
@@ -27,7 +27,7 @@ It simulates the process of smarter modern agricultural production management, a
 
 6.Web & App Control
 
-3.Product Feature
+3.Product Features
 ------
 
 .. figure:: /../images/QE010-2.png
@@ -44,7 +44,6 @@ It simulates the process of smarter modern agricultural production management, a
 ------
 .. figure:: /../images/QE010-4.png
     :align: center
-
 
 6.Product Standard
 ------

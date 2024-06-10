@@ -50,7 +50,7 @@ It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 compr
 7.Suitable for Classroom/School Teaching
 
 
-4.Product Feature
+4.Product Features
 ------
 
 .. figure:: /../images/QE021-QE022-3.png

@@ -1,0 +1,77 @@
+QE002 IOT Smart Farm Starter Kit for ESP32 (Easy-Plug)
+====================
+
+1.Product Introduction
+------
+
+Smart Farm kit is an intelligent technology based on ESP32 Internet of things, which can realize the functions of simulated planting, solar energy application, pet feeding, environmental monitoring and so on.
+
+It simulates the process of smarter modern agricultural production management, and also cultivate children's understanding and application ability of modern agricultural technology, and master relevant programming knowledge.
+
+
+.. figure:: /../images/QE002-1.png
+    :align: center
+
+2.The Value of Starter Kit
+------
+
+1.Simulated Planting
+
+2.Pet Feeding
+
+3.Solar Power Generation
+
+4.Internet of Things Learning
+
+5.ESP32 Programming Learning
+
+6.WIFI & App Control
+
+
+3.Product Features
+------
+
+.. figure:: /../images/QE002-2.png
+    :align: center
+
+4.Controller Board Introduction
+------
+
+.. figure:: /../images/QE001-4.png
+    :align: center
+
+5.Multi-Platform Support
+------
+
+.. figure:: /../images/QE002-3.png
+    :align: center
+
+6.Course Description
+------
+
+.. figure:: /../images/QE010-3.png
+    :align: center
+
+7.Part List
+------
+.. figure:: /../images/QE002-4.png
+    :align: center
+
+
+8.Product Standard
+------
+
+.. figure:: /../images/QE002-5.png
+    :align: center
+
+9.Related Resources
+------
+
+ `PDF and Code <>`_
+
+10.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <>`_

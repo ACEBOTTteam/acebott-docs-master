@@ -12,7 +12,7 @@ and control over LED lights, RGB and more.
 .. figure:: /../images/QE007-1.png
     :align: center
 
-2.The Value of Starer Kit
+2.The Value of Starter Kit
 ------
 
 1.The concept of smart home

@@ -84,19 +84,12 @@ Packages can also be paired with each other.
 .. figure:: /../images/QD001-3.png
     :align: center
 
-
-10.Product Standard
-------
-
-.. figure:: /../images/QD001-4.png
-    :align: center
-
-11.Related Resources
+10.Related Resources
 ------
 
  `PDF and Code <https://www.dropbox.com/scl/fo/892ydm4qyqw7e10oup40h/h?rlkey=mpj2z55dpa4maa1x75i8ei5eb&dl=0>`_
 
-12.Get One Now
+11.Get One Now
 ------
 
     B2B Business: info@acebott.com

@@ -35,19 +35,12 @@ It incorporates interactive controls such as RFID door access, human body sensor
 .. figure:: /../images/QE004-3.png
     :align: center
 
-
-5.Product Standard
-------
-
-.. figure:: /../images/QE004-4.png
-    :align: center
-
-6.Related Resources
+5.Related Resources
 ------
 
  `PDF and Code <https://www.dropbox.com/scl/fo/ik1b2ue0qxa4obkjyg0fy/h?rlkey=hsxvblero3w1koow26rboczwj&dl=0>`_
 
-7.Get One Now
+6.Get One Now
 ------
 
     B2B Business: info@acebott.com

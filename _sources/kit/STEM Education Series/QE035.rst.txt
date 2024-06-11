@@ -1,3 +1,40 @@
 QE035 IOT  Smart Home Display Kit (Easy-Plug) -Year 1 
 ====================
 
+1.Smart Home Education Kit Introduction
+------
+
+The Smart Home display kit is the first theme in the series of educational solutions. 
+
+Different from QE023 and QE024, it can build 8 items on the map at the same time to show learning results, and it is equipped with a display map.
+
+.. figure:: /../images/QE035-1.png
+    :align: center
+
+2.The Value of Kit
+------
+
+1.Smart Home Theme
+
+2.Achievement Exhibition
+
+.. figure:: /../images/QE035-2.png
+    :align: center
+
+3.Part List
+------
+
+.. figure:: /../images/QE035-3.png
+    :align: center
+
+4.Related Resources
+------
+
+ `QE035 Tutorial <https://www.dropbox.com/scl/fo/cb904jh3b38oyh8o2w3zu/AJTZvLaMCRsw_PB3KBId15E?rlkey=thtreo05rik2ma06037caie8o&st=ad61t3zh&dl=0>`_
+ 
+5.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/cb904jh3b38oyh8o2w3zu/AJTZvLaMCRsw_PB3KBId15E?rlkey=thtreo05rik2ma06037caie8o&st=ad61t3zh&dl=0>`_

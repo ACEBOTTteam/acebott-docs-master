@@ -45,18 +45,12 @@ It simulates the process of smarter modern agricultural production management, a
 .. figure:: /../images/QE010-4.png
     :align: center
 
-6.Product Standard
-------
-
-.. figure:: /../images/QE010-5.png
-    :align: center
-
-7.Related Resources
+6.Related Resources
 ------
 
  `PDF and Code <https://www.dropbox.com/scl/fo/5h3zfdu71geyg3nma8qy9/h?rlkey=q3fx3d2vwjwuskuttk2db7vm9&st=75oasjdw&dl=0>`_
 
-8.Get One Now
+7.Get One Now
 ------
 
     B2B Business: info@acebott.com

@@ -90,7 +90,7 @@ Support Smart Config / AirKiss one-click distribution network
 
 **4.Sample Code**
 
-Connect the ACEBOTT-ESP32-CAM-V1.0 controller motherboard with the Type-C data cable and then upload the program for live imaging on the web page.
+Connect the ACEBOTT-ESP32-CAM-V1.0 controller board with the Type-C data cable and then upload the program for live imaging on the web page.
 
 （1）Wiring Diagram
 

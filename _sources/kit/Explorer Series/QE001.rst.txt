@@ -27,7 +27,7 @@ This kit is based on story-based learning tasks and rich electronic modules to l
 
 6.Artistic structural design enlightenment
 
-3.The mode of Starter Kit
+3.The Mode of Starter Kit
 ------
 
 .. figure:: /../images/QE001-2.png

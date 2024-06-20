@@ -28,7 +28,7 @@ We've included 16 detailed, story-based tutorials so you can learn better.It wil
 
 6.Rich expansion
 
-3.The Mode of Start Kit
+3.The Mode of Starter Kit
 ------
 
 .. figure:: /../images/QD001-5.png

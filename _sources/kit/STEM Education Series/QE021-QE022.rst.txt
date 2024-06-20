@@ -25,7 +25,7 @@ It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 compr
 .. container:: custom-hint
 .. Hint:: 
 
-    All works can only exist one at a time, that is, the material can only be used to make one project.
+    Each kit only has one controller board, so only one of these projects exists at a time.
 
 .. figure:: /../images/QE021-QE022-2.png
     :align: center

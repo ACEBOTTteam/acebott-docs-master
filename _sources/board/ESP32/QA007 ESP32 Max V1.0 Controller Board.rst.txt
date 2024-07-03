@@ -38,7 +38,7 @@ If you want to program the esp32 with Arduino, `click here <https://acebottteam.
 
 **3.PCB Dimensions**
 
-.. image:: /../images/ESP32-2.jpg
+.. image:: /../images/ESP32-2.png
     :align: center
 
 **4.Pin Interfaces**
@@ -57,7 +57,7 @@ Here is an explanation of what every element and interface of the board does:
 **6.Test Result**
 
 When a network is found in the environment, the number and name of all nearby networks will be obtained and displayed in the serial port, 
-and the blue indicator will light up.
+and the indicator will light up.
 
 .. image:: /../images/ESP32-4.png
     :align: center

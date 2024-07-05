@@ -20,6 +20,9 @@ This time we use the control board is the ESP32 control board, so we need to ins
 
 **3. Copy the URL in the lower box and add it to the "Additional Boards Manager URLs".**
 
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+https://www.arduino.me/package_esp32_index.json
+
 .. figure:: /../images/install_the_esp32_plugin-4.png
     :align: center
 

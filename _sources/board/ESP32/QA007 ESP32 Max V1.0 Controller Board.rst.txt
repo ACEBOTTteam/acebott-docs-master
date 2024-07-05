@@ -54,6 +54,8 @@ Here is an explanation of what every element and interface of the board does:
 .. literalinclude:: /../../examples/TEST_esp32/TEST_esp32.ino
     :linenos:
 
+Connect the board to the computer using a Type-C data cable: Select "ESP32" -> "ESP32 Dev Module" from the Tools > Board menu. Choose the appropriate Port. And upload it to the board using the Upload button.
+
 **6.Test Result**
 
 When a network is found in the environment, the number and name of all nearby networks will be obtained and displayed in the serial port, 

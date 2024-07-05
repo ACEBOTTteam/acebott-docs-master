@@ -64,7 +64,7 @@ Clock Speed: 16MHz
 
 **4.Sample Code**
 
-Connect the ACEBOTT QA016 Leonardo controller board to the computer using a Type-C data cable, and then upload the program for controlling serial port printing.
+Connect the board to the computer using a USB data cable: Select "Arduino AVR Boards" -> "Arduino Leonardo" from the Tools > Board menu. Choose the appropriate Port. And upload it to the board using the Upload button.
 
 （1）Wiring Diagram
 

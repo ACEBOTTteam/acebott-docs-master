@@ -9,7 +9,7 @@ QZ041 Spider Shield V1.0
 Spider-Shield-V1.0 is the expansion board of the quadruped robot, which is connected to the ESP8266 controller board. 
 The expansion board has 10 pin ports and can connect 8 servos. 
 The bottom contains the 18650 battery cabin, which can operate the movement of the robot offline after the battery is configured. 
-At the same time, after connecting the ESP8266 motherboard, the 18650 battery can be charged by connecting the power supply through the Type-c line. 
+At the same time, after connecting the ESP8266 controller board, the 18650 battery can be charged by connecting the power supply through the Type-c line. 
 
 There are two charging indicators on the extension board, "CHRG" indicates that the battery is charging, and "STDBY" indicates that the battery is full. 
 Through the use of the expansion board, users can easily operate multiple servos to complete different actions.
@@ -44,7 +44,7 @@ Weight：31g
 
 **4.Sample Code**
 
-After inserting the ESP8266 mainboard into the pin slots of the extension board, connect a servo to the D4 pin port on the extension board. 
+After inserting the ESP8266 controller board into the pin slots of the extension board, connect a servo to the D4 pin port on the extension board. 
 Install a 18650 battery, then upload the program to control the servo.
 
 （1）Wiring Diagram

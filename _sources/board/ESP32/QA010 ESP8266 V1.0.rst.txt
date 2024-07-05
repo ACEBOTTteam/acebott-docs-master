@@ -67,7 +67,7 @@ General AT commands for quick familiarization
 
 **4.Sample Code**
 
-Connect the ESP8266 mainboard to the computer using a Type-C data cable, and then upload the program for controlling serial port printing.
+Connect the board to the computer using a Type-C data cable: Select "ESP8266" -> "NodeMCU 1.0(ESP-12E Module)" from the Tools > Board menu. Choose the appropriate Port. And upload it to the board using the Upload button.
 
 （1）Wiring Diagram
 

@@ -45,4 +45,6 @@ It incorporates interactive controls such as RFID door access, human body sensor
 
     B2B Business: info@acebott.com
 
-    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/pkoem0fvsi0dsxtvptpxv/h?rlkey=uurqqtydoqt0tl8dz0y61a00u&dl=0>`_
+    `QE005 Official Website <https://www.acebott.com/products/acebott-qe005-micro-bit-smart-home-iot-starter-kit-with-arduino-acecode-scratch?_pos=5&_psq=QE004&_ss=e&_v=1.0>`_
+
+    `QE006 Official Website <https://www.acebott.com/products/acebott-qe006-micro-bit-smart-home-iot-starter-kit-with-arduino-acecode-scratch?_pos=4&_psq=QE004&_ss=e&_v=1.07>`_

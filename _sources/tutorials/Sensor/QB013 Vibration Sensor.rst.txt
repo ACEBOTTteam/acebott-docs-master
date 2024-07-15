@@ -80,4 +80,4 @@ When we shake the vibration sensor, it returns 0; When we don't shake it, the se
 
     B2B Business: info@acebott.com
 
-    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/v11s59mdz6t1sasfw5lvf/h?rlkey=2nti0xxe580smim7dw7t0p4av&dl=0>`_
+    `Official Website <https://www.acebott.com/products/acebott-qb013-analog-piezoelectric-ceramics-vibration-sensor-module?_pos=2&_psq=QB012&_ss=e&_v=1.0>`_

@@ -73,4 +73,4 @@ When we press the key, the serial port returns data 0; When the key is released,
 
     B2B Business: info@acebott.com
 
-    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_
+    `Official Website <https://www.acebott.com/products/acebott-qb038-push-button-module?_pos=1&_psq=QB038&_ss=e&_v=1.0>`_

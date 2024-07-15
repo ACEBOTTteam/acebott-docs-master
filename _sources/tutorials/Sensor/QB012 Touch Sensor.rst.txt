@@ -71,4 +71,4 @@ After uploading the code to the controller board, open the serial port monitor o
 
     B2B Business: info@acebott.com
 
-    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/vhen9z9roik4u2vwdsdzh/h?rlkey=vkzfqjcgkmb6uyf64rr9bieup&dl=0>`_
+    `Official Website <https://www.acebott.com/products/acebott-qb012-capacitive-touch-sensor-module?_pos=1&_psq=QB012&_ss=e&_v=1.0>`_

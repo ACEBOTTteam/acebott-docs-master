@@ -67,4 +67,4 @@ With this kit, you can have a good understanding of how a robot arm works, progr
 
     B2B Business: info@acebott.com
 
-    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/whgyo4xylun3spupfvgws/AKqL-pMXq38Z6D5MDVQUATY?rlkey=cr86qtuuxxg1rwotz63dsat3z&st=vag8iwvd&dl=0>`_
+    `Official Website <https://www.acebott.com/products/acebott-qd022-esp32-programmable-robot-arm-kit-for-arduino?_pos=2&_psq=QD020&_ss=e&_v=1.0>`_

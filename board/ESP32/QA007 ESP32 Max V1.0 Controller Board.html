@@ -125,8 +125,8 @@
 <img alt="../../_images/ESP32-1.jpg" class="align-center" src="../../_images/ESP32-1.jpg" />
 <div class="section" id="introduction">
 <h2>1.Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This is a general WIFI + Bluetooth controller board based on ESP32, integrated ESP32-Room-32 module and compatible with Arduino.</p>
-<p>It has high-speed SDIO/SPI, UART, I2S and I2C. In addition, it is equipped with freeRTOS operating system, which is quite suitable for Internet of things and smart home.</p>
+<p>This is a general WIFI + Bluetooth controller board based on ESP32, integrated ESP32-WROOM-32 module and compatible with Arduino.</p>
+<p>It has high-speed SPI, UART, I2S and I2C. In addition, it is equipped with freeRTOS operating system, which is quite suitable for Internet of things and smart home.</p>
 <p>Provides a rich fast interface, convenient for developers to use.</p>
 <p>If you want to know more about ESP32, <a class="reference external" href="https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Getting%20Started%20with%20ESP32.html">click here</a></p>
 </div>
@@ -243,13 +243,14 @@
 <p><strong>Enable (EN)</strong></p>
 <p>Enable (EN) is the chip enable pin. This means you can use the button connected to that pin to restart the ESP32.</p>
 <p>High level: Chip enabled</p>
-<p>Low level: The chip is off</p>
+<p>Low level: Chip disable</p>
 </div>
 <div class="section" id="notice">
 <h2>6.Notice<a class="headerlink" href="#notice" title="Permalink to this headline">¶</a></h2>
 <p>1.ADC2 pins cannot be used when using Wi-Fi. So if you are on Wi-Fi and you can’t get a value from the ADC2 GPIO, you might consider using the ADC1 GPIO instead.</p>
 <p>2.The ADC input channel has a 12-bit resolution. This means that you can get analog readings between 0 and 4095, where 0 corresponds to 0V and 4095 corresponds to 3.3V. You can also set the resolution of the channel as well as the ADC range on the code.</p>
 <p>3.ESP32 ADC pins do not have linear behavior. You might not be able to distinguish between 0 and 0.1V, or 3.2 and 3.3V. You need to keep this in mind when using ADC pins. You will get a behavior similar to the one shown below.</p>
+<img alt="../../_images/ESP32-17.png" class="align-center" src="../../_images/ESP32-17.png" />
 </div>
 <div class="section" id="detailed-use-with-arduino-software-as-follows">
 <h2>7.Detailed Use with ARDUINO Software as follows:<a class="headerlink" href="#detailed-use-with-arduino-software-as-follows" title="Permalink to this headline">¶</a></h2>

@@ -7,9 +7,9 @@ QA007/QA008/QA009 ESP32 Max V1.0 Controller Board
 1.Introduction
 ------------
 
-This is a general WIFI + Bluetooth controller board based on ESP32, integrated ESP32-Room-32 module and compatible with Arduino.
+This is a general WIFI + Bluetooth controller board based on ESP32, integrated ESP32-WROOM-32 module and compatible with Arduino.
 
-It has high-speed SDIO/SPI, UART, I2S and I2C. In addition, it is equipped with freeRTOS operating system, which is quite suitable for Internet of things and smart home.
+It has high-speed SPI, UART, I2S and I2C. In addition, it is equipped with freeRTOS operating system, which is quite suitable for Internet of things and smart home.
 
 Provides a rich fast interface, convenient for developers to use.
 
@@ -130,7 +130,7 @@ Enable (EN) is the chip enable pin. This means you can use the button connected 
 
 High level: Chip enabled
 
-Low level: The chip is off
+Low level: Chip disable
 
 6.Notice
 ------------
@@ -140,6 +140,9 @@ Low level: The chip is off
 2.The ADC input channel has a 12-bit resolution. This means that you can get analog readings between 0 and 4095, where 0 corresponds to 0V and 4095 corresponds to 3.3V. You can also set the resolution of the channel as well as the ADC range on the code.
 
 3.ESP32 ADC pins do not have linear behavior. You might not be able to distinguish between 0 and 0.1V, or 3.2 and 3.3V. You need to keep this in mind when using ADC pins. You will get a behavior similar to the one shown below.
+
+.. image:: /../images/ESP32-17.png
+    :align: center
 
 7.Detailed Use with ARDUINO Software as follows:
 ------------

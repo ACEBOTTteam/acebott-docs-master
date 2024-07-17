@@ -48,3 +48,7 @@ With this suite, you can have a good understanding of the walking posture of the
     B2B Business: info@acebott.com
 
     `Official Website <https://www.acebott.com/products/qd020-bionic-spider-kit?_pos=1&_psq=QD020&_ss=e&_v=1.0>`_
+
+    `Amazon US Store <https://www.amazon.com/ACEBOTT-ESP8266-Quadruped-Crawling-Robotics/dp/B0D5D9Z6G7>`_
+
+    `Amazon UK Store <https://www.amazon.co.uk/ACEBOTT-ESP8266-Quadruped-Crawling-Robotics/dp/B0D5D9Z6G7>`_

@@ -132,7 +132,7 @@ High level: Chip enabled
 
 Low level: Chip disable
 
-6.Notice
+7.Notice
 ------------
 
 1.ADC2 pins cannot be used when using Wi-Fi. So if you are on Wi-Fi and you can't get a value from the ADC2 GPIO, you might consider using the ADC1 GPIO instead.
@@ -144,7 +144,7 @@ Low level: Chip disable
 .. image:: /../images/ESP32-17.png
     :align: center
 
-7.Detailed Use with ARDUINO Software as follows:
+8.Detailed Use with ARDUINO Software as follows:
 ------------
 
 **Step1 | Download the Arduino environment (IDE)**
@@ -216,17 +216,18 @@ The serial port display effect diagram is as follows：
 .. image:: /../images/ESP32-5.png
     :align: center
 
-8.Package List
+9.Package List
 ------------
 
     ESP32 Max V1.0 Controller Board * 1pcs
 
     Type-C cable * 1pcs
 
-9.Get One Now
+10.Get One Now
 ------------
 
     B2B Business: info@acebott.com
 
     `Official Website <https://www.acebott.com/products/easy-plug-esp32-shield-board-v1-0-for-qa008-acebott-esp32-max-v1-0?_pos=3&_psq=QA001&_ss=e&_v=1.0>`_
 
+    `Amazon US Store <https://www.amazon.com/ACEBOTT-Development-Board-Compatible-Arduino/dp/B0D5D7Q42V>`_

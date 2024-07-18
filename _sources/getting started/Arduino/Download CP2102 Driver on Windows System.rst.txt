@@ -1,0 +1,30 @@
+Download CP2102 Driver on Windows System
+======================================
+
+**Download CP2102 driver**
+
+`Download CP2102 driver <https://www.dropbox.com/scl/fo/1bi9f1d5um5nxscxiiw29/AJqhPJepqZUko0VAbO5K9EU?rlkey=094z4isajwi27vi53re4qn8ec&st=7us4hhtf&dl=0>`_
+
+
+**Installation**
+
+Open the folder, and then open the "CP210x_Universal_Windows_Driver" folder, you will see two exe files, please install according to the configuration of your Windows computer, 
+if your computer system type is 64 bit, Please double-click "CP210xVCPInstaller_x64.exe" with the mouse; If your computer system type is 32 bit, please double-click "CP210xVCPInstaller_x86.exe" with the mouse.
+
+.. figure:: /../images/Windows_CP2102_driver-1.png
+    :align: center
+
+After double-clicking the corresponding exe file, an installation window will pop up. Click "Next".
+
+.. figure:: /../images/Windows_CP2102_driver-2.png
+    :align: center
+
+Until the last window appears, the installation is complete.Finally, click "Finish".
+
+.. figure:: /../images/Windows_CP2102_driver-3.png
+    :align: center
+
+To confirm whether the installation is successful, insert one end of the USB cable into the controller board and the other end into the USB interface on the computer. Right click "My Computer "->" Properties "-> click" Device Manager ", after connecting to the control panel, the following picture shows that the installation is successful.
+
+.. figure:: /../images/Windows_CP2102_driver-4.png
+    :align: center

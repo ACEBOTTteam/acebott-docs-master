@@ -8,3 +8,5 @@ Arduino
    How to Download Arduino IDE .rst
    Download CH340 Driver on MAC System.rst
    Download CH340 Driver on Windows System.rst
+   Download CP2102 Driver on Windows System.rst
+   Download CP2102 Driver on MAC System.rst

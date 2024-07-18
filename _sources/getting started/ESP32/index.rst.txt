@@ -1,4 +1,4 @@
-ESP32
+ESP32/ESP8266
 ==================
 
 .. toctree::
@@ -6,4 +6,4 @@ ESP32
 
    Getting Started with ESP32.rst
    Install the ESP32 plugin in the Arduino IDE.rst
-   
+   Install the ESP8266 plugin in the Arduino IDE.rst

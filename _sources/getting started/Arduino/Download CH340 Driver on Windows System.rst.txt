@@ -8,7 +8,7 @@ Download CH340 Driver on Windows System
 
 **Installation**
 
-Connect the main control board to your computer with a USB cable, and the driver will be installed automatically on MacOS and Windows systems. If the driver installation fails, you need to install the driver manually.
+Connect the controller board to your computer with a USB cable, and the driver will be installed automatically on MacOS and Windows systems. If the driver installation fails, you need to install the driver manually.
 
 The USB to serial port chip of ESP32 control board is CH340C. Therefore, you need to install the driver for the chip.
 

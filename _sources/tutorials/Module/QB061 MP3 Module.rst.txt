@@ -1,0 +1,106 @@
+QB061 MP3 Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/MP3 Module-1.png
+    :align: center
+
+
+An MP3 player is a digital audio device specifically designed to play music in MP3 format.
+It consists of a microprocessor, memory, and an audio decoder. 
+The microprocessor controls the device's operations, memory stores the audio files, and the audio decoder converts the audio files into audible audio signals. 
+The MP3 module can be controlled via serial communication to play music.
+
+Application reference:Mechanical electronics, security and home anti-theft, communication equipment, home appliances, medical equipment, etc.
+
+
+**2.Parameter Specification**
+
++-----------------------------------+--------------------------------------------------+
+| Parameter                         | Value//Description                               |
++===================================+==================================================+
+| Operating voltage                 | 5V                                               |
++-----------------------------------+--------------------------------------------------+
+| Operating temperature             | -40°C~+70°C                                      |
++-----------------------------------+--------------------------------------------------+
+| Interface                         | USB-C and Serial Port                            |
++-----------------------------------+--------------------------------------------------+
+| Supported audio formats           | Support MP3, WAV high-quality audio format files |
++-----------------------------------+--------------------------------------------------+
+| Maximum supported TF card capacity| Maximum support 32G TF card                      |
++-----------------------------------+--------------------------------------------------+
+| Size                              | 4.7cm * 2.4cm                                    |
++-----------------------------------+--------------------------------------------------+
+
+.. figure:: /../images/MP3 Module-2.png
+    :align: center
+
+**3.Store Music**
+
+Before controlling the MP3 module to play music, you need to store songs on the memory card of the MP3 module. The following are the steps to store songs on the MP3 module:
+
+(1)Insert the memory card into the card slot of the MP3 module.
+
+.. figure:: /../images/MP3 Module-3.png
+    :align: center
+
+(2)There is a USB port on the back of the MP3 player module. Use a Type-C data cable to connect the USB port of the MP3 module to the computer.
+
+.. figure:: /../images/MP3 Module-4.png
+    :align: center
+
+(3)After connecting the MP3 module to the computer, a new folder will pop up on the computer system disk. Place your MP3 file in the newly popped up folder. If your MP3 file is placed in the root directory of the memory card, the name of the MP3 file must start with a four-digit number, such as "0001Hero.mp3", "0002Jingle bells.mp3".
+
+.. figure:: /../images/MP3 Module-5.png
+    :align: center
+
+If you want to create a new folder in the root directory of the memory card, the folder name should start with a two-digit number, and the MP3 files in the folder name should start with a three-digit number.
+
+.. figure:: /../images/MP3 Module-6.png
+    :align: center
+
+**4.Wiring Diagram**
+
+.. figure:: /../images/MP3 Module-7.png
+    :align: center
+
++-----------------------+-----------------------+
+|MP3 Module             | UNO                   |
++=======================+=======================+
+| V                     | 5V                    |
++-----------------------+-----------------------+
+| G                     | GND                   |
++-----------------------+-----------------------+
+| TX                    | RX                    |
++-----------------------+-----------------------+
+| RX                    | TX                    |
++-----------------------+-----------------------+
+
+.. container:: custom-hint
+.. Hint:: 
+
+    The RX and TX interfaces in the UNO main control board are used for program downloading and debugging. If you use this interface to communicate with an external device, you need to disconnect the external device on the interface before uploading or debugging the program, and then connect the device after the program is successfully uploaded.
+
+**5.Sample Code**
+
+.. literalinclude:: /../../examples/MP3_Module/MP3_Module.ino
+    :linenos:
+
+**6.Test Result**
+
+When you have successfully connected the circuits according to the wiring diagram and successfully uploaded the correct program, your MP3 module will play music.
+
+.. figure:: /../images/MP3 Module-8.png
+    :align: center
+
+**7.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/ga99st7rsh7634u3oi3z9/ACyypwSD9sXem9OOhDRLLf0?rlkey=r38gq40voh7xg2gjtbflxd1by&st=d084oiwe&dl=0>`_
+
+**8.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/ga99st7rsh7634u3oi3z9/ACyypwSD9sXem9OOhDRLLf0?rlkey=r38gq40voh7xg2gjtbflxd1by&st=d084oiwe&dl=0>`_
+

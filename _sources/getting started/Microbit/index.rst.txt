@@ -1,4 +1,4 @@
-microbit
+Microbit
 ==================
 
 .. toctree::

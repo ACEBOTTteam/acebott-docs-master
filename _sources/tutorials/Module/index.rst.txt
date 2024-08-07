@@ -22,6 +22,10 @@ Module
    QB062 Humidifier Module.rst
    QB064 OLED Module.rst
    QB001+QB053 Infrared Remote Control Module.rst
+   QB098 4x4 Touch Keyboard Module.rst
+   QB015 Joystick Module.rst
+   QB061 MP3 Module.rst
+   QB095 Traffic Light Module.rst
 
 
 

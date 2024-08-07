@@ -20,6 +20,7 @@ Sensor
    QB013 Vibration Sensor.rst
    QB060 Trace Sensor.rst
    QB063 Water Sensor.rst
+   QB096 Infrared Obstacle Avoidance Sensor.rst
 
 
 

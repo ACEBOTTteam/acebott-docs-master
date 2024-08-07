@@ -14,6 +14,7 @@ Thank you for choosing ACEBOTT! We hope that the information provided here will 
    getting started/Arduino/index.rst
    getting started/ESP32/index.rst
    getting started/Microbit/index.rst
+   getting started/ACECode(Blockly Programming)/index.rst
 
 ---------
 

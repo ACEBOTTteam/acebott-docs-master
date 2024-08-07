@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Getting Started with ESP32 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>Getting Started with ESP8266 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
@@ -28,8 +28,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Install the ESP32 plugin in the Arduino IDE" href="Install the ESP32 plugin in the Arduino IDE.html" />
-    <link rel="prev" title="Getting Started with ESP32" href="Getting Started with ESP32.html" /> 
+    <link rel="next" title="Install the ESP8266 plugin in the Arduino IDE" href="Install the ESP8266 plugin in the Arduino IDE.html" />
+    <link rel="prev" title="Install the ESP32 plugin in the Arduino IDE" href="Install the ESP32 plugin in the Arduino IDE.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -60,16 +60,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../Arduino/index.html">Arduino</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">ESP32/ESP8266</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Getting Started with ESP32.html">Getting Started with ESP32</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started with ESP32</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#what-is-esp32">What is ESP32</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#the-esp32-platform">The ESP32 Platform</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="Install the ESP32 plugin in the Arduino IDE.html">Install the ESP32 plugin in the Arduino IDE</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started with ESP8266</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-esp8266">What is ESP8266</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application-scenarios">Application Scenarios</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment-and-programming">Development Environment and Programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comparison-with-other-chips">Comparison with Other Chips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">microbit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install the ESP8266 plugin in the Arduino IDE.html">Install the ESP8266 plugin in the Arduino IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ACECode(Blockly Programming)/index.html">ACECode</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Starter Kit</span></p>
 <ul>
@@ -104,7 +109,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">ESP32/ESP8266</a></li>
-      <li class="breadcrumb-item active">Getting Started with ESP32</li>
+      <li class="breadcrumb-item active">Getting Started with ESP8266</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -113,69 +118,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="getting-started-with-esp32">
-<h1>Getting Started with ESP32<a class="headerlink" href="#getting-started-with-esp32" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-is-esp32">
-<h2>What is ESP32<a class="headerlink" href="#what-is-esp32" title="Permalink to this headline">¶</a></h2>
-<p>ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth.
-The ESP32 series employs either a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations,
-Xtensa LX7 dual-core microprocessor or a single-core RISC-V microprocessor and includes built-in antenna switches,
-RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems,
-a Chinese company based in Shanghai, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.</p>
+  <div class="section" id="getting-started-with-esp8266">
+<h1>Getting Started with ESP8266<a class="headerlink" href="#getting-started-with-esp8266" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-esp8266">
+<h2>What is ESP8266<a class="headerlink" href="#what-is-esp8266" title="Permalink to this headline">¶</a></h2>
+<p>The ESP8266 is a highly integrated wireless communication chip designed and manufactured by Espressif Systems.
+Known for its low cost, high performance, and extensive application scenarios, it has gained widespread popularity among developers, especially in the field of the Internet of Things (IoT). Below is a detailed introduction to the ESP8266.</p>
 </div>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<p>Features of the ESP32 include the following:</p>
+<p><strong>Wireless connectivity</strong></p>
+<p>Wi-Fi Standards: Supports IEEE 802.11 b/g/n protocols, allowing it to connect to Wi-Fi networks and operate in Access Point (AP) or Station (STA) modes.</p>
+<p>Frequency Band: Operates in the 2.4GHz band.</p>
+<p>Security Protocols: Supports WPA/WPA2 security protocols to ensure secure wireless communication.</p>
+<p><strong>Processing Capabilities</strong></p>
+<p>CPU: Integrated 32-bit RISC processor (Tensilica L106) with a clock speed up to 160 MHz.</p>
+<p>RAM: Comes with 50 KB of usable RAM for program execution and data storage.</p>
+<p>Flash Memory: External flash memory configurable (usually between 512 KB to 4 MB) for storing firmware and user programs.</p>
+<p><strong>Interfaces and Peripherals</strong></p>
+<p>GPIO: Offers 17 GPIO pins for connecting sensors, LEDs, relays, and other external devices.</p>
+<p>UART, I2C, SPI: Supports multiple communication protocols for interfacing with other microcontrollers and sensors.</p>
+<p>ADC: Provides a 10-bit ADC input for analog signal acquisition.</p>
+<p>PWM: Supports PWM output, suitable for motor control, LED dimming, and other applications.</p>
+<p><strong>Low Power Consumption</strong></p>
+<p>Includes various low-power modes, including deep sleep mode, making it ideal for energy-sensitive IoT devices.</p>
 </div>
-<div class="section" id="the-esp32-platform">
-<h2>The ESP32 Platform<a class="headerlink" href="#the-esp32-platform" title="Permalink to this headline">¶</a></h2>
-<p><strong>Processors:</strong></p>
-<blockquote>
-<div><p>CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS</p>
-<p>Ultra low power (ULP) co-processor</p>
-</div></blockquote>
-<p><strong>Memory:</strong> 520 KiB RAM, 448 KiB ROM</p>
-<p><strong>Wireless connectivity:</strong></p>
-<blockquote>
-<div><p>Wi-Fi: 802.11 b/g/n</p>
-<p>Bluetooth: v4.2 BR/EDR and BLE (shares the radio with Wi-Fi)</p>
-</div></blockquote>
-<p><strong>Peripheral interfaces:</strong></p>
-<blockquote>
-<div><p>34 × programmable GPIOs</p>
-<p>12-bit SAR ADC up to 18 channels</p>
-<p>2 × 8-bit DACs</p>
-<p>10 × touch sensors (capacitive sensing GPIOs)</p>
-<p>4 × SPI</p>
-<p>2 × I²S interfaces</p>
-<p>2 × I²C interfaces</p>
-<p>3 × UART</p>
-<p>SD/SDIO/CE-ATA/MMC/eMMC host controller</p>
-<p>SDIO/SPI slave controller</p>
-<p>Ethernet MAC interface with dedicated DMA and planned IEEE 1588 Precision Time Protocol support</p>
-<p>CAN bus 2.0</p>
-<p>Infrared remote controller (TX/RX, up to 8 channels)</p>
-<p>Pulse counter (capable of full quadrature decoding)</p>
-<p>Motor PWM</p>
-<p>LED PWM (up to 16 channels)</p>
-<p>Ultra low power analog pre-amplifier</p>
-</div></blockquote>
-<dl class="docutils">
-<dt><strong>Security:</strong></dt>
-<dd><p class="first">IEEE 802.11 standard security features all supported, including WPA, WPA2, WPA3 (depending on version)[5] and WLAN Authentication and Privacy Infrastructure (WAPI)</p>
-<p>Secure boot</p>
-<p>Flash encryption</p>
-<p>1024-bit OTP, up to 768-bit for customers</p>
-<p class="last">Cryptographic hardware acceleration: AES, SHA-2, RSA, elliptic curve cryptography (ECC), random number generator (RNG)</p>
-</dd>
-</dl>
-<p><strong>Power management:</strong></p>
-<blockquote>
-<div><p>Internal low-dropout regulator</p>
-<p>Individual power domain for RTC</p>
-<p>5 μA deep sleep current</p>
-<p>Wake up from GPIO interrupt, timer, ADC measurements, capacitive touch sensor interrupt</p>
-</div></blockquote>
+<div class="section" id="application-scenarios">
+<h2>Application Scenarios<a class="headerlink" href="#application-scenarios" title="Permalink to this headline">¶</a></h2>
+<p>Due to its powerful features and affordability, the ESP8266 is widely used in various fields:</p>
+<p>Smart Home: Such as smart plugs, smart lighting, and temperature and humidity sensors.</p>
+<p>Industrial Automation: For data acquisition and wireless control.</p>
+<p>Health Monitoring: Connects with bio-sensors for real-time health data monitoring.</p>
+<p>Environmental Monitoring: Remote monitoring of environmental parameters like air quality and soil moisture.</p>
+<p>Wearable Devices: Communicates with smartphones or other devices to provide real-time data updates.</p>
+</div>
+<div class="section" id="development-environment-and-programming">
+<h2>Development Environment and Programming<a class="headerlink" href="#development-environment-and-programming" title="Permalink to this headline">¶</a></h2>
+<p>ESP8266 supports multiple development environments, commonly including:</p>
+<p>1.Arduino IDE: By installing the ESP8266 board support package, you can develop using the Arduino IDE, which is suitable for beginners and rapid prototyping.</p>
+<p>2.PlatformIO: An integrated development environment that supports multiple microcontroller platforms, ideal for professional developers.</p>
+<p>3.NodeMCU: A firmware based on the Lua scripting language, allowing direct execution of Lua code on the chip, suitable for scenarios requiring rapid script-based development.</p>
+<p>4.MicroPython: Supports running Python scripts on ESP8266, perfect for developers who prefer the Python language.</p>
+</div>
+<div class="section" id="comparison-with-other-chips">
+<h2>Comparison with Other Chips<a class="headerlink" href="#comparison-with-other-chips" title="Permalink to this headline">¶</a></h2>
+<p>Compared to its successor, the ESP32, the ESP8266 is simpler and cheaper but lacks Bluetooth capabilities and dual-core processing. For most projects requiring basic Wi-Fi functionality, the ESP8266 is an economical and practical choice.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.espressif.com.cn/">Espressif Official Website</a></p>
+<p><a class="reference external" href="https://www.esp8266.com/">ESP8266 Community Forum</a></p>
+<p><a class="reference external" href="https://github.com/esp8266/Arduino/">ESP8266 Arduino Library</a></p>
+<p>The ESP8266, with its excellent performance and low cost, has become a crucial component in IoT development, providing wireless connectivity for various innovative applications.</p>
 </div>
 </div>
 
@@ -183,8 +177,8 @@ a Chinese company based in Shanghai, and is manufactured by TSMC using their 40 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Getting Started with ESP32.html" class="btn btn-neutral float-left" title="Getting Started with ESP32" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Install the ESP32 plugin in the Arduino IDE.html" class="btn btn-neutral float-right" title="Install the ESP32 plugin in the Arduino IDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Install the ESP32 plugin in the Arduino IDE.html" class="btn btn-neutral float-left" title="Install the ESP32 plugin in the Arduino IDE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Install the ESP8266 plugin in the Arduino IDE.html" class="btn btn-neutral float-right" title="Install the ESP8266 plugin in the Arduino IDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

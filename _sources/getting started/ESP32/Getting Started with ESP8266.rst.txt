@@ -1,88 +1,90 @@
-Getting Started with ESP32
+Getting Started with ESP8266
 ======================================
 
-What is ESP32
+What is ESP8266
 ---------------------
-ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. 
-The ESP32 series employs either a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations, 
-Xtensa LX7 dual-core microprocessor or a single-core RISC-V microprocessor and includes built-in antenna switches, 
-RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems, 
-a Chinese company based in Shanghai, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.
+The ESP8266 is a highly integrated wireless communication chip designed and manufactured by Espressif Systems. 
+Known for its low cost, high performance, and extensive application scenarios, it has gained widespread popularity among developers, especially in the field of the Internet of Things (IoT). Below is a detailed introduction to the ESP8266.
 
 Features
 ---------------------
-Features of the ESP32 include the following:
 
-The ESP32 Platform
+**Wireless connectivity**
+
+Wi-Fi Standards: Supports IEEE 802.11 b/g/n protocols, allowing it to connect to Wi-Fi networks and operate in Access Point (AP) or Station (STA) modes.
+
+Frequency Band: Operates in the 2.4GHz band.
+
+Security Protocols: Supports WPA/WPA2 security protocols to ensure secure wireless communication.
+
+**Processing Capabilities**
+
+CPU: Integrated 32-bit RISC processor (Tensilica L106) with a clock speed up to 160 MHz. 
+
+RAM: Comes with 50 KB of usable RAM for program execution and data storage.
+
+Flash Memory: External flash memory configurable (usually between 512 KB to 4 MB) for storing firmware and user programs.
+
+**Interfaces and Peripherals** 
+
+GPIO: Offers 17 GPIO pins for connecting sensors, LEDs, relays, and other external devices.
+
+UART, I2C, SPI: Supports multiple communication protocols for interfacing with other microcontrollers and sensors.
+
+ADC: Provides a 10-bit ADC input for analog signal acquisition.
+
+PWM: Supports PWM output, suitable for motor control, LED dimming, and other applications.
+
+
+**Low Power Consumption**
+
+Includes various low-power modes, including deep sleep mode, making it ideal for energy-sensitive IoT devices.
+
+
+
+Application Scenarios
 ------------------------------
 
-**Processors:**
+Due to its powerful features and affordability, the ESP8266 is widely used in various fields:
 
-    CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS
-   
-    Ultra low power (ULP) co-processor
+Smart Home: Such as smart plugs, smart lighting, and temperature and humidity sensors.
 
-**Memory:** 520 KiB RAM, 448 KiB ROM
+Industrial Automation: For data acquisition and wireless control.
 
-**Wireless connectivity:**
+Health Monitoring: Connects with bio-sensors for real-time health data monitoring.
 
-    Wi-Fi: 802.11 b/g/n
+Environmental Monitoring: Remote monitoring of environmental parameters like air quality and soil moisture.
 
-    Bluetooth: v4.2 BR/EDR and BLE (shares the radio with Wi-Fi)
+Wearable Devices: Communicates with smartphones or other devices to provide real-time data updates.
 
-**Peripheral interfaces:**
 
-    34 × programmable GPIOs
+Development Environment and Programming
+------------------------------
 
-    12-bit SAR ADC up to 18 channels
+ESP8266 supports multiple development environments, commonly including:
 
-    2 × 8-bit DACs
 
-    10 × touch sensors (capacitive sensing GPIOs)
+1.Arduino IDE: By installing the ESP8266 board support package, you can develop using the Arduino IDE, which is suitable for beginners and rapid prototyping.
 
-    4 × SPI
+2.PlatformIO: An integrated development environment that supports multiple microcontroller platforms, ideal for professional developers.
 
-    2 × I²S interfaces
+3.NodeMCU: A firmware based on the Lua scripting language, allowing direct execution of Lua code on the chip, suitable for scenarios requiring rapid script-based development.
 
-    2 × I²C interfaces
+4.MicroPython: Supports running Python scripts on ESP8266, perfect for developers who prefer the Python language.
 
-    3 × UART
+Comparison with Other Chips
+------------------------------
 
-    SD/SDIO/CE-ATA/MMC/eMMC host controller
+Compared to its successor, the ESP32, the ESP8266 is simpler and cheaper but lacks Bluetooth capabilities and dual-core processing. For most projects requiring basic Wi-Fi functionality, the ESP8266 is an economical and practical choice.
 
-    SDIO/SPI slave controller
 
-    Ethernet MAC interface with dedicated DMA and planned IEEE 1588 Precision Time Protocol support
+References
+------------------------------
 
-    CAN bus 2.0
+`Espressif Official Website <https://www.espressif.com.cn/>`_
 
-    Infrared remote controller (TX/RX, up to 8 channels)
+`ESP8266 Community Forum <https://www.esp8266.com/>`_
 
-    Pulse counter (capable of full quadrature decoding)
+`ESP8266 Arduino Library <https://github.com/esp8266/Arduino/>`_
 
-    Motor PWM
-
-    LED PWM (up to 16 channels)
-
-    Ultra low power analog pre-amplifier
-
-**Security:**
-    IEEE 802.11 standard security features all supported, including WPA, WPA2, WPA3 (depending on version)[5] and WLAN Authentication and Privacy Infrastructure (WAPI)
-
-    Secure boot
-
-    Flash encryption
-
-    1024-bit OTP, up to 768-bit for customers
-
-    Cryptographic hardware acceleration: AES, SHA-2, RSA, elliptic curve cryptography (ECC), random number generator (RNG)
-
-**Power management:**
-
-    Internal low-dropout regulator
-
-    Individual power domain for RTC
-
-    5 μA deep sleep current
-
-    Wake up from GPIO interrupt, timer, ADC measurements, capacitive touch sensor interrupt
+The ESP8266, with its excellent performance and low cost, has become a crucial component in IoT development, providing wireless connectivity for various innovative applications.

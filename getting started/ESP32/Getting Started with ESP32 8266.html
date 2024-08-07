@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started with ESP8266 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2.2.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ACECode(Blockly Programming)/index.html">ACECode</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Getting Started with ESP8266</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="getting-started-with-esp8266">
+<h1>Getting Started with ESP8266<a class="headerlink" href="#getting-started-with-esp8266" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-esp8266">
+<h2>What is ESP8266<a class="headerlink" href="#what-is-esp8266" title="Permalink to this headline">¶</a></h2>
+<p>The ESP8266 is a highly integrated wireless communication chip designed and manufactured by Espressif Systems.
+Known for its low cost, high performance, and extensive application scenarios, it has gained widespread popularity among developers, especially in the field of the Internet of Things (IoT). Below is a detailed introduction to the ESP8266.</p>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<p><strong>Wireless connectivity</strong></p>
+<p>Wi-Fi Standards: Supports IEEE 802.11 b/g/n protocols, allowing it to connect to Wi-Fi networks and operate in Access Point (AP) or Station (STA) modes.</p>
+<p>Frequency Band: Operates in the 2.4GHz band.</p>
+<p>Security Protocols: Supports WPA/WPA2 security protocols to ensure secure wireless communication.</p>
+<p><strong>Processing Capabilities</strong></p>
+<p>CPU: Integrated 32-bit RISC processor (Tensilica L106) with a clock speed up to 160 MHz.</p>
+<p>RAM: Comes with 50 KB of usable RAM for program execution and data storage.</p>
+<p>Flash Memory: External flash memory configurable (usually between 512 KB to 4 MB) for storing firmware and user programs.</p>
+<p><strong>Interfaces and Peripherals</strong></p>
+<p>GPIO: Offers 17 GPIO pins for connecting sensors, LEDs, relays, and other external devices.</p>
+<p>UART, I2C, SPI: Supports multiple communication protocols for interfacing with other microcontrollers and sensors.</p>
+<p>ADC: Provides a 10-bit ADC input for analog signal acquisition.</p>
+<p>ADC: Provides a 10-bit ADC input for analog signal acquisition.</p>
+<p><strong>Low Power Consumption</strong></p>
+<p>Includes various low-power modes, including deep sleep mode, making it ideal for energy-sensitive IoT devices.</p>
+</div>
+<div class="section" id="application-scenarios">
+<h2>Application Scenarios<a class="headerlink" href="#application-scenarios" title="Permalink to this headline">¶</a></h2>
+<p>Due to its powerful features and affordability, the ESP8266 is widely used in various fields:</p>
+<p>Smart Home: Such as smart plugs, smart lighting, and temperature and humidity sensors.</p>
+<p>Industrial Automation: For data acquisition and wireless control.</p>
+<p>Health Monitoring: Connects with bio-sensors for real-time health data monitoring.</p>
+<p>Environmental Monitoring: Remote monitoring of environmental parameters like air quality and soil moisture.</p>
+<p>Wearable Devices: Communicates with smartphones or other devices to provide real-time data updates.</p>
+</div>
+<div class="section" id="development-environment-and-programming">
+<h2>Development Environment and Programming<a class="headerlink" href="#development-environment-and-programming" title="Permalink to this headline">¶</a></h2>
+<p>ESP8266 supports multiple development environments, commonly including:</p>
+<p>1.Arduino IDE: By installing the ESP8266 board support package, you can develop using the Arduino IDE, which is suitable for beginners and rapid prototyping.</p>
+<p>2.PlatformIO: An integrated development environment that supports multiple microcontroller platforms, ideal for professional developers.</p>
+<p>3.NodeMCU: A firmware based on the Lua scripting language, allowing direct execution of Lua code on the chip, suitable for scenarios requiring rapid script-based development.</p>
+<p>4.MicroPython: Supports running Python scripts on ESP8266, perfect for developers who prefer the Python language.</p>
+</div>
+<div class="section" id="comparison-with-other-chips">
+<h2>Comparison with Other Chips<a class="headerlink" href="#comparison-with-other-chips" title="Permalink to this headline">¶</a></h2>
+<p>Compared to its successor, the ESP32, the ESP8266 is simpler and cheaper but lacks Bluetooth capabilities and dual-core processing. For most projects requiring basic Wi-Fi functionality, the ESP8266 is an economical and practical choice.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.espressif.com.cn/">Espressif Official Website</a></p>
+<p><a class="reference external" href="https://www.esp8266.com/">ESP8266 Community Forum</a></p>
+<p><a class="reference external" href="https://github.com/esp8266/Arduino/">ESP8266 Arduino Library</a></p>
+<p>The ESP8266, with its excellent performance and low cost, has become a crucial component in IoT development, providing wireless connectivity for various innovative applications.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+QB095 Traffic Light Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Traffic Light Module-1.png
+    :align: center
+
+
+The traffic light module integrates three different color LEDs: red, yellow, and green. 
+It has four pins, one of which is a common pin, and the other three pins control the operation of three different color LEDs. The common GND is connected to the GND port of the development board, and the R, Y, and G pins are connected to different I/O ports of the development board. When each R, Y, and G pin inputs a high level, the corresponding color LED will light up.
+
+Application reference:Traffic lights, indicators, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -40°C~+70°C           |
++-----------------------+-----------------------+
+| communication method  | Digital signal        |
++-----------------------+-----------------------+
+| Size                  | 4.8cm*2.4cm           |
++-----------------------+-----------------------+
+
+.. figure:: /../images/Traffic Light Module-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Traffic Light Module-3.png
+    :align: center
++-----------------------+-----------------------+
+|Traffic Light Module   | UNO                   |
++=======================+=======================+
+| G                     | 0                     |
++-----------------------+-----------------------+
+| Y                     | 2                     |
++-----------------------+-----------------------+
+| R                     | 14                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Traffic_Light/Traffic_Light.ino
+    :linenos:
+
+**5.Test Result**
+
+When you have successfully connected the circuits according to the wiring diagram and successfully uploaded the correct program, your traffic light will be green for 2 seconds, yellow for 1 second, and red for 3 seconds.
+.. figure:: /../images/Traffic Light Module-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/3zxnhfrl6qtufrvxtjmjg/ACgd-DwMMKKDz3yP_cFW3vM?rlkey=5yxpxw5tegkj5z9u5ljayiww2&st=gpecw1x6&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/3zxnhfrl6qtufrvxtjmjg/ACgd-DwMMKKDz3yP_cFW3vM?rlkey=5yxpxw5tegkj5z9u5ljayiww2&st=gpecw1x6&dl=0>`_
+

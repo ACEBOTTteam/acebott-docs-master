@@ -9,7 +9,7 @@ QB098 4x4 Touch Keyboard Module
 
 The 4×4 touch keyboard module is an input device used to input data into a computer or other electronic device. Each key of this keyboard is a capacitive touch design, with a layout of four rows and four columns, and each key represents a specific character. When a finger touches a key, it causes a corresponding change in the capacitance of the touch key. Once the detection circuit connected to the key detects this capacitance change, it outputs information that the corresponding key has been pressed.
 
-Application reference:Password doors, calculators, ATM machines, mobile phones, etc.
+Application reference: password doors, calculators, ATM machines, mobile phones, etc.
 
 **2.Parameter Specification**
 
@@ -30,6 +30,11 @@ Application reference:Password doors, calculators, ATM machines, mobile phones, 
     :align: center
 
 **3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
 
 .. figure:: /../images/4x4-3.png
     :align: center

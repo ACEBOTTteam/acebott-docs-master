@@ -84,6 +84,11 @@ The following uses the ESP32 controller board as an example to demonstrate how t
 .. figure:: /../images/ACECode-11.png
     :align: center
 
+.. container:: custom-hint
+.. Hint:: 
+
+   USB power supply may be insufficient, external power supply is required, please connect ESP32 with sufficient power supply and turn on the power switch.
+
 **Step 2: Online Mode**
 
 1.Write the following code in online mode to make the built-in LED light on ESP32 flash.
@@ -91,7 +96,9 @@ The following uses the ESP32 controller board as an example to demonstrate how t
 .. container:: custom-hint
 .. Hint:: 
 
-   The LED light is integrated on the ESP32 controller board and connected to I/O port 2. The effect of this instruction can make the LED light flash for 1 second on and 1 second off.
+   1.The LED light is integrated on the ESP32 controller board and connected to I/O port 
+   
+   2.The effect of this instruction can make the LED light flash for 1 second on and 1 second off.
 
 .. figure:: /../images/ACECode-12.png
     :align: center
@@ -107,12 +114,6 @@ The following uses the ESP32 controller board as an example to demonstrate how t
 
 .. figure:: /../images/ACECode-14.png
     :align: center
-
-.. container:: custom-hint
-.. Hint:: 
-
-   The "Start the Program" command is in the "Event" module.
-
 
 2.At this point, you can see that in ACECode's "Upload Mode", the corresponding C language code and Python code will be generated synchronously to meet the different needs of users.
 

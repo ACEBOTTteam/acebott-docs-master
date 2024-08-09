@@ -31,8 +31,8 @@ Thank you for choosing ACEBOTT! We hope that the information provided here will 
    :maxdepth: 2
    :caption: Controller Board
 
-   board/Arduino/index.rst
    board/ESP32/index.rst
+   board/Arduino/index.rst
    board/Microbit/index.rst
 
 ---------

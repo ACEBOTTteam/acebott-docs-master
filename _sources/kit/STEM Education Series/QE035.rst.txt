@@ -1,38 +1,89 @@
 QE035 IOT  Smart Home Display Kit (Easy-Plug) -Year 1 
 ====================
 
-1.Smart Home Education Kit Introduction
+1.Education Series Introduction
 ------
 
-The Smart Home display kit is the first theme in the series of educational solutions. 
+The STEM Education series has 3 themes, 6 academic years of advanced teaching system, designed to give students continuity and direction of learning.
+
+The product is combined with the wood board, 3-5 big works per semester, and the works can be presented in the map scene.
+
+.. figure:: /../images/QE021-QE022-1.png
+    :align: center
+
+
+2.Smart Home display Kit Introduction
+------
+
+The Smart Home display kit is the first theme in the series of educational solutions. It supports both semesters of study in the first academic year.
 
 Different from QE023 and QE024, it can build 8 items on the map at the same time to show learning results, and it is equipped with a display map.
 
 .. figure:: /../images/QE035-1.png
     :align: center
 
-2.The Value of Kit
+3.The Value of Kit
 ------
 
-1.Smart Home Theme
+1.Structural Construction
 
-2.Achievement Exhibition
+2.Programming Learning
+
+3.Interdisciplinary Knowledge
+
+4.Bluetooth/WiFi Control
+
+5.APP Development
+
+6.Smart Home Theme
+
+7.Suitable for Classroom/School Teaching
+
+8.Achievement Exhibition
+
 
 .. figure:: /../images/QE035-2.png
     :align: center
 
-3.Part List
+4.Product Features
+------
+
+.. figure:: /../images/QE021-QE022-3.png
+    :align: center
+
+5.Controller Board Introduction
+------
+
+.. figure:: /../images/QE023-QE024-5.png
+    :align: center
+
+6.Multi-Platform Support
+------
+
+.. figure:: /../images/QE023-QE024-6.png
+    :align: center
+
+7.Course Description
+------
+
+.. figure:: /../images/QE021-QE022-4.png
+    :align: center
+
+.. figure:: /../images/QE021-QE022-5.png
+    :align: center
+
+8.Part List
 ------
 
 .. figure:: /../images/QE035-3.png
     :align: center
 
-4.Related Resources
+9.Related Resources
 ------
 
  `QE035 Tutorial <https://www.dropbox.com/scl/fo/cb904jh3b38oyh8o2w3zu/AJTZvLaMCRsw_PB3KBId15E?rlkey=thtreo05rik2ma06037caie8o&st=ad61t3zh&dl=0>`_
  
-5.Get One Now
+10.Get One Now
 ------
 
     B2B Business: info@acebott.com

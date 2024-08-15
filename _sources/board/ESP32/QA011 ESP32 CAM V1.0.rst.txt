@@ -106,6 +106,9 @@ Connect the board to the computer using a Type-C data cable: Select "ESP32" -> "
 
 After uploading the program, the imaging effect will be displayed on the web end. First of all, the terminal device needs to be connected to the WiFi issued by the camera module.
 
+.. image:: /../images/QA011-7.jpg
+    :align: center
+
 .. container:: custom-hint
 .. Hint:: 
 

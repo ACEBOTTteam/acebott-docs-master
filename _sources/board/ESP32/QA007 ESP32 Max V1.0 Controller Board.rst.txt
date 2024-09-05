@@ -64,6 +64,8 @@ Here is an explanation of what every element and interface of the board does:
 6.Specialized Functions of Some Pins
 ------------
 
+`ESP32-Wroom-32E Datesheet <https://www.dropbox.com/scl/fo/xpi87pgxl4w03wr9iuuc1/APOgDiBelV-p23V7gv63-SA?rlkey=z9nuz5otqj1qejhfbe7xtythe&st=q69y29a6&dl=0>`_
+
 **Input-only pins**
 
 GPIO34 to 39 are input-only pins. These pins have no internal pull-up or pull-down resistors. They can't be used as output, so you can only use these pins as input:

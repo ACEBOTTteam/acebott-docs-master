@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ucryptolib – 加密密码 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>ucryptolib – 加密密码 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">ucryptolib</span></code> – 加密密码</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ucryptolib</span></code> – 加密密码</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,48 +95,45 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-ucryptolib">
-<span id="ucryptolib"></span><h1><a class="reference internal" href="#module-ucryptolib" title="ucryptolib: 加密密码"><code class="xref py py-mod docutils literal"><span class="pre">ucryptolib</span></code></a> – 加密密码<a class="headerlink" href="#module-ucryptolib" title="Permalink to this headline">¶</a></h1>
+<span id="ucryptolib"></span><h1><a class="reference internal" href="#module-ucryptolib" title="ucryptolib: 加密密码"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ucryptolib</span></code></a> – 加密密码<a class="headerlink" href="#module-ucryptolib" title="Permalink to this heading"></a></h1>
 <div class="section" id="id1">
-<h2>类<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="ucryptolib.aes">
-<em class="property">class </em><code class="descclassname">ucryptolib.</code><code class="descname">aes</code><a class="headerlink" href="#ucryptolib.aes" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="classmethod">
-<dt id="ucryptolib.aes.__init__">
-<em class="property">classmethod </em><code class="descname">__init__</code><span class="sig-paren">(</span><em>key</em>, <em>mode</em><span class="optional">[</span>, <em>IV</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ucryptolib.aes.__init__" title="Permalink to this definition">¶</a></dt>
+<h2>类<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ucryptolib.aes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ucryptolib.</span></span><span class="sig-name descname"><span class="pre">aes</span></span><a class="headerlink" href="#ucryptolib.aes" title="Permalink to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="ucryptolib.aes.__init__">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">IV</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ucryptolib.aes.__init__" title="Permalink to this definition"></a></dt>
 <dd><p>初始化密码对象，适用于加密/解密。注意：初始化后，密码对象只能用于加密或解密。不支持在encrypt()之后运行decrypt()操作，反之亦然。</p>
 <p>参数:</p>
 <blockquote>
 <div><ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">key</span></code> 加密/解密密钥（类似字节）</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">mode</span></code> :</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code> 加密/解密密钥（类似字节）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code> :</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">1</span></code> (或 <code class="docutils literal"><span class="pre">ucryptolib.MODE_ECB</span></code> 如果存在）电子代码簿(ECB)</li>
-<li><code class="docutils literal"><span class="pre">2</span></code> (ucryptolib.MODE_CBC如果存在）密码块链接(CBC)</li>
-<li><code class="docutils literal"><span class="pre">6</span></code> (或ucryptolib.MODE_CTR如果存在)用于计数器模式(CTR)</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1</span></code> (或 <code class="docutils literal notranslate"><span class="pre">ucryptolib.MODE_ECB</span></code> 如果存在）电子代码簿(ECB)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2</span></code> (ucryptolib.MODE_CBC如果存在）密码块链接(CBC)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">6</span></code> (或ucryptolib.MODE_CTR如果存在)用于计数器模式(CTR)</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">IV</span></code> CBC模式的初始化矢量</p>
-</li>
-<li><p class="first">对于计数器模式，IV是计数器的初始值</p>
-</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IV</span></code> CBC模式的初始化矢量</p></li>
+<li><p>对于计数器模式，IV是计数器的初始值</p></li>
 </ul>
 </div></blockquote>
 </dd></dl>
 
-<dl class="method">
-<dt id="ucryptolib.aes.encrypt">
-<code class="descname">encrypt</code><span class="sig-paren">(</span><em>in_buf</em><span class="optional">[</span>, <em>out_buf</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ucryptolib.aes.encrypt" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="ucryptolib.aes.encrypt">
+<span class="sig-name descname"><span class="pre">encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_buf</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">out_buf</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ucryptolib.aes.encrypt" title="Permalink to this definition"></a></dt>
 <dd><p>加密in_buf。如果没有给出out_buf，则返回结果作为新分配的bytes对象。
 否则，结果被写入可变缓冲区out_buf。in_buf和out_buf也可以引用相同的可变缓冲区，在这种情况下，数据就地加密。</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="ucryptolib.aes.decrypt">
-<code class="descname">decrypt</code><span class="sig-paren">(</span><em>in_buf</em><span class="optional">[</span>, <em>out_buf</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ucryptolib.aes.decrypt" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="ucryptolib.aes.decrypt">
+<span class="sig-name descname"><span class="pre">decrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_buf</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">out_buf</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ucryptolib.aes.decrypt" title="Permalink to this definition"></a></dt>
 <dd><p>类似 <cite>encrypt()</cite> ，但是用于解密。</p>
 </dd></dl>
 

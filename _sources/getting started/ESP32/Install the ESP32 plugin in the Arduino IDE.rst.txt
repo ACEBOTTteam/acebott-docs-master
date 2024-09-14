@@ -1,0 +1,55 @@
+Install the ESP32 plugin in the Arduino IDE
+======================================
+
+When you open the Arduino IDE, select Tools > Board, you will find that the Arduino IDE only has Arduino AVR Boards and no esp32.
+
+.. figure:: /../images/install_the_esp32_plugin-1.png
+    :align: center
+
+So we need to install the ESP32 board in the Arduino IDE. Follow these steps:
+
+**1.Open File >Preferences**
+
+.. figure:: /../images/install_the_esp32_plugin-2.png
+    :align: center
+
+**2.Add the development board management address URL.**
+
+.. figure:: /../images/install_the_esp32_plugin-3.png
+    :align: center
+
+**3.Copy the URL in the lower box and add it to the "Additional Boards Manager URLs".**
+
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+https://www.arduino.me/package_esp32_index.json
+
+.. figure:: /../images/install_the_esp32_plugin-4.png
+    :align: center
+
+**4. After adding the URL, click "OK".**
+
+.. figure:: /../images/install_the_esp32_plugin-5.png
+    :align: center
+
+.. figure:: /../images/install_the_esp32_plugin-6.png
+    :align: center
+
+**5.Click Tools > Board > Boards Manager.**
+
+.. figure:: /../images/install_the_esp32_plugin-7.png
+    :align: center
+
+**6.Search for "ESP32" in the BOARDS MANAGER's search bar and install it.**
+
+.. figure:: /../images/install_the_esp32_plugin-8.png
+    :align: center
+
+**7.If the following screen appears, please wait until the installation is complete then turn off the Arduino IDE.**
+
+.. figure:: /../images/install_the_esp32_plugin-9.png
+    :align: center
+
+**8.Open the Arduino IDE again and select Tools > Board. You will see the esp32 board appear.**
+
+.. figure:: /../images/install_the_esp32_plugin-10.png
+    :align: center

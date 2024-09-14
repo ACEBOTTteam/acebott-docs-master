@@ -1,0 +1,76 @@
+QB038 Button Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Button-1.jpeg
+    :align: center
+    :width: 300
+    :height: 300
+
+Button module is a common electronic component used to achieve key operation in electronic devices.
+
+The Button module is composed of two electrodes and a spring-type button, which is located between the two electrodes. When the button is not pressed, the two electrodes of the button are disconnected, and the circuit is in the disconnected state; When the key is pressed, the two electrodes touch to form a closed circuit.
+
+Application reference: keyboard, control switch, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -10°C~+50°C           |
++-----------------------+-----------------------+
+| Output signal         | Digital signal        |
++-----------------------+-----------------------+
+| Size                  | 3.16cm*2.38cm         |
++-----------------------+-----------------------+
+
+.. figure:: /../images/Button-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+    
+**3.Wiring Diagram**
+
+.. figure:: /../images/Button-2.png
+    :align: center
++-----------------------+-----------------------+
+|PIR Motion Sensor      | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Button_Module/Button_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to scroll mode.
+
+When we press the key, the serial port returns data 0; When the key is released, the serial port returns data 1.
+
+.. figure:: /../images/Button-3.png
+    :align: center
+
+.. figure:: /../images/Button-4.jpeg
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/udw6j60umcnkmo3devj13/h?rlkey=nlsgnrcjk65km3216l30l4gyt&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    `Official Website <https://www.acebott.com/products/acebott-qb038-push-button-module?_pos=1&_psq=QB038&_ss=e&_v=1.0>`_

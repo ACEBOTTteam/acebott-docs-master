@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dht — dht模块 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>dht — dht模块 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">dht</span></code> — dht模块</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dht</span></code> — dht模块</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,32 +95,32 @@
            <div itemprop="articleBody">
              
   <div class="section" id="dht-dht">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">dht</span></code> — dht模块<a class="headerlink" href="#dht-dht" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">dht</span></code> — dht模块<a class="headerlink" href="#dht-dht" title="Permalink to this heading"></a></h1>
 <p>dht模块中提供了dht系列温湿度传感器读取相关的函数。</p>
 <div class="section" id="dht22">
-<h2>类 DHT22<a class="headerlink" href="#dht22" title="Permalink to this headline">¶</a></h2>
+<h2>类 DHT22<a class="headerlink" href="#dht22" title="Permalink to this heading"></a></h2>
 <div class="section" id="id1">
-<h3>构建对象<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<dl class="class">
-<dt id="DHT22">
-<em class="property">class </em><code class="descname">DHT22</code><span class="sig-paren">(</span><em>pin</em><span class="sig-paren">)</span><a class="headerlink" href="#DHT22" title="Permalink to this definition">¶</a></dt>
+<h3>构建对象<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="DHT22">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DHT22</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DHT22" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>创建一个与引脚pin相连的DHT22传感器对象。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">pin</span></code>:引脚</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>:引脚</p></li>
 </ul>
 <div class="attention admonition">
-<p class="first admonition-title">支持引脚</p>
-<ul class="last simple">
-<li>ESP32:GPIO0/2/4/5/16/17/18/19/21/22/23/25/26/27</li>
-<li>掌控板: P0/1/8/9/13/14/15/16</li>
+<p class="admonition-title">支持引脚</p>
+<ul class="simple">
+<li><p>ESP32:GPIO0/2/4/5/16/17/18/19/21/22/23/25/26/27</p></li>
+<li><p>掌控板: P0/1/8/9/13/14/15/16</p></li>
 </ul>
 </div>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">Pin</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
 <span class="kn">import</span> <span class="nn">dht</span>
 
 <span class="n">d</span> <span class="o">=</span> <span class="n">dht</span><span class="o">.</span><span class="n">DHT22</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P0</span><span class="p">))</span>
@@ -132,33 +128,33 @@
 </div>
 </div>
 <div class="section" id="id2">
-<h3>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<dl class="method">
-<dt id="DHT22.humidity">
-<code class="descclassname">DHT22.</code><code class="descname">humidity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DHT22.humidity" title="Permalink to this definition">¶</a></dt>
+<h3>方法<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="DHT22.humidity">
+<span class="sig-prename descclassname"><span class="pre">DHT22.</span></span><span class="sig-name descname"><span class="pre">humidity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DHT22.humidity" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>读取并返回传感器的湿度值。</p>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">humidity</span><span class="p">())</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="DHT22.temperature">
-<code class="descclassname">DHT22.</code><code class="descname">temperature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DHT22.temperature" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="DHT22.temperature">
+<span class="sig-prename descclassname"><span class="pre">DHT22.</span></span><span class="sig-name descname"><span class="pre">temperature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DHT22.temperature" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>读取并返回传感器的温度值。</p>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">temperature</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="dht11">
-<h2>类 DHT11<a class="headerlink" href="#dht11" title="Permalink to this headline">¶</a></h2>
+<h2>类 DHT11<a class="headerlink" href="#dht11" title="Permalink to this heading"></a></h2>
 <p>与DHT22()函数类似，不再赘述。</p>
 </div>
 </div>

@@ -1,0 +1,74 @@
+QB098 4x4 Touch Keyboard Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/4x4-1.png
+    :align: center
+
+
+The 4×4 touch keyboard module is an input device used to input data into a computer or other electronic device. Each key of this keyboard is a capacitive touch design, with a layout of four rows and four columns, and each key represents a specific character. When a finger touches a key, it causes a corresponding change in the capacitance of the touch key. Once the detection circuit connected to the key detects this capacitance change, it outputs information that the corresponding key has been pressed.
+
+Application reference: password doors, calculators, ATM machines, mobile phones, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -40°C~+85°C           |
++-----------------------+-----------------------+
+| Communication method  | I2C                   |
++-----------------------+-----------------------+
+| Size                  | 5.6cm*7.8cm           |
++-----------------------+-----------------------+
+
+
+.. figure:: /../images/4x4-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/4x4-3.png
+    :align: center
++-----------------------+-----------------------+
+|4×4Touch Keyboard      | ESP32                 |
++=======================+=======================+
+| SCL                   | SCL                   |
++-----------------------+-----------------------+
+| SDA                   | SDA                   |
++-----------------------+-----------------------+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Touch_Keyboard/Touch_Keyboard.ino
+    :linenos:
+
+**5.Test Result**
+
+After you have successfully connected the circuit according to the wiring diagram and successfully uploaded the correct program, when you touch and press a key, the serial port monitor will print the corresponding key value.
+
+.. figure:: /../images/4x4-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/5bsval4pl1g5bzxweoq5x/AEh69AgUPA5ITySd1cgqTVc?rlkey=x20a3q6yorb1ughvsmyaky7bt&st=pl79114p&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/5bsval4pl1g5bzxweoq5x/AEh69AgUPA5ITySd1cgqTVc?rlkey=x20a3q6yorb1ughvsmyaky7bt&st=pl79114p&dl=0>`_
+

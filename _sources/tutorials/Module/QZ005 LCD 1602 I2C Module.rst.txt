@@ -1,0 +1,85 @@
+QZ005 LCD 1602 I2C Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/LCD-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+LCD (Liquid Crystal Display) is a passive display, that is, the liquid crystal itself does not emit light, it needs a backlight to provide background brightness, 
+the use of electric fields to control the arrangement of liquid crystal molecules, so as to change the transmission of light and block, to achieve image display.
+
+LCD 1602 I2C Module As the name suggests, this module is a 16 character x2 line LCD display module (can display 32 ASCII characters), 
+and with an I2C communication interface module, the default I2C address 0x27, with a blue potentiometer on the back. 
+Can be used to adjust the backlight (when the character display is not clear, you need to adjust the backlight to make the character display clearly).
+
+Application reference: This module can be used for data display of control panel, electronic scale, electronic clock, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -0°C~+70°C            |
++-----------------------+-----------------------+
+| Number of lattice     | 16*02                 |
++-----------------------+-----------------------+
+| Display color         | Blue                  |
++-----------------------+-----------------------+
+| Communication mode    | IIC                   |
++-----------------------+-----------------------+
+| Size                  | 80cm*36cm*11cm        |
++-----------------------+-----------------------+
+
+.. figure:: /../images/LCD-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/LCD-2.png
+    :align: center
++-----------------------+-----------------------+
+|LCD 1602 I2C Module    | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| SCL                   | SCL                   |
++-----------------------+-----------------------+
+| SDA                   | SDA                   |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/LCD_1602_I2C_Module/LCD_1602_I2C_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program.
+
+Your lcd screen will light up with "HELLO" on the first line and "ACEBOTT" on the second line.
+
+.. figure:: /../images/LCD-3.png
+    :align: center
+
+.. Hint:: 
+
+    If the lcd screen cannot display characters normally, check whether the line is connected correctly and adjust the sliding rheostat behind to adjust the backlight.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/q2ex9cog6eofisbufd6sf/h?rlkey=shsofyricbbxh47rku6o0llua&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

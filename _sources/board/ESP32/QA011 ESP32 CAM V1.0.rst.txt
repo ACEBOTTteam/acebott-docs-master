@@ -1,0 +1,127 @@
+QA011 ESP32 CAM V1.0
+=======
+
+.. image:: /../images/QA011-1.png
+    :align: center
+
+**1.Introduction**
+
+ACEBOTT-ESP32-CAM-V1.0 is the most competitive small size camera module in the industry, which can work independently as the smallest system.
+
+ACEBOTT-ESP32-CAM-V1.0 can be widely used in various Internet of things applications, suitable for home smart devices, industrial wireless control, wireless monitoring, QR wireless identification, wireless positioning system signals and other Internet of things applications.
+
+ACEBOTT-ESP32-CAM-V1.0 adopts DIP package, which can be used directly when it is inserted into the bottom plate to realize the rapid production of products, provide customers with highly reliable connection, and facilitate the application in various Internet of Things hardware terminal occasions.
+
+**2.Features**
+
+Ultra-small volume 802.11b/g/n Wi-Fi SoC module
+
+The low-power dual-core 32-bit CPU can be used as an application processor
+
+The main frequency up to 240 MHz, computing power up to 600 DMIPS
+
+Built-in 520 KB SRAM, external 8MB PSRAM
+
+Support for UART / SPI / I2C / PWM / ADC / DAC interfaces
+
+Support for OV2640 and OV7670 cameras, with a built-in flash
+
+Support image WiFI upload
+
+Supports multiple dormancy modes
+
+Lwip and FreeRTOS
+
+Supports the STA / AP / STA + AP working mode
+
+Support Smart Config / AirKiss one-click distribution network
+
+**3.Specifications**
+
++-----------------------+----------------------------------------------------------------------------+
+| Parameters            | Value/Description                                                          |
++=======================+============================================================================+
+| Size                  | 27.1x47.1(mm)                                                              |
++-----------------------+----------------------------------------------------------------------------+
+| Encapsulation         | DIP-20                                                                     |
++-----------------------+----------------------------------------------------------------------------+
+| Power supply          | Type-c                                                                     |
++-----------------------+----------------------------------------------------------------------------+
+| Support interface     | UART/SPI/I2C/PWM                                                           |
++-----------------------+----------------------------------------------------------------------------+
+| Number of IO ports    | 10                                                                         |
++-----------------------+----------------------------------------------------------------------------+
+| Serial port baud rate | Support 110 ~ 4608000 bps, Default 115200 bps                              |
++-----------------------+----------------------------------------------------------------------------+
+| SPI Flash             | Default 32Mbit                                                             |                      
++-----------------------+----------------------------------------------------------------------------+
+| Image output format   | JPEG (supported by OV2640 only), BMP, GRAYSCALE                            |                      
++-----------------------+----------------------------------------------------------------------------+
+| Spectrum range        | 2400~2483.5MHz                                                             |                      
++-----------------------+----------------------------------------------------------------------------+
+| Antenna form          | External PCB antenna, gain 2 dBi                                           |                      
++-----------------------+----------------------------------------------------------------------------+
+| Power consumption     | Turn off the flash:180mA@5V                                                |                      
++                       +----------------------------------------------------------------------------+
+|                       | Turn on the flash light and adjust the brightness to the maximum:310mA@5V  |                      
++                       +----------------------------------------------------------------------------+
+|                       | Deep-sleep: The lowest power consumption can reach 6 mA@5V                 |                      
++                       +----------------------------------------------------------------------------+
+|                       | Moderm-sleep: The minimum level is 20 mA@5V                                |                      
++                       +----------------------------------------------------------------------------+
+|                       | Light-sleep: The minimum value can reach 6.7 mA@5V                         |                      
++-----------------------+----------------------------------------------------------------------------+
+| Security              | WEP/WPA-PSK/WPA2-PSK                                                       |                      
++-----------------------+----------------------------------------------------------------------------+
+| Power supply range    | 4.75-5.25V                                                                 |                      
++-----------------------+----------------------------------------------------------------------------+
+| Operating temperature | -20 °C ~ 70 °C                                                             |                      
++-----------------------+----------------------------------------------------------------------------+
+| Storage environment   | -40 °C ~ 1250 °C，<90%RH                                                   |                      
++-----------------------+----------------------------------------------------------------------------+
+
+
+
+.. image:: /../images/QA011-2.png
+    :align: center
+
+.. image:: /../images/QA011-3.png
+    :align: center
+
+**4.Sample Code**
+
+Connect the board to the computer using a Type-C data cable: Select "ESP32" -> "ESP32 Dev Module" from the Tools > Board menu. Choose the appropriate Port. And upload it to the board using the Upload button.
+
+（1）Wiring Diagram
+
+.. image:: /../images/QA011-4.png
+    :align: center
+
+（2）Sample Code
+
+.. literalinclude:: /../../examples/TEST_CAM/TEST_CAM.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the program, the imaging effect will be displayed on the web end. First of all, the terminal device needs to be connected to the WiFi issued by the camera module.
+
+.. image:: /../images/QA011-7.jpg
+    :align: center
+
+.. container:: custom-hint
+.. Hint:: 
+
+    The WiFi name and password in the program can be customized.
+
+.. image:: /../images/QA011-5.png
+    :align: center
+
+The IP address of the camera module in AP mode is: 192.168.4.1, and then enter the IP address in the address bar of the terminal browser to access the web page of the camera image. By moving the direction of the camera, you can see the live imaging effect of the camera module on the web page.
+
+.. image:: /../images/QA011-6.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/scae1ppc92nejmuwiacjs/AF6OiDu9mnn_59M0NRFeDUU?rlkey=qtkirna7or6uaamr79llg3d0r&st=i1z2gm1b&dl=0>`_

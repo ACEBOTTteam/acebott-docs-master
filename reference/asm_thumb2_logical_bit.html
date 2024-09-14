@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4. 逻辑&amp;位运算指令 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>4. 逻辑&amp;位运算指令 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">4. 逻辑&amp;位运算指令</li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>逻辑&amp;位运算指令</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,48 +95,48 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>4. 逻辑&amp;位运算指令<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>逻辑&amp;位运算指令<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
 <div class="section" id="id2">
-<h2>4.1. 文件规范<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>符号：除使用R0-R15的特殊指令的情况外， <code class="docutils literal"><span class="pre">Rd,</span> <span class="pre">Rn</span></code> 表示ARM寄存器R0-R7。 <code class="docutils literal"><span class="pre">Rn&lt;a-b&gt;</span></code> 表示内容介于 <code class="docutils literal"><span class="pre">a</span> <span class="pre">&lt;=</span> <span class="pre">contents</span> <span class="pre">&lt;=</span> <span class="pre">b</span></code> 范围的ARM寄存器。
-对于有两个寄存器参数的指令，允许二者相同。例如，无论初始内容如何，以下指令都将把R0归零（Python  <code class="docutils literal"><span class="pre">R0</span> <span class="pre">^=</span> <span class="pre">R0</span></code> ）。</p>
+<h2><span class="section-number">4.1. </span>文件规范<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p>符号：除使用R0-R15的特殊指令的情况外， <code class="docutils literal notranslate"><span class="pre">Rd,</span> <span class="pre">Rn</span></code> 表示ARM寄存器R0-R7。 <code class="docutils literal notranslate"><span class="pre">Rn&lt;a-b&gt;</span></code> 表示内容介于 <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;=</span> <span class="pre">contents</span> <span class="pre">&lt;=</span> <span class="pre">b</span></code> 范围的ARM寄存器。
+对于有两个寄存器参数的指令，允许二者相同。例如，无论初始内容如何，以下指令都将把R0归零（Python  <code class="docutils literal notranslate"><span class="pre">R0</span> <span class="pre">^=</span> <span class="pre">R0</span></code> ）。</p>
 <ul class="simple">
-<li>eor(r0, r0)</li>
+<li><p>eor(r0, r0)</p></li>
 </ul>
 <p>除特殊说明外，这些指令会影响条件标志。</p>
 </div>
 <div class="section" id="id3">
-<h2>4.2. 逻辑指令<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.2. </span>逻辑指令<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li>and_(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">&amp;=</span> <span class="pre">Rn</span></code></li>
-<li>orr(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">|=</span> <span class="pre">Rn</span></code></li>
-<li>eor(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">^=</span> <span class="pre">Rn</span></code></li>
-<li>mvn(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">Rn</span> <span class="pre">^</span> <span class="pre">0xffffffff</span></code> i.e.  Rd = Rn的1的补码</li>
-<li>bic(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">&amp;=</span> <span class="pre">~Rn</span></code>  bit 使用Rn中掩码清除Rd</li>
+<li><p>and_(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">&amp;=</span> <span class="pre">Rn</span></code></p></li>
+<li><p>orr(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">|=</span> <span class="pre">Rn</span></code></p></li>
+<li><p>eor(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">^=</span> <span class="pre">Rn</span></code></p></li>
+<li><p>mvn(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">Rn</span> <span class="pre">^</span> <span class="pre">0xffffffff</span></code> i.e.  Rd = Rn的1的补码</p></li>
+<li><p>bic(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">&amp;=</span> <span class="pre">~Rn</span></code>  bit 使用Rn中掩码清除Rd</p></li>
 </ul>
 <p>注意：使用”and_”而非”and”，因为”and”在Python中是保留关键字。</p>
 </div>
 <div class="section" id="id4">
-<h2>4.3. 转换和旋转指令<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.3. </span>转换和旋转指令<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li>lsl(Rd, Rn&lt;0-31&gt;) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">&lt;&lt;=</span> <span class="pre">Rn</span></code></li>
-<li>lsr(Rd, Rn&lt;1-32&gt;) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">(Rd</span> <span class="pre">&amp;</span> <span class="pre">0xffffffff)</span> <span class="pre">&gt;&gt;</span> <span class="pre">Rn</span></code> 逻辑右移</li>
-<li>asr(Rd, Rn&lt;1-32&gt;) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">&gt;&gt;=</span> <span class="pre">Rn</span></code> 算术右移</li>
-<li>ror(Rd, Rn&lt;1-31&gt;) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">rotate_right(Rd,</span> <span class="pre">Rn)</span></code> Rd右转Rn位。</li>
+<li><p>lsl(Rd, Rn&lt;0-31&gt;) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">&lt;&lt;=</span> <span class="pre">Rn</span></code></p></li>
+<li><p>lsr(Rd, Rn&lt;1-32&gt;) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">(Rd</span> <span class="pre">&amp;</span> <span class="pre">0xffffffff)</span> <span class="pre">&gt;&gt;</span> <span class="pre">Rn</span></code> 逻辑右移</p></li>
+<li><p>asr(Rd, Rn&lt;1-32&gt;) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">&gt;&gt;=</span> <span class="pre">Rn</span></code> 算术右移</p></li>
+<li><p>ror(Rd, Rn&lt;1-31&gt;) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">rotate_right(Rd,</span> <span class="pre">Rn)</span></code> Rd右转Rn位。</p></li>
 </ul>
-<p>三位旋转运行如下。若Rd初始就包含位 <code class="docutils literal"><span class="pre">b31</span> <span class="pre">b30..b0</span></code> ，则旋转后将包含 <code class="docutils literal"><span class="pre">b2</span> <span class="pre">b1</span> <span class="pre">b0</span> <span class="pre">b31</span> <span class="pre">b30..b3</span></code> 。</p>
+<p>三位旋转运行如下。若Rd初始就包含位 <code class="docutils literal notranslate"><span class="pre">b31</span> <span class="pre">b30..b0</span></code> ，则旋转后将包含 <code class="docutils literal notranslate"><span class="pre">b2</span> <span class="pre">b1</span> <span class="pre">b0</span> <span class="pre">b31</span> <span class="pre">b30..b3</span></code> 。</p>
 </div>
 <div class="section" id="id5">
-<h2>4.4. 特殊指令<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.4. </span>特殊指令<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p>条件代码不受这些指令的影响。</p>
 <ul class="simple">
-<li>clz(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">count_leading_zeros(Rn)</span></code></li>
+<li><p>clz(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">count_leading_zeros(Rn)</span></code></p></li>
 </ul>
 <p>count_leading_zeros(Rn) 返回Rn中第一个二进制位之前的二进制零位数。</p>
 <ul class="simple">
-<li>rbit(Rd, Rn) <code class="docutils literal"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">bit_reverse(Rn)</span></code></li>
+<li><p>rbit(Rd, Rn) <code class="docutils literal notranslate"><span class="pre">Rd</span> <span class="pre">=</span> <span class="pre">bit_reverse(Rn)</span></code></p></li>
 </ul>
-<p>bit_reverse(Rn) 返回Rn的位反转内容。若Rn包含位 <code class="docutils literal"><span class="pre">b31</span> <span class="pre">b30..b0</span></code> ，则Rd将设置为 <code class="docutils literal"><span class="pre">b0</span> <span class="pre">b1</span> <span class="pre">b2..b31</span></code> 。</p>
+<p>bit_reverse(Rn) 返回Rn的位反转内容。若Rn包含位 <code class="docutils literal notranslate"><span class="pre">b31</span> <span class="pre">b30..b0</span></code> ，则Rd将设置为 <code class="docutils literal notranslate"><span class="pre">b0</span> <span class="pre">b1</span> <span class="pre">b2..b31</span></code> 。</p>
 <p>在执行clz之前，可通过执行一次位反转来计算尾部零点。</p>
 </div>
 </div>

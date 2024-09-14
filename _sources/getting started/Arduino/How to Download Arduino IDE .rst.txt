@@ -1,0 +1,42 @@
+How to Download Arduino IDE 
+======================================
+
+Download Arduino Environment
+------
+
+You can directly download the latest version from this link: http://arduino.cc/en/Main/Software.
+When the download is finished, unzip the downloaded file. Be sure to preserve the folder structure. 
+Double-click the folder to open it. There should be several files and sub-folders inside.
+
+The Arduino Software (IDE) allows you to write programs and upload them to your board. In the Arduino Software page you will find two options:
+
+1. If you have a reliable Internet connection, you should use the  `online IDE <https://login.arduino.cc/login?state=hKFo2SB0UkdUb0ttTGFIeUtCS0V5X3VvT2NPZVU1NFlqaGVtbqFupWxvZ2luo3RpZNkgYnZUd2lOV20xTWNWT29xRVVEdGFabEpoWW91SGt0WkWjY2lk2SBycjZMU09TejU3aDdmdnNIZFJYWFBrWkczRVJvWFRmWg&client=rr6LSOSz57h7fvsHdRXXPkZG3ERoXTfZ&protocol=oauth2&authorizeTimeoutInSeconds=5&redirect_uri=https%3A%2F%2Fcreate.arduino.cc%2Feditor&logout_uri=https%3A%2F%2Fcreate.arduino.cc&audience=https%3A%2F%2Fapi.arduino.cc&scope=openid%20profile%20email&loginCoppa=login-selector&response_type=code&response_mode=query&nonce=TTYucE9BeGVLOGxXM1J0SVl1dmZJa0puLUgwd3FqdU5vYVJMR2ZMV1I1LQ%3D%3D&code_challenge=GOlRttkggm_AD2hbp2NvzEJ_Mim9xiDCYUg3yAv0NXA&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMTIuMSJ9#/sso/login>`_ (Arduino Web Editor). 
+It will allow you to save your sketches in the cloud, having them available from any device and backed up. You will always have the most up-to-date version of the IDE without the need to install updates or community generated libraries.
+
+2. If you would rather work offline, you should use the latest version of the  `desktop IDE <https://www.arduino.cc/en/software#download>`_.
+
+
+Install the Arduino Desktop IDE
+------
+
+`Windows <https://docs.arduino.cc/software/ide-v1/tutorials/Windows>`_
+
+`Mac OS X <https://docs.arduino.cc/software/ide-v1/tutorials/macOS>`_
+
+`Linux <https://docs.arduino.cc/software/ide-v1/tutorials/Linux>`_
+
+`Portable IDE (Windows and Linux) <https://docs.arduino.cc/software/ide-v1/tutorials/PortableIDE>`_
+
+Choose your board in the list here on the right to learn how to get started with it and how to use it on the Desktop IDE.
+
+You can check all the Arduino software of old version from this link: https://www.arduino.cc/en/Main/OldSoftwareReleases#1.5.x
+
+
+Reference for Arduino Programming Language
+------
+
+Arduino programming language can be divided in three main parts: structure, values (variables and constants), and functions.
+
+You can see more details on the following link:
+
+https://www.arduino.cc/reference/en/

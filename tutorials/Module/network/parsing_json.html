@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>解析JSON &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <title>解析JSON &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../../index.html">
             
-              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,26 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ESP32/index.html">ESP32/ESP8266</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Microbit/index.html">Microbit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ACECode(Blockly Programming)/index.html">ACECode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Module</a></li>
@@ -102,15 +95,15 @@
            <div itemprop="articleBody">
              
   <div class="section" id="json">
-<h1>解析JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h1>
+<h1>解析JSON<a class="headerlink" href="#json" title="Permalink to this heading"></a></h1>
 <p>JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。采用完全独立于编程语言的文本格式来存储和表示数据，易于人阅读和编写，同时也易于机器解析和生成，所以在互联网应用非常广泛。</p>
-<p>在python中，json和dict非常类似，都是key-value的形式，而且json、dict也可以非常方便的通过 <code class="xref py py-mod docutils literal"><span class="pre">json</span></code> 模块互转。</p>
+<p>在python中，json和dict非常类似，都是key-value的形式，而且json、dict也可以非常方便的通过 <code class="xref py py-mod docutils literal notranslate"><span class="pre">json</span></code> 模块互转。</p>
 <ul class="simple">
-<li>json：是一种数据格式，是纯字符串，本质是一种文件组织方式，比如您熟悉的txt、csv、doc、docx、xls、xlsx文件等。</li>
-<li>dict：是一种数据结构，比如列表list、集合set、字符串str、数组array。</li>
+<li><p>json：是一种数据格式，是纯字符串，本质是一种文件组织方式，比如您熟悉的txt、csv、doc、docx、xls、xlsx文件等。</p></li>
+<li><p>dict：是一种数据结构，比如列表list、集合set、字符串str、数组array。</p></li>
 </ul>
 <div class="section" id="id1">
-<h2>网络获取解析JSON<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>网络获取解析JSON<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <p>http协议采用的是请求/响应模型，浏览器或客户端发出请求，服务器给与响应。</p>
 <p>例如，想从 <a class="reference external" href="http://ip-api.com/json/">http://ip-api.com/json/</a> 这个开放的接口中获取IP地址等信息，我们将地址直接在浏览器输入，可以看到：</p>
 <a class="reference internal image-reference" href="../images/tutorials/httpjson.png"><img alt="../images/tutorials/httpjson.png" class="align-center" src="../images/tutorials/httpjson.png" /></a>
@@ -118,13 +111,13 @@
 <a class="reference internal image-reference" href="../images/tutorials/json.jpg"><img alt="../images/tutorials/json.jpg" class="align-center" src="../images/tutorials/json.jpg" /></a>
 <p>我们在REPL交互式的编程环境下逐步解析，能更加直观地查看结果。</p>
 <p>使用前，导入mpython、json、urequests模块:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span><span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span><span class="o">*</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">urequests</span>
 </pre></div>
 </div>
 <p>连接您的 WiFi 网络，需要设置您的WiFi名称和密码:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mywifi</span><span class="o">=</span><span class="n">wifi</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mywifi</span><span class="o">=</span><span class="n">wifi</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mywifi</span><span class="o">.</span><span class="n">connectWiFi</span><span class="p">(</span><span class="s1">&#39;yourESSID&#39;</span><span class="p">,</span> <span class="s1">&#39;yourpassword&#39;</span><span class="p">)</span>
 <span class="go">Connecting to network...</span>
 <span class="go">Connecting to network...</span>
@@ -133,32 +126,32 @@
 </pre></div>
 </div>
 <p>添加请求地址，发送get请求，获取网页第三方接口返回的数据:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url_ip</span> <span class="o">=</span><span class="s2">&quot;http://ip-api.com/json/&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url_ip</span> <span class="o">=</span><span class="s2">&quot;http://ip-api.com/json/&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rsp</span><span class="o">=</span><span class="n">urequests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url_ip</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>获取的数据返回为json数据文本格式，打印输出，我们可以看到返回的数据:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipJson</span><span class="o">=</span><span class="n">rsp</span><span class="o">.</span><span class="n">text</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipJson</span><span class="o">=</span><span class="n">rsp</span><span class="o">.</span><span class="n">text</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">jpJson</span><span class="p">)</span>
 <span class="go">{&quot;as&quot;:&quot;AS56040 China Mobile Communications Corporation&quot;,&quot;city&quot;:&quot;Guangzhou&quot;,&quot;country&quot;:&quot;China&quot;,&quot;countryCode&quot;:&quot;CN&quot;,&quot;isp&quot;:&quot;China Mobile communications corporation&quot;,&quot;lat&quot;:23.1292,&quot;lon&quot;:113.264,&quot;org&quot;:&quot;China Mobile&quot;,&quot;query&quot;:&quot;120.234.223.173&quot;,&quot;region&quot;:&quot;GD&quot;,&quot;regionName&quot;:&quot;Guangdong&quot;,&quot;status&quot;:&quot;success&quot;,&quot;timezone&quot;:&quot;Asia/Shanghai&quot;,&quot;zip&quot;:&quot;&quot;}</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">rsp.text 返回为json数据文本格式。</p>
+<p class="admonition-title">Note</p>
+<p>rsp.text 返回为json数据文本格式。</p>
 </div>
 <p>将获取的数据转换为dict字典类型，打印输出，我们可以看到返回的数据:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">ipJson</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">ipJson</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ipDict</span><span class="p">)</span>
 <span class="go">{&#39;countryCode&#39;: &#39;CN&#39;, &#39;lon&#39;: 113.264, &#39;regionName&#39;: &#39;Guangdong&#39;, &#39;query&#39;: &#39;120.234.223.173&#39;, &#39;city&#39;: &#39;Guangzhou&#39;, &#39;status&#39;: &#39;success&#39;, &#39;org&#39;: &#39;China Mobile&#39;, &#39;timezone&#39;: &#39;Asia/Shanghai&#39;, &#39;region&#39;: &#39;GD&#39;, &#39;lat&#39;: 23.1292, &#39;isp&#39;: &#39;China Mobile communications corporation&#39;, &#39;as&#39;: &#39;AS56040 China Mobile Communications Corporation&#39;, &#39;zip&#39;: &#39;&#39;, &#39;country&#39;: &#39;China&#39;}</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">json.loads(str) 解析 JSON 字符串并返回对象。</p>
+<p class="admonition-title">Note</p>
+<p>json.loads(str) 解析 JSON 字符串并返回对象。</p>
 </div>
 <p>我们可以在dict字典中键入关键字（key），获取对应的信息值（value），比如城市、IP地址:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span>
 <span class="go">&#39;Guangzhou&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">]</span>
 <span class="go">&#39;120.234.223.173&#39;</span>

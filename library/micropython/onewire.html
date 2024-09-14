@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>onewire — 单总线 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>onewire — 单总线 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">onewire</span></code> — 单总线</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">onewire</span></code> — 单总线</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,57 +95,57 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-onewire">
-<span id="onewire"></span><h1><a class="reference internal" href="#module-onewire" title="onewire: 单总线"><code class="xref py py-mod docutils literal"><span class="pre">onewire</span></code></a> — 单总线<a class="headerlink" href="#module-onewire" title="Permalink to this headline">¶</a></h1>
+<span id="onewire"></span><h1><a class="reference internal" href="#module-onewire" title="onewire: 单总线"><code class="xref py py-mod docutils literal notranslate"><span class="pre">onewire</span></code></a> — 单总线<a class="headerlink" href="#module-onewire" title="Permalink to this heading"></a></h1>
 <p>单总线即one-wire总线，是美国DALLAS公司推出的外围串行扩展总线技术。
 与SPI、I²C串行数据通信方式不同。它采用单根信号线，既传输时钟又传输数据，而且数据传输是双向的，具有节省I/O口线、资源结构简单、成本低廉、便于总线扩展和维护等诸多优点。</p>
 <p>单总线适用于单主机系统，能够控制一个或多个从机设备。主机可以是微控制器，从机可以是单总线器件，它们之间的数据交换只通过一条信号线。
 当只有一个从机设备时，系统可按单节点系统操作;当有多个从设备时，系统则按多节点系统操作。图12-1所示是单总线多节点系统。</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3459156120,798055718&amp;fm=173&amp;app=25&amp;f=JPEG?w=574&amp;h=232&amp;s=88A07D3287AC4D091AF4C1DB0000C0B1"><img alt="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3459156120,798055718&amp;fm=173&amp;app=25&amp;f=JPEG?w=574&amp;h=232&amp;s=88A07D3287AC4D091AF4C1DB0000C0B1" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3459156120,798055718&amp;fm=173&amp;app=25&amp;f=JPEG?w=574&amp;h=232&amp;s=88A07D3287AC4D091AF4C1DB0000C0B1" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">单总线多节点系统示意图</span></p>
+<p class="caption"><span class="caption-text">单总线多节点系统示意图</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </div>
 <div class="section" id="id1">
-<h2>OneWire类<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="onewire.OneWire">
-<em class="property">class </em><code class="descclassname">onewire.</code><code class="descname">OneWire</code><span class="sig-paren">(</span><em>pin</em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.OneWire" title="Permalink to this definition">¶</a></dt>
+<h2>OneWire类<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="onewire.OneWire">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">OneWire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.OneWire" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>构建OneWire类</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">pin</span></code> - <cite>machine.Pin</cite> 实例对象。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code> - <cite>machine.Pin</cite> 实例对象。</p></li>
 </ul>
-<dl class="method">
-<dt id="onewire.reset">
-<code class="descclassname">onewire.</code><code class="descname">reset</code><span class="sig-paren">(</span><em>required=False</em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.reset" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="onewire.reset">
+<span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.reset" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="onewire.readinto">
-<code class="descclassname">onewire.</code><code class="descname">readinto</code><span class="sig-paren">(</span><em>buf</em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.readinto" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="onewire.readinto">
+<span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">readinto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.readinto" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>读取字节</p>
-<dl class="method">
-<dt id="onewire.write">
-<code class="descclassname">onewire.</code><code class="descname">write</code><span class="sig-paren">(</span><em>buf</em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.write" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="onewire.write">
+<span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.write" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>写字节</p>
-<dl class="method">
-<dt id="onewire.select_rom">
-<code class="descclassname">onewire.</code><code class="descname">select_rom</code><span class="sig-paren">(</span><em>rom</em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.select_rom" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="onewire.select_rom">
+<span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">select_rom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rom</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.select_rom" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="onewire.scan">
-<code class="descclassname">onewire.</code><code class="descname">scan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#onewire.scan" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="onewire.scan">
+<span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">scan</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#onewire.scan" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>扫描总线上设备</p>
-<dl class="method">
-<dt id="onewire.crc8">
-<code class="descclassname">onewire.</code><code class="descname">crc8</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.crc8" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="onewire.crc8">
+<span class="sig-prename descclassname"><span class="pre">onewire.</span></span><span class="sig-name descname"><span class="pre">crc8</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#onewire.crc8" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </div>

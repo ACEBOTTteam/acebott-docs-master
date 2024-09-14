@@ -1,0 +1,68 @@
+QB010 P-Buzzer Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/P-Buzzer-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+Buzzer module is an integrated structure of sound electronic components, using DC power supply, widely used in toys, alarms and other electronic products. Buzzer is divided into passive buzzer and active buzzer; There is no shock source inside the passive buzzer, and it needs to be driven by 2K~5K square wave. Passive buzzer can freely control the output sound frequency, and can be programmed to write different scales and duration time to synthesize a beautiful melody of music.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -20°C~+70°C             |
++-------------------------+-------------------------+
+| Output signal           | Digital signal          |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/P-Buzzer-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/P-Buzzer-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|P-Buzzer Module        | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/P-Buzzer-Module/P-Buzzer-Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After you upload the code to the controller board, the buzzer will emit a piece of music, and you can change the tune to play different music.
+
+.. figure:: /../images/P-Buzzer-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/l7sp0x1wf9fgbuogw5vsk/h?rlkey=j4jeeuoi9hga8e9myhxxcmvn7&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/l7sp0x1wf9fgbuogw5vsk/h?rlkey=j4jeeuoi9hga8e9myhxxcmvn7&dl=0>`_

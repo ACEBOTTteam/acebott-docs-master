@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>random — 生成随机数 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>random — 生成随机数 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">random</span></code> — 生成随机数</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">random</span></code> — 生成随机数</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,75 +95,75 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">random</span></code> — 生成随机数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>该模块基于Python标准库中的 <code class="docutils literal"><span class="pre">random</span></code> 模块。它包含用于生成随机数的函数。</p>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">random</span></code> — 生成随机数<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<p>该模块基于Python标准库中的 <code class="docutils literal notranslate"><span class="pre">random</span></code> 模块。它包含用于生成随机数的函数。</p>
 <div class="section" id="id2">
-<h2>函数<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="method">
-<dt id="random.randint">
-<code class="descclassname">random.</code><code class="descname">randint</code><span class="sig-paren">(</span><em>start</em>, <em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#random.randint" title="Permalink to this definition">¶</a></dt>
+<h2>函数<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.randint">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">randint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random.randint" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>随机生成一个start到end之间的整数。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">start</span></code>:指定范围内的开始值，包含在范围内。</li>
-<li><code class="docutils literal"><span class="pre">stop</span></code>：指定范围内的结束值，包含在范围内。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code>:指定范围内的开始值，包含在范围内。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stop</span></code>：指定范围内的结束值，包含在范围内。</p></li>
 </ul>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">random</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="go">4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="go">2</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="random.random">
-<code class="descclassname">random.</code><code class="descname">random</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#random.random" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.random">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">random</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#random.random" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>随机生成一个0到1之间的浮点数。</p>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
 <span class="go">0.7111824</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
 <span class="go">0.3168149</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="random.unifrom">
-<code class="descclassname">random.</code><code class="descname">unifrom</code><span class="sig-paren">(</span><em>start</em>, <em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#random.unifrom" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.unifrom">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">unifrom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random.unifrom" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>随机生成start到end之间的浮点数。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">start</span></code>：指定范围内的开始值，包含在范围内。</li>
-<li><code class="docutils literal"><span class="pre">stop</span></code>：指定范围内的结束值，包含在范围内。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code>：指定范围内的开始值，包含在范围内。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stop</span></code>：指定范围内的结束值，包含在范围内。</p></li>
 </ul>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="go">2.021441</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="go">3.998012</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="random.getrandbits">
-<code class="descclassname">random.</code><code class="descname">getrandbits</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#random.getrandbits" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.getrandbits">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">getrandbits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random.getrandbits" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>随机生成 0 到 size 个位二进制数范围内的正整数。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">size</span></code> :位大小。例如，size = 4，那么便是从 0 到0b1111中随机一个正整数；size = 8，那么便是从 0 到 0b11111111中随机一个正整数。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code> :位大小。例如，size = 4，那么便是从 0 到0b1111中随机一个正整数；size = 8，那么便是从 0 到 0b11111111中随机一个正整数。</p></li>
 </ul>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>  <span class="c1">#1位二进制位，范围为0~1（十进制：0~1）</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>  <span class="c1">#1位二进制位，范围为0~1（十进制：0~1）</span>
 <span class="go">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 <span class="go">0</span>
@@ -177,21 +173,21 @@
 <span class="go">155</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="random.randrange">
-<code class="descclassname">random.</code><code class="descname">randrange</code><span class="sig-paren">(</span><em>start</em>, <em>end</em>, <em>step</em><span class="sig-paren">)</span><a class="headerlink" href="#random.randrange" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.randrange">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">randrange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random.randrange" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>随机生成start到end并且递增为 step 的范围内的正整数。例如，randrange(0, 8, 2)中，随机生成的数为0、2、4、6中任一个。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">start</span></code>：指定范围内的开始值，包含在范围内</li>
-<li><code class="docutils literal"><span class="pre">stop</span></code>：指定范围内的结束值，包含在范围内</li>
-<li><code class="docutils literal"><span class="pre">step</span></code>：递增基数</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code>：指定范围内的开始值，包含在范围内</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stop</span></code>：指定范围内的结束值，包含在范围内</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">step</span></code>：递增基数</p></li>
 </ul>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 <span class="go">4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 <span class="go">6</span>
@@ -199,14 +195,14 @@
 <span class="go">2</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="random.seed">
-<code class="descclassname">random.</code><code class="descname">seed</code><span class="sig-paren">(</span><em>sed</em><span class="sig-paren">)</span><a class="headerlink" href="#random.seed" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.seed">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random.seed" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>指定随机数种子，通常和其他随机数生成函数搭配使用。</p>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
   <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>  <span class="c1">#指定随机数种子</span>
@@ -216,7 +212,7 @@
 </pre></div>
 </div>
 <p>运行结果:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">5</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span>
 <span class="mi">2</span>
 <span class="mi">3</span>
 <span class="mi">2</span>
@@ -242,19 +238,19 @@
 </div>
 <p>从上面可以看到生成两个随机数列表是一样的，你也可以多生成几个随机数列表看看。
 另外当我们不用seed(sed)函数时，相当于没有指定随机种子，这样就是随机生成的。</p>
-<dl class="method">
-<dt id="random.choice">
-<code class="descclassname">random.</code><code class="descname">choice</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#random.choice" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="random.choice">
+<span class="sig-prename descclassname"><span class="pre">random.</span></span><span class="sig-name descname"><span class="pre">choice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random.choice" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>函数说明：随机生成对象obj中的元数。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">obj</span></code>：元数列表</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">obj</span></code>：元数列表</p></li>
 </ul>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s2">&quot;mPython&quot;</span><span class="p">))</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s2">&quot;mPython&quot;</span><span class="p">))</span>
 <span class="go">m</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="s2">&quot;mPython&quot;</span><span class="p">))</span>
 <span class="go">n</span>

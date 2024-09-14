@@ -1,0 +1,70 @@
+QA017 ESP32 Shield V1.0
+=======
+
+.. image:: /../images/ESP32-Shield-1.png
+    :align: center
+
+**1.Introduction**
+
+The ACEBOTT-ESP32-Shield-V1.0 is an expansion board for the ESP32-Max-V3.0 controller board. 
+The expansion board adopts a standardized connection method, which simplifies the hardware connection process, can also reduce the wiring work of users, reduce the possibility of errors, and better help developers improve the development efficiency of the project.
+
+For more information about the ESP32 controller board, please click the following link:
+https://acebottteam.github.io/acebott-docs-master/board/ESP32/QA007%20ESP32%20Max%20V1.0%20Controller%20Board.html
+
+**2.Features**
+
+Eight 3-pin digital pins for connecting 5V sensors/modules
+
+Six 3-pin analog pins, four of which are connected to 5V sensors/modules and two to 3.3V sensors/modules
+
+One 4-pin digital pin (two signal pins, one power, one GND)
+
+One 4-pin digital pin (three signal pins, one GND)
+
+Two rows with ESP32-Max-V3.0 pin interface
+
+Two I2C pins
+
+Two servo interfaces
+
+One serial port
+
+One power supply interface (output current of the maximum input voltage 15V 3A)
+
+Operating temperature 0~70℃
+
+**3.Specifications**
+
+Size：68.1mm*52.1mm
+
+Weight：22.1g
+
+.. image:: /../images/ESP32-Shield-2.png
+    :align: center
+
+**4.Sample Code**
+
+Connect the expansion board to the esp32 controller board, connect an LED light module in the No. 5 pin interface of the expansion board, upload program, control the opening and closing of the LED light.
+
+（1）Wiring Diagram
+
+.. image:: /../images/ESP32-Shield-3.png
+    :align: center
+
+（2）Sample Code
+
+.. literalinclude:: /../../examples/LED/LED.ino
+    :linenos:
+
+**5.Test Result**
+
+After the program is uploaded, the LED lights achieve a cycle effect of flashing every second.
+
+.. image:: /../images/ESP32-Shield-4.png
+    :align: center
+
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/t5sjz5lt8ly4slwvly7gx/AD07jiT4wr3s7pvvTIsVKJY?rlkey=b6ekvm6w6ieuwenzl815a5065&st=bdvfubt9&dl=0>`_

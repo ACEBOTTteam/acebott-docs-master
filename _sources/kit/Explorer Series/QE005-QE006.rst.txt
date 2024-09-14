@@ -1,0 +1,50 @@
+QE005-QE006 IOT Smart Home Basic Starter Kit for micro:bit
+====================
+
+1.Product Introduction
+------
+
+Lumi's Home is an intelligent home system that combines features such as Wi-Fi control, voice control, and app control. 
+
+It incorporates interactive controls such as RFID door access, human body sensor lamp, and Combustible gas alarm and more.
+
+.. figure:: /../images/QE005-1.png
+    :align: center
+
+2.The Value of Starter Kit
+------
+
+1.The concept of smart home
+
+2.Sensor control and application
+
+3.Knowledge of WI-FI LAN
+
+4.Interactive control of APP
+
+5.Artistic structural design enlightenment
+
+3.Course Description
+------
+
+.. figure:: /../images/QE005-2.png
+    :align: center
+
+4.Part List
+------
+.. figure:: /../images/QE005-3.png
+    :align: center
+
+5.Related Resources
+------
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/pkoem0fvsi0dsxtvptpxv/h?rlkey=uurqqtydoqt0tl8dz0y61a00u&dl=0>`_
+
+6.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    `QE005 Official Website <https://www.acebott.com/products/acebott-qe005-micro-bit-smart-home-iot-starter-kit-with-arduino-acecode-scratch?_pos=5&_psq=QE004&_ss=e&_v=1.0>`_
+
+    `QE006 Official Website <https://www.acebott.com/products/acebott-qe006-micro-bit-smart-home-iot-starter-kit-with-arduino-acecode-scratch?_pos=4&_psq=QE004&_ss=e&_v=1.07>`_

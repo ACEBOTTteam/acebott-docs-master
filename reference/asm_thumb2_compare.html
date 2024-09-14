@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6. 比对指令 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>6. 比对指令 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">6. 比对指令</li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>比对指令</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,66 +95,66 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>6. 比对指令<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">6. </span>比对指令<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
 <p>这些指令对两个参数执行算术或逻辑指令，放弃结果但会设置条件标志。通常，这些指令用于在执行条件分支之前，在不更改数据值的前提下测试数据值。</p>
 <div class="section" id="id2">
-<h2>6.1. 文件规范<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>符号： <code class="docutils literal"><span class="pre">Rd,</span> <span class="pre">Rm,</span> <span class="pre">Rn</span></code> 表示ARM寄存器R0-R7。 <code class="docutils literal"><span class="pre">imm8</span></code> 表示一个具有8位宽度的即时值。</p>
+<h2><span class="section-number">6.1. </span>文件规范<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p>符号： <code class="docutils literal notranslate"><span class="pre">Rd,</span> <span class="pre">Rm,</span> <span class="pre">Rn</span></code> 表示ARM寄存器R0-R7。 <code class="docutils literal notranslate"><span class="pre">imm8</span></code> 表示一个具有8位宽度的即时值。</p>
 </div>
 <div class="section" id="apsr">
-<h2>6.2. 应用程序状态寄存器(APSR)<a class="headerlink" href="#apsr" title="Permalink to this headline">¶</a></h2>
-<p>这包含四个由条件分支指令测试的位。通常情况下，条件分支将测试多个位，例如 <code class="docutils literal"><span class="pre">bge(LABEL)</span></code> 。
-条件码的含义取决于算术指令的操作数是否被视为有符号或无符号整数。因此， <code class="docutils literal"><span class="pre">bhi(LABEL)</span></code> 假定处理无符号数， <code class="docutils literal"><span class="pre">bgt(LABEL)</span></code> 假定处理有符号数。</p>
+<h2><span class="section-number">6.2. </span>应用程序状态寄存器(APSR)<a class="headerlink" href="#apsr" title="Permalink to this heading"></a></h2>
+<p>这包含四个由条件分支指令测试的位。通常情况下，条件分支将测试多个位，例如 <code class="docutils literal notranslate"><span class="pre">bge(LABEL)</span></code> 。
+条件码的含义取决于算术指令的操作数是否被视为有符号或无符号整数。因此， <code class="docutils literal notranslate"><span class="pre">bhi(LABEL)</span></code> 假定处理无符号数， <code class="docutils literal notranslate"><span class="pre">bgt(LABEL)</span></code> 假定处理有符号数。</p>
 </div>
 <div class="section" id="id3">
-<h2>6.3. APSR位<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.3. </span>APSR位<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li>Z (zero)</li>
+<li><p>Z (zero)</p></li>
 </ul>
 <p>若运算的结果为0或比对的操作数相等，则设置为0。</p>
 <ul class="simple">
-<li>N (negative)</li>
+<li><p>N (negative)</p></li>
 </ul>
 <p>若结果为负，则设置为N。</p>
 <ul class="simple">
-<li>C (carry)</li>
+<li><p>C (carry)</p></li>
 </ul>
 <p>若结果溢出MSB，则加法设定进位标记，例如把0x80000000和0x80000000相加。由于二进制补码算术的性质，
 这种行为在减法时反转，清除借助进位位指示的借位。因此0x10 - 0x01执行为0x10 + 0xffffffff，它将设置进位位。</p>
 <ul class="simple">
-<li>V (overflow)</li>
+<li><p>V (overflow)</p></li>
 </ul>
 <p>若结果（被视为二进制数的补码）具有与操作数相关的”错误”符号，则会设置溢出标志。例如，将1添加到0x7fffffff将设置溢出位，
 因为结果（0x8000000）（被视为二进制补码整数）为负值。请注意：在此情况下，未设置进位位。</p>
 </div>
 <div class="section" id="id4">
-<h2>6.4. 比对指令<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.4. </span>比对指令<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p>这些指令会设置APSR（应用程序状态寄存器）、N（负）、Z（零）、C（进位）和V（溢出）标志。</p>
 <ul class="simple">
-<li>cmp(Rn, imm8) <code class="docutils literal"><span class="pre">Rn</span> <span class="pre">-</span> <span class="pre">imm8</span></code></li>
-<li>cmp(Rn, Rm) <code class="docutils literal"><span class="pre">Rn</span> <span class="pre">-</span> <span class="pre">Rm</span></code></li>
-<li>cmn(Rn, Rm) <code class="docutils literal"><span class="pre">Rn</span> <span class="pre">+</span> <span class="pre">Rm</span></code></li>
-<li>tst(Rn, Rm) <code class="docutils literal"><span class="pre">Rn</span> <span class="pre">&amp;</span> <span class="pre">Rm</span></code></li>
+<li><p>cmp(Rn, imm8) <code class="docutils literal notranslate"><span class="pre">Rn</span> <span class="pre">-</span> <span class="pre">imm8</span></code></p></li>
+<li><p>cmp(Rn, Rm) <code class="docutils literal notranslate"><span class="pre">Rn</span> <span class="pre">-</span> <span class="pre">Rm</span></code></p></li>
+<li><p>cmn(Rn, Rm) <code class="docutils literal notranslate"><span class="pre">Rn</span> <span class="pre">+</span> <span class="pre">Rm</span></code></p></li>
+<li><p>tst(Rn, Rm) <code class="docutils literal notranslate"><span class="pre">Rn</span> <span class="pre">&amp;</span> <span class="pre">Rm</span></code></p></li>
 </ul>
 </div>
 <div class="section" id="id5">
-<h2>6.5. 条件执行<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal"><span class="pre">It</span></code> 和 <code class="docutils literal"><span class="pre">ite</span></code> 指令提供一种有条件地执行一到四个后续指令而无需标记的方法。</p>
+<h2><span class="section-number">6.5. </span>条件执行<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">It</span></code> 和 <code class="docutils literal notranslate"><span class="pre">ite</span></code> 指令提供一种有条件地执行一到四个后续指令而无需标记的方法。</p>
 <ul class="simple">
-<li>it(&lt;condition&gt;) If then</li>
+<li><p>it(&lt;condition&gt;) If then</p></li>
 </ul>
 <p>若&lt;condition&gt;为True，则执行下一指令:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">cmp</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmp</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
 <span class="n">it</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span>
 <span class="n">mov</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># runs if r0 == r1</span>
 <span class="c1"># execution continues here 此处继续执行</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>ite(&lt;condition&gt;) If then else</li>
+<li><p>ite(&lt;condition&gt;) If then else</p></li>
 </ul>
 <p>若&lt;condtion&gt;为真，执行下一指令，否则执行后续指令，因此:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">cmp</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmp</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
 <span class="n">ite</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span>
 <span class="n">mov</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># runs if r0 == r1</span>
 <span class="n">mov</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span> <span class="c1"># runs if r0 != r1</span>

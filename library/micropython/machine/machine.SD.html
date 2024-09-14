@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>class SD – secure digital memory card &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <title>class SD – secure digital memory card &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../../index.html">
             
-              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Module/index.html">Module</a></li>
@@ -99,16 +95,16 @@
            <div itemprop="articleBody">
              
   <div class="section" id="class-sd-secure-digital-memory-card">
-<span id="machine-sd"></span><h1>class SD – secure digital memory card<a class="headerlink" href="#class-sd-secure-digital-memory-card" title="Permalink to this headline">¶</a></h1>
+<span id="machine-sd"></span><h1>class SD – secure digital memory card<a class="headerlink" href="#class-sd-secure-digital-memory-card" title="Permalink to this heading"></a></h1>
 <p>The SD card class allows to configure and enable the memory card
-module of the WiPy and automatically mount it as <code class="docutils literal"><span class="pre">/sd</span></code> as part
+module of the WiPy and automatically mount it as <code class="docutils literal notranslate"><span class="pre">/sd</span></code> as part
 of the file system. There are several pin combinations that can be
 used to wire the SD card socket to the WiPy and the pins used can
 be specified in the constructor. Please check the <a class="reference external" href="https://raw.githubusercontent.com/wipy/wipy/master/docs/PinOUT.png">pinout and alternate functions
 table.</a> for
 more info regarding the pins which can be remapped to be used with a SD card.</p>
 <p>Example usage:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">SD</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">SD</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="c1"># clk cmd and dat0 pins must be passed along with</span>
 <span class="c1"># their respective alternate functions</span>
@@ -118,26 +114,26 @@ more info regarding the pins which can be remapped to be used with a SD card.</p
 </pre></div>
 </div>
 <div class="section" id="constructors">
-<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="machine.SD">
-<em class="property">class </em><code class="descclassname">machine.</code><code class="descname">SD</code><span class="sig-paren">(</span><em>id</em>, <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.SD" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a SD card object. See <code class="docutils literal"><span class="pre">init()</span></code> for parameters if initialization.</p>
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="machine.SD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">machine.</span></span><span class="sig-name descname"><span class="pre">SD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#machine.SD" title="Permalink to this definition"></a></dt>
+<dd><p>Create a SD card object. See <code class="docutils literal notranslate"><span class="pre">init()</span></code> for parameters if initialization.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="methods">
-<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
-<dl class="method">
-<dt id="machine.SD.init">
-<code class="descclassname">SD.</code><code class="descname">init</code><span class="sig-paren">(</span><em>id=0</em>, <em>pins=('GP10'</em>, <em>'GP11'</em>, <em>'GP15')</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.SD.init" title="Permalink to this definition">¶</a></dt>
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="machine.SD.init">
+<span class="sig-prename descclassname"><span class="pre">SD.</span></span><span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('GP10',</span> <span class="pre">'GP11',</span> <span class="pre">'GP15')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#machine.SD.init" title="Permalink to this definition"></a></dt>
 <dd><p>Enable the SD card. In order to initialize the card, give it a 3-tuple:
-<code class="docutils literal"><span class="pre">(clk_pin,</span> <span class="pre">cmd_pin,</span> <span class="pre">dat0_pin)</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">(clk_pin,</span> <span class="pre">cmd_pin,</span> <span class="pre">dat0_pin)</span></code>.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="machine.SD.deinit">
-<code class="descclassname">SD.</code><code class="descname">deinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine.SD.deinit" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="machine.SD.deinit">
+<span class="sig-prename descclassname"><span class="pre">SD.</span></span><span class="sig-name descname"><span class="pre">deinit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine.SD.deinit" title="Permalink to this definition"></a></dt>
 <dd><p>Disable the SD card.</p>
 </dd></dl>
 

@@ -1,0 +1,73 @@
+QA052 ESP32 Car Shield V1.0
+=======
+
+.. image:: /../images/ESP32-Car-Shield-1.png
+    :align: center
+
+**1.Introduction**
+
+ACEBOTT-ESP32-Car-Shield-V1.0 is an expansion board for the ESP32-Max-V3.0 controller board, which is mainly used for the construction of smart cars. 
+The expansion board adopts a standardized connection method, simplifies the hardware connection process, and the most important thing is to increase the function of motor drive, which improves the development efficiency and flexibility of the project, so that developers can focus more on the core functions and innovation of the project.
+
+For more information about the ESP32 controller board, please click the following link:
+https://acebottteam.github.io/acebott-docs-master/board/ESP32/QA007%20ESP32%20Max%20V1.0%20Controller%20Board.html
+
+**2.Features**
+
+Three 3-pin digital pins
+
+Two 3-pin analog pins
+
+Two rows of pin interfaces for ESP32-Max-V3.0
+
+Five DC motor interfaces
+
+Three I2C pins
+
+Three servo interfaces
+
+One serial port
+
+One ultrasonic interface
+
+One three-way Trace sensor interface
+
+One power interface (Max input voltage 15V Max output current 3A)
+
+Operating temperature 0~70℃
+
+
+**3.Specifications**
+
+Size：68.1mm*52.1mm
+
+Weight：22g
+
+.. image:: /../images/ESP32-Car-Shield-2.png
+    :align: center
+
+**4.Sample Code**
+
+Connect the expansion board to the esp32 controller board, connect a TT motor in the M1 interface of the expansion board, upload the program, and control the forward and reverse rotation of the motor.
+
+（1）Wiring Diagram
+
+.. image:: /../images/ESP32-Car-Shield-3.png
+    :align: center
+
+（2）Sample Code
+
+.. literalinclude:: /../../examples/Motor/Motor.ino
+    :linenos:
+
+**5.Test Result**
+
+After the program is uploaded, the TT motor cycles to achieve the effect of forward rotation for 3 seconds and then reverse rotation for 3 seconds.
+
+.. image:: /../images/ESP32-Car-Shield-4.png
+    :align: center
+
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/ikhoat8ve2s19xqhvj0sm/AC3l9Y0-IhEcK-BdU6NbU-I?rlkey=e9p8mu72tmu7fqy48fs56uvx4&st=bum56wz0&dl=0>`_

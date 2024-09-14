@@ -1,0 +1,72 @@
+QB063 Water Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Water-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+The water sensor is an instrument that can convert the water level parameters of the measured point into the corresponding electric signal in real time. Its working principle is to use the trace of its parallel wire to measure the amount of water and thus judge the water level. The analog value output by the water sensor can be directly read by the controller board, which can be used for the function of water level alarm in practical applications.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -20°C~+80°C             |
++-------------------------+-------------------------+
+| Output signal           | Analog signal           |
++-------------------------+-------------------------+
+| Size                    | 6.68cm*2.37cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Water-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Water-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|Water Sensor           | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Analog Pin A0         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Water-Sensor/Water-Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to the scroll mode.
+
+When you plug the water sensor into the water cup, you can see the following data.
+
+.. figure:: /../images/Water-4.png
+    :align: center
+.. figure:: /../images/Water-5.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/wtsy7fqbdnhdgoykkm0ew/h?rlkey=afbesd25xc2abitvmb969fbbk&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/wtsy7fqbdnhdgoykkm0ew/h?rlkey=afbesd25xc2abitvmb969fbbk&dl=0>`_

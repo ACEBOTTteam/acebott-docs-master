@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>类 Timer – 控制硬件定时器 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <title>类 Timer – 控制硬件定时器 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../../index.html">
             
-              <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,26 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ESP32/index.html">ESP32/ESP8266</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/Microbit/index.html">Microbit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../getting started/ACECode(Blockly Programming)/index.html">ACECode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/Arduino/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials/Module/index.html">Module</a></li>
@@ -102,82 +95,80 @@
            <div itemprop="articleBody">
              
   <div class="section" id="timer">
-<span id="machine-timer"></span><h1>类 Timer – 控制硬件定时器<a class="headerlink" href="#timer" title="Permalink to this headline">¶</a></h1>
+<span id="machine-timer"></span><h1>类 Timer – 控制硬件定时器<a class="headerlink" href="#timer" title="Permalink to this heading"></a></h1>
 <p>硬件定时器处理周期和事件的时间。定时器可能是MCU和SoC中最灵活和异构的硬件类型，从一个模型到另一个模型的差别很大。
 MicroPython的Timer类定义了在给定时间段内（或在一段延迟后执行一次回调）执行回调的基线操作，并允许特定的板定义更多的非标准行为（因此不能移植到其他板）。</p>
 <p>请参阅有关Timer回调的 <a class="reference internal" href="machine.html#machine-callbacks"><span class="std std-ref">重要约束</span></a> 。</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">内存不能在irq处理程序（中断）中分配，因此处理程序中引发的异常不会提供太多信息。
-了解 <a class="reference internal" href="../micropython.html#micropython.alloc_emergency_exception_buf" title="micropython.alloc_emergency_exception_buf"><code class="xref py py-func docutils literal"><span class="pre">micropython.alloc_emergency_exception_buf()</span></code></a> 如何解决此限制。</p>
+<p class="admonition-title">Note</p>
+<p>内存不能在irq处理程序（中断）中分配，因此处理程序中引发的异常不会提供太多信息。
+了解 <a class="reference internal" href="../micropython.html#micropython.alloc_emergency_exception_buf" title="micropython.alloc_emergency_exception_buf"><code class="xref py py-func docutils literal notranslate"><span class="pre">micropython.alloc_emergency_exception_buf()</span></code></a> 如何解决此限制。</p>
 </div>
 <div class="section" id="id1">
-<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="machine.Timer">
-<em class="property">class </em><code class="descclassname">machine.</code><code class="descname">Timer</code><span class="sig-paren">(</span><em>id</em>, <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer" title="Permalink to this definition">¶</a></dt>
+<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="machine.Timer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">machine.</span></span><span class="sig-name descname"><span class="pre">Timer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>构造给定id的新计时器对象。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">id</span></code> - 任意正整数</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code> - 任意正整数</p></li>
 </ul>
 </div></blockquote>
 </div>
 <div class="section" id="id2">
-<h2>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="method">
-<dt id="machine.Timer.init">
-<code class="descclassname">Timer.</code><code class="descname">init</code><span class="sig-paren">(</span><em>*</em>, <em>mode=Timer.PERIODIC</em>, <em>period=-1</em>, <em>callback=None</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer.init" title="Permalink to this definition">¶</a></dt>
+<h2>方法<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="machine.Timer.init">
+<span class="sig-prename descclassname"><span class="pre">Timer.</span></span><span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">\*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode=Timer.PERIODIC</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">period=-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer.init" title="Permalink to this definition"></a></dt>
 <dd><ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">mode</span></code> - 定时器模式,可以是以下之一:</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code> - 定时器模式,可以是以下之一:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">Timer.ONE_SHOT</span></code> - 计时器运行一次，直到配置完毕通道的期限到期。</li>
-<li><code class="docutils literal"><span class="pre">Timer.PERIODIC</span></code> - 定时器以通道的配置频率定期运行。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Timer.ONE_SHOT</span></code> - 计时器运行一次，直到配置完毕通道的期限到期。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Timer.PERIODIC</span></code> - 定时器以通道的配置频率定期运行。</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">period</span></code> -  定时器执行的周期，单位是ms， 隔period ms 执行一次。 period取值范围： 0 &lt; period &lt;= 3435973836</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">callback</span></code> -  定时器的回调函数</p>
-</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">period</span></code> -  定时器执行的周期，单位是ms， 隔period ms 执行一次。 period取值范围： 0 &lt; period &lt;= 3435973836</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">callback</span></code> -  定时器的回调函数</p></li>
 </ul>
 </dd></dl>
 
 <p>初始化计时器，示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tim</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">period</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>                         <span class="c1"># periodic with 100ms period</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tim</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">period</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>                         <span class="c1"># periodic with 100ms period</span>
 <span class="n">tim</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">Timer</span><span class="o">.</span><span class="n">ONE_SHOT</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>   <span class="c1"># one shot firing after 1000ms</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="machine.Timer.value">
-<code class="descclassname">Timer.</code><code class="descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer.value" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="machine.Timer.value">
+<span class="sig-prename descclassname"><span class="pre">Timer.</span></span><span class="sig-name descname"><span class="pre">value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer.value" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>获取并返回计时器当前计数值。</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="n">tim</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="n">tim</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="machine.Timer.deinit">
-<code class="descclassname">Timer.</code><code class="descname">deinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer.deinit" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="machine.Timer.deinit">
+<span class="sig-prename descclassname"><span class="pre">Timer.</span></span><span class="sig-name descname"><span class="pre">deinit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine.Timer.deinit" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>取消定时器的初始化。停止计时器，并禁用计时器外围设备。</p>
 </div>
 <div class="section" id="id3">
-<h2>常数<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<dl class="data">
-<dt id="machine.Timer.ONE_SHOT">
-<code class="descclassname">Timer.</code><code class="descname">ONE_SHOT</code><a class="headerlink" href="#machine.Timer.ONE_SHOT" title="Permalink to this definition">¶</a></dt>
+<h2>常数<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="machine.Timer.ONE_SHOT">
+<span class="sig-prename descclassname"><span class="pre">Timer.</span></span><span class="sig-name descname"><span class="pre">ONE_SHOT</span></span><a class="headerlink" href="#machine.Timer.ONE_SHOT" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="data">
-<dt id="machine.Timer.PERIODIC">
-<code class="descclassname">Timer.</code><code class="descname">PERIODIC</code><a class="headerlink" href="#machine.Timer.PERIODIC" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="machine.Timer.PERIODIC">
+<span class="sig-prename descclassname"><span class="pre">Timer.</span></span><span class="sig-name descname"><span class="pre">PERIODIC</span></span><a class="headerlink" href="#machine.Timer.PERIODIC" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </div>

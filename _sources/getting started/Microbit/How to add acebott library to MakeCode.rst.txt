@@ -1,0 +1,56 @@
+How to add Acebott library to MakeCode
+======================================
+
+Step 1
+---------------------
+
+Open Microsoft MakeCode: https://makecode.microbit.org/.
+
+Step 2
+---------------------
+
+Click New Project, give the project a name, and click Create.
+
+.. figure:: /../images/MakeCode_library-1.png
+    :align: center
+
+Step 3
+------------------------------
+
+When you click Create, you will enter the graphical programming interface.
+
+The operation interface is mainly divided into three parts, namely Microbit Simulator、Toolbox、Workspace.
+
+.. figure:: /../images/MakeCode_library-2.png
+    :align: center
+
+Step 4
+------------------------------
+
+Copy the URL: "https://github.com/ACEBOTTteam/Acebott", click on Extensions.
+
+
+.. figure:: /../images/MakeCode_library-3.png
+    :align: center
+
+Step 5
+------------------------------
+
+Copy the URL into the search box and press Enter on your keypad to see the Acebott extension appear.
+
+.. figure:: /../images/MakeCode_library-4.png
+    :align: center
+
+.. figure:: /../images/MakeCode_library-5.png
+    :align: center
+
+Step 6
+------------------------------
+
+Click Go Back to the main interface, and you can see the Acebott extension appears. Click the relevant blocks with Acebott module, so the addition of the extension is completed.
+
+.. figure:: /../images/MakeCode_library-6.png
+    :align: center
+
+.. figure:: /../images/MakeCode_library-7.png
+    :align: center

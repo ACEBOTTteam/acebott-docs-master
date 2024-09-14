@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6. 驱动舵机 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>6. 驱动舵机 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,26 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/ESP32/index.html">ESP32/ESP8266</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Microbit/index.html">Microbit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/ACECode(Blockly Programming)/index.html">ACECode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
@@ -92,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">6. 驱动舵机</li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>驱动舵机</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -102,9 +95,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="servo-classic">
-<span id="id1"></span><h1>6. 驱动舵机<a class="headerlink" href="#servo-classic" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1><span class="section-number">6. </span>驱动舵机<a class="headerlink" href="#servo-classic" title="Permalink to this heading"></a></h1>
 <div class="section" id="id2">
-<h2>6.1. 舵机原理<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.1. </span>舵机原理<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p>舵机是一种位置（角度）伺服的驱动器，它由直流电机、减速齿轮组、传感器和控制电路组成的一套自动控制系统。通过发送信号，指定输出轴旋转角度，一般而言都有最大旋转角度（比如180度），与普通直流电机的区别主要在直流电机是一圈圈转动的，舵机只能在一定角度内转动，不能一圈圈转（但数字舵机可以在舵机模式和电机模式中切换）。普通直流电机无法反馈转动的角度信息，而舵机可以。</p>
 <a class="reference internal image-reference" href="../images/classic/Servo.jpg"><img alt="../images/classic/Servo.jpg" class="align-center" src="../images/classic/Servo.jpg" /></a>
 <p>标准的舵机有3条引线，分别是：地线GND(舵机连接线的棕色)、电源线Vcc（舵机连接线的红色）、控制信号线(舵机连接线的橙色)。</p>
@@ -115,15 +108,15 @@
 <p>180度角度伺服对应的控制关系是：</p>
 <a class="reference internal image-reference" href="../images/classic/Servo3.jpg"><img alt="../images/classic/Servo3.jpg" class="align-center" src="../images/classic/Servo3.jpg" /></a>
 <div class="admonition attention">
-<p class="first admonition-title">Attention</p>
-<p class="last">不同舵机的脉宽范围会有所不一样，控制时需要留意！</p>
+<p class="admonition-title">Attention</p>
+<p>不同舵机的脉宽范围会有所不一样，控制时需要留意！</p>
 </div>
 </div>
 <div class="section" id="id3">
-<h2>6.2. 加速度控制舵机<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.2. </span>加速度控制舵机<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p>我们结合加速度计制作一个通过左右倾斜掌控板来控制舵机的角度:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">servo</span> <span class="k">import</span> <span class="n">Servo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">servo</span> <span class="kn">import</span> <span class="n">Servo</span>
 
 <span class="n">myServo</span><span class="o">=</span><span class="n">Servo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">min_us</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">max_us</span><span class="o">=</span><span class="mi">2500</span><span class="p">)</span>      <span class="c1">#构建Servo对象</span>
 
@@ -141,29 +134,29 @@
 <p>舵机和掌控板的连接需要借助掌控扩展板。你可以查阅 <span class="xref std std-ref">掌控板接口引脚说明</span> ,了解可供使用的PWM模拟输出的引脚 。在这里使用引脚P0。将掌控板插在掌控扩展板上，通过双母头杜邦线将舵机和扩展板进行连接，舵机上的电源线Vcc（舵机连接线的红色）连接扩展板的电源口“V”，地线GND(舵机连接线的棕色)连接扩展板的地线口“G”，控制信号线(舵机连接线的橙色)连接扩展板的引脚“0”。</p>
 <a class="reference internal image-reference" href="../images/classic/Servoconnect.jpg"><img alt="../images/classic/Servoconnect.jpg" class="align-center" src="../images/classic/Servoconnect.jpg" /></a>
 <p>使用前，导入mpython、servo模块:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">servo</span> <span class="k">import</span> <span class="n">Servo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">servo</span> <span class="kn">import</span> <span class="n">Servo</span>
 </pre></div>
 </div>
 <p>构建Servo对象，设置舵机脉冲宽度参数:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">myServo</span><span class="o">=</span><span class="n">Servo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">min_us</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">max_us</span><span class="o">=</span><span class="mi">2500</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">myServo</span><span class="o">=</span><span class="n">Servo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">min_us</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">max_us</span><span class="o">=</span><span class="mi">2500</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Servo(pin, min_us=750, max_us=2250, actuation_range=180) 用来构建Servo对象，默认使用SG90舵机。不同舵机脉冲宽度参数和角度范围会有所不一样,根据舵机型号自行设置。<code class="docutils literal"><span class="pre">pin</span></code> 设置舵机PWM控制信号引脚，<code class="docutils literal"><span class="pre">min_us</span></code> 设置舵机PWM信号脉宽最小宽度，单位微秒，默认min_us=750，<code class="docutils literal"><span class="pre">max_us</span></code> 设置舵机PWM信号脉宽最小宽度，单位微秒，默认max_us=2250，<code class="docutils literal"><span class="pre">actuation_range</span></code> 设置舵机转动最大角度。</p>
+<p class="admonition-title">Note</p>
+<p>Servo(pin, min_us=750, max_us=2250, actuation_range=180) 用来构建Servo对象，默认使用SG90舵机。不同舵机脉冲宽度参数和角度范围会有所不一样,根据舵机型号自行设置。<code class="docutils literal notranslate"><span class="pre">pin</span></code> 设置舵机PWM控制信号引脚，<code class="docutils literal notranslate"><span class="pre">min_us</span></code> 设置舵机PWM信号脉宽最小宽度，单位微秒，默认min_us=750，<code class="docutils literal notranslate"><span class="pre">max_us</span></code> 设置舵机PWM信号脉宽最小宽度，单位微秒，默认max_us=2250，<code class="docutils literal notranslate"><span class="pre">actuation_range</span></code> 设置舵机转动最大角度。</p>
 </div>
 <div class="admonition attention">
-<p class="first admonition-title">Attention</p>
-<p class="last">您可以设置 <code class="docutils literal"><span class="pre">actuation_range</span></code> 来对应用给定的 <code class="docutils literal"><span class="pre">min_us</span></code> 和 <code class="docutils literal"><span class="pre">max_us</span></code> 观察到的实际运动范围值。您也可以将脉冲宽度扩展到这些限制之上和之下伺服机构可能会停止，嗡嗡声，并在停止时吸收额外的电流。仔细测试，找出安全的最小值和最大值。</p>
+<p class="admonition-title">Attention</p>
+<p>您可以设置 <code class="docutils literal notranslate"><span class="pre">actuation_range</span></code> 来对应用给定的 <code class="docutils literal notranslate"><span class="pre">min_us</span></code> 和 <code class="docutils literal notranslate"><span class="pre">max_us</span></code> 观察到的实际运动范围值。您也可以将脉冲宽度扩展到这些限制之上和之下伺服机构可能会停止，嗡嗡声，并在停止时吸收额外的电流。仔细测试，找出安全的最小值和最大值。</p>
 </div>
 <p>当检测到掌控板在Y轴方向倾斜时（范围-1g 至+1g），将Y轴的加速度值（范围-1至1）映射在舵机输出轴旋转角度（（范围0至180））上:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">y</span><span class="o">&lt;=</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">y</span><span class="o">&gt;=-</span><span class="mi">1</span><span class="p">:</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">y</span><span class="o">&lt;=</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">y</span><span class="o">&gt;=-</span><span class="mi">1</span><span class="p">:</span>
     <span class="n">angle</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">numberMap</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">180</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>输出舵机角度并在OLED显示屏上显示:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">myServo</span><span class="o">.</span><span class="n">write_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>       <span class="c1">#写舵机角度</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">myServo</span><span class="o">.</span><span class="n">write_angle</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>       <span class="c1">#写舵机角度</span>
         <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s2">&quot;angle:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">angle</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
         <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>

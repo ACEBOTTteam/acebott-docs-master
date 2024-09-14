@@ -1,0 +1,80 @@
+QB055 MQ-4 Gas Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/MQ-4-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+MQ-4 gas sensor is a combustible gas sensor, which can detect the concentration of combustible gas in the environment. 
+Its working principle is based on the change of electrical properties of semiconductor gas sensitive materials. 
+When there is combustible gas (such as methane, propane, butane, etc.), 
+the gas sensitive materials inside the sensor will react with the gas, resulting in changes in the resistance value of the material.
+
+It is widely used in domestic and industrial fields in methane leakage detection, gas leakage alarm and gas detection.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 5V                      |
++-------------------------+-------------------------+
+| Operating temperature   | -20°C~+80°C             |
++-------------------------+-------------------------+
+| Concentration detection | 300~10000ppm            |
++-------------------------+-------------------------+
+| Output signal           | Analog signal           |
++-------------------------+-------------------------+
+| Size                    | 4.72cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/MQ-4-2.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/MQ-4-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|MQ-4 Gas Sensor        | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Analog Pin A0         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/MQ-4-Gas-Sensor/MQ-4-Gas-Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to the scroll mode. When pressed half with a lighter, flammable gas will be released. At this time, the gas will be sprayed to the MQ-4 gas sensor, and the following data can be seen.
+
+.. figure:: /../images/MQ-4-4.png
+    :align: center
+.. figure:: /../images/MQ-4-5.png
+    :align: center
+
+.. Hint:: 
+    The MQ-4 gas sensor will be heated at the beginning, and it will be 20 seconds before normal detection.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/kfad9u7fvbn3ve36z92vu/h?rlkey=loyusikmexq10hrlwwd07rdj1&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/kfad9u7fvbn3ve36z92vu/h?rlkey=loyusikmexq10hrlwwd07rdj1&dl=0>`_

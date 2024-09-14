@@ -1,0 +1,9 @@
+Inventor Series
+==================
+
+.. toctree::
+   :maxdepth: 1
+
+   QD020.rst
+   QD022.rst
+

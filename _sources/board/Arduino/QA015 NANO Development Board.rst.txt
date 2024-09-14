@@ -1,0 +1,92 @@
+QA015 Nano Development Board
+====================
+
+.. image:: /../images/QA015-1.png
+    :align: center
+
+**1.Introduction**
+
+The ACEBOTT QA015 NANO development board is a small, complete, and easy-to-experiment development board based on ATMega328P and CH340.
+It has all the features of Diecimila/Duemilanove.
+
+**2.Features**
+
+Micro controller: ATMega328P
+
+Operating Voltage: 5V
+
+Input Voltage (Recommended): 7-12V
+
+Input Voltage (Limit): 6-20V
+
+Digital I/O Pins: 14
+
+Analog Input Pins: 8
+
+DC Current per I/O Pin: 40 mA
+
+3.3V Port Output Current: 50 mA
+
+Flash Memory: 16 KB (2 KB used by boot loader)
+
+SRAM: 2 KB
+
+EEPROM: 1 KB
+
+Clock Speed: 16 MHz
+
+**3.Specifications**
+
++-----------------------+-------------------------------------------------------------------------+
+| Parameters            | Value/Description                                                       |
++=======================+=========================================================================+
+| Size                  | 45.6X18(mm)                                                             |
++-----------------------+-------------------------------------------------------------------------+
+|Power supply           | Type-c                                                                  | 
++-----------------------+-------------------------------------------------------------------------+
+| Supported interfaces  | UART/GPIO/ADC/PWM/SPI/I2C                                               |
++-----------------------+-------------------------------------------------------------------------+
+| Number of I/O ports   | 14                                                                      |
++-----------------------+-------------------------------------------------------------------------+
+| Serial port baud rate | Supports baud rates from 110 to 4608000 bps, defaulting to 115200 bps   |
++-----------------------+-------------------------------------------------------------------------+
+
+.. image:: /../images/QA015-2.png
+    :align: center
+
+.. image:: /../images/QA015-3.png
+    :align: center
+
+**4.Sample Code**
+
+Connect the board to the computer using a Type-C data cable: Select "Arduino AVR Boards" -> "Arduino Nano" from the Tools > Board menu. Choose the appropriate Port. And upload it to the board using the Upload button.
+
+（1）Wiring Diagram
+
+.. image:: /../images/QA015-4.png
+    :align: center
+
+（2）Sample Code
+
+.. literalinclude:: /../../examples/TEST_QA015/TEST_QA015.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the program, open the serial monitor in the Arduino IDE to observe the continuous serial printing of "Hello,ACEBOTT QA015 NANO".
+
+.. image:: /../images/QA015-5.png
+    :align: center
+
+.. image:: /../images/QA015-6.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/dqjpdax8k5cqodalglz0y/AGic7I4eORckmwbi17voagw?rlkey=t02xtm93qkvrmmrphfwa340kg&st=fyf4zmf3&dl=0>`_
+
+**7.Get One Now**
+
+B2B Business: info@acebott.com
+
+`Official Website <https://www.acebott.com/products/acebott-qa015-nano-development-board-with-1m-type-c-cable?_pos=1&_psq=QA015Q&_ss=e&_v=1.0>`_

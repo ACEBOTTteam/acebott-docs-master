@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>_thread — 线程 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>_thread — 线程 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">_thread</span></code> — 线程</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">_thread</span></code> — 线程</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,12 +95,12 @@
            <div itemprop="articleBody">
              
   <div class="section" id="thread">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">_thread</span></code> — 线程<a class="headerlink" href="#thread" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">_thread</span></code> — 线程<a class="headerlink" href="#thread" title="Permalink to this heading"></a></h1>
 <p>该模块提供了用于处理多个线程（也称为轻量级进程或任务）的低级原语 - 多个控制线程共享其全局数据空间。为
 了同步，提供了简单的锁（也称为互斥锁或二进制信号量）。</p>
 <p>发生线程特定错误时，会RuntimeError引发异常。</p>
 <p>快速使用示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">_thread</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">_thread</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="k">def</span> <span class="nf">th_func</span><span class="p">(</span><span class="n">delay</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
@@ -117,85 +113,85 @@
 </pre></div>
 </div>
 <div class="section" id="id1">
-<h2>方法<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="method">
-<dt>
-<code class="descname">_thread.start_new_thread（function，args [，kwargs]）</code></dt>
+<h2>方法<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_thread.start_new_thread（function，args</span> <span class="pre">[，kwargs]）</span></span></dt>
 <dd></dd></dl>
 
 <p>启动一个新线程并返回其标识符。线程使用参数列表args（必须是元组）执行函数。可选kwargs参数指定关键字参数的字典。
 当函数返回时，线程将以静默方式退出。当函数以未处理的异常终止时，将打印堆栈跟踪，然后线程退出（但其他线程继续运行）。</p>
-<dl class="method">
-<dt id="_thread.exit">
-<code class="descclassname">_thread.</code><code class="descname">exit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_thread.exit" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="thread.exit">
+<span class="sig-prename descclassname"><span class="pre">_thread.</span></span><span class="sig-name descname"><span class="pre">exit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thread.exit" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>引发 SystemExit 异常。如果未捕获时，这将导致线程以静默方式退出。</p>
-<dl class="method">
-<dt id="_thread.allocate_lock">
-<code class="descclassname">_thread.</code><code class="descname">allocate_lock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_thread.allocate_lock" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="thread.allocate_lock">
+<span class="sig-prename descclassname"><span class="pre">_thread.</span></span><span class="sig-name descname"><span class="pre">allocate_lock</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thread.allocate_lock" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>返回一个新的锁定对象。锁的方法如下所述。锁最初为解锁状态。</p>
-<dl class="method">
-<dt id="_thread.get_ident">
-<code class="descclassname">_thread.</code><code class="descname">get_ident</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_thread.get_ident" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="thread.get_ident">
+<span class="sig-prename descclassname"><span class="pre">_thread.</span></span><span class="sig-name descname"><span class="pre">get_ident</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thread.get_ident" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>返回thread identifier当前线程。这是一个非零整数。它的价值没有直接意义;
 它旨在用作例如索引线程特定数据的字典的魔术cookie。当线程退出并创建另一个线程时，可以回收线程标识符。</p>
-<dl class="method">
-<dt id="_thread.stack_size">
-<code class="descclassname">_thread.</code><code class="descname">stack_size</code><span class="sig-paren">(</span><span class="optional">[</span><em>size</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#_thread.stack_size" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="thread.stack_size">
+<span class="sig-prename descclassname"><span class="pre">_thread.</span></span><span class="sig-name descname"><span class="pre">stack_size</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#thread.stack_size" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>返回创建新线程时使用的线程堆栈大小（以字节为单位）。可选的size参数指定用于后续创建的线程的堆栈大小，并且必须是0（使用平台或配置的默认值）或至少为4096（4KiB）的正整数值。
 4KiB是目前支持的最小堆栈大小值，以保证解释器本身有足够的堆栈空间。</p>
 </div>
 <div class="section" id="id2">
-<h2>对象<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>对象<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <dl class="object">
-<dt>
-<code class="descname">_thread.LockType</code></dt>
+<dt class="sig sig-object">
+<span class="sig-name descname"><span class="pre">_thread.LockType</span></span></dt>
 <dd></dd></dl>
 
 <p>这是锁定对象的类型。</p>
 </div>
 <div class="section" id="lock">
-<h2>Lock 类<a class="headerlink" href="#lock" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="Lock">
-<em class="property">class </em><code class="descname">Lock</code><a class="headerlink" href="#Lock" title="Permalink to this definition">¶</a></dt>
+<h2>Lock 类<a class="headerlink" href="#lock" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Lock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Lock</span></span><a class="headerlink" href="#Lock" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Python提供的线程模块包含一个易于实现的锁定机制，可以实现线程之间的同步。通过调用Lock()方法创建一个新锁。
 新锁对象的获取（阻塞）方法用于强制线程同步运行。可选的阻塞参数使您可以控制线程是否等待获取锁定。</p>
 <div class="section" id="id3">
-<h3>方法<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>方法<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <p>锁定对象具有以下方法：</p>
-<dl class="method">
-<dt id="lock.acquire">
-<code class="descclassname">lock.</code><code class="descname">acquire</code><span class="sig-paren">(</span><em>waitflag = 1，timeout = -1</em><span class="sig-paren">)</span><a class="headerlink" href="#lock.acquire" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="lock.acquire">
+<span class="sig-prename descclassname"><span class="pre">lock.</span></span><span class="sig-name descname"><span class="pre">acquire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waitflag</span> <span class="pre">=</span> <span class="pre">1，timeout</span> <span class="pre">=</span> <span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lock.acquire" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>在没有任何可选参数的情况下，此方法无条件地获取锁定，如果有必要，等待它被另一个线程释放（一次只有一个线程可以获取锁定 - 这就是它们存在的原因）。</p>
-<p>如果存在整数 <code class="docutils literal"><span class="pre">waitflag</span></code> 参数，则操作取决于其值：如果它为零，则仅在不等待的情况下立即获取锁定时获取锁定，而如果它非零，则如上所述无条件地获取锁定。</p>
-<p>如果浮点超时参数存在且为正，则它指定返回之前的最长等待时间（以秒为单位）。负超时参数指定无限制等待。如果 <code class="docutils literal"><span class="pre">waitflag</span></code> 为零，则无法指定超时。</p>
-<p><code class="docutils literal"><span class="pre">True</span></code> 如果成功获取锁定则返回值，否则返回值 <code class="docutils literal"><span class="pre">False</span></code> 。</p>
-<dl class="method">
-<dt id="lock.release">
-<code class="descclassname">lock.</code><code class="descname">release</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lock.release" title="Permalink to this definition">¶</a></dt>
+<p>如果存在整数 <code class="docutils literal notranslate"><span class="pre">waitflag</span></code> 参数，则操作取决于其值：如果它为零，则仅在不等待的情况下立即获取锁定时获取锁定，而如果它非零，则如上所述无条件地获取锁定。</p>
+<p>如果浮点超时参数存在且为正，则它指定返回之前的最长等待时间（以秒为单位）。负超时参数指定无限制等待。如果 <code class="docutils literal notranslate"><span class="pre">waitflag</span></code> 为零，则无法指定超时。</p>
+<p><code class="docutils literal notranslate"><span class="pre">True</span></code> 如果成功获取锁定则返回值，否则返回值 <code class="docutils literal notranslate"><span class="pre">False</span></code> 。</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lock.release">
+<span class="sig-prename descclassname"><span class="pre">lock.</span></span><span class="sig-name descname"><span class="pre">release</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lock.release" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>释放锁定。必须先获取锁，但不一定是同一个线程。</p>
-<dl class="method">
-<dt id="lock.locked">
-<code class="descclassname">lock.</code><code class="descname">locked</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lock.locked" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="lock.locked">
+<span class="sig-prename descclassname"><span class="pre">lock.</span></span><span class="sig-name descname"><span class="pre">locked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lock.locked" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>返回锁的状态：True表示被某个线程获取，False则表示没有。</p>
 <p>除了这些方法之外，还可以通过with语句使用锁定对象，例如:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">_thread</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">_thread</span>
 
 <span class="n">a_lock</span> <span class="o">=</span> <span class="n">_thread</span><span class="o">.</span><span class="n">allocate_lock</span><span class="p">()</span>
 <span class="k">with</span> <span class="n">a_lock</span><span class="p">:</span>

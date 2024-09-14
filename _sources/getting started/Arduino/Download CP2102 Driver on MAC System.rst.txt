@@ -1,0 +1,39 @@
+Download CP2102 Driver on MAC System
+======================================
+
+**Download CP2102 driver**
+
+`Download CP2102 driver <https://www.dropbox.com/scl/fo/e1ogaizxh5s4xm9fbiywf/AH-oDDo70sKkYdkpYK086bM?rlkey=cbpff8tenoxmxgz5gem3d2r12&st=6m621k5p&dl=0>`_
+
+
+**Installation**
+
+Open "Mac System" folder, then open "Mac_OSX_VCP_Driver" folder, and then double-click "SiLabsUSBDriverDisk.dmg" installation file, according to the following installation window prompts to install.
+
+.. figure:: /../images/Mac_CP2102_driver-1.png
+    :align: center
+
+Click "Continue".
+
+.. figure:: /../images/Mac_CP2102_driver-2.png
+    :align: center
+
+Click "Agree".
+
+.. figure:: /../images/Mac_CP2102_driver-3.png
+    :align: center
+
+Your Mac may be prompted for a password for installation, so enter your login password.
+
+.. figure:: /../images/Mac_CP2102_driver-4.png
+    :align: center
+
+This prompt indicates that the driver has been installed.
+
+.. figure:: /../images/Mac_CP2102_driver-5.png
+    :align: center
+
+Then enter Arduino IDE, you can see that the software recognizes the serial port.
+
+.. figure:: /../images/Mac_CP2102_driver-6.png
+    :align: center

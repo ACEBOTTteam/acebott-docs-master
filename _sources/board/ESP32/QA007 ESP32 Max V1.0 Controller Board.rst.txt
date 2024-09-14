@@ -1,0 +1,235 @@
+QA007/QA008/QA009 ESP32 Max V1.0 Controller Board
+=======
+
+.. image:: /../images/ESP32-1.jpg
+    :align: center
+
+1.Introduction
+------------
+
+This is a general WIFI + Bluetooth controller board based on ESP32, integrated ESP32-WROOM-32 module and compatible with Arduino.
+
+It has high-speed SPI, UART, I2S and I2C. In addition, it is equipped with freeRTOS operating system, which is quite suitable for Internet of things and smart home.
+
+Provides a rich fast interface, convenient for developers to use.
+
+If you want to know more about ESP32, `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Getting%20Started%20with%20ESP32.html>`_
+
+2.Specifications
+------------
+
++-----------------------+-------------------------------------------------------------------------+
+| Connectivity          | WI-FI                 | Bluetooth LE                                    |
++=======================+=========================================================================+
+| Chip                  | ESP-WROOM-32                                                            |
++-----------------------+-------------------------------------------------------------------------+
+| Clock                 | 240MHz                                                                  |
++-----------------------+-------------------------------------------------------------------------+
+| Ram                   | 448KB                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| FLASH                 | 4MB                                                                     |
++-----------------------+-------------------------------------------------------------------------+
+| Interfaces            | UART | I2C | SPI | CAN                                                  |
++-----------------------+-------------------------------------------------------------------------+
+| Input Voltages        | 6-18V                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| Pinout                | 25(DIGITAL) | 15(ANALOG)| 25(PWM) | 2(DAC) | 2(UART) | 2(SPI) | 1（I2C）|                      
++-----------------------+-------------------------------------------------------------------------+
+
+3.Features
+------------
+
+1.Upgrade Type-C interface for stronger compatibility
+
+2.IO pins are all exported to facilitate development
+
+3.No extra breadboard is needed. It has male and female pins, and the pins are clearly colored for easy wiring
+
+4.The Type-C interface is equipped with an electrostatic discharge protection diode and a transient voltage suppression diode to protect the chip from electrostatic breakdown and damage from various surge pulses.
+
+4.PCB Dimensions
+------------
+
+.. image:: /../images/ESP32-2.png
+    :align: center
+
+5.Pin Interfaces
+------------
+
+Here is an explanation of what every element and interface of the board does:
+
+.. image:: /../images/ESP32-3.png
+    :align: center
+
+6.Specialized Functions of Some Pins
+------------
+
+`ESP32-Wroom-32E Datesheet <https://www.dropbox.com/scl/fo/xpi87pgxl4w03wr9iuuc1/APOgDiBelV-p23V7gv63-SA?rlkey=z9nuz5otqj1qejhfbe7xtythe&st=q69y29a6&dl=0>`_
+
+**Input-only pins**
+
+GPIO34 to 39 are input-only pins. These pins have no internal pull-up or pull-down resistors. They can't be used as output, so you can only use these pins as input:
+
+GPIO 34 / GPIO 35 / GPIO 36 / GPIO 39
+
+**Analog-to-digital Converter (ADC)**
+
+
+The ESP32 has an 18 x 12-bit ADC input channel (whereas the ESP8266 only has a 1 x 10-bit ADC). These are the GPIOs that can be used as ADCs and corresponding channels:
+
+ADC1_CH0 (GPIO 36) / ADC1_CH1 (GPIO 37) / ADC1_CH2 (GPIO 38) / ADC1_CH3 (GPIO 39) / ADC1_CH4 (GPIO 32) / ADC1_CH5 (GPIO 33) / ADC1_CH6 (GPIO 34) / ADC1_CH7 (GPIO 35)
+
+ADC2_CH0 (GPIO 4) / ADC2_CH1 (GPIO 0) / ADC2_CH2 (GPIO 2) / ADC2_CH3 (GPIO 15) / ADC2_CH4 (GPIO 13) / ADC2_CH5 (GPIO 12) / ADC2_CH6 (GPIO 14) / ADC2_CH7 (GPIO 27) / ADC2_CH8 (GPIO 25) / ADC2_CH9 (GPIO 26)
+
+**Digital Analog Converter (DAC)**
+
+
+There are 2 x 8-bit DAC channels on the ESP32, which are used to convert the digital signal into an analog voltage signal output. These are the DAC channels:
+
+DAC1 (GPIO25) / DAC2 (GPIO26)
+
+**PWM**
+
+
+The ESP32 LED PWM controller has 16 independent channels and can be configured to generate PWM signals with different characteristics. All pins that can be output can be used as PWM pins (GPIOs 34 to 39 cannot produce PWM).
+
+**I2C**
+
+
+ESP32 has two I2C channels and any pin can be set to SDA or SCL. When using ESP32 with Arduino IDE, the default I2C pin is:
+
+GPIO 21（SDA） / GPIO 22（SCL）
+
+If you want to use another pin, when using the wire library, just call: Wire.begin(SDA, SCL);
+
+**SPI**
+
+By default, the SPI pin map is:
+
++--------+---------+---------+--------+--------+
+| SPI    | MOSI    | MISO    | CLK    | CS     |
++========+=========+=========+========+========+
+| VSPI   | GPIO 23 | GPIO 19 | GPIO 18| GPIO 5 |
++--------+---------+---------+--------+--------+
+| HSPI   | GPIO 13 | GPIO 12 | GPIO 14|GPIO 15 | 
++--------+---------+---------+--------+--------+
+
+**Strapping pins**
+
+GPIO 0 / GPIO 2 / GPIO 4 / GPIO 5 ( Must be high during startup ) / GPIO 12（ Must be low during startup ） /GPIO 15（ Must be high during startup ）
+
+These pins are used to put the ESP32 into bootloader or burn mode. On most development boards with built-in USB/Serial, you don't need to worry about the status of these pins. The pin is in the correct burn or boot mode by default. If you have some peripherals connected to Strapping pins and you are having problems uploading code or burning your ESP32, it may be because these peripherals are preventing the ESP32 from entering the correct mode. Read the boot mode selection documentation to guide you through making these pins work as expected after reset, burn, or boot.
+
+**Pins HIGH at Boot**
+
+Some GPIOs change their state to high or output PWM signals upon startup or reset. This means that if the output is connected to these GPIOs, you may get unexpected results when the ESP32 is reset or restarted.
+
+GPIO 1 / GPIO 3 / GPIO 5 / GPIO 6 to GPIO 11 (connected to the ESP32 integrated SPI flash memory – not recommended to use). / GPIO 14 / GPIO 15
+
+**Enable (EN)**
+
+Enable (EN) is the chip enable pin. This means you can use the button connected to that pin to restart the ESP32.
+
+High level: Chip enabled
+
+Low level: Chip disable
+
+7.Notice
+------------
+
+1.ADC2 pins cannot be used when using Wi-Fi. So if you are on Wi-Fi and you can't get a value from the ADC2 GPIO, you might consider using the ADC1 GPIO instead.
+
+2.The ADC input channel has a 12-bit resolution. This means that you can get analog readings between 0 and 4095, where 0 corresponds to 0V and 4095 corresponds to 3.3V. You can also set the resolution of the channel as well as the ADC range on the code.
+
+3.ESP32 ADC pins do not have linear behavior. You might not be able to distinguish between 0 and 0.1V, or 3.2 and 3.3V. You need to keep this in mind when using ADC pins. You will get a behavior similar to the one shown below.
+
+.. image:: /../images/ESP32-17.png
+    :align: center
+
+8.Detailed Use with ARDUINO Software as follows:
+------------
+
+**Step1 | Download the Arduino environment (IDE)**
+
+ `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
+
+
+**Step2 | Install the ESP32 plugin in the Arduino IDE**
+
+ `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
+
+**Step3 | Download CH340 Driver**
+
+ `MAC System <https://acebottteam.github.io/acebott-docs-master/getting%20started/Arduino/Download%20CH340%20Driver%20on%20MAC%20System.html>`_
+
+ `Windows System <https://acebottteam.github.io/acebott-docs-master/getting%20started/Arduino/Download%20CH340%20Driver%20on%20Windows%20System.html>`_
+
+**Step4 | Upload the LED lighting program**
+
+Connect the board to the computer using a Type-C data cable.The red power LED should go on.
+
+.. image:: /../images/ESP32-10.jpg
+    :align: center
+
+Select "ESP32" -> "ESP32 Dev Module" from the Tools > Board menu
+
+.. image:: /../images/ESP32-11.png
+    :align: center
+
+Select the serial device of the  board from the Tools | Serial Port menu.  This is likely to be COM8 or higher (COM1and COM2 are usually reserved for hardware serial ports).  To find out, you can disconnect your board and re-open the menu;  the entry that disappears should be the board.  Reconnect the board and select that serial port.  Here you should select COM 8 as below.
+
+.. image:: /../images/ESP32-12.png
+    :align: center
+
+You also can find the right ports shown on Device Manager.
+
+.. image:: /../images/ESP32-13.png
+    :align: center
+
+Upload the Program.
+
+.. literalinclude:: /../../examples/TEST_esp32_Blink/TEST_esp32_Blink.ino
+    :linenos:
+
+click the “Upload” button to upload the code.  will appear in the status bar. 
+
+.. image:: /../images/ESP32-14.png
+    :align: center
+
+Wait a few seconds. If the upload is successful, the message "Done uploading."
+
+.. image:: /../images/ESP32-15.png
+    :align: center
+
+And the LED on the board blink.
+
+.. image:: /../images/ESP32-16.jpg
+    :align: center
+
+If your tests were successful, you can try to upload the following code. When a network is found in the environment, the number and name of all nearby networks will be obtained and displayed in the serial port, 
+and the indicator will light up.
+
+.. literalinclude:: /../../examples/TEST_esp32/TEST_esp32.ino
+    :linenos:
+
+
+The serial port display effect diagram is as follows：
+
+.. image:: /../images/ESP32-5.png
+    :align: center
+
+9.Package List
+------------
+
+    ESP32 Max V1.0 Controller Board * 1pcs
+
+    Type-C cable * 1pcs
+
+10.Get One Now
+------------
+
+    B2B Business: info@acebott.com
+
+    `Official Website <https://www.acebott.com/products/easy-plug-esp32-shield-board-v1-0-for-qa008-acebott-esp32-max-v1-0?_pos=3&_psq=QA001&_ss=e&_v=1.0>`_
+
+    `Amazon US Store <https://www.amazon.com/ACEBOTT-Development-Board-Compatible-Arduino/dp/B0D5D7Q42V>`_

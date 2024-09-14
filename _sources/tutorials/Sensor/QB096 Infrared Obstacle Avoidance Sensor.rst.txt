@@ -1,0 +1,79 @@
+QB096 Infrared Obstacle Avoidance Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Infrared_Obstacle_Avoidance_Sensor-1.png
+    :align: center
+
+
+The infrared obstacle avoidance sensor transmits infrared light through a transmitter, and detects the change in the amount of light reflected by the detection object or blocked by the receiver to obtain an output signal.
+
+The working principle of infrared obstacle avoidance sensor is based on the photoelectric effect, which converts photon energy into electron energy.
+Infrared obstacle avoidance sensor mainly includes light source, receiver, signal processing circuit and other parts. Among them, the light source is mainly used to irradiate the object to be detected with a certain light intensity, and the receiver receives the light signal reflected, transmitted, scattered or emitted from the object to be detected through the photosensitive element, and converts it into an electrical signal. Finally, the signal processing circuit amplifies, filters, compares and counts the electrical signal to realize the detection and control of the object.
+
+Application reference: Automatic doors, elevators, security systems, etc.
+
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 3.3~5V                  |
++-------------------------+-------------------------+
+| Operating temperature   | -40°C~+70°C             |
++-------------------------+-------------------------+
+| Input signal            | Digital signal          |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Infrared_Obstacle_Avoidance_Sensor-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/Infrared_Obstacle_Avoidance_Sensor-3.png
+    :align: center
+
++------------------------------------+----------------+
+|Infrared Obstacle Avoidance Sensor  | ESP32          |
++====================================+================+
+| VCC                                | 5V             |
++------------------------------------+----------------+
+| GND                                | GND            |
++------------------------------------+----------------+
+| Sign                               | Digital Pin 23 |
++------------------------------------+----------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Infrared_Obstacle_Avoidance_Sensor/Infrared_Obstacle_Avoidance_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After you have successfully connected the circuits according to the wiring diagram and successfully uploaded the correct program, the serial monitor will output "Obstacle detected!" when it detects a person or obstacle approaching.
+
+
+
+.. figure:: /../images/Infrared_Obstacle_Avoidance_Sensor-4.png
+    :align: center
+
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/brs11kgc38vbp17zj5q58/ABuh_dr4vNOTOKbrlOOtbTA?rlkey=ltzbwa4saltj6m3zj6li07o8x&st=yjcliygd&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/brs11kgc38vbp17zj5q58/ABuh_dr4vNOTOKbrlOOtbTA?rlkey=ltzbwa4saltj6m3zj6li07o8x&st=yjcliygd&dl=0>`_

@@ -1,0 +1,83 @@
+QE040 Moisture Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Moisture-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+Soil moisture sensor is a sensor used to detect soil moisture, which can sense the soil condition in time to make plants grow better.
+
+The soil moisture sensor is to insert two probes into the soil, and then as the current passes through the soil, the sensor obtains the resistance value by reading the current change between the two probes, and converts this resistance value to the moisture content. The higher the moisture (and the less resistance), the better the conductivity of the soil. Therefore, if the soil is short of water, the analog value output by the sensor will decrease; Otherwise, it will increase.
+
+Application reference: smart agriculture, plant research and other scenarios that need to sense soil moisture.
+
+**2.Parameter Specification**
+
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| output voltage        | 0V~2.3V               |
++-----------------------+-----------------------+
+| Output signal         | analog signal         |
++-----------------------+-----------------------+
+| Size                  | 2.3cm*6.28cm          |
++-----------------------+-----------------------+
+
+.. figure:: /../images/Moisture-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+        
+**3.Wiring Diagram**
+
+
+.. figure:: /../images/Moisture-2.png
+    :align: center
++-----------------------+-----------------------+
+|Moisture Sensor        | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Analog Pin A0         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+
+.. literalinclude:: /../../examples/Moisture_Sensor/Moisture_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE and set the baud rate to 9600.
+
+When we place the module in wet soil or water, the wetter the module's contact surface, the larger the value returned; When we place the module into dry soil or air, the drier the contact surface of the module, the smaller the value returned.
+
+.. figure:: /../images/Moisture-3.png
+    :align: center
+.. figure:: /../images/Moisture-4.png
+    :align: center
+
+.. Hint:: 
+
+   The live part of the sensor should not touch water.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/rn2uek0v10xocfnqvikkm/h?rlkey=lgtldj50d1yre2d4qr7xz09f2&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

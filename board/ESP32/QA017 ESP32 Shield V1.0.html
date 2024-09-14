@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QA017 ESP32 Shield V1.0 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Arduino" href="../Arduino/index.html" />
+    <link rel="prev" title="QA052 ESP32 Car Shield V1.0" href="QA052%20ESP32%20Car%20Shield%20V1.0.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ESP32/ESP8266</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="QA007%20ESP32%20Max%20V1.0%20Controller%20Board.html">QA007/QA008/QA009 ESP32 Max V1.0 Controller Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA010%20ESP8266%20V1.0.html">QA010 ESP8266 V1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QZ041%20Spider%20Shield%20V1.0.html">QZ041 Spider Shield V1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA011%20ESP32%20CAM%20V1.0.html">QA011 ESP32 CAM V1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QA052%20ESP32%20Car%20Shield%20V1.0.html">QA052 ESP32 Car Shield V1.0</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">QA017 ESP32 Shield V1.0</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">ESP32/ESP8266</a></li>
+      <li class="breadcrumb-item active">QA017 ESP32 Shield V1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="qa017-esp32-shield-v1-0">
+<h1>QA017 ESP32 Shield V1.0<a class="headerlink" href="#qa017-esp32-shield-v1-0" title="Permalink to this heading"></a></h1>
+<img alt="../../_images/ESP32-Shield-1.png" class="align-center" src="../../_images/ESP32-Shield-1.png" />
+<p><strong>1.Introduction</strong></p>
+<p>The ACEBOTT-ESP32-Shield-V1.0 is an expansion board for the ESP32-Max-V3.0 controller board.
+The expansion board adopts a standardized connection method, which simplifies the hardware connection process, can also reduce the wiring work of users, reduce the possibility of errors, and better help developers improve the development efficiency of the project.</p>
+<p>For more information about the ESP32 controller board, please click the following link:
+<a class="reference external" href="https://acebottteam.github.io/acebott-docs-master/board/ESP32/QA007%20ESP32%20Max%20V1.0%20Controller%20Board.html">https://acebottteam.github.io/acebott-docs-master/board/ESP32/QA007%20ESP32%20Max%20V1.0%20Controller%20Board.html</a></p>
+<p><strong>2.Features</strong></p>
+<p>Eight 3-pin digital pins for connecting 5V sensors/modules</p>
+<p>Six 3-pin analog pins, four of which are connected to 5V sensors/modules and two to 3.3V sensors/modules</p>
+<p>One 4-pin digital pin (two signal pins, one power, one GND)</p>
+<p>One 4-pin digital pin (three signal pins, one GND)</p>
+<p>Two rows with ESP32-Max-V3.0 pin interface</p>
+<p>Two I2C pins</p>
+<p>Two servo interfaces</p>
+<p>One serial port</p>
+<p>One power supply interface (output current of the maximum input voltage 15V 3A)</p>
+<p>Operating temperature 0~70℃</p>
+<p><strong>3.Specifications</strong></p>
+<p>Size：68.1mm*52.1mm</p>
+<p>Weight：22.1g</p>
+<img alt="../../_images/ESP32-Shield-2.png" class="align-center" src="../../_images/ESP32-Shield-2.png" />
+<p><strong>4.Sample Code</strong></p>
+<p>Connect the expansion board to the esp32 controller board, connect an LED light module in the No. 5 pin interface of the expansion board, upload program, control the opening and closing of the LED light.</p>
+<p>（1）Wiring Diagram</p>
+<img alt="../../_images/ESP32-Shield-3.png" class="align-center" src="../../_images/ESP32-Shield-3.png" />
+<p>（2）Sample Code</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">#define Led 5</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">void</span> <span class="n">setup</span><span class="p">(){</span>
+<span class="linenos"> 4</span>  <span class="n">pinMode</span><span class="p">(</span><span class="n">Led</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span><span class="o">//</span><span class="n">Define</span> <span class="n">the</span> <span class="n">mode</span> <span class="n">of</span> <span class="n">the</span> <span class="n">LED</span> <span class="n">light</span>
+<span class="linenos"> 5</span><span class="p">}</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="n">void</span> <span class="n">loop</span><span class="p">(){</span>
+<span class="linenos"> 8</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Led</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span><span class="o">//</span><span class="n">Turn</span> <span class="n">on</span> <span class="n">LED</span> <span class="n">light</span>
+<span class="linenos"> 9</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="linenos">10</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Led</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span><span class="o">//</span><span class="n">Turn</span> <span class="n">off</span> <span class="n">LED</span> <span class="n">light</span>
+<span class="linenos">11</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="linenos">12</span><span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>5.Test Result</strong></p>
+<p>After the program is uploaded, the LED lights achieve a cycle effect of flashing every second.</p>
+<img alt="../../_images/ESP32-Shield-4.png" class="align-center" src="../../_images/ESP32-Shield-4.png" />
+<p><strong>6.Related Resources</strong></p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.dropbox.com/scl/fo/t5sjz5lt8ly4slwvly7gx/AD07jiT4wr3s7pvvTIsVKJY?rlkey=b6ekvm6w6ieuwenzl815a5065&amp;st=bdvfubt9&amp;dl=0">PDF and Code</a></p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="QA052%20ESP32%20Car%20Shield%20V1.0.html" class="btn btn-neutral float-left" title="QA052 ESP32 Car Shield V1.0" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Arduino/index.html" class="btn btn-neutral float-right" title="Arduino" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ujson – JSON 编码和解码 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>ujson – JSON 编码和解码 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">ujson</span></code> – JSON 编码和解码</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ujson</span></code> – JSON 编码和解码</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,28 +95,28 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-ujson">
-<span id="ujson-json"></span><h1><a class="reference internal" href="#module-ujson" title="ujson: JSON 编码和解码"><code class="xref py py-mod docutils literal"><span class="pre">ujson</span></code></a> – JSON 编码和解码<a class="headerlink" href="#module-ujson" title="Permalink to this headline">¶</a></h1>
-<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-cpython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/json.html#module-json">json</a></p>
+<span id="ujson-json"></span><h1><a class="reference internal" href="#module-ujson" title="ujson: JSON 编码和解码"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ujson</span></code></a> – JSON 编码和解码<a class="headerlink" href="#module-ujson" title="Permalink to this heading"></a></h1>
+<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-CPython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/json.html#module-json">json</a></p>
 <p>此模块允许在Python对象和JSON数据格式之间进行转换。</p>
 <div class="section" id="id1">
-<h2>函数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="ujson.dump">
-<code class="descclassname">ujson.</code><code class="descname">dump</code><span class="sig-paren">(</span><em>obj</em>, <em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.dump" title="Permalink to this definition">¶</a></dt>
+<h2>函数<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="ujson.dump">
+<span class="sig-prename descclassname"><span class="pre">ujson.</span></span><span class="sig-name descname"><span class="pre">dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.dump" title="Permalink to this definition"></a></dt>
 <dd><p>将 <em>obj</em> 串行化为 <em>JSON</em> 字符串，将其写入给定的 <em>stream</em> 。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="ujson.dumps">
-<code class="descclassname">ujson.</code><code class="descname">dumps</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.dumps" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="ujson.dumps">
+<span class="sig-prename descclassname"><span class="pre">ujson.</span></span><span class="sig-name descname"><span class="pre">dumps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.dumps" title="Permalink to this definition"></a></dt>
 <dd><p>将dict类型的数据转换成str，因为如果直接将dict类型的数据写入json文件中会发生报错，因此在将数据写入时需要用到该函数。</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">obj</span></code> 要转换的对象</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">obj</span></code> 要转换的对象</p></li>
 </ul>
 </dd></dl>
 
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="mi">6</span><span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="mi">6</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">),</span> <span class="n">obj</span><span class="p">)</span> <span class="c1">#原来为dict类型</span>
 <span class="go">&lt;class &#39;dict&#39;&gt; {3: 4, 1: 2, &#39;a&#39;: 6}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">jsObj</span> <span class="o">=</span> <span class="n">ujson</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="c1">#将dict类型转换成str</span>
@@ -128,21 +124,21 @@
 <span class="go">&lt;class &#39;str&#39;&gt; {3: 4, 1: 2, &quot;a&quot;: 6}</span>
 </pre></div>
 </div>
-<dl class="function">
-<dt id="ujson.load">
-<code class="descclassname">ujson.</code><code class="descname">load</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.load" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="ujson.load">
+<span class="sig-prename descclassname"><span class="pre">ujson.</span></span><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.load" title="Permalink to this definition"></a></dt>
 <dd><p>解析给定的 <em>stream</em> ，将其解释为JSON字符串并将数据反序列化为Python对象。返回结果对象。</p>
-<p>解析继续，直到遇到文件结尾。如果未正确形成流中的数据，则引发 <a class="reference internal" href="builtins.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a></p>
+<p>解析继续，直到遇到文件结尾。如果未正确形成流中的数据，则引发 <a class="reference internal" href="builtins.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a></p>
 </dd></dl>
 
-<dl class="function">
-<dt id="ujson.loads">
-<code class="descclassname">ujson.</code><code class="descname">loads</code><span class="sig-paren">(</span><em>str</em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.loads" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="ujson.loads">
+<span class="sig-prename descclassname"><span class="pre">ujson.</span></span><span class="sig-name descname"><span class="pre">loads</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ujson.loads" title="Permalink to this definition"></a></dt>
 <dd><p>解析 JSON 字符串并返回对象。如果字符串格式错误将引发 ValueError 异常。</p>
 </dd></dl>
 
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="mi">6</span><span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="mi">6</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">jsDumps</span> <span class="o">=</span> <span class="n">ujson</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">jsLoads</span> <span class="o">=</span> <span class="n">ujson</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">jsDumps</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">),</span> <span class="n">obj</span><span class="p">)</span>

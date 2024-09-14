@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>neopixel — WS2812 灯带 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>neopixel — WS2812 灯带 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">neopixel</span></code> — WS2812 灯带</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">neopixel</span></code> — WS2812 灯带</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,33 +95,34 @@
            <div itemprop="articleBody">
              
   <div class="section" id="neopixel-ws2812">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">neopixel</span></code> — WS2812 灯带<a class="headerlink" href="#neopixel-ws2812" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">neopixel</span></code> — WS2812 灯带<a class="headerlink" href="#neopixel-ws2812" title="Permalink to this heading"></a></h1>
 <p>NeoPixels也被称为WS2812 LED彩带，是连接在一起的全彩色led灯串。你可以设置他它们的红色，绿色和蓝色值，
 在0到255之间。neopixel模块可通过精确的时间控制，生成WS2812控制信号。</p>
 <div class="section" id="id1">
-<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="NeoPixel">
-<em class="property">class </em><code class="descname">NeoPixel</code><span class="sig-paren">(</span><em>pin</em>, <em>n</em>, <em>bpp=3</em>, <em>timing=0</em>, <em>brightness=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel" title="Permalink to this definition">¶</a></dt>
+<h2>构建对象<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="NeoPixel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NeoPixel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bpp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">brightness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel" title="Permalink to this definition"></a></dt>
 <dd><ul class="simple">
-<li><code class="docutils literal"><span class="pre">pin</span></code> :输出引脚,可使用引脚见下文</li>
-<li><code class="docutils literal"><span class="pre">n</span></code> :LED灯的个数</li>
-<li><code class="docutils literal"><span class="pre">bpp</span></code>:<ul>
-<li><code class="docutils literal"><span class="pre">3</span></code>:默认为3元组RGB</li>
-<li><code class="docutils literal"><span class="pre">4</span></code>:对于具有3种以上颜色的LED，例如RGBW像素或RGBY像素,采用4元组RGBY或RGBY像素</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code> :输出引脚,可使用引脚见下文</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code> :LED灯的个数</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bpp</span></code>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">3</span></code>:默认为3元组RGB</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">4</span></code>:对于具有3种以上颜色的LED，例如RGBW像素或RGBY像素,采用4元组RGBY或RGBY像素</p></li>
 </ul>
 </li>
-<li><code class="docutils literal"><span class="pre">timing</span></code>:默认等于0,为400KHz速率；等于1，为800KHz速率</li>
-<li><code class="docutils literal"><span class="pre">brightness</span></code>:亮度调节,范围0~1,默认为1.0</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">timing</span></code>:默认等于0,为400KHz速率；等于1，为800KHz速率</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">brightness</span></code>:亮度调节,范围0~1,默认为1.0</p></li>
 </ul>
 </dd></dl>
 
 <div class="admonition attention">
-<p class="first admonition-title">Attention</p>
-<p class="last">NeoPixel可使用的pin引脚有掌控板的P5,P6,P7(板上RGB),P8,P9,P11,P13,P14,P15,P16,P19,P20。</p>
+<p class="admonition-title">Attention</p>
+<p>NeoPixel可使用的pin引脚有掌控板的P5,P6,P7(板上RGB),P8,P9,P11,P13,P14,P15,P16,P19,P20。</p>
 </div>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="k">import</span> <span class="n">Pin</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
 <span class="kn">import</span> <span class="nn">neopixel</span>
 
 <span class="n">pin</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
@@ -134,36 +131,36 @@
 </div>
 </div>
 <div class="section" id="id2">
-<h2>方法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="method">
-<dt id="NeoPixel.write">
-<code class="descclassname">NeoPixel.</code><code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel.write" title="Permalink to this definition">¶</a></dt>
+<h2>方法<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="NeoPixel.write">
+<span class="sig-prename descclassname"><span class="pre">NeoPixel.</span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel.write" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>把数据写入LED中。</p>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">np</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="c1"># 设置第一个LED像素为白色</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="c1"># 设置第一个LED像素为白色</span>
 <span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="NeoPixel.fill">
-<code class="descclassname">NeoPixel.</code><code class="descname">fill</code><span class="sig-paren">(</span><em>rgb_buf</em><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel.fill" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="NeoPixel.fill">
+<span class="sig-prename descclassname"><span class="pre">NeoPixel.</span></span><span class="sig-name descname"><span class="pre">fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb_buf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel.fill" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>填充所有LED像素。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">rgb_buf</span></code> :rgb颜色</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rgb_buf</span></code> :rgb颜色</p></li>
 </ul>
 </div></blockquote>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="NeoPixel.brightness">
-<code class="descclassname">NeoPixel.</code><code class="descname">brightness</code><span class="sig-paren">(</span><em>brightness</em><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel.brightness" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="NeoPixel.brightness">
+<span class="sig-prename descclassname"><span class="pre">NeoPixel.</span></span><span class="sig-name descname"><span class="pre">brightness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">brightness</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NeoPixel.brightness" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>亮度调节,范围0~1.0</p>

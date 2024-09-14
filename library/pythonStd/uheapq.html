@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>uheapq – 堆队列算法 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>uheapq – 堆队列算法 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">uheapq</span></code> – 堆队列算法</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">uheapq</span></code> – 堆队列算法</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,29 +95,29 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-uheapq">
-<span id="uheapq"></span><h1><a class="reference internal" href="#module-uheapq" title="uheapq: 堆队列算法"><code class="xref py py-mod docutils literal"><span class="pre">uheapq</span></code></a> – 堆队列算法<a class="headerlink" href="#module-uheapq" title="Permalink to this headline">¶</a></h1>
-<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-cpython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/heapq.html#module-heapq">heapq</a></p>
+<span id="uheapq"></span><h1><a class="reference internal" href="#module-uheapq" title="uheapq: 堆队列算法"><code class="xref py py-mod docutils literal notranslate"><span class="pre">uheapq</span></code></a> – 堆队列算法<a class="headerlink" href="#module-uheapq" title="Permalink to this heading"></a></h1>
+<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-CPython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档: <a class="reference external" href="https://docs.python.org/3.5/library/heapq.html#module-heapq">heapq</a></p>
 <p>T该模块实现堆队列算法。</p>
 <p>堆队列只是一个以某种方式存储其元素的列表。</p>
 <div class="section" id="id1">
-<h2>函数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="uheapq.heappush">
-<code class="descclassname">uheapq.</code><code class="descname">heappush</code><span class="sig-paren">(</span><em>heap</em>, <em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#uheapq.heappush" title="Permalink to this definition">¶</a></dt>
-<dd><p>Push the <code class="docutils literal"><span class="pre">item</span></code> onto the <code class="docutils literal"><span class="pre">heap</span></code>.</p>
+<h2>函数<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="uheapq.heappush">
+<span class="sig-prename descclassname"><span class="pre">uheapq.</span></span><span class="sig-name descname"><span class="pre">heappush</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">heap</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uheapq.heappush" title="Permalink to this definition"></a></dt>
+<dd><p>Push the <code class="docutils literal notranslate"><span class="pre">item</span></code> onto the <code class="docutils literal notranslate"><span class="pre">heap</span></code>.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="uheapq.heappop">
-<code class="descclassname">uheapq.</code><code class="descname">heappop</code><span class="sig-paren">(</span><em>heap</em><span class="sig-paren">)</span><a class="headerlink" href="#uheapq.heappop" title="Permalink to this definition">¶</a></dt>
-<dd><p>Pop the first item from the <code class="docutils literal"><span class="pre">heap</span></code>, and return it.  Raises IndexError if
+<dl class="py function">
+<dt class="sig sig-object py" id="uheapq.heappop">
+<span class="sig-prename descclassname"><span class="pre">uheapq.</span></span><span class="sig-name descname"><span class="pre">heappop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">heap</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uheapq.heappop" title="Permalink to this definition"></a></dt>
+<dd><p>Pop the first item from the <code class="docutils literal notranslate"><span class="pre">heap</span></code>, and return it.  Raises IndexError if
 heap is empty.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="uheapq.heapify">
-<code class="descclassname">uheapq.</code><code class="descname">heapify</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#uheapq.heapify" title="Permalink to this definition">¶</a></dt>
-<dd><p>Convert the list <code class="docutils literal"><span class="pre">x</span></code> into a heap.  This is an in-place operation.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="uheapq.heapify">
+<span class="sig-prename descclassname"><span class="pre">uheapq.</span></span><span class="sig-name descname"><span class="pre">heapify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uheapq.heapify" title="Permalink to this definition"></a></dt>
+<dd><p>Convert the list <code class="docutils literal notranslate"><span class="pre">x</span></code> into a heap.  This is an in-place operation.</p>
 </dd></dl>
 
 </div>

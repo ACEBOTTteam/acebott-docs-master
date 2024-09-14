@@ -1,0 +1,75 @@
+QZ004 RGB LED Strip
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/RGB_LED_Strip-1.png
+    :align: center
+
+
+The RGB light strip usually consists of multiple RGB lights arranged at certain spacing and connected to the circuit board.
+
+Each RGB lamp contains red, green, blue three different colors of the small lamp beads each one, when the internal three small lamp beads with different brightness collocation, 
+similar to the three colors in different proportions of mixed, the final external presentation is the mixed light color.
+
+Application reference: This module can be used for home decoration, festivals and celebrations, light and shadow art, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 5V                    |
++-----------------------+-----------------------+
+| Operating temperature | -30°C~+70°C           |
++-----------------------+-----------------------+
+| Number of lamp beads  | 8                     |
++-----------------------+-----------------------+
+| Color of light        | RGB                   |
++-----------------------+-----------------------+
+| Peak wavelength       | 625nm;470nm;530nm     |
++-----------------------+-----------------------+
+| Control signal        | digital signal        |
++-----------------------+-----------------------+
+| Size                  | 13cm                  |
++-----------------------+-----------------------+
+
+.. figure:: /../images/RGB_LED_Strip-4.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/RGB_LED_Strip-2.png
+    :align: center
++-----------------------+-----------------------+
+|RGB LED Strip          | UNO                   |
++=======================+=======================+
+| +5V                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| DO                    | Digital Pin 6         |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/RGB_LED_Strip/RGB_LED_Strip.ino
+    :linenos:
+
+**5.Test Result**
+
+When you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program, you will see the light strip display different colors of light in the order of red, green, blue, yellow, blue, pink, and white.
+
+.. figure:: /../images/RGB_LED_Strip-3.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/fzdeqz6dpag4z438h7ojs/h?rlkey=c53qahprhcknsqjiqas1gsr0q&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_
+

@@ -1,0 +1,69 @@
+Button Sensor
+======================================
+
+一、Product Introduction
+------
+
+.. figure:: /../images/Button-1.jpeg
+    :align: center
+    :width: 300
+    :height: 200
+
+Key module is a common electronic component used to achieve key operation in electronic devices.
+
+The key module is composed of two electrodes and a spring-type button, which is located between the two electrodes. When the button is not pressed, the two electrodes of the button are disconnected, and the circuit is in the disconnected state; When the key is pressed, the two electrodes touch to form a closed circuit.
+
+Application reference: keyboard, control switch, etc.
+
+二、Parameter Specification
+------
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -10°C~+50°C           |
++-----------------------+-----------------------+
+| Output signal         | Digital signal        |
++-----------------------+-----------------------+
+| Size                  | 3.16cm*2.38cm         |
++-----------------------+-----------------------+
+
+三、Wiring Diagram
+------
+
+.. figure:: /../images/Button-2.png
+    :align: center
++-----------------------+-----------------------+
+|PIR Motion Sensor      | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| Sign                  | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+四、Sample Program
+------
+
+.. literalinclude:: /../../examples/Button_Module/Button_Module.ino
+    :linenos:
+
+五、Test Result
+------
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to scroll mode.
+
+When we press the key, the serial port returns data 0; When the key is released, the serial port returns data 1.
+
+.. figure:: /../images/Button-3.png
+    :align: center
+
+.. figure:: /../images/Button-4.jpeg
+    :align: center
+
+六、Related Resources
+------

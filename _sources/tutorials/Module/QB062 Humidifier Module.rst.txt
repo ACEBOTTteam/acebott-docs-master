@@ -1,0 +1,79 @@
+QB062 Humidifier Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Humidifier-1.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+The humidifier module includes a driving plate and a microporous atomizing plate, 
+which is composed of piezoelectric ceramic ring and metal steel sheet. 
+Through the driving circuit board output PWM pulse width modulation, 
+the piezoelectric ceramic produces hundreds of thousands of high-frequency resonances per second, 
+driving the metal sheet vibration. Water is ejected from thousands of micropores in steel sheets to form 4-6 microns of water molecules, 
+which scatter the structure of liquid water molecules and produce water mist.
+
+**2.Parameter Specification**
+
++-------------------------+-------------------------+
+| Parameter               | Value/Representation    |
++=========================+=========================+
+| Operating voltage       | 5V                      |
++-------------------------+-------------------------+
+| Operating temperature   | -20°C~+70°C             |
++-------------------------+-------------------------+
+| Control signal          | Falling edge trigger    |
++-------------------------+-------------------------+
+| Size                    | 3.16cm*2.38cm           |           
++-------------------------+-------------------------+
+
+.. figure:: /../images/Humidifier-2.png
+    :align: center
+    :width: 400
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Humidifier-3.png
+    :align: center
+
++-----------------------+-----------------------+
+|Humidifier Module      | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 7         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Humidifier-Module/Humidifier-Module.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, prepare a container with water, and then place the micro-pore atomizer of the humidifier module face up on the water inside the container. The humidifier will start and spray water mist every five seconds, and then pause for five seconds, and cycle all the time.
+
+
+.. Hint:: 
+    The atomized sheet has a front and back side, and the metal steel side is the water absorbing back side, which is installed downward. The front and back sides are shown below.
+
+.. figure:: /../images/Humidifier-4.png
+    :align: center
+.. figure:: /../images/Humidifier-5.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/w2mm6p8i7e3fyleznjo6n/h?rlkey=zl1mh3h96uepth39ktytp77bn&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/w2mm6p8i7e3fyleznjo6n/h?rlkey=zl1mh3h96uepth39ktytp77bn&dl=0>`_

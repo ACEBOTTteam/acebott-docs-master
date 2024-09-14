@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>gc – 回收内存碎片 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>gc – 回收内存碎片 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">gc</span></code> –  回收内存碎片</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code> –  回收内存碎片</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,68 +95,69 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-gc">
-<span id="gc"></span><h1><a class="reference internal" href="#module-gc" title="gc: 回收内存碎片"><code class="xref py py-mod docutils literal"><span class="pre">gc</span></code></a> –  回收内存碎片<a class="headerlink" href="#module-gc" title="Permalink to this headline">¶</a></h1>
-<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-cpython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档:<a class="reference external" href="https://docs.python.org/3.5/library/gc.html#module-gc">array</a>.</p>
+<span id="gc"></span><h1><a class="reference internal" href="#module-gc" title="gc: 回收内存碎片"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code></a> –  回收内存碎片<a class="headerlink" href="#module-gc" title="Permalink to this heading"></a></h1>
+<p>这个模块实现了相应 <a class="reference internal" href="../../reference/glossary.html#term-CPython"><span class="xref std std-term">CPython</span></a> 模块的一个子集，如下所述。有关更多信息，请参阅原始CPython文档:<a class="reference external" href="https://docs.python.org/3.5/library/gc.html#module-gc">array</a>.</p>
 <div class="section" id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="gc.enable">
-<code class="descclassname">gc.</code><code class="descname">enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.enable" title="Permalink to this definition">¶</a></dt>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.enable">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">enable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.enable" title="Permalink to this definition"></a></dt>
 <dd><p>启用自动回收内存碎片。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="gc.disable">
-<code class="descclassname">gc.</code><code class="descname">disable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.disable" title="Permalink to this definition">¶</a></dt>
-<dd><p>禁用自动回收。堆内存仍然可以分配，但可以通过 <a class="reference internal" href="#gc.collect" title="gc.collect"><code class="xref py py-meth docutils literal"><span class="pre">gc.collect()</span></code></a> 函数进行手动回收内存碎片。</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.disable">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">disable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.disable" title="Permalink to this definition"></a></dt>
+<dd><p>禁用自动回收。堆内存仍然可以分配，但可以通过 <a class="reference internal" href="#gc.collect" title="gc.collect"><code class="xref py py-meth docutils literal notranslate"><span class="pre">gc.collect()</span></code></a> 函数进行手动回收内存碎片。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="gc.collect">
-<code class="descclassname">gc.</code><code class="descname">collect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.collect" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.collect">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">collect</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.collect" title="Permalink to this definition"></a></dt>
 <dd><p>回收内存碎片。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="gc.mem_alloc">
-<code class="descclassname">gc.</code><code class="descname">mem_alloc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.mem_alloc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.mem_alloc">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">mem_alloc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.mem_alloc" title="Permalink to this definition"></a></dt>
 <dd><p>返回分配的堆RAM的字节数.</p>
 <blockquote>
 <div><div class="attention admonition">
-<p class="first admonition-title">与CPython的区别</p>
-<p class="last">此功能是MicroPython扩展.</p>
+<p class="admonition-title">与CPython的区别</p>
+<p>此功能是MicroPython扩展.</p>
 </div>
 </div></blockquote>
 </dd></dl>
 
-<dl class="function">
-<dt id="gc.mem_free">
-<code class="descclassname">gc.</code><code class="descname">mem_free</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.mem_free" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.mem_free">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">mem_free</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.mem_free" title="Permalink to this definition"></a></dt>
 <dd><p>返回可用堆RAM的字节数，如果此数量未知，则返回-1.</p>
 <div class="attention admonition">
-<p class="first admonition-title">与CPython的区别</p>
-<blockquote class="last">
-<div>此功能是MicroPython扩展.</div></blockquote>
+<p class="admonition-title">与CPython的区别</p>
+<blockquote>
+<div><p>此功能是MicroPython扩展.</p>
+</div></blockquote>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="gc.isenabled">
-<code class="descclassname">gc.</code><code class="descname">isenabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.isenabled" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.isenabled">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">isenabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.isenabled" title="Permalink to this definition"></a></dt>
 <dd><p>判断是否启动自动内存碎片收集。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="gc.threshold">
-<code class="descclassname">gc.</code><code class="descname">threshold</code><span class="sig-paren">(</span><span class="optional">[</span><em>amount</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.threshold" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="gc.threshold">
+<span class="sig-prename descclassname"><span class="pre">gc.</span></span><span class="sig-name descname"><span class="pre">threshold</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#gc.threshold" title="Permalink to this definition"></a></dt>
 <dd><p>设置或查询其他GC分配阈值。通常，只有在无法满足新分配时，即在内存不足（OOM）条件下才会触发集合。
 如果调用此函数，除了OOM之外，每次分配了大量字节后都会触发一个集合（总共，因为上一次分配了这么多的字节）。
 amount通常被指定为小于完整堆大小，意图在堆耗尽之前触发集合，并希望早期集合可以防止过多的内存碎片。
 这是一种启发式度量，其效果因应用程序而异，以及量参数的最佳值。</p>
 <p>不带参数调用函数将返回阈值的当前值。值-1表示禁用的分配阈值。</p>
 <div class="attention admonition">
-<p class="first admonition-title">与CPython的区别</p>
-<p class="last">函数是MicroPython扩展。CPython具有类似的功能 - <code class="docutils literal"><span class="pre">set_threshold()</span></code> 但由于不同的GC实现，它的签名和语义是不同的。</p>
+<p class="admonition-title">与CPython的区别</p>
+<p>函数是MicroPython扩展。CPython具有类似的功能 - <code class="docutils literal notranslate"><span class="pre">set_threshold()</span></code> 但由于不同的GC实现，它的签名和语义是不同的。</p>
 </div>
 </dd></dl>
 

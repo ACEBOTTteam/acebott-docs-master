@@ -1,0 +1,48 @@
+QE004 IOT Smart Home Basic Starter Kit for ESP32
+====================
+
+1.Product Introduction
+------
+
+Lumi's Home is an intelligent home system that combines features such as Wi-Fi control and app control. 
+
+It incorporates interactive controls such as RFID door access, human body sensor lamp, and Combustible gas alarm and more.
+
+.. figure:: /../images/QE004-1.png
+    :align: center
+
+2.The Value of Starter Kit
+------
+
+1.The concept of smart home
+
+2.Sensor control and application
+
+3.Knowledge of WI-FI LAN
+
+4.Interactive control of APP
+
+5.Artistic structural design enlightenment
+
+3.Course Description
+------
+
+.. figure:: /../images/QE004-2.png
+    :align: center
+
+4.Part List
+------
+.. figure:: /../images/QE004-3.png
+    :align: center
+
+5.Related Resources
+------
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/ik1b2ue0qxa4obkjyg0fy/h?rlkey=hsxvblero3w1koow26rboczwj&dl=0>`_
+
+6.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    `Official Website <https://www.acebott.com/products/qe004-acebott-iot-smart-home-basic-starter-kit?_pos=1&_psq=QE004&_ss=e&_v=1.0>`_

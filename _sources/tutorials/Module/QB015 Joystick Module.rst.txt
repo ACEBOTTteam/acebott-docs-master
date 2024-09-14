@@ -1,0 +1,72 @@
+QB015 Joystick Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Joystick_Module-1.png
+    :align: center
+
+
+The joystick module is mainly composed of two potentiometers and a push button switch. These two potentiometers output the corresponding voltage values ​​on the X and Y axes respectively according to the twisting angle of the joystick, realizing the position perception of the joystick in two dimensions. In the Z-axis direction, pressing the joystick can trigger the touch button to realize additional operating functions. The design of this module enables it to simulate an operating experience similar to that of a game controller, reflecting the position of the joystick through changes in the potentiometer, and realizing specific functions by triggering the push button switch.
+
+In addition, the initial state of the joystick module is that both potentiometers are in the middle of the range without external force. This design ensures that the output of the module is stable when there is no operation, and will not cause misoperation due to slight vibration or other external interference.
+
+Application reference: game console controllers, remote control cars, gimbals, model airplanes, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -40°C~+70°C           |
++-----------------------+-----------------------+
+| Output signal         | Analog signal         |
++-----------------------+-----------------------+
+| Size                  | 4.7cm*2.4cm           |
++-----------------------+-----------------------+
+
+.. figure:: /../images/Joystick_Module-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Joystick_Module-3.png
+    :align: center
++-----------------------+-----------------------+
+|Joystick Module        | UNO                   |
++=======================+=======================+
+| SW                    | A0                    |
++-----------------------+-----------------------+
+| Y                     | A1                    |
++-----------------------+-----------------------+
+| X                     | A2                    |
++-----------------------+-----------------------+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Joystick_test/Joystick_test.ino
+    :linenos:
+
+**5.Test Result**
+
+After you have successfully connected the circuits according to the wiring diagram and successfully uploaded the correct program, when you press the joystick, the serial port monitor will output the current coordinate information of the joystick.
+
+.. figure:: /../images/Joystick_Module-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/ahlvetzhou9h4j0ar1ih9/AHC8r2Kv7HqyyMCd991r5vM?rlkey=84zlhdu6cvchzx9h2028bes8e&st=cfdg24iu&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/ahlvetzhou9h4j0ar1ih9/AHC8r2Kv7HqyyMCd991r5vM?rlkey=84zlhdu6cvchzx9h2028bes8e&st=cfdg24iu&dl=0>`_
+

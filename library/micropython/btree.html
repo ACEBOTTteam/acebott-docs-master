@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>btree – 简单的 BTree 数据库 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>btree – 简单的 BTree 数据库 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">btree</span></code> – 简单的 BTree 数据库</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btree</span></code> – 简单的 BTree 数据库</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,10 +95,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="btree-btree">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">btree</span></code> – 简单的 BTree 数据库<a class="headerlink" href="#btree-btree" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">btree</span></code> – 简单的 BTree 数据库<a class="headerlink" href="#btree-btree" title="Permalink to this heading"></a></h1>
 <p>该模块基于著名的BerkelyDB 库的1.xx版本。</p>
 <p>示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">btree</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">btree</span>
 
 <span class="c1"># First, we need to open a stream which holds a database 首先，我们需要打开一个包含数据库的流</span>
 <span class="c1"># This is usually a file, but can be in-memory database 这通常是一个文件，也可能是一个内存数据库</span>
@@ -162,64 +158,64 @@
 </pre></div>
 </div>
 <div class="section" id="id1">
-<h2>函数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="open">
-<code class="descname">open</code><span class="sig-paren">(</span><em>stream</em>, <em>*</em>, <em>flags=0</em>, <em>cachesize=0</em>, <em>pagesize=0</em>, <em>minkeypage=0</em><span class="sig-paren">)</span><a class="headerlink" href="#open" title="Permalink to this definition">¶</a></dt>
+<h2>函数<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">\*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cachesize=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pagesize=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minkeypage=0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#open" title="Permalink to this definition"></a></dt>
 <dd><p>从随机存取的 <a href="#id2"><span class="problematic" id="id3">``</span></a>stream``（类似一个打开的文件）中打开一个数据库。所有其他的参数都是可选的，且都只为关键字，并允许对数据库操作的高级参数进行调整（大多数用户并不会需要这个）:</p>
 <ul class="simple">
-<li><em>flags</em> - 当前未使用的</li>
-<li><em>cachesize</em> - 以字节计的建议最大内存缓存大小。对于一个由充足内存的板而言，使用更大值或许可以提高性能。该值只是推荐值，若该值设置过低，则模块可能会占用更多内存。</li>
-<li><em>pagesize</em> - B树中用于节点的页面大小。可接受范围为512-65536。若为0，则会使用基础I/O块的大小（内存使用和性能之间的最佳协调）。</li>
-<li><em>minkeypage</em> - 每个页面存储的键的最小数量。默认值为0等于2。</li>
+<li><p><em>flags</em> - 当前未使用的</p></li>
+<li><p><em>cachesize</em> - 以字节计的建议最大内存缓存大小。对于一个由充足内存的板而言，使用更大值或许可以提高性能。该值只是推荐值，若该值设置过低，则模块可能会占用更多内存。</p></li>
+<li><p><em>pagesize</em> - B树中用于节点的页面大小。可接受范围为512-65536。若为0，则会使用基础I/O块的大小（内存使用和性能之间的最佳协调）。</p></li>
+<li><p><em>minkeypage</em> - 每个页面存储的键的最小数量。默认值为0等于2。</p></li>
 </ul>
 <p>返回一个B树对象，该对象实现一个字典协议（方法集）和下述的一些附加方法。</p>
 </dd></dl>
 
 </div>
 <div class="section" id="id4">
-<h2>方法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<dl class="method">
-<dt id="btree.close">
-<code class="descclassname">btree.</code><code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.close" title="Permalink to this definition">¶</a></dt>
+<h2>方法<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="btree.close">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.close" title="Permalink to this definition"></a></dt>
 <dd><p>关闭数据库。处理结束时关闭数据库是强制性的，因为某些未写入的数据可能仍留在缓存中。注意：这并不会关闭随数据库打开的基础流，基础流应单独关闭（这也是强制性的，以确保从缓冲区中刷新的数据进入底层储存）。</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="btree.flush">
-<code class="descclassname">btree.</code><code class="descname">flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.flush" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="btree.flush">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.flush" title="Permalink to this definition"></a></dt>
 <dd><p>将缓存中的任何数据刷新到底层流。</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="btree.__getitem__">
-<code class="descclassname">btree.</code><code class="descname">__getitem__</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__getitem__" title="Permalink to this definition">¶</a></dt>
-<dt id="btree.get">
-<code class="descclassname">btree.</code><code class="descname">get</code><span class="sig-paren">(</span><em>key</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#btree.get" title="Permalink to this definition">¶</a></dt>
-<dt id="btree.__setitem__">
-<code class="descclassname">btree.</code><code class="descname">__setitem__</code><span class="sig-paren">(</span><em>key</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__setitem__" title="Permalink to this definition">¶</a></dt>
-<dt id="btree.__detitem__">
-<code class="descclassname">btree.</code><code class="descname">__detitem__</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__detitem__" title="Permalink to this definition">¶</a></dt>
-<dt id="btree.__contains__">
-<code class="descclassname">btree.</code><code class="descname">__contains__</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__contains__" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="btree.__getitem__">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__getitem__" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="btree.get">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#btree.get" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="btree.__setitem__">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">__setitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__setitem__" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="btree.__detitem__">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">__detitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__detitem__" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="btree.__contains__">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#btree.__contains__" title="Permalink to this definition"></a></dt>
 <dd><p>标准字典方法。</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="btree.__iter__">
-<code class="descclassname">btree.</code><code class="descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.__iter__" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="btree.__iter__">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.__iter__" title="Permalink to this definition"></a></dt>
 <dd><p>B树对象可被直接迭代（与字典相似）以按顺序访问所有键。</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="btree.keys">
-<code class="descclassname">btree.</code><code class="descname">keys</code><span class="sig-paren">(</span><span class="optional">[</span><em>start_key</em><span class="optional">[</span>, <em>end_key</em><span class="optional">[</span>, <em>flags</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.keys" title="Permalink to this definition">¶</a></dt>
-<dt id="btree.values">
-<code class="descclassname">btree.</code><code class="descname">values</code><span class="sig-paren">(</span><span class="optional">[</span><em>start_key</em><span class="optional">[</span>, <em>end_key</em><span class="optional">[</span>, <em>flags</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.values" title="Permalink to this definition">¶</a></dt>
-<dt id="btree.items">
-<code class="descclassname">btree.</code><code class="descname">items</code><span class="sig-paren">(</span><span class="optional">[</span><em>start_key</em><span class="optional">[</span>, <em>end_key</em><span class="optional">[</span>, <em>flags</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.items" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="btree.keys">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">keys</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">start_key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">end_key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span></em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.keys" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="btree.values">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">values</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">start_key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">end_key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span></em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.values" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="btree.items">
+<span class="sig-prename descclassname"><span class="pre">btree.</span></span><span class="sig-name descname"><span class="pre">items</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">start_key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">end_key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span></em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#btree.items" title="Permalink to this definition"></a></dt>
 <dd><p>这些方法类似于标准字典方法，但也可使用可选参数来迭代一个键子范围，而不是整个数据库。
-注意：这三种方法中， <em>start_key</em> 和 <em>end_key</em> 参数都代表键值。例如， <code class="docutils literal"><span class="pre">values()</span></code> 方法将迭代与给定键范围对应的值。
+注意：这三种方法中， <em>start_key</em> 和 <em>end_key</em> 参数都代表键值。例如， <code class="docutils literal notranslate"><span class="pre">values()</span></code> 方法将迭代与给定键范围对应的值。
 无 <em>start_key</em> 值即意为“从首个键”，无 <em>end_key</em> 值或其值为None则意为“直到数据库结束”。
 默认情况下，范围包括 <em>start_key</em> ，而不包括 <em>end_key</em> ，您可以通过传递 <cite>btree.INCL</cite> 的标记来将 <em>end_key</em> 包括在迭代中。
 您可以通过传递 <cite>btree.DESC</cite> 的标记来按照下行键方向进行迭代。标记值可同为ORed。</p>
@@ -227,16 +223,16 @@
 
 </div>
 <div class="section" id="id5">
-<h2>常量<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<dl class="data">
-<dt id="INCL">
-<code class="descname">INCL</code><a class="headerlink" href="#INCL" title="Permalink to this definition">¶</a></dt>
+<h2>常量<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="INCL">
+<span class="sig-name descname"><span class="pre">INCL</span></span><a class="headerlink" href="#INCL" title="Permalink to this definition"></a></dt>
 <dd><p><cite>keys()</cite>, <cite>values()</cite>, <cite>items()</cite> 方法的标记, 指定扫描应该包含结束键。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="DESC">
-<code class="descname">DESC</code><a class="headerlink" href="#DESC" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="DESC">
+<span class="sig-name descname"><span class="pre">DESC</span></span><a class="headerlink" href="#DESC" title="Permalink to this definition"></a></dt>
 <dd><p><cite>keys()</cite>, <cite>values()</cite>, <cite>items()</cite> 方法的标记, 指定扫描应按照键的下行方向进行。</p>
 </dd></dl>
 

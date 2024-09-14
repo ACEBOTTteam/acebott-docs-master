@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>esp — functions related to the ESP8266 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>esp — functions related to the ESP8266 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">esp</span></code> — functions related to the ESP8266</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">esp</span></code> — functions related to the ESP8266</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,13 +95,13 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-esp">
-<span id="esp-functions-related-to-the-esp8266"></span><h1><a class="reference internal" href="micropython/esp.html#module-esp" title="esp: ESP32相关的功能"><code class="xref py py-mod docutils literal"><span class="pre">esp</span></code></a> — functions related to the ESP8266<a class="headerlink" href="#module-esp" title="Permalink to this headline">¶</a></h1>
-<p>The <code class="docutils literal"><span class="pre">esp</span></code> module contains specific functions related to the ESP8266 module.</p>
+<span id="esp-functions-related-to-the-esp8266"></span><h1><a class="reference internal" href="micropython/esp.html#module-esp" title="esp: ESP32相关的功能"><code class="xref py py-mod docutils literal notranslate"><span class="pre">esp</span></code></a> — functions related to the ESP8266<a class="headerlink" href="#module-esp" title="Permalink to this heading"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">esp</span></code> module contains specific functions related to the ESP8266 module.</p>
 <div class="section" id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="esp.sleep_type">
-<code class="descclassname">esp.</code><code class="descname">sleep_type</code><span class="sig-paren">(</span><span class="optional">[</span><em>sleep_type</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.sleep_type" title="Permalink to this definition">¶</a></dt>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.sleep_type">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">sleep_type</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">sleep_type</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.sleep_type" title="Permalink to this definition"></a></dt>
 <dd><p>Get or set the sleep type.</p>
 <p>If the <em>sleep_type</em> parameter is provided, sets the sleep type to its
 value. If the function is called without parameters, returns the current
@@ -113,18 +109,18 @@ sleep type.</p>
 <p>The possible sleep types are defined as constants:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">SLEEP_NONE</span></code> – all functions enabled,</li>
-<li><code class="docutils literal"><span class="pre">SLEEP_MODEM</span></code> – modem sleep, shuts down the WiFi Modem circuit.</li>
-<li><code class="docutils literal"><span class="pre">SLEEP_LIGHT</span></code> – light sleep, shuts down the WiFi Modem circuit
-and suspends the processor periodically.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SLEEP_NONE</span></code> – all functions enabled,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SLEEP_MODEM</span></code> – modem sleep, shuts down the WiFi Modem circuit.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SLEEP_LIGHT</span></code> – light sleep, shuts down the WiFi Modem circuit
+and suspends the processor periodically.</p></li>
 </ul>
 </div></blockquote>
 <p>The system enters the set sleep mode automatically when possible.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.deepsleep">
-<code class="descclassname">esp.</code><code class="descname">deepsleep</code><span class="sig-paren">(</span><em>time=0</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.deepsleep" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.deepsleep">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">deepsleep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.deepsleep" title="Permalink to this definition"></a></dt>
 <dd><p>Enter deep sleep.</p>
 <p>The whole module powers down, except for the RTC clock circuit, which can
 be used to restart the module after the specified time if the pin 16 is
@@ -132,43 +128,43 @@ connected to the reset pin. Otherwise the module will sleep until manually
 reset.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_id">
-<code class="descclassname">esp.</code><code class="descname">flash_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_id" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_id">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_id" title="Permalink to this definition"></a></dt>
 <dd><p>Read the device ID of the flash memory.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_read">
-<code class="descclassname">esp.</code><code class="descname">flash_read</code><span class="sig-paren">(</span><em>byte_offset</em>, <em>length_or_buffer</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_read" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_read">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_or_buffer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_read" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_write">
-<code class="descclassname">esp.</code><code class="descname">flash_write</code><span class="sig-paren">(</span><em>byte_offset</em>, <em>bytes</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_write" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_write">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_write" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_erase">
-<code class="descclassname">esp.</code><code class="descname">flash_erase</code><span class="sig-paren">(</span><em>sector_no</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_erase" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_erase">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_erase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sector_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_erase" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="esp.set_native_code_location">
-<code class="descclassname">esp.</code><code class="descname">set_native_code_location</code><span class="sig-paren">(</span><em>start</em>, <em>length</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.set_native_code_location" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.set_native_code_location">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">set_native_code_location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.set_native_code_location" title="Permalink to this definition"></a></dt>
 <dd><p>Set the location that native code will be placed for execution after it is
-compiled.  Native code is emitted when the <code class="docutils literal"><span class="pre">&#64;micropython.native</span></code>,
-<code class="docutils literal"><span class="pre">&#64;micropython.viper</span></code> and <code class="docutils literal"><span class="pre">&#64;micropython.asm_xtensa</span></code> decorators are applied
+compiled.  Native code is emitted when the <code class="docutils literal notranslate"><span class="pre">&#64;micropython.native</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&#64;micropython.viper</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;micropython.asm_xtensa</span></code> decorators are applied
 to a function.  The ESP8266 must execute code from either iRAM or the lower
 1MByte of flash (which is memory mapped), and this function controls the
 location.</p>
-<p>If <em>start</em> and <em>length</em> are both <code class="docutils literal"><span class="pre">None</span></code> then the native code location is
+<p>If <em>start</em> and <em>length</em> are both <code class="docutils literal notranslate"><span class="pre">None</span></code> then the native code location is
 set to the unused portion of memory at the end of the iRAM1 region.  The
 size of this unused portion depends on the firmware and is typically quite
 small (around 500 bytes), and is enough to store a few very small
 functions.  The advantage of using this iRAM1 region is that it does not
 get worn out by writing to it.</p>
-<p>If neither <em>start</em> nor <em>length</em> are <code class="docutils literal"><span class="pre">None</span></code> then they should be integers.
+<p>If neither <em>start</em> nor <em>length</em> are <code class="docutils literal notranslate"><span class="pre">None</span></code> then they should be integers.
 <em>start</em> should specify the byte offset from the beginning of the flash at
 which native code should be stored.  <em>length</em> specifies how many bytes of
 flash from <em>start</em> can be used to store native code.  <em>start</em> and <em>length</em>

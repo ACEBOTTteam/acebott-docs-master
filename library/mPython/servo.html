@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>servo — 舵机驱动功能函数 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>servo — 舵机驱动功能函数 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">servo</span></code> — 舵机驱动功能函数</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code> — 舵机驱动功能函数</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,57 +95,57 @@
            <div itemprop="articleBody">
              
   <span class="target" id="module-servo"><span id="servo-api"></span></span><div class="section" id="servo">
-<h1><a class="reference internal" href="#module-servo" title="servo: 舵机驱动功能函数"><code class="xref py py-mod docutils literal"><span class="pre">servo</span></code></a> — 舵机驱动功能函数<a class="headerlink" href="#servo" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="#module-servo" title="servo: 舵机驱动功能函数"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code></a> — 舵机驱动功能函数<a class="headerlink" href="#servo" title="Permalink to this heading"></a></h1>
 <div class="section" id="id1">
-<h2>Servo类<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="servo.Servo">
-<em class="property">class </em><code class="descclassname">servo.</code><code class="descname">Servo</code><span class="sig-paren">(</span><em>pin</em>, <em>min_us=750</em>, <em>max_us=2250</em>, <em>actuation_range=180</em><span class="sig-paren">)</span><a class="headerlink" href="#servo.Servo" title="Permalink to this definition">¶</a></dt>
+<h2>Servo类<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="servo.Servo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">servo.</span></span><span class="sig-name descname"><span class="pre">Servo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_us</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">750</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_us</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2250</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">actuation_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">180</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servo.Servo" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>构建Servo对象,默认使用SG90舵机。不同舵机脉冲宽度参数和角度范围会有所不一样,根据舵机型号自行设置。</p>
 <div class="admonition hint">
-<p class="first admonition-title">Hint</p>
-<p class="last">作为Servo控制引脚须为支持PWM(模拟输出)的引脚。掌控板支持PWM的引脚,详情可查阅 <a class="reference internal" href="../../board/Microbit/Micro：bitV2.html#mpythonpindesc"><span class="std std-ref">掌控板接口引脚说明</span></a> 。</p>
+<p class="admonition-title">Hint</p>
+<p>作为Servo控制引脚须为支持PWM(模拟输出)的引脚。掌控板支持PWM的引脚,详情可查阅 <span class="xref std std-ref">掌控板接口引脚说明</span> 。</p>
 </div>
 <div class="admonition attention">
-<p class="first admonition-title">Attention</p>
-<ul class="last simple">
-<li>你可以设置 <code class="docutils literal"><span class="pre">actuation_range</span></code> 来对应用给定的 <code class="docutils literal"><span class="pre">min_us</span></code> 和 <code class="docutils literal"><span class="pre">max_us</span></code> 观察到的实际运动范围值。</li>
-<li>您也可以将脉冲宽度扩展到这些限制之上和之下伺服机构可能会停止，嗡嗡声，并在停止时吸收额外的电流。仔细测试，找出安全的最小值和最大值。</li>
-<li>由于舵机PWM周期为20ms,即响应时间为20ms。在编程时须注意两次写舵机角度间隔时间应至少大于20ms。</li>
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>你可以设置 <code class="docutils literal notranslate"><span class="pre">actuation_range</span></code> 来对应用给定的 <code class="docutils literal notranslate"><span class="pre">min_us</span></code> 和 <code class="docutils literal notranslate"><span class="pre">max_us</span></code> 观察到的实际运动范围值。</p></li>
+<li><p>您也可以将脉冲宽度扩展到这些限制之上和之下伺服机构可能会停止，嗡嗡声，并在停止时吸收额外的电流。仔细测试，找出安全的最小值和最大值。</p></li>
+<li><p>由于舵机PWM周期为20ms,即响应时间为20ms。在编程时须注意两次写舵机角度间隔时间应至少大于20ms。</p></li>
 </ul>
 </div>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">pin</span></code> -舵机PWM控制信号引脚</li>
-<li><code class="docutils literal"><span class="pre">min_us</span></code> -舵机PWM信号脉宽最小宽度,单位微秒。默认min_us=750</li>
-<li><code class="docutils literal"><span class="pre">max_us</span></code> -舵机PWM信号脉宽最大宽度,单位微秒。默认max_us=2250</li>
-<li><code class="docutils literal"><span class="pre">actuation_range</span></code> -舵机转动最大角度</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code> -舵机PWM控制信号引脚</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_us</span></code> -舵机PWM信号脉宽最小宽度,单位微秒。默认min_us=750</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_us</span></code> -舵机PWM信号脉宽最大宽度,单位微秒。默认max_us=2250</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">actuation_range</span></code> -舵机转动最大角度</p></li>
 </ul>
-<dl class="method">
-<dt id="servo.Servo.write_us">
-<code class="descclassname">Servo.</code><code class="descname">write_us</code><span class="sig-paren">(</span><em>width</em><span class="sig-paren">)</span><a class="headerlink" href="#servo.Servo.write_us" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="servo.Servo.write_us">
+<span class="sig-prename descclassname"><span class="pre">Servo.</span></span><span class="sig-name descname"><span class="pre">write_us</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servo.Servo.write_us" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>发送设置脉冲宽度的PWM信号。</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">width</span></code> -脉冲宽度,单位微秒。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> -脉冲宽度,单位微秒。</p></li>
 </ul>
 </div></blockquote>
-<dl class="method">
-<dt id="servo.Servo.write_angle">
-<code class="descclassname">Servo.</code><code class="descname">write_angle</code><span class="sig-paren">(</span><em>angle</em><span class="sig-paren">)</span><a class="headerlink" href="#servo.Servo.write_angle" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="servo.Servo.write_angle">
+<span class="sig-prename descclassname"><span class="pre">Servo.</span></span><span class="sig-name descname"><span class="pre">write_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servo.Servo.write_angle" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>写舵机角度</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">angle</span></code> -舵机角度。</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">angle</span></code> -舵机角度。</p></li>
 </ul>
 </div></blockquote>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">servo</span> <span class="k">import</span> <span class="n">Servo</span>                 <span class="c1">#导入舵机模块</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">servo</span> <span class="kn">import</span> <span class="n">Servo</span>                 <span class="c1">#导入舵机模块</span>
 
 <span class="n">s</span><span class="o">=</span><span class="n">Servo</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 

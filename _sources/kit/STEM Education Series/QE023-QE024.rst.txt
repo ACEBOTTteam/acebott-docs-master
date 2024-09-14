@@ -1,0 +1,104 @@
+QE023-QE024 IOT  Smart Home Education Kit (Easy-Plug) -Year 1 
+====================
+
+1.Education Series Introduction
+------
+
+The STEM Education series has 3 themes, 6 academic years of advanced teaching system, designed to give students continuity and direction of learning.
+
+The product is combined with the wood board, 3-5 big works per semester, and the works can be presented in the map scene.
+
+.. figure:: /../images/QE021-QE022-1.png
+    :align: center
+
+2.Smart Home Education Kit Introduction
+------
+
+Smart Home Education Kit is the first topic in the Education Solutions Series. 
+
+It has 2 academic years and 4 semesters of teaching package. 
+
+It is a STEM education kit designed for students aged 8 years and above. And participate in the construction of comprehensive practice project.
+
+It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 comprehensive display projects.
+
+.. container:: custom-hint
+.. Hint:: 
+
+    Each kit only has one controller board, so only one of these projects exists at a time.
+
+.. figure:: /../images/QE023-QE024-1.png
+    :align: center
+
+.. figure:: /../images/QE023-QE024-2.png
+    :align: center
+
+3.The Value of Kit
+------
+
+1.Structural Construction
+
+2.Programming Learning
+
+3.Interdisciplinary Knowledge
+
+4.Bluetooth/WiFi Control
+
+5.APP Development
+
+6.Smart Home Theme
+
+7.Suitable for Classroom/School Teaching
+
+
+4.Product Features
+------
+
+.. figure:: /../images/QE021-QE022-3.png
+    :align: center
+
+5.Controller Board Introduction
+------
+
+.. figure:: /../images/QE023-QE024-5.png
+    :align: center
+
+6.Multi-Platform Support
+------
+
+.. figure:: /../images/QE023-QE024-6.png
+    :align: center
+
+
+7.Course Description
+------
+
+.. figure:: /../images/QE021-QE022-4.png
+    :align: center
+
+.. figure:: /../images/QE021-QE022-5.png
+    :align: center
+
+8.Part List
+------
+
+.. figure:: /../images/QE023-QE024-3.png
+    :align: center
+
+.. figure:: /../images/QE023-QE024-4.png
+    :align: center
+
+9.Related Resources
+------
+
+ `QE023 Tutorial <https://www.dropbox.com/scl/fo/iiete91rvu3mzm9jul25z/AIqErZ2o6d7DucfDoTTw5C8?rlkey=pc39uscj4ps2sj4r3ibbpclbs&st=y2lkquqf&dl=0>`_
+ 
+ `QE024 Tutorial <https://www.dropbox.com/scl/fo/yhal2gx3q32ktc09396nx/ALLlIV66YzYvJwtl8fBbAGA?rlkey=7xczvmxlwns04g6mdzh8rfszf&st=4tfxkg9h&dl=0>`_
+
+10.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <>`_
+

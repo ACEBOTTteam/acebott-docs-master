@@ -1,0 +1,77 @@
+QB006 Laser Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Laser-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+The laser module is composed of a 650nm red laser diode head, driving circuit and three male pins, whose role is to generate a red dot shaped laser beam. 
+It should be noted that the laser has powerful energy and highly concentrated beam, laser beam will cause damage to the human eye, do not directly illuminate the laser eyes.
+
+Application reference: This module can be used in laser alarm, laser sight, smart home, etc.
+
+**2.Parameter Specification**
+
++----------------------------+----------------------------+
+| Parameter                  | Value//Description         |
++============================+============================+
+| Operating voltage          | 3.3V~5V                    |
++----------------------------+----------------------------+
+| Light spot pattern         | Red light dot              |
++----------------------------+----------------------------+
+| Wavelength of light source | 650nm                      |
++----------------------------+----------------------------+
+| power                      | 5mW                        |
++----------------------------+----------------------------+
+| output signal              | Digital signal /PWM signal |
++----------------------------+----------------------------+
+| Size                       | 3.16cm*2.38cm              |
++----------------------------+----------------------------+
+
+.. figure:: /../images/Laser-4.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Laser-2.png
+    :align: center
++-----------------------+-----------------------+
+|Laser Module           | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                    | Digital Pin 11         |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Laser_Module/Laser_Module.ino
+    :linenos:
+
+**5.Test Result**
+
+When you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program, your laser module will light up and blink.
+
+.. figure:: /../images/Laser-3.png
+    :align: center
+
+.. Hint:: 
+
+   After the laser module is lit, do not direct eyes.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/gejk6lckfhxucx6twlcpo/h?rlkey=uv0m0u32bt3a77i99ehkaq9gl&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    `Official Website <https://www.acebott.com/products/acebott-qb006-laser-module?_pos=3&_psq=QB001&_ss=e&_v=1.0>`_

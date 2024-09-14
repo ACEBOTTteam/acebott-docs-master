@@ -1,0 +1,70 @@
+QD022 4 DOF Robot Arm Kit for ESP32
+====================
+
+1.Product Introduction
+------
+
+4 DOF Robot Arm Kit is a creative learning kit designed for beginners.
+
+With this kit, you can have a good understanding of how a robot arm works, program its actions, and control it in a variety of ways to master the control of a multi-DOF robot.
+
+
+.. figure:: /../images/QD022-1.png
+    :align: center
+
+2.The Value of Kit
+------
+
+1.Learning Manipulators with Multiple DoF
+
+2.Memory Function
+
+3.Three-Axis Control
+
+4.Joystick Control
+
+5.Web /App Control
+
+6.Learn ESP32 Programming
+
+3.The Mode of Starter Kit
+------
+
+.. figure:: /../images/QD022-2.png
+    :align: center
+
+4.Controller Board Introduction
+------
+
+.. figure:: /../images/QD022-3.png
+    :align: center
+
+5.Multi-Platform Support
+------
+
+.. figure:: /../images/QD022-4.png
+    :align: center
+
+6.Course Description
+------
+
+.. figure:: /../images/QD022-5.png
+    :align: center
+
+7.Part List
+------
+
+.. figure:: /../images/QD022-6.png
+    :align: center
+
+8.Related Resources
+------
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/whgyo4xylun3spupfvgws/AKqL-pMXq38Z6D5MDVQUATY?rlkey=cr86qtuuxxg1rwotz63dsat3z&st=vag8iwvd&dl=0>`_
+
+9.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    `Official Website <https://www.acebott.com/products/acebott-qd022-esp32-programmable-robot-arm-kit-for-arduino?_pos=2&_psq=QD020&_ss=e&_v=1.0>`_

@@ -1,0 +1,48 @@
+
+
+Main Page
+======================================
+
+Thank you for choosing ACEBOTT! We hope that the information provided here will help you to make better use of our products.
+
+---------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Getting Started
+
+   getting started/Arduino/index.rst
+   getting started/ESP32/index.rst
+   getting started/Microbit/index.rst
+   getting started/ACECode(Blockly Programming)/index.rst
+
+---------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Starter Kit
+
+   kit/Explorer Series/index.rst
+   kit/STEM Education Series/index.rst
+   kit/Inventor Series/index.rst
+---------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Controller Board
+
+   board/ESP32/index.rst
+   board/Arduino/index.rst
+   board/Microbit/index.rst
+
+---------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Electronic Module
+
+   tutorials/Sensor/index.rst
+   tutorials/Module/index.rst
+
+---------
+

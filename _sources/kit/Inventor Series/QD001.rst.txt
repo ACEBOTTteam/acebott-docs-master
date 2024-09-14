@@ -1,0 +1,56 @@
+QD001 Quadruped Bionic Spider Robot for ESP8266
+====================
+
+一、Product Introduction
+------
+
+Quadruped Bionic Spider Robot is a creative learning kit designed for beginners.
+
+With this suite, you can have a good understanding of the walking posture of the spider, and through the programming design of robot action, master the control of multi-degree of freedom robot.
+
+
+.. figure:: /../images/QD020-1.png
+    :align: center
+
+二、The value of starer kit
+------
+
+1.Structure Building
+
+2.Action Design
+
+3.ESP32 Programming Learning
+
+4.WIFI & App Control
+
+
+三、Course Description
+------
+
+.. figure:: /../images/QD020-2.png
+    :align: center
+
+    
+四、Part List
+------
+.. figure:: /../images/QD020-3.png
+    :align: center
+
+
+五、Product Standard
+------
+
+.. figure:: /../images/QD020-4.png
+    :align: center
+
+.Related Resources
+------
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/892ydm4qyqw7e10oup40h/h?rlkey=mpj2z55dpa4maa1x75i8ei5eb&dl=0>`_
+
+7.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/892ydm4qyqw7e10oup40h/h?rlkey=mpj2z55dpa4maa1x75i8ei5eb&dl=0>`_

@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MicroPython类库 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>MicroPython类库 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,26 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32/ESP8266</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Microbit/index.html">Microbit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/ACECode(Blockly Programming)/index.html">ACECode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -102,26 +95,26 @@
            <div itemprop="articleBody">
              
   <div class="section" id="micropython">
-<span id="micropythonmodu"></span><h1>MicroPython类库<a class="headerlink" href="#micropython" title="Permalink to this headline">¶</a></h1>
+<span id="micropythonmodu"></span><h1>MicroPython类库<a class="headerlink" href="#micropython" title="Permalink to this heading"></a></h1>
 <p>以下库中提供了特定于MicroPython-ESP32实现的功能。</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="btree.html"><code class="docutils literal"><span class="pre">btree</span></code> – 简单的 BTree 数据库</a></li>
-<li class="toctree-l1"><a class="reference internal" href="framebuf.html"><code class="docutils literal"><span class="pre">framebuf</span></code> — 帧缓冲操作</a></li>
-<li class="toctree-l1"><a class="reference internal" href="machine/machine.html"><code class="docutils literal"><span class="pre">machine</span></code> — 与硬件相关的功能</a></li>
-<li class="toctree-l1"><a class="reference internal" href="network.html"><code class="docutils literal"><span class="pre">network</span></code> — 网络配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubluetooth.html"><code class="docutils literal"><span class="pre">ubluetooth</span></code> — 低功耗蓝牙</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ucryptolib.html"><code class="docutils literal"><span class="pre">ucryptolib</span></code> – 加密密码</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uctypes.html"><code class="docutils literal"><span class="pre">uctypes</span></code> –  以结构化方式访问二进制数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="micropython.html"><code class="docutils literal"><span class="pre">micropython</span></code> – 访问和控制MicroPython内部</a></li>
-<li class="toctree-l1"><a class="reference internal" href="neopixel.html"><code class="docutils literal"><span class="pre">neopixel</span></code> — WS2812 灯带</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random.html"><code class="docutils literal"><span class="pre">random</span></code> — 生成随机数</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ntptime.html"><code class="docutils literal"><span class="pre">ntptime</span></code> — 时间同步</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dht.html"><code class="docutils literal"><span class="pre">dht</span></code> — dht模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="_thread.html"><code class="docutils literal"><span class="pre">_thread</span></code> — 线程</a></li>
-<li class="toctree-l1"><a class="reference internal" href="esp.html"><code class="docutils literal"><span class="pre">esp</span></code> — ESP32相关的功能</a></li>
-<li class="toctree-l1"><a class="reference internal" href="esp32.html"><code class="docutils literal"><span class="pre">esp32</span></code> — 特定于ESP32的功能</a></li>
-<li class="toctree-l1"><a class="reference internal" href="onewire.html"><code class="docutils literal"><span class="pre">onewire</span></code> — 单总线</a></li>
+<li class="toctree-l1"><a class="reference internal" href="btree.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btree</span></code> – 简单的 BTree 数据库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framebuf.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">framebuf</span></code> — 帧缓冲操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="machine/machine.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">machine</span></code> — 与硬件相关的功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">network</span></code> — 网络配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubluetooth.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ubluetooth</span></code> — 低功耗蓝牙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ucryptolib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ucryptolib</span></code> – 加密密码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uctypes.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">uctypes</span></code> –  以结构化方式访问二进制数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="micropython.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">micropython</span></code> – 访问和控制MicroPython内部</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neopixel.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">neopixel</span></code> — WS2812 灯带</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">random</span></code> — 生成随机数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ntptime.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ntptime</span></code> — 时间同步</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dht.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dht</span></code> — dht模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_thread.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">_thread</span></code> — 线程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="esp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">esp</span></code> — ESP32相关的功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="esp32.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">esp32</span></code> — 特定于ESP32的功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onewire.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">onewire</span></code> — 单总线</a></li>
 </ul>
 </div>
 </div>

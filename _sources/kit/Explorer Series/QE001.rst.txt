@@ -1,0 +1,75 @@
+QE001 IOT Smart Home Starter Kit for ESP32 (Easy-Plug)
+====================
+
+1.Product Introduction
+------
+
+Lumi's Home is an intelligent home system that combines features such as voice control and app control. It incorporates interactive controls such as RFID door access, automatic window closure when it rains, and control over LED lights, RGB and more.
+
+This kit is based on story-based learning tasks and rich electronic modules to lead children to learn related circuit and programming knowledge through the STEAM education concept, and immerse them in the fascinating world of smart home.
+
+
+.. figure:: /../images/QE001-1.png
+    :align: center
+
+2.The Value of Starter Kit
+------
+
+1.The concept of smart home
+
+2.Sensor control and application
+
+3.Speech recognition experience
+
+4.Knowledge of WI-FI LAN
+
+5.Interactive control of APP
+
+6.Artistic structural design enlightenment
+
+3.The Mode of Starter Kit
+------
+
+.. figure:: /../images/QE001-2.png
+    :align: center
+
+4.Product Features
+------
+
+.. figure:: /../images/QE001-3.png
+    :align: center
+
+5.Controller Board Introduction
+------
+
+.. figure:: /../images/QE001-4.png
+    :align: center
+
+6.Multi-Platform Support
+------
+
+.. figure:: /../images/QE001-5.png
+    :align: center
+
+7.Course Description
+------
+
+.. figure:: /../images/QE007-2.png
+    :align: center
+
+8.Part List
+------
+.. figure:: /../images/QE001-6.png
+    :align: center
+
+9.Related Resources
+------
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/25o3yqhm4os1we72xc5j0/AEFhVFweY6R_IWuo7Mzr6XM?rlkey=713gmwcx6wzqk1v3anb79k1a4&st=3rxspm88&dl=0>`_
+
+10.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    `Official Website <https://www.acebott.com/products/qe007-acebott-adventure-series-smart-home-kit?_pos=1&_psq=QE007&_ss=e&_v=1.0&variant=42723256303753>`_

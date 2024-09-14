@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4. DHT11读取温湿度 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>4. DHT11读取温湿度 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,26 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/ESP32/index.html">ESP32/ESP8266</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/Microbit/index.html">Microbit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting started/ACECode(Blockly Programming)/index.html">ACECode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
@@ -92,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">4. DHT11读取温湿度</li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>DHT11读取温湿度</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -102,14 +95,14 @@
            <div itemprop="articleBody">
              
   <div class="section" id="dht11">
-<h1>4. DHT11读取温湿度<a class="headerlink" href="#dht11" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>DHT11读取温湿度<a class="headerlink" href="#dht11" title="Permalink to this heading"></a></h1>
 <p>DHT11数字温湿度传感器是一款含有已校准数字信号输出的温湿度复合传感器，它应用专用的数字模块采集技术和温湿度传感技术，确保产品具有极高的可靠性和卓越的长期稳定性。传感器包括一个电阻式感湿元件和一个NTC测温元件，并与一个高性能8位单片机相连接。因此该产品具有品质卓越、超快响应、抗干扰能力强、性价比极高等优点。</p>
 <a class="reference internal image-reference" href="../images/classic/dht11.png"><img alt="../images/classic/dht11.png" class="align-center" src="../images/classic/dht11.png" /></a>
 <p>DHT11数字温湿度传感器和掌控板连接需要借助掌控扩展版，在掌控扩展版中DHT11可使用的引脚有P0/1/8/9/13/14/15/16，在这里使用引脚0。将掌控板插在掌控扩展板上，通过双母头杜邦线将DHT11和扩展板进行连接，DHT11上的“+”连接扩展板的电源口“V”，“-”连接扩展板的地线口“G”，“out”连接扩展板的引脚“0”。</p>
 <a class="reference internal image-reference" href="../_images/dhtconnect.jpg"><img alt="../_images/dhtconnect.jpg" class="align-center" src="../_images/dhtconnect.jpg" style="width: 420.0px; height: 324.59999999999997px;" /></a>
 <p>例：显示DHT11读取的温湿度</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">dht</span> <span class="k">import</span> <span class="n">DHT11</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">dht</span> <span class="kn">import</span> <span class="n">DHT11</span>
 
 <span class="n">dht</span><span class="o">=</span><span class="n">DHT11</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P0</span><span class="p">))</span>
 
@@ -126,23 +119,23 @@
 </div>
 <a class="reference internal image-reference" href="../_images/dhtexample.jpg"><img alt="../_images/dhtexample.jpg" class="align-center" src="../_images/dhtexample.jpg" style="width: 450.0px; height: 336.0px;" /></a>
 <p>使用前，导入mpython模块和DHT11类:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="k">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">dht</span> <span class="k">import</span> <span class="n">DHT11</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">dht</span> <span class="kn">import</span> <span class="n">DHT11</span>
 </pre></div>
 </div>
 <p>实例化DHT11类，并设置mPython引脚P0:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">dht</span><span class="o">=</span><span class="n">DHT11</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P0</span><span class="p">))</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dht</span><span class="o">=</span><span class="n">DHT11</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P0</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>DHT11测量并返回温湿度数据:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">dht</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dht</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
 <span class="n">dht</span><span class="o">.</span><span class="n">temperature</span><span class="p">()</span>
 <span class="n">dht</span><span class="o">.</span><span class="n">humidity</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last"><code class="docutils literal"><span class="pre">dht.measure()</span></code> 为DHT11测量温湿度数据指令，测量后使用 <code class="docutils literal"><span class="pre">dht.temperature()</span></code> 、 <code class="docutils literal"><span class="pre">dht.humidity()</span></code> 获取测量的温湿度值。</p>
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">dht.measure()</span></code> 为DHT11测量温湿度数据指令，测量后使用 <code class="docutils literal notranslate"><span class="pre">dht.temperature()</span></code> 、 <code class="docutils literal notranslate"><span class="pre">dht.humidity()</span></code> 获取测量的温湿度值。</p>
 </div>
 </div>
 

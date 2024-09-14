@@ -1,0 +1,86 @@
+DHT11 Humidity Temperature Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/DHT11-1.png
+    :align: center
+    :width: 300
+    :height: 300
+
+DHT11 Temperature and humidity sensor is a sensor based on the digital temperature and humidity sensor DHT11, it is a combination of temperature and humidity sensor, 
+it converts the physical temperature and humidity through the temperature, humidity sensor and the corresponding circuit into a digital quantity that is convenient 
+for data acquisition equipment to read directly.
+
+DHT11 is composed of resistive humidity sensing device and NTC coefficient temperature sensing device, and has the function of calibrating digital signal output.
+Using a single bus serial interface, the output data a total of 5 bytes, respectively: Humidity integer, humidity digit, temperature integer, temperature digit and checksum,
+where the checksum is the low 8-bit binary complement of the result of adding each byte of data. If the checksum calculation result does not match the last byte of data sent by DHT11, 
+the data may be wrong and need to be re-obtained.
+
+Application reference: This module can be used for weather station, temperature and humidity regulator, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value/Representation  |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -20°C~+60°C ±2°C      |
++-----------------------+-----------------------+
+| Humidity range        | 5~95%RH ±5%RH         |
++-----------------------+-----------------------+
+| Output signal         | Digital signal        |
++-----------------------+-----------------------+
+| Size                  | 3.16cm*2.38cm         |
++-----------------------+-----------------------+
+
+.. figure:: /../images/DHT11-5.jpg
+    :align: center
+    :width: 300
+    :height: 300
+
+**3.Wiring Diagram**
+
+.. figure:: /../images/Button-2.png
+    :align: center
+
++-----------------------+-----------------------+
+|PIR Motion Sensor      | UNO                   |
++=======================+=======================+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+| S                     | Digital Pin 2         |
++-----------------------+-----------------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/DHT11_Humidity_Temperature_Sensor/DHT11_Humidity_Temperature_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After uploading the code to the controller board, open the serial port monitor of the Arduino IDE, set the baud rate to 9600, and switch to scroll mode.
+
+By placing the module in the air, you can see the measured values of temperature and humidity.
+
+.. figure:: /../images/DHT11-3.png
+    :align: center
+.. figure:: /../images/DHT11-4.png
+    :align: center
+
+.. Hint:: 
+    The module is non-contact, do not put it in water.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/9bqs2me5lncvra1anzr5c/h?rlkey=yjtzkhhqza4q4599lhut4g1so&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/aqpdyx278dwagltlbrzgi/h?rlkey=7u5u79db0102gwikafeshfu7x&dl=0>`_

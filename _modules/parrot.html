@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>parrot &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kit/Inventor%20Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">parrot</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for parrot</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="n">i2c</span>
+<span class="kn">from</span> <span class="nn">micropython</span> <span class="kn">import</span> <span class="n">const</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">__VERSION__</span> <span class="o">=</span> <span class="s1">&#39;2.1&#39;</span>
+
+<span class="n">MOTOR_1</span> <span class="o">=</span> <span class="n">const</span><span class="p">(</span><span class="mh">0x01</span><span class="p">)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">M1电机编号，0x01</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">MOTOR_2</span> <span class="o">=</span> <span class="n">const</span><span class="p">(</span><span class="mh">0x02</span><span class="p">)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">M2电机编号，0x02</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">_speed_buf</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<div class="viewcode-block" id="set_speed"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.set_speed">[docs]</a><span class="k">def</span> <span class="nf">set_speed</span><span class="p">(</span><span class="n">motor_no</span><span class="p">,</span> <span class="n">speed</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    设置电机速度</span>
+
+<span class="sd">    :param int motor_no: 控制电机编号，可以使用 ``MOTOR_1``, ``MOTOR_2`` ,或者直接写入电机编号。</span>
+<span class="sd">    :param int speed: 电机速度，范围-100~100，负值代表反转。</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">_speed_buf</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">speed</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="o">-</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">_speed_buf</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">motor_no</span><span class="p">:</span> <span class="n">speed</span><span class="p">})</span>
+    <span class="n">attempts</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mh">0x10</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">([</span><span class="n">motor_no</span><span class="p">,</span> <span class="n">speed</span><span class="p">]))</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">attempts</span> <span class="o">=</span> <span class="n">attempts</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">attempts</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span></div>
+
+<div class="viewcode-block" id="get_speed"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.get_speed">[docs]</a><span class="k">def</span> <span class="nf">get_speed</span><span class="p">(</span><span class="n">motor_no</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    返回电机速度</span>
+
+<span class="sd">    :param int motor_no: 控制电机编号，可以使用 ``MOTOR_1``, ``MOTOR_2``,或者直接写入电机编号。</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    :return: 返回该电机速度</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">_speed_buf</span>
+    <span class="k">if</span> <span class="n">motor_no</span> <span class="ow">in</span> <span class="n">_speed_buf</span><span class="p">:</span>
+
+        <span class="k">return</span> <span class="n">_speed_buf</span><span class="p">[</span><span class="n">motor_no</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="led_on"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.led_on">[docs]</a><span class="k">def</span> <span class="nf">led_on</span><span class="p">(</span><span class="n">no</span><span class="p">,</span> <span class="n">brightness</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    打开灯。电机接口,除了可以驱动电机,还能做灯的控制。</span>
+
+<span class="sd">    :param int no: 控制电机编号，可以使用 ``MOTOR_1``, ``MOTOR_2``,或者直接写入电机编号。</span>
+<span class="sd">    :param int brightness: 设置亮度,范围0~100</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">brightness</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">brightness</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">attempts</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mh">0x10</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">([</span><span class="n">no</span><span class="p">,</span> <span class="n">brightness</span><span class="p">]))</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">attempts</span> <span class="o">=</span> <span class="n">attempts</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">attempts</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span></div>
+
+
+<div class="viewcode-block" id="led_off"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.led_off">[docs]</a><span class="k">def</span> <span class="nf">led_off</span><span class="p">(</span><span class="n">no</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    关闭灯。</span>
+
+<span class="sd">    :param int no: 控制电机编号，可以使用 ``MOTOR_1``, ``MOTOR_2``,或者直接写入电机编号。</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">attempts</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mh">0x10</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">([</span><span class="n">no</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">attempts</span> <span class="o">=</span> <span class="n">attempts</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">attempts</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span></div>
+
+
+<div class="viewcode-block" id="get_battery_level"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.get_battery_level">[docs]</a><span class="k">def</span> <span class="nf">get_battery_level</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    获取拓展板的电压值。</span>
+
+<span class="sd">    :return: 返回电量，单位mV。</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x03</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">i2c</span><span class="o">.</span><span class="n">readfrom</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="n">tmp</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<span class="kn">import</span> <span class="nn">struct</span>
+
+
+<div class="viewcode-block" id="IR_encode"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR_encode">[docs]</a><span class="k">class</span> <span class="nc">IR_encode</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; 红外编码类</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="IR_encode.encode_raw"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR_encode.encode_raw">[docs]</a>    <span class="k">def</span> <span class="nf">encode_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">carry_freq</span><span class="p">,</span> <span class="nb">len</span><span class="p">,</span> <span class="n">repeat_pos</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        制作任意编码。</span>
+
+<span class="sd">        :param int carry_freq: 载波频率，单位hz。</span>
+<span class="sd">        :param int len: 加上循环码后的单次发码的code总数</span>
+<span class="sd">        :param int repeat_pos: 循环码位置</span>
+<span class="sd">        :param int code: code列表，16个成员,记录8组不同的高低电平波形</span>
+<span class="sd">        :param char data: 编码波形数据，最长64字节</span>
+<span class="sd">        :return: 返回编码后的红外脉冲数据buff</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">period</span> <span class="o">=</span> <span class="mi">1000000</span><span class="o">//</span><span class="n">carry_freq</span>  <span class="c1"># us</span>
+        <span class="n">buff</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;H2B&#39;</span><span class="p">,</span> <span class="n">period</span><span class="o">*</span><span class="mi">16</span><span class="p">,</span> <span class="nb">len</span><span class="p">,</span> <span class="n">repeat_pos</span><span class="p">)</span>  <span class="c1"># carry, len, repeat_pos</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">16</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="n">_code</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">//</span><span class="n">period</span>
+            <span class="n">_code</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">16</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">2</span>
+        <span class="c1"># print(_code)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">_code</span><span class="p">:</span>
+            <span class="n">buff</span> <span class="o">+=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">buff</span> <span class="o">+=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">buff</span></div>
+
+<div class="viewcode-block" id="IR_encode.encode_nec"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR_encode.encode_nec">[docs]</a>    <span class="k">def</span> <span class="nf">encode_nec</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_code</span><span class="p">,</span> <span class="n">command_code</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        NEC编码。</span>
+
+<span class="sd">        :param int user_code: 用户码</span>
+<span class="sd">        :param int command_code: 命令码</span>
+<span class="sd">        :return: 返回编码后的红外脉冲数据buff</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+     
+        <span class="n">buff</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;H2B&#39;</span><span class="p">,</span> <span class="mi">416</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>  <span class="c1"># carry, len, repeat_pos</span>
+        <span class="c1">#              head    logic_1  logic_0  stop     repeat0   repeat1</span>
+        <span class="n">nec_code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">346</span><span class="p">,</span> <span class="mi">281</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">2437</span><span class="p">,</span> <span class="mi">346</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">6012</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">nec_key</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">36</span>
+        <span class="n">nec_key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># lead code</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>  <span class="c1"># 把用户码转为code编号</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">user_code</span> <span class="o">&gt;&gt;</span> <span class="n">i</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">:</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">command_code</span> <span class="o">&gt;&gt;</span> <span class="n">i</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">:</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">16</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">24</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">16</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+                <span class="n">nec_key</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">24</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">nec_key</span><span class="p">[</span><span class="mi">33</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="n">nec_key</span><span class="p">[</span><span class="mi">34</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+        <span class="n">nec_key</span><span class="p">[</span><span class="mi">35</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+        <span class="c1"># print(nec_key)</span>
+
+        <span class="c1"># 计算stop bit低电平时间</span>
+        <span class="n">stopbit_low_time</span> <span class="o">=</span> <span class="mi">108000</span> <span class="o">-</span> <span class="p">(</span><span class="mi">9000</span> <span class="o">+</span> <span class="mi">4500</span> <span class="o">+</span> <span class="mi">2250</span><span class="o">*</span><span class="mi">16</span> <span class="o">+</span> <span class="mi">1120</span><span class="o">*</span><span class="mi">16</span> <span class="o">+</span> <span class="mi">560</span><span class="p">)</span>  <span class="c1"># 因为补码的原因，bit0 bit1数量各占16bit</span>
+        <span class="n">nec_code</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="n">stopbit_low_time</span><span class="o">//</span><span class="mi">16</span>
+        <span class="c1"># print(nec_code)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nec_code</span><span class="p">:</span>
+            <span class="n">buff</span> <span class="o">+=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nec_key</span><span class="p">:</span>
+            <span class="n">buff</span> <span class="o">+=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+        <span class="c1"># print(buff)</span>
+        <span class="k">return</span> <span class="n">buff</span></div></div>
+
+
+<div class="viewcode-block" id="IR"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR">[docs]</a><span class="k">class</span> <span class="nc">IR</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    红外收发管的抽象类，用于红外发射和学习。 </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="IR.send"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR.send">[docs]</a>    <span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">buff</span><span class="p">,</span> <span class="n">repeat_en</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        发送红外脉冲数据buff</span>
+
+<span class="sd">        :param bytes buff: 可以是 ``IR_encode.encode_nec`` 返回的buff。或，学习后的buff。</span>
+<span class="sd">        :param init repeat_en: 重复码。用于表示按键常按。当repeat_en为1时，会不断发送重复码，直至 ``stop_send`` 停止发送。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">tmp</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">([</span><span class="mh">0x04</span><span class="p">,</span> <span class="n">repeat_en</span><span class="p">])</span>
+        <span class="n">tmp</span> <span class="o">+=</span> <span class="n">buff</span>
+        <span class="c1"># print(tmp)</span>
+        <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">tmp</span><span class="p">)</span></div>
+        <span class="c1"># self.check_buff(tmp)</span>
+
+<div class="viewcode-block" id="IR.stop_send"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR.stop_send">[docs]</a>    <span class="k">def</span> <span class="nf">stop_send</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        停止发送，当发送重复码后，使用该函数来停止发送。 </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x05</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IR.learn"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR.learn">[docs]</a>    <span class="k">def</span> <span class="nf">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        红外学习。默认下wait为True,此时为阻塞函数。learn()开始后，须在5秒内，常按住被学习对象按键。当学习完成后，会返回学习结果，成功True，失败Fail。wait 为 False,则为非阻塞，此时不返回结果。</span>
+
+<span class="sd">        :param bool wait: 是否阻塞。</span>
+<span class="sd">        :return: bool类型，返回结果</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x06</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Start Learning: the learning object should hold down the button within 5 seconds.&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">wait</span><span class="p">:</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_learn_status</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="c1"># error</span>
+                <span class="k">return</span> <span class="kc">False</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">True</span></div>
+
+<div class="viewcode-block" id="IR.get_learn_data"><a class="viewcode-back" href="../library/mPython/parrot.html#parrot.IR.get_learn_data">[docs]</a>    <span class="k">def</span> <span class="nf">get_learn_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        返回学习后的，红外编码数据。该函数须在 ``learn`` 函数后使用。</span>
+
+<span class="sd">        :return: 返回编码后的红外脉冲数据buff</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x07</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">i2c</span><span class="o">.</span><span class="n">readfrom</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">118</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">__get_learn_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">i2c</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x08</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">i2c</span><span class="o">.</span><span class="n">readfrom</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

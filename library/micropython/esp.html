@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>esp — ESP32相关的功能 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>esp — ESP32相关的功能 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">esp</span></code> — ESP32相关的功能</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">esp</span></code> — ESP32相关的功能</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,31 +95,31 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-esp">
-<span id="esp-esp32"></span><h1><a class="reference internal" href="#module-esp" title="esp: ESP32相关的功能"><code class="xref py py-mod docutils literal"><span class="pre">esp</span></code></a> — ESP32相关的功能<a class="headerlink" href="#module-esp" title="Permalink to this headline">¶</a></h1>
-<p>该 <code class="docutils literal"><span class="pre">esp</span></code> 模块包含ESP32模块相关的特定功能。</p>
+<span id="esp-esp32"></span><h1><a class="reference internal" href="#module-esp" title="esp: ESP32相关的功能"><code class="xref py py-mod docutils literal notranslate"><span class="pre">esp</span></code></a> — ESP32相关的功能<a class="headerlink" href="#module-esp" title="Permalink to this heading"></a></h1>
+<p>该 <code class="docutils literal notranslate"><span class="pre">esp</span></code> 模块包含ESP32模块相关的特定功能。</p>
 <div class="section" id="id1">
-<h2>函数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="esp.flash_size">
-<code class="descclassname">esp.</code><code class="descname">flash_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_size" title="Permalink to this definition">¶</a></dt>
+<h2>函数<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_size">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_size" title="Permalink to this definition"></a></dt>
 <dd><p>返回flash的大小。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_user_start">
-<code class="descclassname">esp.</code><code class="descname">flash_user_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_user_start" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_user_start">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_user_start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_user_start" title="Permalink to this definition"></a></dt>
 <dd><p>读取用户flash空间开始的内存偏移量。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_read">
-<code class="descclassname">esp.</code><code class="descname">flash_read</code><span class="sig-paren">(</span><em>byte_offset</em>, <em>length_or_buffer</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_read" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_read">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_or_buffer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_read" title="Permalink to this definition"></a></dt>
 <dd><p>从地址为 byte_offset 的 flash 起始点读取 buf.len()个长度的数据并放入 buf 中。</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">byte_offset</span></code> ：flash偏移地址</li>
-<li><code class="docutils literal"><span class="pre">buf</span></code> ：接收数据缓冲区，缓冲区的长度为len</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">byte_offset</span></code> ：flash偏移地址</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buf</span></code> ：接收数据缓冲区，缓冲区的长度为len</p></li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">esp</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">esp</span>
 
 <span class="n">buf</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">esp</span><span class="o">.</span><span class="n">flash_read</span><span class="p">(</span><span class="mi">2097152</span><span class="p">,</span> <span class="n">buf</span><span class="p">)</span>
@@ -131,35 +127,35 @@
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_write">
-<code class="descclassname">esp.</code><code class="descname">flash_write</code><span class="sig-paren">(</span><em>byte_offset</em>, <em>bytes</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_write" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_write">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_write" title="Permalink to this definition"></a></dt>
 <dd><p>将 buf 中所有的数据写入地址为 byte_offset 的 flash 区域。</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">byte_offset</span></code> ：flash偏移地址</li>
-<li><code class="docutils literal"><span class="pre">buf</span></code> ：数据缓冲区，缓冲区长度为len</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">byte_offset</span></code> ：flash偏移地址</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buf</span></code> ：数据缓冲区，缓冲区长度为len</p></li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">buf</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">buf</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">esp</span><span class="o">.</span><span class="n">flash_write</span><span class="p">(</span><span class="mi">2097152</span><span class="p">,</span> <span class="n">buf</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.flash_erase">
-<code class="descclassname">esp.</code><code class="descname">flash_erase</code><span class="sig-paren">(</span><em>sector_no</em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_erase" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.flash_erase">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">flash_erase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sector_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esp.flash_erase" title="Permalink to this definition"></a></dt>
 <dd><p>擦除flash扇区</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">ector_no</span></code> :要擦除的扇区</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ector_no</span></code> :要擦除的扇区</p></li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">esp</span><span class="o">.</span><span class="n">flash_erase</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">esp</span><span class="o">.</span><span class="n">flash_erase</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="esp.osdebug">
-<code class="descclassname">esp.</code><code class="descname">osdebug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.osdebug" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="esp.osdebug">
+<span class="sig-prename descclassname"><span class="pre">esp.</span></span><span class="sig-name descname"><span class="pre">osdebug</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esp.osdebug" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </div>

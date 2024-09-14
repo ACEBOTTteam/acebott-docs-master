@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QB059 LCD 1602 I2C Module &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>QB059 LCD 1602 I2C Module &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="QZ004 RGB LED Strip" href="QZ004 RGB LED Strip.html" /> 
+    <link rel="next" title="QB010 P-Buzzer Module" href="QB010%20P-Buzzer%20Module.html" />
+    <link rel="prev" title="QZ004 RGB LED Strip" href="QZ004%20RGB%20LED%20Strip.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,7 +36,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -54,40 +48,51 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/ESP32/index.html">ESP32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Module</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="QB004 Potentiometer Module.html">QB004 Potentiometer Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB006 Laser Module.html">QB006 Laser Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB007 LED Module.html">QB007 LED Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB008 Relay Module.html">QB008 Relay Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB038 Button Module.html">QB038 Button Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB045 130 DC Motor Module.html">QB045 130 DC Motor Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB046 RFID RC522 I2C Module.html">QB046 RFID RC522 I2C Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB047 DS1307 Clock Module.html">QB047 DS1307 Clock Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB048 Vibrating Motor Module.html">QB048 Vibrating Motor Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB051 4-Digit Tube Display Module.html">QB051 4-Digit Tube Display Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QB054 Servo SG90 9G Module 180 Degree.html">QB054 Servo SG90 9G Module 180 Degree</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QZ004 RGB LED Strip.html">QZ004 RGB LED Strip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB004%20Potentiometer%20Module.html">QB004 Potentiometer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB006%20Laser%20Module.html">QB006 Laser Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB007%20LED%20Module.html">QB007 LED Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB008%20Relay%20Module.html">QB008 Relay Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB038%20Button%20Module.html">QB038 Button Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB045%20130%20DC%20Motor%20Module.html">QB045 130 DC Motor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB046%20RFID%20RC522%20I2C%20Module.html">QB046 RFID RC522 I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB047%20DS1307%20Clock%20Module.html">QB047 DS1307 Clock Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB048%20Vibrating%20Motor%20Module.html">QB048 Vibrating Motor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB051%204-Digit%20Tube%20Display%20Module.html">QB051 4-Digit Tube Display Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB054%20Servo%20SG90%209G%20Module%20180%20Degree.html">QB054 Servo SG90 9G Module 180 Degree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QZ004%20RGB%20LED%20Strip.html">QZ004 RGB LED Strip</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">QB059 LCD 1602 I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB010%20P-Buzzer%20Module.html">QB010 P-Buzzer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB014%20RGB%20Module.html">QB014 RGB Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB062%20Humidifier%20Module.html">QB062 Humidifier Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB064%20OLED%20Module.html">QB064 OLED Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB001%2BQB053%20Infrared%20Remote%20Control%20Module.html">QB001+QB053 Infrared Remote Control Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB098%204x4%20Touch%20Keyboard%20Module.html">QB098 4x4 Touch Keyboard Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB015%20Joystick%20Module.html">QB015 Joystick Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB061%20MP3%20Module.html">QB061 MP3 Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB095%20Traffic%20Light%20Module.html">QB095 Traffic Light Module</a></li>
 </ul>
 </li>
 </ul>
@@ -117,7 +122,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="qb059-lcd-1602-i2c-module">
-<h1>QB059 LCD 1602 I2C Module<a class="headerlink" href="#qb059-lcd-1602-i2c-module" title="Permalink to this headline">¶</a></h1>
+<h1>QB059 LCD 1602 I2C Module<a class="headerlink" href="#qb059-lcd-1602-i2c-module" title="Permalink to this heading"></a></h1>
 <p><strong>1.Product Introduction</strong></p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/LCD-1.png"><img alt="../../_images/LCD-1.png" src="../../_images/LCD-1.png" style="width: 300px; height: 300px;" /></a>
@@ -129,34 +134,34 @@ and with an I2C communication interface module, the default I2C address 0x27, wi
 Can be used to adjust the backlight (when the character display is not clear, you need to adjust the backlight to make the character display clearly).</p>
 <p>Application reference: This module can be used for data display of control panel, electronic scale, electronic clock, etc.</p>
 <p><strong>2.Parameter Specification</strong></p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameter</th>
-<th class="head">Value//Description</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value//Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>Operating voltage</td>
-<td>3.3V~5V</td>
+<tbody>
+<tr class="row-even"><td><p>Operating voltage</p></td>
+<td><p>3.3V~5V</p></td>
 </tr>
-<tr class="row-odd"><td>Operating temperature</td>
-<td>-0°C~+70°C</td>
+<tr class="row-odd"><td><p>Operating temperature</p></td>
+<td><p>-0°C~+70°C</p></td>
 </tr>
-<tr class="row-even"><td>Number of lattice</td>
-<td>16*02</td>
+<tr class="row-even"><td><p>Number of lattice</p></td>
+<td><p>16*02</p></td>
 </tr>
-<tr class="row-odd"><td>Display color</td>
-<td>Blue</td>
+<tr class="row-odd"><td><p>Display color</p></td>
+<td><p>Blue</p></td>
 </tr>
-<tr class="row-even"><td>Communication mode</td>
-<td>IIC</td>
+<tr class="row-even"><td><p>Communication mode</p></td>
+<td><p>IIC</p></td>
 </tr>
-<tr class="row-odd"><td>Size</td>
-<td>80cm*36cm*11cm</td>
+<tr class="row-odd"><td><p>Size</p></td>
+<td><p>80cm*36cm*11cm</p></td>
 </tr>
 </tbody>
 </table>
@@ -167,75 +172,55 @@ Can be used to adjust the backlight (when the character display is not clear, yo
 <div class="figure align-center">
 <img alt="../../_images/LCD-2.png" src="../../_images/LCD-2.png" />
 </div>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">LCD 1602 I2C Module</th>
-<th class="head">UNO</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>LCD 1602 I2C Module</p></th>
+<th class="head"><p>UNO</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>VCC</td>
-<td>5V</td>
+<tbody>
+<tr class="row-even"><td><p>VCC</p></td>
+<td><p>5V</p></td>
 </tr>
-<tr class="row-odd"><td>GND</td>
-<td>GND</td>
+<tr class="row-odd"><td><p>GND</p></td>
+<td><p>GND</p></td>
 </tr>
-<tr class="row-even"><td>SCL</td>
-<td>SCL</td>
+<tr class="row-even"><td><p>SCL</p></td>
+<td><p>SCL</p></td>
 </tr>
-<tr class="row-odd"><td>SDA</td>
-<td>SDA</td>
+<tr class="row-odd"><td><p>SDA</p></td>
+<td><p>SDA</p></td>
 </tr>
 </tbody>
 </table>
 <p><strong>4.Sample Code</strong></p>
-<div class="highlight-default"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">acebott</span><span class="o">.</span><span class="n">com</span>
-<span class="c1">#include &lt;Wire.h&gt;</span>
-<span class="c1">#include &lt;LiquidCrystal_I2C.h&gt;</span>
-<span class="o">//</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">LiquidCrystal_I2C</span> <span class="nb">object</span> <span class="k">with</span> <span class="n">LCD</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">number</span> <span class="n">of</span> <span class="n">columns</span> <span class="ow">and</span> <span class="n">rows</span>
-<span class="n">LiquidCrystal_I2C</span> <span class="n">mylcd</span><span class="p">(</span><span class="mh">0x27</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-<span class="n">void</span> <span class="n">setup</span><span class="p">(){</span>
-  <span class="o">//</span> <span class="n">Initialize</span> <span class="n">the</span> <span class="n">LCD</span>
-  <span class="n">mylcd</span><span class="o">.</span><span class="n">init</span><span class="p">();</span>
-  <span class="o">//</span> <span class="n">Turn</span> <span class="n">on</span> <span class="n">the</span> <span class="n">backlight</span>
-  <span class="n">mylcd</span><span class="o">.</span><span class="n">backlight</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="n">void</span> <span class="n">loop</span><span class="p">(){</span>
-  <span class="o">//</span> <span class="n">Set</span> <span class="n">the</span> <span class="n">cursor</span> <span class="n">position</span> <span class="n">to</span> <span class="n">the</span> <span class="n">first</span> <span class="n">row</span><span class="p">,</span> <span class="n">first</span> <span class="n">column</span>
-  <span class="n">mylcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="o">//</span> <span class="n">Print</span> <span class="n">the</span> <span class="n">text</span> <span class="s2">&quot;HELLO&quot;</span> <span class="n">on</span> <span class="n">the</span> <span class="n">LCD</span>
-  <span class="n">mylcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;HELLO&quot;</span><span class="p">);</span>
-  <span class="o">//</span> <span class="n">Set</span> <span class="n">the</span> <span class="n">cursor</span> <span class="n">position</span> <span class="n">to</span> <span class="n">the</span> <span class="n">second</span> <span class="n">row</span><span class="p">,</span> <span class="n">first</span> <span class="n">column</span>
-  <span class="n">mylcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-  <span class="o">//</span> <span class="n">Print</span> <span class="n">the</span> <span class="n">text</span> <span class="s2">&quot;ACEBOTT&quot;</span> <span class="n">on</span> <span class="n">the</span> <span class="n">LCD</span>
-  <span class="n">mylcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;ACEBOTT&quot;</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">acebott</span><span class="o">.</span><span class="n">com</span>
+<span class="linenos"> 2</span><span class="c1">#include &lt;Wire.h&gt;</span>
+<span class="linenos"> 3</span><span class="c1">#include &lt;LiquidCrystal_I2C.h&gt;</span>
+<span class="linenos"> 4</span><span class="o">//</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">LiquidCrystal_I2C</span> <span class="nb">object</span> <span class="k">with</span> <span class="n">LCD</span> <span class="n">address</span> <span class="ow">and</span> <span class="n">number</span> <span class="n">of</span> <span class="n">columns</span> <span class="ow">and</span> <span class="n">rows</span>
+<span class="linenos"> 5</span><span class="n">LiquidCrystal_I2C</span> <span class="n">mylcd</span><span class="p">(</span><span class="mh">0x27</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="linenos"> 6</span><span class="n">void</span> <span class="n">setup</span><span class="p">(){</span>
+<span class="linenos"> 7</span>  <span class="o">//</span> <span class="n">Initialize</span> <span class="n">the</span> <span class="n">LCD</span>
+<span class="linenos"> 8</span>  <span class="n">mylcd</span><span class="o">.</span><span class="n">init</span><span class="p">();</span>
+<span class="linenos"> 9</span>  <span class="o">//</span> <span class="n">Turn</span> <span class="n">on</span> <span class="n">the</span> <span class="n">backlight</span>
+<span class="linenos">10</span>  <span class="n">mylcd</span><span class="o">.</span><span class="n">backlight</span><span class="p">();</span>
+<span class="linenos">11</span><span class="p">}</span>
+<span class="linenos">12</span><span class="n">void</span> <span class="n">loop</span><span class="p">(){</span>
+<span class="linenos">13</span>  <span class="o">//</span> <span class="n">Set</span> <span class="n">the</span> <span class="n">cursor</span> <span class="n">position</span> <span class="n">to</span> <span class="n">the</span> <span class="n">first</span> <span class="n">row</span><span class="p">,</span> <span class="n">first</span> <span class="n">column</span>
+<span class="linenos">14</span>  <span class="n">mylcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="linenos">15</span>  <span class="o">//</span> <span class="n">Print</span> <span class="n">the</span> <span class="n">text</span> <span class="s2">&quot;HELLO&quot;</span> <span class="n">on</span> <span class="n">the</span> <span class="n">LCD</span>
+<span class="linenos">16</span>  <span class="n">mylcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;HELLO&quot;</span><span class="p">);</span>
+<span class="linenos">17</span>  <span class="o">//</span> <span class="n">Set</span> <span class="n">the</span> <span class="n">cursor</span> <span class="n">position</span> <span class="n">to</span> <span class="n">the</span> <span class="n">second</span> <span class="n">row</span><span class="p">,</span> <span class="n">first</span> <span class="n">column</span>
+<span class="linenos">18</span>  <span class="n">mylcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="linenos">19</span>  <span class="o">//</span> <span class="n">Print</span> <span class="n">the</span> <span class="n">text</span> <span class="s2">&quot;ACEBOTT&quot;</span> <span class="n">on</span> <span class="n">the</span> <span class="n">LCD</span>
+<span class="linenos">20</span>  <span class="n">mylcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;ACEBOTT&quot;</span><span class="p">);</span>
+<span class="linenos">21</span><span class="p">}</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <p><strong>5.Test Result</strong></p>
 <p>After you have successfully connected the line according to the wiring diagram and successfully uploaded the correct program.</p>
 <p>Your lcd screen will light up with “HELLO” on the first line and “ACEBOTT” on the second line.</p>
@@ -243,12 +228,13 @@ Can be used to adjust the backlight (when the character display is not clear, yo
 <img alt="../../_images/LCD-3.png" src="../../_images/LCD-3.png" />
 </div>
 <div class="admonition hint">
-<p class="first admonition-title">Hint</p>
-<p class="last">If the lcd screen cannot display characters normally, check whether the line is connected correctly and adjust the sliding rheostat behind to adjust the backlight.</p>
+<p class="admonition-title">Hint</p>
+<p>If the lcd screen cannot display characters normally, check whether the line is connected correctly and adjust the sliding rheostat behind to adjust the backlight.</p>
 </div>
 <p><strong>6.Related Resources</strong></p>
 <blockquote>
-<div><a class="reference external" href="https://www.dropbox.com/scl/fo/q2ex9cog6eofisbufd6sf/h?rlkey=shsofyricbbxh47rku6o0llua&amp;dl=0">PDF and Code</a></div></blockquote>
+<div><p><a class="reference external" href="https://www.dropbox.com/scl/fo/q2ex9cog6eofisbufd6sf/h?rlkey=shsofyricbbxh47rku6o0llua&amp;dl=0">PDF and Code</a></p>
+</div></blockquote>
 <p><strong>7.Get One Now</strong></p>
 <blockquote>
 <div><p>B2B Business: <a class="reference external" href="mailto:info&#37;&#52;&#48;acebott&#46;com">info<span>&#64;</span>acebott<span>&#46;</span>com</a></p>
@@ -260,7 +246,8 @@ Can be used to adjust the backlight (when the character display is not clear, yo
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="QZ004 RGB LED Strip.html" class="btn btn-neutral float-left" title="QZ004 RGB LED Strip" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="QZ004%20RGB%20LED%20Strip.html" class="btn btn-neutral float-left" title="QZ004 RGB LED Strip" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="QB010%20P-Buzzer%20Module.html" class="btn btn-neutral float-right" title="QB010 P-Buzzer Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,0 +1,92 @@
+QE021-QE022 IOT  Smart Home Education Kit -Year 1 
+====================
+
+1.Education Series Introduction
+------
+
+The STEM Education series has 3 themes, 6 academic years of advanced teaching system, designed to give students continuity and direction of learning.
+
+The product is combined with the wood board, 3-5 big works per semester, and the works can be presented in the map scene.
+
+.. figure:: /../images/QE021-QE022-1.png
+    :align: center
+
+2.Smart Home Education Kit Introduction
+------
+
+Smart Home Education Kit is the first topic in the Education Solutions Series. 
+
+It has 2 academic years and 4 semesters of teaching package. 
+
+It is a STEM education kit designed for students aged 8 years and above. And participate in the construction of comprehensive practice project.
+
+It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 comprehensive display projects.
+
+.. container:: custom-hint
+.. Hint:: 
+
+    Each kit only has one controller board, so only one of these projects exists at a time.
+
+.. figure:: /../images/QE021-QE022-2.png
+    :align: center
+
+.. figure:: /../images/QE021-QE022-8.png
+    :align: center
+3.The Value of Kit
+------
+
+1.Structural Construction
+
+2.Programming Learning
+
+3.Interdisciplinary Knowledge
+
+4.Bluetooth/WiFi Control
+
+5.APP Development
+
+6.Smart Home Theme
+
+7.Suitable for Classroom/School Teaching
+
+
+4.Product Features
+------
+
+.. figure:: /../images/QE021-QE022-3.png
+    :align: center
+
+5.Course Description
+------
+
+.. figure:: /../images/QE021-QE022-4.png
+    :align: center
+
+.. figure:: /../images/QE021-QE022-5.png
+    :align: center
+
+6.Part List
+------
+
+.. figure:: /../images/QE021-QE022-6.png
+    :align: center
+
+.. figure:: /../images/QE021-QE022-7.png
+    :align: center
+
+7.Related Resources
+------
+
+ `QE021 Tutorial <https://www.dropbox.com/scl/fo/up9nm05mipdtfcg833xnh/h?rlkey=62t7wjarx40zd1ymqif8xgoem&dl=0>`_
+ 
+ `QE022 Tutorial <https://www.dropbox.com/scl/fo/up9nm05mipdtfcg833xnh/h?rlkey=62t7wjarx40zd1ymqif8xgoem&dl=0>`_
+
+8.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    `QE021 Official Website <https://www.acebott.com/products/acebott-smart-home-education-kit-for-esp32-qe021-22?_pos=1&_psq=QE021&_ss=e&_v=1.0>`_
+    
+    `QE022 Official Website <https://www.acebott.com/products/acebott-qe022-esp32-5-in-1-smart-home-education-kit-level-2?_pos=3&_psq=QE021&_ss=e&_v=1.0>`_
+

@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>uctypes – 以结构化方式访问二进制数据 &mdash; ACEBOTT 2.2.2 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>uctypes – 以结构化方式访问二进制数据 &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-      <script>
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2.2.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -40,7 +34,6 @@
           
           <a href="../../index.html">
             
-              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.2.2
@@ -53,23 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Starter Kit</span></p>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer Series/index.html">Explorer Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM Education Series/index.html">STEM Education Series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor Series/index.html">Inventor Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Controller Board</span></p>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Electronic Module</span></p>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Sensor/index.html">Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/Module/index.html">Module</a></li>
@@ -89,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal"><span class="pre">uctypes</span></code> –  以结构化方式访问二进制数据</li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">uctypes</span></code> –  以结构化方式访问二进制数据</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,19 +95,19 @@
            <div itemprop="articleBody">
              
   <div class="section" id="module-uctypes">
-<span id="uctypes"></span><h1><a class="reference internal" href="#module-uctypes" title="uctypes: 以结构化方式访问二进制数据"><code class="xref py py-mod docutils literal"><span class="pre">uctypes</span></code></a> –  以结构化方式访问二进制数据<a class="headerlink" href="#module-uctypes" title="Permalink to this headline">¶</a></h1>
-<p>该模块为MicroPython实现“外部数据接口”。它背后的想法类似于CPython的 <code class="docutils literal"><span class="pre">ctypes</span></code> 模块，但实际的API是不同的，流线型和小尺寸优化。
+<span id="uctypes"></span><h1><a class="reference internal" href="#module-uctypes" title="uctypes: 以结构化方式访问二进制数据"><code class="xref py py-mod docutils literal notranslate"><span class="pre">uctypes</span></code></a> –  以结构化方式访问二进制数据<a class="headerlink" href="#module-uctypes" title="Permalink to this heading"></a></h1>
+<p>该模块为MicroPython实现“外部数据接口”。它背后的想法类似于CPython的 <code class="docutils literal notranslate"><span class="pre">ctypes</span></code> 模块，但实际的API是不同的，流线型和小尺寸优化。
 该模块的基本思想是定义具有与C语言允许的大致相同功率的数据结构布局，然后使用熟悉的点语法访问它以引用子字段。</p>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last"><code class="docutils literal"><span class="pre">uctypes</span></code> 模块允许访问机器的任意内存地址（包括I / O和控制寄存器）。不小心使用它可能会导致崩溃，数据丢失，甚至硬件故障。</p>
+<p class="admonition-title">Warning</p>
+<p><code class="docutils literal notranslate"><span class="pre">uctypes</span></code> 模块允许访问机器的任意内存地址（包括I / O和控制寄存器）。不小心使用它可能会导致崩溃，数据丢失，甚至硬件故障。</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../pythonStd/ustruct.html#module-ustruct" title="ustruct: 打包和解压缩原始数据类型"><code class="xref py py-mod docutils literal"><span class="pre">ustruct</span></code></a> 模块: 用于访问二进制数据结构的标准Python方法（不能很好地扩展到大型和复杂的结构）。</p>
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../pythonStd/ustruct.html#module-ustruct" title="ustruct: 打包和解压缩原始数据类型"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ustruct</span></code></a> 模块: 用于访问二进制数据结构的标准Python方法（不能很好地扩展到大型和复杂的结构）。</p>
 </div>
 <p>用法示例:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uctypes</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uctypes</span>
 
 <span class="c1"># Example 1: Subset of ELF file header</span>
 <span class="c1"># https://wikipedia.org/wiki/Executable_and_Linkable_Format#File_header</span>
@@ -169,26 +165,26 @@
 </pre></div>
 </div>
 <div class="section" id="id1">
-<h2>定义结构布局<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>定义结构布局<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <p>结构布局由“描述符”定义 - 一个Python字典，它将字段名称编码为键，以及将它们作为关联值访问它们所需的其他属性:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;field1&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">properties</span><span class="o">&gt;</span><span class="p">,</span>
     <span class="s2">&quot;field2&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">properties</span><span class="o">&gt;</span><span class="p">,</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>目前，<code class="docutils literal"><span class="pre">uctypes</span></code> 需要明确规定每个字段的偏移量。从结构开始以字节为单位给出偏移量。</p>
+<p>目前，<code class="docutils literal notranslate"><span class="pre">uctypes</span></code> 需要明确规定每个字段的偏移量。从结构开始以字节为单位给出偏移量。</p>
 <p>以下是各种字段类型的编码示例:</p>
 <ul>
-<li><p class="first">标量类型:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;field_name&quot;</span><span class="p">:</span> <span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT32</span>
+<li><p>标量类型:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;field_name&quot;</span><span class="p">:</span> <span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT32</span>
 </pre></div>
 </div>
 <p>换句话说，该值是标量类型标识符，与结构起始处的字段偏移量（以字节为单位）进行或运算。</p>
 </li>
-<li><p class="first">递归结构:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;sub&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span><span class="p">,</span> <span class="p">{</span>
+<li><p>递归结构:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;sub&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span><span class="p">,</span> <span class="p">{</span>
     <span class="s2">&quot;b0&quot;</span><span class="p">:</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">,</span>
     <span class="s2">&quot;b1&quot;</span><span class="p">:</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">,</span>
 <span class="p">})</span>
@@ -197,32 +193,32 @@
 <p>即，值是2元组，其第一个元素是偏移量，第二个是结构描述符字典（注意：递归描述符中的偏移量与其定义的结构相关）。
 当然，递归结构不仅可以通过文字字典指定，还可以通过按名称引用结构描述符字典（前面定义）来指定。</p>
 </li>
-<li><p class="first">原始类型的数组:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;arr&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">ARRAY</span><span class="p">,</span> <span class="n">size</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">),</span>
+<li><p>原始类型的数组:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;arr&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">ARRAY</span><span class="p">,</span> <span class="n">size</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">),</span>
 </pre></div>
 </div>
 <p>即，value是一个2元组，其第一个元素是ARRAY标志ORed与offset，第二个是标量元素类型ORed数组中的元素。</p>
 </li>
-<li><p class="first">聚合类型的数组:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;arr2&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">ARRAY</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">}),</span>
+<li><p>聚合类型的数组:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;arr2&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">ARRAY</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">}),</span>
 </pre></div>
 </div>
 <p>即，value是一个3元组，其第一个元素是ARRAY标志ORed与offset，第二个是数组中的元素数，第三个是元素类型的描述符。</p>
 </li>
-<li><p class="first">指向原始类型的指针:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;ptr&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">PTR</span><span class="p">,</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">),</span>
+<li><p>指向原始类型的指针:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;ptr&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">PTR</span><span class="p">,</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">),</span>
 </pre></div>
 </div>
 <p>即，value是一个2元组，其第一个元素是PTR标志，与偏移量进行OR运算，第二个元素是标量元素类型。</p>
 </li>
-<li><p class="first">指向聚合类型的指针:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;ptr2&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">PTR</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">}),</span>
+<li><p>指向聚合类型的指针:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;ptr2&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">PTR</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">UINT8</span><span class="p">}),</span>
 </pre></div>
 </div>
 <p>ie值是一个2元组，其第一个元素是PTR标志ORed with offset，second是指向的类型的描述符。</p>
 </li>
-<li><p class="first">位地址:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;bitf0&quot;</span><span class="p">:</span> <span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">BFUINT16</span> <span class="o">|</span> <span class="n">lsbit</span> <span class="o">&lt;&lt;</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">BF_POS</span> <span class="o">|</span> <span class="n">bitsize</span> <span class="o">&lt;&lt;</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">BF_LEN</span><span class="p">,</span>
+<li><p>位地址:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;bitf0&quot;</span><span class="p">:</span> <span class="n">offset</span> <span class="o">|</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">BFUINT16</span> <span class="o">|</span> <span class="n">lsbit</span> <span class="o">&lt;&lt;</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">BF_POS</span> <span class="o">|</span> <span class="n">bitsize</span> <span class="o">&lt;&lt;</span> <span class="n">uctypes</span><span class="o">.</span><span class="n">BF_LEN</span><span class="p">,</span>
 </pre></div>
 </div>
 </li>
@@ -236,129 +232,129 @@
 但它取决于最低有效位被编号为0.某些目标可能在其原生ABI中使用不同的编号，但uctypes始终使用上述标准化编号。</p>
 </div>
 <div class="section" id="id2">
-<h2>模块内容<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="uctypes.struct">
-<em class="property">class </em><code class="descclassname">uctypes.</code><code class="descname">struct</code><span class="sig-paren">(</span><em>addr</em>, <em>descriptor</em>, <em>layout_type=NATIVE</em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.struct" title="Permalink to this definition">¶</a></dt>
+<h2>模块内容<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="uctypes.struct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">struct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">descriptor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NATIVE</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.struct" title="Permalink to this definition"></a></dt>
 <dd><p>基于内存中的结构地址，描述符（编码为字典）和布局类型（参见下文）来实例化“外部数据结构”对象。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.LITTLE_ENDIAN">
-<code class="descclassname">uctypes.</code><code class="descname">LITTLE_ENDIAN</code><a class="headerlink" href="#uctypes.LITTLE_ENDIAN" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.LITTLE_ENDIAN">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">LITTLE_ENDIAN</span></span><a class="headerlink" href="#uctypes.LITTLE_ENDIAN" title="Permalink to this definition"></a></dt>
 <dd><p>little-endian压缩结构的布局类型。（打包意味着每个字段占用描述符中定义的字节数，即对齐为1）。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.BIG_ENDIAN">
-<code class="descclassname">uctypes.</code><code class="descname">BIG_ENDIAN</code><a class="headerlink" href="#uctypes.BIG_ENDIAN" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.BIG_ENDIAN">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">BIG_ENDIAN</span></span><a class="headerlink" href="#uctypes.BIG_ENDIAN" title="Permalink to this definition"></a></dt>
 <dd><p>big-endian压缩结构的布局类型。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.NATIVE">
-<code class="descclassname">uctypes.</code><code class="descname">NATIVE</code><a class="headerlink" href="#uctypes.NATIVE" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.NATIVE">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">NATIVE</span></span><a class="headerlink" href="#uctypes.NATIVE" title="Permalink to this definition"></a></dt>
 <dd><p>本机结构的布局类型 - 数据字节顺序和对齐符合运行MicroPython的系统的ABI。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="uctypes.sizeof">
-<code class="descclassname">uctypes.</code><code class="descname">sizeof</code><span class="sig-paren">(</span><em>struct</em>, <em>layout_type=NATIVE</em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.sizeof" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="uctypes.sizeof">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">sizeof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">struct</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NATIVE</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.sizeof" title="Permalink to this definition"></a></dt>
 <dd><p>以字节为单位返回数据结构的大小。的结构参数可以是一个类结构或特定实例化结构对象（或其聚集体字段）。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="uctypes.addressof">
-<code class="descclassname">uctypes.</code><code class="descname">addressof</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.addressof" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="uctypes.addressof">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">addressof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.addressof" title="Permalink to this definition"></a></dt>
 <dd><p>返回对象的地址。参数应该是字节，字节数组或其他支持缓冲区协议的对象（该缓冲区的地址实际上是返回的）。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="uctypes.bytes_at">
-<code class="descclassname">uctypes.</code><code class="descname">bytes_at</code><span class="sig-paren">(</span><em>addr</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.bytes_at" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="uctypes.bytes_at">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">bytes_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.bytes_at" title="Permalink to this definition"></a></dt>
 <dd><p>以给定的地址和大小捕获内存作为bytes对象。由于bytes对象是不可变的，因此内存实际上是复制并复制到bytes对象中，因此如果内存内容稍后更改，则创建的对象将保留原始值。</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="uctypes.bytearray_at">
-<code class="descclassname">uctypes.</code><code class="descname">bytearray_at</code><span class="sig-paren">(</span><em>addr</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.bytearray_at" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="uctypes.bytearray_at">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">bytearray_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#uctypes.bytearray_at" title="Permalink to this definition"></a></dt>
 <dd><p>将给定地址和大小的内存捕获为bytearray对象。与上面的bytes_at（）函数不同，内存是通过引用捕获的，因此它也可以写入，并且您将在给定的内存地址访问当前值。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.UINT8">
-<code class="descclassname">uctypes.</code><code class="descname">UINT8</code><a class="headerlink" href="#uctypes.UINT8" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.INT8">
-<code class="descclassname">uctypes.</code><code class="descname">INT8</code><a class="headerlink" href="#uctypes.INT8" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.UINT16">
-<code class="descclassname">uctypes.</code><code class="descname">UINT16</code><a class="headerlink" href="#uctypes.UINT16" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.INT16">
-<code class="descclassname">uctypes.</code><code class="descname">INT16</code><a class="headerlink" href="#uctypes.INT16" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.UINT32">
-<code class="descclassname">uctypes.</code><code class="descname">UINT32</code><a class="headerlink" href="#uctypes.UINT32" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.INT32">
-<code class="descclassname">uctypes.</code><code class="descname">INT32</code><a class="headerlink" href="#uctypes.INT32" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.UINT64">
-<code class="descclassname">uctypes.</code><code class="descname">UINT64</code><a class="headerlink" href="#uctypes.UINT64" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.INT64">
-<code class="descclassname">uctypes.</code><code class="descname">INT64</code><a class="headerlink" href="#uctypes.INT64" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.UINT8">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">UINT8</span></span><a class="headerlink" href="#uctypes.UINT8" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.INT8">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">INT8</span></span><a class="headerlink" href="#uctypes.INT8" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.UINT16">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">UINT16</span></span><a class="headerlink" href="#uctypes.UINT16" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.INT16">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">INT16</span></span><a class="headerlink" href="#uctypes.INT16" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.UINT32">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">UINT32</span></span><a class="headerlink" href="#uctypes.UINT32" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.INT32">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">INT32</span></span><a class="headerlink" href="#uctypes.INT32" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.UINT64">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">UINT64</span></span><a class="headerlink" href="#uctypes.UINT64" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.INT64">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">INT64</span></span><a class="headerlink" href="#uctypes.INT64" title="Permalink to this definition"></a></dt>
 <dd><p>结构描述符的整数类型。提供了8,16,32和64位类型的常量，包括有符号和无符号。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.FLOAT32">
-<code class="descclassname">uctypes.</code><code class="descname">FLOAT32</code><a class="headerlink" href="#uctypes.FLOAT32" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.FLOAT64">
-<code class="descclassname">uctypes.</code><code class="descname">FLOAT64</code><a class="headerlink" href="#uctypes.FLOAT64" title="Permalink to this definition">¶</a></dt>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.FLOAT32">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">FLOAT32</span></span><a class="headerlink" href="#uctypes.FLOAT32" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.FLOAT64">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">FLOAT64</span></span><a class="headerlink" href="#uctypes.FLOAT64" title="Permalink to this definition"></a></dt>
 <dd><p>结构描述符的浮点类型。</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.VOID">
-<code class="descclassname">uctypes.</code><code class="descname">VOID</code><a class="headerlink" href="#uctypes.VOID" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal"><span class="pre">VOID</span></code> 是一个别名 <code class="docutils literal"><span class="pre">UINT8</span></code> ，用于方便地定义C的void指针：。( <code class="docutils literal"><span class="pre">uctypes.PTR</span></code> , <code class="docutils literal"><span class="pre">uctypes.VOID</span></code> )</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.VOID">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">VOID</span></span><a class="headerlink" href="#uctypes.VOID" title="Permalink to this definition"></a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">VOID</span></code> 是一个别名 <code class="docutils literal notranslate"><span class="pre">UINT8</span></code> ，用于方便地定义C的void指针：。( <code class="docutils literal notranslate"><span class="pre">uctypes.PTR</span></code> , <code class="docutils literal notranslate"><span class="pre">uctypes.VOID</span></code> )</p>
 </dd></dl>
 
-<dl class="data">
-<dt id="uctypes.PTR">
-<code class="descclassname">uctypes.</code><code class="descname">PTR</code><a class="headerlink" href="#uctypes.PTR" title="Permalink to this definition">¶</a></dt>
-<dt id="uctypes.ARRAY">
-<code class="descclassname">uctypes.</code><code class="descname">ARRAY</code><a class="headerlink" href="#uctypes.ARRAY" title="Permalink to this definition">¶</a></dt>
-<dd><p>输入指针和数组的常量。请注意，结构没有显式常量，它是隐式的：没有 <code class="docutils literal"><span class="pre">PTR</span></code> 或者 <code class="docutils literal"><span class="pre">ARRAY</span></code> 标志的聚合类型是结构。</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="uctypes.PTR">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">PTR</span></span><a class="headerlink" href="#uctypes.PTR" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="uctypes.ARRAY">
+<span class="sig-prename descclassname"><span class="pre">uctypes.</span></span><span class="sig-name descname"><span class="pre">ARRAY</span></span><a class="headerlink" href="#uctypes.ARRAY" title="Permalink to this definition"></a></dt>
+<dd><p>输入指针和数组的常量。请注意，结构没有显式常量，它是隐式的：没有 <code class="docutils literal notranslate"><span class="pre">PTR</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">ARRAY</span></code> 标志的聚合类型是结构。</p>
 </dd></dl>
 
 </div>
 <div class="section" id="id3">
-<h2>结构描述符和实例化结构对象<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>给定结构描述符字典及其布局类型，您可以使用 <a class="reference internal" href="#uctypes.struct" title="uctypes.struct"><code class="xref py py-class docutils literal"><span class="pre">uctypes.struct()</span></code></a>  构造函数在给定的内存地址处实例化特定的结构实例。
+<h2>结构描述符和实例化结构对象<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<p>给定结构描述符字典及其布局类型，您可以使用 <a class="reference internal" href="#uctypes.struct" title="uctypes.struct"><code class="xref py py-class docutils literal notranslate"><span class="pre">uctypes.struct()</span></code></a>  构造函数在给定的内存地址处实例化特定的结构实例。
 内存地址通常来自以下来源:</p>
 <ul class="simple">
-<li>访问裸机系统上的硬件寄存器时的预定义地址。在特定MCU / SoC的数据表中查找这些地址。</li>
-<li>作为从调用某些FFI（外部函数接口）函数的返回值。</li>
-<li>从 <cite>uctypes.addressof()</cite>,当您想要将参数传递给FFI函数时，或者，为了访问I / O的某些数据（例如，从文件或网络套接字读取的数据）。</li>
+<li><p>访问裸机系统上的硬件寄存器时的预定义地址。在特定MCU / SoC的数据表中查找这些地址。</p></li>
+<li><p>作为从调用某些FFI（外部函数接口）函数的返回值。</p></li>
+<li><p>从 <cite>uctypes.addressof()</cite>,当您想要将参数传递给FFI函数时，或者，为了访问I / O的某些数据（例如，从文件或网络套接字读取的数据）。</p></li>
 </ul>
 </div>
 <div class="section" id="id4">
-<h2>结构对象<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>结构对象允许使用标准点表示法访问各个字段：<code class="docutils literal"><span class="pre">my_struct.substruct1.field1</span></code> 。
+<h2>结构对象<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<p>结构对象允许使用标准点表示法访问各个字段：<code class="docutils literal notranslate"><span class="pre">my_struct.substruct1.field1</span></code> 。
 如果字段是标量类型，获取它将产生与字段中包含的值对应的原始值（Python整数或浮点数）。
 标量字段也可以分配给。</p>
-<p>如果字段是数组，则可以使用标准下标运算符访问其各个元素 <code class="docutils literal"><span class="pre">[]</span></code> - 包括读取和分配。</p>
-<p>如果一个字段是一个指针，它可以使用 <code class="docutils literal"><span class="pre">[0]</span></code> 语法解除引用（对应于C  <code class="docutils literal"><span class="pre">*</span></code> 运算符，但也 <code class="docutils literal"><span class="pre">[0]</span></code> 适用于C）。还支持使用其他整数值（但是为0）订阅指针，其语义与C中相同。</p>
-<p>总而言之，访问结构字段通常遵循C语法，除了指针取消引用，当您需要使用 <code class="docutils literal"><span class="pre">[0]</span></code> 运算符而不是 <code class="docutils literal"><span class="pre">*</span></code> 。</p>
+<p>如果字段是数组，则可以使用标准下标运算符访问其各个元素 <code class="docutils literal notranslate"><span class="pre">[]</span></code> - 包括读取和分配。</p>
+<p>如果一个字段是一个指针，它可以使用 <code class="docutils literal notranslate"><span class="pre">[0]</span></code> 语法解除引用（对应于C  <code class="docutils literal notranslate"><span class="pre">*</span></code> 运算符，但也 <code class="docutils literal notranslate"><span class="pre">[0]</span></code> 适用于C）。还支持使用其他整数值（但是为0）订阅指针，其语义与C中相同。</p>
+<p>总而言之，访问结构字段通常遵循C语法，除了指针取消引用，当您需要使用 <code class="docutils literal notranslate"><span class="pre">[0]</span></code> 运算符而不是 <code class="docutils literal notranslate"><span class="pre">*</span></code> 。</p>
 </div>
 <div class="section" id="id5">
-<h2>限制<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>限制<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
-<li>访问非标量字段会导致分配中间对象以表示它们。这意味着应特别注意布局在禁用内存分配时需要访问的结构（例如，来自中断）。建议如下:</li>
+<li><p>访问非标量字段会导致分配中间对象以表示它们。这意味着应特别注意布局在禁用内存分配时需要访问的结构（例如，来自中断）。建议如下:</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>避免访问嵌套结构。例如，代替 <code class="docutils literal"><span class="pre">mcu_registers.peripheral_a.register1</span></code> 为每个外围设备定义单独的布局描述符，以便进行访问 <code class="docutils literal"><span class="pre">peripheral_a.register1</span></code> 。或者只缓存特定的外围设备: 如果寄存器由多个位域组成，则需要缓存对特定寄存器的引用: <code class="docutils literal"><span class="pre">peripheral_a</span> <span class="pre">=</span> <span class="pre">mcu_registers.peripheral_areg_a</span> <span class="pre">=</span> <span class="pre">mcu_registers.peripheral_a.reg_a</span></code></li>
-<li>避免使用其他非标量数据，例如数组。例如，而不是 peripheral_a.register[0]使用peripheral_a.register0。同样，另一种方法是缓存中间值，例如 <code class="docutils literal"><span class="pre">register0</span> <span class="pre">=</span> <span class="pre">peripheral_a.register[0]</span></code></li>
+<li><p>避免访问嵌套结构。例如，代替 <code class="docutils literal notranslate"><span class="pre">mcu_registers.peripheral_a.register1</span></code> 为每个外围设备定义单独的布局描述符，以便进行访问 <code class="docutils literal notranslate"><span class="pre">peripheral_a.register1</span></code> 。或者只缓存特定的外围设备: 如果寄存器由多个位域组成，则需要缓存对特定寄存器的引用: <code class="docutils literal notranslate"><span class="pre">peripheral_a</span> <span class="pre">=</span> <span class="pre">mcu_registers.peripheral_areg_a</span> <span class="pre">=</span> <span class="pre">mcu_registers.peripheral_a.reg_a</span></code></p></li>
+<li><p>避免使用其他非标量数据，例如数组。例如，而不是 peripheral_a.register[0]使用peripheral_a.register0。同样，另一种方法是缓存中间值，例如 <code class="docutils literal notranslate"><span class="pre">register0</span> <span class="pre">=</span> <span class="pre">peripheral_a.register[0]</span></code></p></li>
 </ul>
 </div></blockquote>
-<p>2. <code class="docutils literal"><span class="pre">uctypes</span></code> 模块支持的偏移范围有限。支持的确切范围被认为是实现细节，一般建议是将结构定义拆分为从几千字节到几十千字节的最大值。
+<p>2. <code class="docutils literal notranslate"><span class="pre">uctypes</span></code> 模块支持的偏移范围有限。支持的确切范围被认为是实现细节，一般建议是将结构定义拆分为从几千字节到几十千字节的最大值。
 在大多数情况下，无论如何这都是一种自然情况，例如，在一个结构中定义MCU的所有寄存器（扩展到32位地址空间）没有意义，而是通过外围模块定义外设模块。
 在某些极端情况下，您可能需要人工分割几个部分的结构（例如，如果在中间访问具有多兆字节数组的本机数据结构，尽管这将是非常合成的情况）。</p>
 </div>

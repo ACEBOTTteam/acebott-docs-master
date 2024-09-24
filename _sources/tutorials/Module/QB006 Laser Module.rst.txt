@@ -1,4 +1,4 @@
-QB006 Laser Module
+QB006/QB074 Laser Module
 ======================================
 
 **1.Product Introduction**

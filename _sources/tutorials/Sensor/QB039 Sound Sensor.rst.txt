@@ -1,4 +1,4 @@
-QB039 Sound Sensor
+QB039/QB079 Sound Sensor
 ======================================
 
 **1.Product Introduction**

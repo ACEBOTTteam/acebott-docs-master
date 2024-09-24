@@ -1,4 +1,4 @@
-QB008 Relay Module
+QB008/QB076 Relay Module
 ======================================
 
 **1.Product Introduction**

@@ -1,4 +1,4 @@
-QB042 Ultrasonic Sensor
+QB042/QB093 Ultrasonic Sensor
 ======================================
 
 **1.Product Introduction**

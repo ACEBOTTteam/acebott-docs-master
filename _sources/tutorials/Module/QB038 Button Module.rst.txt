@@ -1,4 +1,4 @@
-QB038 Button Module
+QB038/QB067 Button Module
 ======================================
 
 **1.Product Introduction**

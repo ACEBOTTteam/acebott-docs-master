@@ -1,4 +1,4 @@
-QB064 OLED Module
+QB064/QB065 OLED Module
 ======================================
 
 **1.Product Introduction**

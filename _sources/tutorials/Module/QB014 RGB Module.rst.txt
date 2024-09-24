@@ -1,4 +1,4 @@
-QB014 RGB Module
+QB014/QB082 RGB Module
 ======================================
 
 **1.Product Introduction**

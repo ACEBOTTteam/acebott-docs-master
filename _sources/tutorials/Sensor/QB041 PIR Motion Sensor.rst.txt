@@ -1,4 +1,4 @@
-QB041 PIR Motion Sensor
+QB041/QB066 PIR Motion Sensor
 ======================================
 
 **1.Product Introduction**

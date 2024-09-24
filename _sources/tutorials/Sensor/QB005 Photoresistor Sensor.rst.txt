@@ -1,4 +1,4 @@
-QB005 Photoresistor Sensor
+QB005/QB068 Photoresistor Sensor
 ======================================
 
 **1.Product Introduction**

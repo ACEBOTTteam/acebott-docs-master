@@ -1,4 +1,4 @@
-QE040 Moisture Sensor
+QB040/QB073 Moisture Sensor
 ======================================
 
 **1.Product Introduction**

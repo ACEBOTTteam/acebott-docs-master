@@ -1,4 +1,4 @@
-QB051 4-Digit Tube Display Module
+QB051/QB090 4-Digit Tube Display Module
 ======================================
 
 **1.Product Introduction**

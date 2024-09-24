@@ -1,4 +1,4 @@
-QB062 Humidifier Module
+QB062/QB078 Humidifier Module
 ======================================
 
 **1.Product Introduction**

@@ -1,4 +1,4 @@
-QB060 Trace Sensor
+QB060/QB080 Trace Sensor
 ======================================
 
 **1.Product Introduction**

@@ -1,4 +1,4 @@
-QB012 Touch Sensor
+QB012/QB091 Touch Sensor
 ======================================
 
 **1.Product Introduction**

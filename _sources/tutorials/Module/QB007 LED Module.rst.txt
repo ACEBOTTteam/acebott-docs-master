@@ -1,4 +1,4 @@
-QB007 LED Module
+QB007/QB081 LED Module
 ======================================
 
 **1.Product Introduction**

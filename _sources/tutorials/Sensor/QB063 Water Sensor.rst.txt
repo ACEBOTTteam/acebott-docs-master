@@ -1,4 +1,4 @@
-QB063 Water Sensor
+QB063/QB092 Water Sensor
 ======================================
 
 **1.Product Introduction**

@@ -1,4 +1,4 @@
-QB046 RFID RC522 I2C Module
+QB046/QB087 RFID RC522 I2C Module
 ======================================
 
 **1.Product Introduction**

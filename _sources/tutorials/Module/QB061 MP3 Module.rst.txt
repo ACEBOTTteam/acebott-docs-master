@@ -1,4 +1,4 @@
-QB061 MP3 Module
+QB061/QB089 MP3 Module
 ======================================
 
 **1.Product Introduction**

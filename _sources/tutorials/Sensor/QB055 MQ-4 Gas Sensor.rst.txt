@@ -1,4 +1,4 @@
-QB055 MQ-4 Gas Sensor
+QB055/QB084 MQ-4 Gas Sensor
 ======================================
 
 **1.Product Introduction**

@@ -1,4 +1,4 @@
-QB043 Raindrop Sensor
+QB043/QB069 Raindrop Sensor
 ======================================
 
 **1.Product Introduction**

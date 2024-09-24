@@ -1,4 +1,4 @@
-QB013 Vibration Sensor
+QB013/QB070 Vibration Sensor
 ======================================
 
 **1.Product Introduction**

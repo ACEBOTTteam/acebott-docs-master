@@ -1,4 +1,4 @@
-QB010 P-Buzzer Module
+QB010/QB077 P-Buzzer Module
 ======================================
 
 **1.Product Introduction**

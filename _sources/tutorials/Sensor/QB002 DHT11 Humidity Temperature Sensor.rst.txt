@@ -1,4 +1,4 @@
-QB002 DHT11 Sensor
+QB002/QB071 DHT11 Sensor
 ======================================
 
 **1.Product Introduction**

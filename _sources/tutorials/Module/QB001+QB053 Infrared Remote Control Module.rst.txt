@@ -1,4 +1,4 @@
-QB001+QB053 Infrared Remote Control Module
+QB001/QB073+QB053 Infrared Remote Control Module
 ======================================
 
 **1.Product Introduction**

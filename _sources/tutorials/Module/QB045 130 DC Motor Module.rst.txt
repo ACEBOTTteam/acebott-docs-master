@@ -1,4 +1,4 @@
-QB045 130 DC Motor Module
+QB045/QB075 130 DC Motor Module
 ======================================
 
 **1.Product Introduction**

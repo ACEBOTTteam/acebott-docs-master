@@ -1,0 +1,104 @@
+QE027  Intelligent Transport Education Kit (Easy-Plug) -LEVEL 1 
+====================
+
+1.Education Series Introduction
+------
+
+The STEM Education series has 3 themes, 6 academic years of advanced teaching system, designed to give students continuity and direction of learning.
+
+The product is combined with the wood board, 3-5 big works per semester, and the works can be presented in the map scene.
+
+.. figure:: /../images/QE021-QE022-1.png
+    :align: center
+
+2.Intelligent Transportation Education Kit Introduction
+------
+
+Intelligent Transportation Education Kit is the second topic in the Education Solutions Series. 
+
+It has 2 academic years and 4 semesters of teaching package. 
+
+It is a STEM education kit designed for students aged 8 years and above. And participate in the construction of comprehensive practice project.
+
+Through Intelligent Transportation Edu Kit Level 1, students can understand the concepts and applications of Intelligent transportation. They will learn the basics of the ESP32 board, basic programming knowledge, basic electronic circuits, and the use of electronic modules. Students will also be able to build practical projects such as smart street lights, smart traffic lights, smart crossing, and smart parking lots.
+
+.. figure:: /../images/QE027-1.png
+    :align: center
+
+It is an all-in-one kit, each kit can make 10+ small projects, and has 3~5 comprehensive display projects.
+
+.. container:: custom-hint
+.. Hint:: 
+
+    Each kit only has one controller board, so only one of these projects exists at a time.
+
+
+3.The Value of Kit
+------
+
+1.Structural Construction
+
+2.Programming Learning
+
+3.Interdisciplinary Knowledge
+
+4.Bluetooth/WiFi Communication
+
+5.APP Development
+
+6.Intelligent Transportation Theme
+
+7.Suitable for Classroom/School Teaching
+
+
+4.Product Features
+------
+
+.. figure:: /../images/QE027-2.png
+    :align: center
+
+5.Controller Board Introduction
+------
+
+.. figure:: /../images/QE023-QE024-5.png
+    :align: center
+
+6.Multi-Platform Support
+------
+
+.. figure:: /../images/QE023-QE024-6.png
+    :align: center
+
+
+7.Course Description
+------
+
+.. figure:: /../images/QE027-3.png
+    :align: center
+
+.. figure:: /../images/QE027-4.png
+    :align: center
+
+.. figure:: /../images/QE027-5.png
+    :align: center
+
+8.Part List
+------
+
+.. figure:: /../images/QE027-6.png
+    :align: center
+
+
+9.Related Resources
+------
+
+ `QE027 Tutorial <https://www.dropbox.com/scl/fo/djdr2kkwjq3ojwv7kl78t/AMpAtduaBJRuiv0V5Hh5ENg?rlkey=r40ux4rwkvo361o08o6f2m29x&st=jdvmk3ov&dl=0>`_
+
+
+10.Get One Now
+------
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <>`_
+

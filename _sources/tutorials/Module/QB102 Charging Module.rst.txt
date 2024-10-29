@@ -1,0 +1,111 @@
+QB102 Charging Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Charging-1.png
+    :align: center
+
+
+**(1)Module Introduction**
+
+Charging module is a project for the Internet of Things and renewable energy, providing safe and efficient embedded solar power management modules for makers and application engineers. 
+The charging module has the function of solar energy charging, which can use solar energy to charge lithium batteries under certain light conditions, and has the function of power protection, providing efficient and reliable power management for various solar energy projects.
+
+Application reference: solar car and robot, solar intelligent environment monitoring system, small solar street lamp.
+
+**(2)Interface Description**
+
+Charging module is a module used for charging lithium battery with a standard voltage of 7.4V and a full voltage of 8.4V in double section series state. 
+
+The charging module contains two 5.5X2.1mm power block DC power ports, which can input power to the lithium battery and to the controller board. 
+
+A Type-C interface to connect the charging head (not more than 5V) input power.
+
+A solar panel connector to connect the solar panel input power supply.
+
+An LED display light to display the charging status.
+
+.. figure:: /../images/Charging-2.png
+    :align: center
+
+**2.Parameter Specification**
+
++-------------------------------------+------------------------------------------------+
+| Parameter                           | Value//Description                             |
++=====================================+================================================+
+| Operating voltage                   | 4.5V~6.5V                                      |
++-------------------------------------+------------------------------------------------+
+| Battery type available for charging | 7.4V double section series lithium ion battery |
++-------------------------------------+------------------------------------------------+
+| charging current                    | 900mA Max                                      |
++-------------------------------------+------------------------------------------------+
+| Charging cut-off voltage            | 8.4V±1%                                        |
++-------------------------------------+------------------------------------------------+
+| Maximum static power consumption    | <1 mA                                          |
++-------------------------------------+------------------------------------------------+
+| Operating temperature               | -40°C~+85°C                                    |
++-------------------------------------+------------------------------------------------+
+| Size                                | 5.0cm*2.4cm                                    |
++-------------------------------------+------------------------------------------------+
+
+.. figure:: /../images/Charging-3.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/Charging-4.png
+    :align: center
+
++-----------------------+-----------------------------------+
+|Solar Charging Module  | ESP32 / battery box / solar panel |
++=======================+===================================+
+| DC 1                  | On-board power supply port        |
++-----------------------+-----------------------------------+
+| DC 2                  | Battery box interface             |
++-----------------------+-----------------------------------+
+| Solar interface       | Solar panel                       |
++-----------------------+-----------------------------------+
+
+
+**4.Test Result**
+
+The charging time of lithium battery is affected by major factors such as battery capacity, charging current, battery voltage, charging method and battery life. Therefore, the charging time parameter of the lithium battery is only used as the reference time in the test environment conditions, and the actual charging time may have a certain deviation.
+Therefore, the charging module will have different charging times due to different charging modes. The specific cases are as follows:
+
+**(1)Adapter Charging**
+
+It takes about 1 hour and 42 minutes to charge two 18650 batteries (capacity 4800 mAh) with 5V / 2A to 75% and about 5 hours when fully charged.
+
+Attention: Adapter specification must be less than 5V voltage.
+
+
+**(2)Solar Charging**
+
+On a sunny day, it takes about 3.5 hours to charge the 18650 battery (capacity of 4800mAh) to 50% power state by solar energy. It takes about 12 hours to charge to 85% power state.
+
+Attention: The solar panel must use 6V operating voltage, not exceeding 3W model.
+
+**(3)USB Charging**
+
+If you use the USB interface of the computer to charge the 18650 battery (capacity of 4800mAh) to 90% power state, it takes about 6 hours; When fully charged, it takes about 9 hours.
+
+**(4)The solar and adapter charge at the same time**
+
+If the solar energy and 5V/2A charging head are used to charge the 18650 battery (capacity of 4800mAh) at the same time under specific circumstances, it will take about 1 hour and 40 minutes to charge to 80% of the power state. When fully charged, it took about 4 hours and 50 minutes.
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/q0dsjzkrv9pnpmy5uej5u/AHZkwCq6M_cThMGPZTwUv_E?rlkey=ovb89t2ezav1doayl3pqxxdza&st=fd7ffn4p&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/q0dsjzkrv9pnpmy5uej5u/AHZkwCq6M_cThMGPZTwUv_E?rlkey=ovb89t2ezav1doayl3pqxxdza&st=fd7ffn4p&dl=0>`_
+

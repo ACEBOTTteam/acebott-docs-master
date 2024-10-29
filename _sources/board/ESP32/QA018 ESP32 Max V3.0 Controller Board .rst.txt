@@ -1,0 +1,171 @@
+QA018/QA019 ESP32 Max V3.0 Controller Board
+=======
+
+.. image:: /../images/ESP32_3.0-1.png
+    :align: center
+
+1.Introduction
+------------
+
+The ESP32 Max 3.0 controller board is a low power consumption, high performance microcontroller, very suitable for the development of the Internet of Things.
+It has a 240 MHz dual-core processor, 520 KB of RAM, and 4MB of flash memory. Built-in WiFi and Bluetooth 4.2 module, available for wireless communication. With 34 GPIO ports, it can connect and control various peripherals.
+
+The ESP32 Max 3.0 controller board is also equipped with a rechargeable function. 
+The controller board has five LED modules, and the first 4 LED lights correspond to the current power of the battery. When the battery is full, the four LED lights are fully on the blue light, and when the power is reduced, the number of lights will also decrease. 
+The fifth light indicates whether the battery is charging, when it is red, it means the battery is charging, when it is not on, it means the battery is full or is not charging.
+
+If you want to know more about ESP32, `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Getting%20Started%20with%20ESP32.html>`_
+
+2.Features
+------------
+
+The Type-C interface for enhanced compatibility
+
+The pin interface is rich, to meet the needs of the work construction
+
+Foot color is clear, easy to distinguish and wiring
+
+Configure the charging function to realize the convenient battery charging
+
+Onboard power display light, control the battery status at any time
+
++-----------------------+-------------------------------------------------------------------------+
+| Connectivity          | WI-FI                 | Bluetooth LE                                    |
++=======================+=========================================================================+
+| Chip                  | ESP-WROOM-32                                                            |
++-----------------------+-------------------------------------------------------------------------+
+| Clock                 | 240MHz                                                                  |
++-----------------------+-------------------------------------------------------------------------+
+| ROM                   | 448KB                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| SRAM                  | 520KB                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| FLASH                 | 4MB                                                                     |
++-----------------------+-------------------------------------------------------------------------+
+| Interfaces            | UART | I2C | SPI | CAN                                                  |
++-----------------------+-------------------------------------------------------------------------+
+| Input Voltages        | 6-18V                                                                   |
++-----------------------+-------------------------------------------------------------------------+
+| Pinout                | 25(DIGITAL) | 15(ANALOG)| 25(PWM) | 2(DAC) | 2(UART) | 2(SPI) | 1（I2C）|                      
++-----------------------+-------------------------------------------------------------------------+
+
+.. image:: /../images/ESP32_3.0-2.png
+    :align: center
+
+.. image:: /../images/ESP32_3.0-3.png
+    :align: center
+
+4.PCB Description
+------------
+
+.. image:: /../images/ESP323.0-4.png
+    :align: center
+
+The figure illustrates the GPIO pins and the corresponding functions of the ESP32 Max 1.0 controller board, including ADC, DAC, PWM, I2C, SPI pins, etc.
+
+**Only Input Pin:** GPIO 34/GPIO 35/GPIO 36/GPIO 39
+
+**Default I2C Pin:** GPIO 21（SDA）/GPIO 22（SCL）
+
+**DAC Pin:** GPIO 25（DAC1）/GPIO 26（DAC2）
+
+5.Note
+------------
+
+(1)The ADC2 pin cannot be used when using Wi-Fi. Therefore, if you can't get the value from the ADC2 GPIO on Wi-Fi, consider using the ADC1 GPIO instead.
+
+(2)The ADC input channel has 12-bit resolution. This means that you can get analog readings between 0 and 4095, where analog value 0 corresponds to 0V and analog value 4095 corresponds to 3.3V. You can also set the resolution of the channel as well as the ADC range on the code.
+
+(3)ESP32 ADC pins do not have linear behavior. You might not be able to distinguish between 0 and 0.1V, 3.2 and 3.3V, be aware of this when using ADC pins and you will get a data image similar to the one shown below.
+
+.. image:: /../images/ESP32-17.png
+    :align: center
+
+
+6.Detailed Use with ARDUINO Software as follows:
+------------
+
+**Step1 | Download the Arduino environment (IDE)**
+
+ `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
+
+
+**Step2 | Install the ESP32 plugin in the Arduino IDE**
+
+ `click here <https://acebottteam.github.io/acebott-docs-master/getting%20started/ESP32/Install%20the%20ESP32%20plugin%20in%20the%20Arduino%20IDE.html>`_
+
+**Step3 | Download CH340 Driver**
+
+ `MAC System <https://acebottteam.github.io/acebott-docs-master/getting%20started/Arduino/Download%20CH340%20Driver%20on%20MAC%20System.html>`_
+
+ `Windows System <https://acebottteam.github.io/acebott-docs-master/getting%20started/Arduino/Download%20CH340%20Driver%20on%20Windows%20System.html>`_
+
+**Step4 | Upload the LED lighting program**
+
+Connect the board to the computer using a Type-C data cable.The red power LED should go on.
+
+.. image:: /../images/ESP3_3.0-5.png
+    :align: center
+
+Select "ESP32" -> "ESP32 Dev Module" from the Tools > Board menu
+
+.. image:: /../images/ESP32-11.png
+    :align: center
+
+Select the serial device of the  board from the Tools | Serial Port menu.  This is likely to be COM8 or higher (COM1and COM2 are usually reserved for hardware serial ports).  To find out, you can disconnect your board and re-open the menu;  the entry that disappears should be the board.  Reconnect the board and select that serial port.  Here you should select COM 8 as below.
+
+.. image:: /../images/ESP32-12.png
+    :align: center
+
+You also can find the right ports shown on Device Manager.
+
+.. image:: /../images/ESP32-13.png
+    :align: center
+
+Upload the Program.
+
+.. literalinclude:: /../../examples/TEST_esp32_Blink/TEST_esp32_Blink.ino
+    :linenos:
+
+click the “Upload” button to upload the code.  will appear in the status bar. 
+
+.. image:: /../images/ESP32-14.png
+    :align: center
+
+Wait a few seconds. If the upload is successful, the message "Done uploading."
+
+.. image:: /../images/ESP32-15.png
+    :align: center
+
+And the LED on the board blink.
+
+.. image:: /../images/ESP32-16.jpg
+    :align: center
+
+If your tests were successful, you can try to upload the following code. When a network is found in the environment, the number and name of all nearby networks will be obtained and displayed in the serial port, 
+and the indicator will light up.
+
+.. literalinclude:: /../../examples/TEST_esp32/TEST_esp32.ino
+    :linenos:
+
+
+The serial port display effect diagram is as follows：
+
+.. image:: /../images/ESP32-5.png
+    :align: center
+
+7.Package List
+------------
+
+    ESP32 Max V3.0 Controller Board * 1pcs
+
+    Type-C cable * 1pcs
+
+10.Get One Now
+------------
+
+    B2B Business: info@acebott.com
+
+    `Official Website <>`_
+
+    `Amazon US Store <>`_

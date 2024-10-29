@@ -1,0 +1,77 @@
+QB101 DC Motor Driver Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/DC_Motor_Driver_Module-1.png
+    :align: center
+
+
+The DC Motor Driver Module is an electronic component that controls the DC motor, which controls the rotation direction and speed of the motor by controlling the input signal.
+There are two control pins on the drive module, one to control clockwise rotation (IN +) and the other to control counterclockwise rotation (IN-). By applying different level signals (high or low levels) to these pins, the motor has clockwise rotation and counterclockwise rotation that can be achieved.
+
+Application reference: small robots, intelligent cars, fans and other projects.
+
+
+**2.Parameter Specification**
+
++-------------------------------------+------------------------------------------------+
+| Parameter                           | Value//Description                             |
++=====================================+================================================+
+| Operating voltage                   | 3.3V-5V                                        |
++-------------------------------------+------------------------------------------------+
+| Output current                      | 200mA                                          |
++-------------------------------------+------------------------------------------------+
+| Operating temperature               | -10°C~+50°C                                    |
++-------------------------------------+------------------------------------------------+
+| Size                                | 3.2cm*2.4cm                                    |
++-------------------------------------+------------------------------------------------+
+
+
+.. figure:: /../images/DC_Motor_Driver_Module-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/DC_Motor_Driver_Module-3.png
+    :align: center
+
++-------------------------+----------------------------------+
+| DC Motor Driver Module  | ESP32                            |
++=========================+==================================+
+| IN-                     | Digital Pin 16                   |
++-------------------------+----------------------------------+
+| IN+                     | Digital Pin 17                   |
++-------------------------+----------------------------------+
+| VCC                     | 5V                               |
++-------------------------+----------------------------------+
+| GND                     | GND                              |
++-------------------------+----------------------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/DC_motor/DC_motor.ino
+    :linenos:
+
+**5.Test Result**
+
+When you successfully connect the line according to the wiring diagram and successfully upload the correct program, the motor cycle can turn clockwise for 1 second, stop for 1 second, then turn counterclockwise for 1 second, and stop for 1 second.
+
+.. figure:: /../images/DC_Motor_Driver_Module-4.png
+    :align: center
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/9vgm2fr8kbdevypwmnan3/AOF8zaCOMGlmC_uCSQP82y8?rlkey=5fdtfpwsrahk0n5ws0k15ivwx&st=rd32o9ma&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/9vgm2fr8kbdevypwmnan3/AOF8zaCOMGlmC_uCSQP82y8?rlkey=5fdtfpwsrahk0n5ws0k15ivwx&st=rd32o9ma&dl=0>`_
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QB104 UV Sensor &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QB105 Color Sensor" href="QB105%20Color%20Sensor.html" />
+    <link rel="prev" title="QB103 Barometric Pressure Sensor" href="QB103%20Barometric%20Pressure%20Sensor.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sensor</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="QB002%20DHT11%20Humidity%20Temperature%20Sensor.html">QB002/QB071 DHT11 Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB003%20Temperature%20Sensor.html">QB003 Temperature Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB005%20Photoresistor%20Sensor.html">QB005/QB068 Photoresistor Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB039%20Sound%20Sensor.html">QB039/QB079 Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB040%20Moisture%20Sensor.html">QB040/QB073 Moisture Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB041%20PIR%20Motion%20Sensor.html">QB041/QB066 PIR Motion Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB042%20Ultrasonic%20Sensor.html">QB042/QB093 Ultrasonic Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB043%20Raindrop%20Sensor.html">QB043/QB069 Raindrop Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB050%20Photoelectric%20Sensor.html">QB050 Photoelectric Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB055%20MQ-4%20Gas%20Sensor.html">QB055/QB084 MQ-4 Gas Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB011%20Flame%20Sensor.html">QB011/QB083 Flame Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB012%20Touch%20Sensor.html">QB012/QB091 Touch Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB013%20Vibration%20Sensor.html">QB013/QB070 Vibration Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB060%20Trace%20Sensor.html">QB060/QB080 Trace Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB063%20Water%20Sensor.html">QB063/QB092 Water Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB096%20Infrared%20Obstacle%20Avoidance%20Sensor.html">QB096 Infrared Obstacle Avoidance Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB103%20Barometric%20Pressure%20Sensor.html">QB103 Barometric Pressure Sensor</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">QB104 UV Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB105%20Color%20Sensor.html">QB105 Color Sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Module/index.html">Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Sensor</a></li>
+      <li class="breadcrumb-item active">QB104 UV Sensor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="qb104-uv-sensor">
+<h1>QB104 UV Sensor<a class="headerlink" href="#qb104-uv-sensor" title="Permalink to this heading"></a></h1>
+<p><strong>1.Product Introduction</strong></p>
+<div class="figure align-center">
+<img alt="../../_images/UV-1.png" src="../../_images/UV-1.png" />
+</div>
+<p>UV Sensor is a test of the best amount of ultraviolet sensor, can use the photosensitive element by photovoltaic mode and light guide mode converted ultraviolet signal into measurable electrical signal, it does not need to use the wavelength filter, only sensitive to ultraviolet, direct output corresponding ultraviolet index (UV INDEX) linear voltage, output voltage range about 0 ~ 1100 mV.</p>
+<p>Application reference: UV tester, UV lamp monitoring, sterilization lamp equipment, etc.</p>
+<p><strong>2.Parameter Specification</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value/Representation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Operating voltage</p></td>
+<td><p>3.3~5V</p></td>
+</tr>
+<tr class="row-odd"><td><p>Output voltage</p></td>
+<td><p>0~5V (corresponding to UV index 0~11)</p></td>
+</tr>
+<tr class="row-even"><td><p>Test accuracy</p></td>
+<td><p>±1 UV Index</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wavelength of response</p></td>
+<td><p>200~370nm</p></td>
+</tr>
+<tr class="row-even"><td><p>Output signal</p></td>
+<td><p>Analog signal</p></td>
+</tr>
+<tr class="row-odd"><td><p>Operating temperature</p></td>
+<td><p>-20°C~+85°C</p></td>
+</tr>
+<tr class="row-even"><td><p>Size</p></td>
+<td><p>3.2cm*2.4cm</p></td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center">
+<img alt="../../_images/UV-2.png" src="../../_images/UV-2.png" />
+</div>
+<p><strong>3.Wiring Diagram</strong></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Expansion board is attached to esp32 controller board.</p>
+</div>
+<div class="figure align-center">
+<img alt="../../_images/UV-3.png" src="../../_images/UV-3.png" />
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>UV Sensor</p></th>
+<th class="head"><p>ESP32</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>S</p></td>
+<td><p>39</p></td>
+</tr>
+<tr class="row-odd"><td><p>VCC</p></td>
+<td><p>5V</p></td>
+</tr>
+<tr class="row-even"><td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>4.Sample Code</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">#include &lt;ACB_Ultraviolet.h&gt;//Import UV library</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">ACB_Ultraviolet</span> <span class="n">uv</span><span class="p">;</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
+<span class="linenos"> 6</span>  <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="o">//</span><span class="n">Set</span> <span class="n">serial</span> <span class="n">port</span>
+<span class="linenos"> 7</span>  <span class="n">uv</span><span class="o">.</span><span class="n">setpin</span><span class="p">(</span><span class="mi">39</span><span class="p">);</span><span class="o">//</span><span class="n">Set</span> <span class="n">the</span> <span class="n">pin</span> <span class="n">of</span> <span class="n">the</span> <span class="n">UV</span> <span class="n">sensor</span>
+<span class="linenos"> 8</span><span class="p">}</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="linenos">11</span>  <span class="nb">int</span> <span class="n">uv_Value</span> <span class="o">=</span> <span class="n">uv</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;analogValue&quot;</span><span class="p">);</span><span class="o">//</span><span class="n">Uv</span> <span class="n">analog</span> <span class="n">value</span>
+<span class="linenos">12</span>  <span class="nb">int</span> <span class="n">uv_level</span> <span class="o">=</span> <span class="n">uv</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;level&quot;</span><span class="p">);</span><span class="o">//</span><span class="n">Uv</span> <span class="n">Level</span>
+<span class="linenos">13</span>  <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;uv value: &quot;</span><span class="p">);</span>
+<span class="linenos">14</span>  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">uv_Value</span><span class="p">);</span>
+<span class="linenos">15</span>  <span class="n">Serial</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;uv level: &quot;</span><span class="p">);</span>
+<span class="linenos">16</span>  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">uv_level</span><span class="p">);</span>
+<span class="linenos">17</span>  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;---------------------&quot;</span><span class="p">);</span>
+<span class="linenos">18</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="linenos">19</span><span class="p">}</span>
+<span class="linenos">20</span>
+</pre></div>
+</div>
+<p><strong>5.Test Result</strong></p>
+<p>After you successfully connect the line according to the wiring diagram and successfully upload the correct program, when you irradiate the UV sensor with the UV lamp or put the UV sensor in the outdoor sunlight, the serial port monitor will output the current analog value of UV and the corresponding level.</p>
+<div class="figure align-center">
+<img alt="../../_images/UV-4.png" src="../../_images/UV-4.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../_images/UV-5.png" src="../../_images/UV-5.png" />
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ultraviolet grade index</p></th>
+<th class="head"><p>Range of UV analog values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>&lt;372</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>372~743</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>744~1115</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>1116~1487</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>1488~1859</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>1860~2231</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>2232~2603</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>2604~2975</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>2976~3347</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>3348~3719</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>3720~4094</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>&gt;=4095</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>6.Related Resources</strong></p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.dropbox.com/scl/fo/pua0iw6dw0qjq0n7g2elx/AMIoQ6TiDMPetoKLS5XZBOU?rlkey=kmbtwek4dlvemsduqjfr1k8h5&amp;st=23kpfkpo&amp;dl=0">PDF and Code</a></p>
+</div></blockquote>
+<p><strong>7.Get One Now</strong></p>
+<blockquote>
+<div><p>B2B Business: <a class="reference external" href="mailto:info&#37;&#52;&#48;acebott&#46;com">info<span>&#64;</span>acebott<span>&#46;</span>com</a></p>
+<p>Individual buyer: shop on  <a class="reference external" href="https://www.dropbox.com/scl/fo/pua0iw6dw0qjq0n7g2elx/AMIoQ6TiDMPetoKLS5XZBOU?rlkey=kmbtwek4dlvemsduqjfr1k8h5&amp;st=23kpfkpo&amp;dl=0">aliexpress</a></p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="QB103%20Barometric%20Pressure%20Sensor.html" class="btn btn-neutral float-left" title="QB103 Barometric Pressure Sensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="QB105%20Color%20Sensor.html" class="btn btn-neutral float-right" title="QB105 Color Sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

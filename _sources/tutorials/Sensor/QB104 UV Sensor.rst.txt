@@ -1,0 +1,113 @@
+QB104 UV Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/UV-1.png
+    :align: center
+
+
+UV Sensor is a test of the best amount of ultraviolet sensor, can use the photosensitive element by photovoltaic mode and light guide mode converted ultraviolet signal into measurable electrical signal, it does not need to use the wavelength filter, only sensitive to ultraviolet, direct output corresponding ultraviolet index (UV INDEX) linear voltage, output voltage range about 0 ~ 1100 mV.
+
+Application reference: UV tester, UV lamp monitoring, sterilization lamp equipment, etc.
+
+
+**2.Parameter Specification**
+
++-------------------------+---------------------------------------+
+| Parameter               | Value/Representation                  |
++=========================+=======================================+
+| Operating voltage       | 3.3~5V                                |
++-------------------------+---------------------------------------+
+| Output voltage          | 0~5V (corresponding to UV index 0~11) |
++-------------------------+---------------------------------------+
+| Test accuracy           | ±1 UV Index                           |
++-------------------------+---------------------------------------+
+| Wavelength of response  | 200~370nm                             |
++-------------------------+---------------------------------------+
+| Output signal           | Analog signal                         |
++-------------------------+---------------------------------------+
+| Operating temperature   | -20°C~+85°C                           |
++-------------------------+---------------------------------------+
+| Size                    | 3.2cm*2.4cm                           |
++-------------------------+---------------------------------------+
+
+
+.. figure:: /../images/UV-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/UV-3.png
+    :align: center
+
++----------+----------------+
+|UV Sensor | ESP32          |
++==========+================+
+| S        | 39             |
++----------+----------------+
+| VCC      | 5V             |
++----------+----------------+
+| GND      | GND            |
++----------+----------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/UV_Sensor/UV_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After you successfully connect the line according to the wiring diagram and successfully upload the correct program, when you irradiate the UV sensor with the UV lamp or put the UV sensor in the outdoor sunlight, the serial port monitor will output the current analog value of UV and the corresponding level.
+
+
+.. figure:: /../images/UV-4.png
+    :align: center
+
+.. figure:: /../images/UV-5.png
+    :align: center
+
++-------------------------+-----------------------------+
+| Ultraviolet grade index | Range of UV analog values   |
++=========================+=============================+
+| 0                       | <372                        |
++-------------------------+-----------------------------+
+| 1                       | 372~743                     |
++-------------------------+-----------------------------+
+| 2                       | 744~1115                    |
++-------------------------+-----------------------------+
+| 3                       | 1116~1487                   |
++-------------------------+-----------------------------+
+| 4                       | 1488~1859                   |
++-------------------------+-----------------------------+
+| 5                       | 1860~2231                   |
++-------------------------+-----------------------------+
+| 6                       | 2232~2603                   |
++-------------------------+-----------------------------+
+| 7                       | 2604~2975                   |
++-------------------------+-----------------------------+
+| 8                       | 2976~3347                   |
++-------------------------+-----------------------------+
+| 9                       | 3348~3719                   |
++-------------------------+-----------------------------+
+| 10                      | 3720~4094                   |
++-------------------------+-----------------------------+
+| 11                      | >=4095                      |
++-------------------------+-----------------------------+
+
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/pua0iw6dw0qjq0n7g2elx/AMIoQ6TiDMPetoKLS5XZBOU?rlkey=kmbtwek4dlvemsduqjfr1k8h5&st=23kpfkpo&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/pua0iw6dw0qjq0n7g2elx/AMIoQ6TiDMPetoKLS5XZBOU?rlkey=kmbtwek4dlvemsduqjfr1k8h5&st=23kpfkpo&dl=0>`_

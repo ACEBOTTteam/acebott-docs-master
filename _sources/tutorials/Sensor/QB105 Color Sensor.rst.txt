@@ -1,0 +1,82 @@
+QB105 Color Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/Color-1.png
+    :align: center
+
+
+The Color Sensor is an optical sensing to recognize the surface color of an object. Support red, green, blue (RGB) three basic colors, support bright light induction, can output the corresponding specific value, restore the actual color.
+The onboard comes with two bright LEDs, which allows the sensor to use normally in the case of low ambient light, realizing the function of "filling light filling".
+
+Application reference: Color calibration device, color printer, plotter, etc.
+
+
+**2.Parameter Specification**
+
++-------------------------+------------------------+
+| Parameter               | Value/Representation   |
++=========================+========================+
+| Operating voltage       | 3.3~5V                 |
++-------------------------+------------------------+
+| Detection distance      | 3-10mm                 |
++-------------------------+------------------------+
+| Output protocol         | I2C                    |
++-------------------------+------------------------+
+| Operating temperature   | -30°C~+70°C            |
++-------------------------+------------------------+
+| Size                    | 3.2cm*2.4cm            |
++-------------------------+------------------------+
+
+.. figure:: /../images/Color-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/Color-3.png
+    :align: center
+
++-------------+----------------+
+|Color Sensor | ESP32          |
++=============+================+
+| SCL         | SCL            |
++-------------+----------------+
+| SDA         | SDA            |
++-------------+----------------+
+| VCC         | 5V             |
++-------------+----------------+
+| GND         | GND            |
++-------------+----------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Color_Sensor/Color_Sensor.ino
+    :linenos:
+
+**5.Test Result**
+
+After you successfully connect the line according to the wiring diagram and successfully upload the correct program, please turn on the LED light switch of the color sensor, and then put it on different colors. The serial port monitor will output the data of red, green and blue three primary colors.
+
+.. figure:: /../images/Color-4.png
+    :align: center
+
+.. figure:: /../images/Color-5.png
+    :align: center
+
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/3d4bs8qmjn1lpnrbr3ana/AH4Tc6tpGg01eflFnxPMkW4?rlkey=wrslbvviq4ehvncznvx874xwk&st=hsbgg31s&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/3d4bs8qmjn1lpnrbr3ana/AH4Tc6tpGg01eflFnxPMkW4?rlkey=wrslbvviq4ehvncznvx874xwk&st=hsbgg31s&dl=0>`_

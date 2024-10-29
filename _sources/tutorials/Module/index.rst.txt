@@ -26,6 +26,9 @@ Module
    QB015 Joystick Module.rst
    QB061 MP3 Module.rst
    QB095 Traffic Light Module.rst
+   QB100 4-Button Module.rst
+   QB101 DC Motor Driver Module.rst
+   QB102 Charging Module.rst
 
 
 

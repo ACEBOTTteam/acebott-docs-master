@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QB101 DC Motor Driver Module &mdash; ACEBOTT 2.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QB102 Charging Module" href="QB102%20Charging%20Module.html" />
+    <link rel="prev" title="QB100 4-Button Module" href="QB100%204-Button%20Module.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+          </a>
+              <div class="version">
+                2.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/Microbit/index.html">Microbit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting%20started/ACECode%28Blockly%20Programming%29/index.html">ACECode</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Starter Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Explorer%20Series/index.html">Explorer Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/STEM%20Education%20Series/index.html">STEM Education Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit/Inventor%20Series/index.html">Inventor Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Controller Board</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/ESP32/index.html">ESP32/ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Arduino/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/Microbit/index.html">Microbit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Electronic Module</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Sensor/index.html">Sensor</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="QB004%20Potentiometer%20Module.html">QB004 Potentiometer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB006%20Laser%20Module.html">QB006/QB074 Laser Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB007%20LED%20Module.html">QB007/QB081 LED Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB008%20Relay%20Module.html">QB008/QB076 Relay Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB038%20Button%20Module.html">QB038/QB067 Button Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB045%20130%20DC%20Motor%20Module.html">QB045/QB075 130 DC Motor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB046%20RFID%20RC522%20I2C%20Module.html">QB046/QB087 RFID RC522 I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB047%20DS1307%20Clock%20Module.html">QB047 DS1307 Clock Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB048%20Vibrating%20Motor%20Module.html">QB048 Vibrating Motor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB051%204-Digit%20Tube%20Display%20Module.html">QB051/QB090 4-Digit Tube Display Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB054%20Servo%20SG90%209G%20Module%20180%20Degree.html">QB054 Servo SG90 9G Module 180 Degree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QZ004%20RGB%20LED%20Strip.html">QZ004 RGB LED Strip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB059%20LCD%201602%20I2C%20Module.html">QB059 LCD 1602 I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB010%20P-Buzzer%20Module.html">QB010/QB077 P-Buzzer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB014%20RGB%20Module.html">QB014/QB082 RGB Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB062%20Humidifier%20Module.html">QB062/QB078 Humidifier Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB064%20OLED%20Module.html">QB064/QB065 OLED Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB001%2BQB053%20Infrared%20Remote%20Control%20Module.html">QB001/QB073+QB053 Infrared Remote Control Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB098%204x4%20Touch%20Keyboard%20Module.html">QB098 4x4 Touch Keyboard Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB015%20Joystick%20Module.html">QB015 Joystick Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB061%20MP3%20Module.html">QB061/QB089 MP3 Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB095%20Traffic%20Light%20Module.html">QB095 Traffic Light Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB100%204-Button%20Module.html">QB100 4-Button Module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">QB101 DC Motor Driver Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QB102%20Charging%20Module.html">QB102 Charging Module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ACEBOTT</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module</a></li>
+      <li class="breadcrumb-item active">QB101 DC Motor Driver Module</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="qb101-dc-motor-driver-module">
+<h1>QB101 DC Motor Driver Module<a class="headerlink" href="#qb101-dc-motor-driver-module" title="Permalink to this heading"></a></h1>
+<p><strong>1.Product Introduction</strong></p>
+<div class="figure align-center">
+<img alt="../../_images/DC_Motor_Driver_Module-1.png" src="../../_images/DC_Motor_Driver_Module-1.png" />
+</div>
+<p>The DC Motor Driver Module is an electronic component that controls the DC motor, which controls the rotation direction and speed of the motor by controlling the input signal.
+There are two control pins on the drive module, one to control clockwise rotation (IN +) and the other to control counterclockwise rotation (IN-). By applying different level signals (high or low levels) to these pins, the motor has clockwise rotation and counterclockwise rotation that can be achieved.</p>
+<p>Application reference: small robots, intelligent cars, fans and other projects.</p>
+<p><strong>2.Parameter Specification</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value//Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Operating voltage</p></td>
+<td><p>3.3V-5V</p></td>
+</tr>
+<tr class="row-odd"><td><p>Output current</p></td>
+<td><p>200mA</p></td>
+</tr>
+<tr class="row-even"><td><p>Operating temperature</p></td>
+<td><p>-10°C~+50°C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Size</p></td>
+<td><p>3.2cm*2.4cm</p></td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center">
+<img alt="../../_images/DC_Motor_Driver_Module-2.png" src="../../_images/DC_Motor_Driver_Module-2.png" />
+</div>
+<p><strong>3.Wiring Diagram</strong></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Expansion board is attached to esp32 controller board.</p>
+</div>
+<div class="figure align-center">
+<img alt="../../_images/DC_Motor_Driver_Module-3.png" src="../../_images/DC_Motor_Driver_Module-3.png" />
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>DC Motor Driver Module</p></th>
+<th class="head"><p>ESP32</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>IN-</p></td>
+<td><p>Digital Pin 16</p></td>
+</tr>
+<tr class="row-odd"><td><p>IN+</p></td>
+<td><p>Digital Pin 17</p></td>
+</tr>
+<tr class="row-even"><td><p>VCC</p></td>
+<td><p>5V</p></td>
+</tr>
+<tr class="row-odd"><td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>4.Sample Code</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">void</span> <span class="n">setup</span><span class="p">(){</span>
+<span class="linenos"> 2</span>  <span class="n">pinMode</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span><span class="o">//</span><span class="n">Set</span> <span class="n">pin</span> <span class="mi">17</span> <span class="n">to</span> <span class="n">output</span> <span class="n">mode</span>
+<span class="linenos"> 3</span>  <span class="n">pinMode</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span><span class="o">//</span><span class="n">Set</span> <span class="n">pin</span> <span class="mi">16</span> <span class="n">to</span> <span class="n">output</span> <span class="n">mode</span>
+<span class="linenos"> 4</span><span class="p">}</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="n">void</span> <span class="n">loop</span><span class="p">(){</span>
+<span class="linenos"> 7</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+<span class="linenos"> 8</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span><span class="o">//</span><span class="n">Motor</span> <span class="n">clockwise</span> <span class="n">rotation</span>
+<span class="linenos"> 9</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> 
+<span class="linenos">10</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+<span class="linenos">11</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span><span class="o">//</span><span class="n">Motor</span> <span class="n">stop</span>
+<span class="linenos">12</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> 
+<span class="linenos">13</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+<span class="linenos">14</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span><span class="o">//</span><span class="n">Motor</span> <span class="n">contrarotate</span>
+<span class="linenos">15</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="linenos">16</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+<span class="linenos">17</span>  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span><span class="o">//</span><span class="n">Motor</span> <span class="n">stop</span>
+<span class="linenos">18</span>  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="linenos">19</span><span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>5.Test Result</strong></p>
+<p>When you successfully connect the line according to the wiring diagram and successfully upload the correct program, the motor cycle can turn clockwise for 1 second, stop for 1 second, then turn counterclockwise for 1 second, and stop for 1 second.</p>
+<div class="figure align-center">
+<img alt="../../_images/DC_Motor_Driver_Module-4.png" src="../../_images/DC_Motor_Driver_Module-4.png" />
+</div>
+<p><strong>6.Related Resources</strong></p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.dropbox.com/scl/fo/9vgm2fr8kbdevypwmnan3/AOF8zaCOMGlmC_uCSQP82y8?rlkey=5fdtfpwsrahk0n5ws0k15ivwx&amp;st=rd32o9ma&amp;dl=0">PDF and Code</a></p>
+</div></blockquote>
+<p><strong>7.Get One Now</strong></p>
+<blockquote>
+<div><p>B2B Business: <a class="reference external" href="mailto:info&#37;&#52;&#48;acebott&#46;com">info<span>&#64;</span>acebott<span>&#46;</span>com</a></p>
+<p>Individual buyer: shop on  <a class="reference external" href="https://www.dropbox.com/scl/fo/9vgm2fr8kbdevypwmnan3/AOF8zaCOMGlmC_uCSQP82y8?rlkey=5fdtfpwsrahk0n5ws0k15ivwx&amp;st=rd32o9ma&amp;dl=0">aliexpress</a></p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="QB100%204-Button%20Module.html" class="btn btn-neutral float-left" title="QB100 4-Button Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="QB102%20Charging%20Module.html" class="btn btn-neutral float-right" title="QB102 Charging Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright ACEBOTT All Rights Reserved.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

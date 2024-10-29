@@ -1,0 +1,75 @@
+QB100 4-Button Module
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/4-Button-1.png
+    :align: center
+
+
+The 4-button module contains four presses, and the circuit is on when a button is pressed and disconnected when it is released.
+Because the four key switches share one analog output, they can only be connected to the analog port. Each key corresponds to an analog value, so as to realize the discrimination of different keys.
+
+Application reference: remote control, keyboard, game controller, etc.
+
+**2.Parameter Specification**
+
++-----------------------+-----------------------+
+| Parameter             | Value//Description    |
++=======================+=======================+
+| Operating voltage     | 3.3V~5V               |
++-----------------------+-----------------------+
+| Operating temperature | -40°C~+80°C           |
++-----------------------+-----------------------+
+| Output signal         | Analog signal         |
++-----------------------+-----------------------+
+| Size                  | 4.7cm*2.4cm           |
++-----------------------+-----------------------+
+
+.. figure:: /../images/4-Button-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/4-Button-3.png
+    :align: center
++-----------------------+-----------------------+
+|4-Button Module        | ESP32                 |
++=======================+=======================+
+| S                     | 32                    |
++-----------------------+-----------------------+
+| VCC                   | 5V                    |
++-----------------------+-----------------------+
+| GND                   | GND                   |
++-----------------------+-----------------------+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/4-Button/4-Button.ino
+    :linenos:
+
+**5.Test Result**
+
+When you successfully connect the line according to the wiring diagram and successfully upload the correct program, when a certain button is pressed, the serial port monitor will print the corresponding button value.
+
+.. figure:: /../images/4-Button-4.png
+    :align: center
+
+.. figure:: /../images/4-Button-5.png
+    :align: center    
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/yiwucw1snz93yclev2g4d/AL1S0q3ZH4e3QjeVL4QZdbE?rlkey=l65b1lu7rzbd635gwlef3i0fv&st=1ifvzxx5&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/yiwucw1snz93yclev2g4d/AL1S0q3ZH4e3QjeVL4QZdbE?rlkey=l65b1lu7rzbd635gwlef3i0fv&st=1ifvzxx5&dl=0>`_
+

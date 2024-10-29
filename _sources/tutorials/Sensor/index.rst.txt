@@ -21,7 +21,9 @@ Sensor
    QB060 Trace Sensor.rst
    QB063 Water Sensor.rst
    QB096 Infrared Obstacle Avoidance Sensor.rst
-
+   QB103 Barometric Pressure Sensor.rst
+   QB104 UV Sensor.rst
+   QB105 Color Sensor.rst
 
 
 

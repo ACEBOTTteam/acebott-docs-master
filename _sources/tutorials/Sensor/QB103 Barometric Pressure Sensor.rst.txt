@@ -1,0 +1,89 @@
+QB103 Barometric Pressure Sensor
+======================================
+
+**1.Product Introduction**
+
+.. figure:: /../images/ATM-1.png
+    :align: center
+
+
+The Barometric Pressure Sensor adopts BMP280 chip and integrates two main functions of temperature detection and atmospheric pressure detection.
+It can measure atmospheric pressure to provide information on current altitude or air pressure, and can also be able to measure ambient temperature and provide accurate temperature data for temperature compensation or other environmental monitoring applications.
+In navigation applications, the barometer can also enhance the GPS positioning effect, or combine with IMU sensors to achieve three-dimensional indoor navigation.
+
+Application reference: weather station, indoor navigation, pneumatic altimeter, UAV, etc.
+
+
+**2.Parameter Specification**
+
++------------------------------------------+---------------------------------------+
+| Parameter                                | Value/Representation                  |
++==========================================+=======================================+
+| Operating voltage                        | 5V                                    |
++------------------------------------------+---------------------------------------+
+| Air pressure detection range             | 300~1100hPa                           |
++------------------------------------------+---------------------------------------+
+| Air pressure detecting relative accuracy | ±0.12hPa(±1m)                         |
++------------------------------------------+---------------------------------------+
+| Temperature measurement range            | 0°C~65°C                              |
++------------------------------------------+---------------------------------------+
+| Temperature measurement accuracy         | 0.01°C                                |
++------------------------------------------+---------------------------------------+
+| Output protocol                          | I2C                                   |
++------------------------------------------+---------------------------------------+
+| Operating temperature                    | -10°C~+50°C                           |
++------------------------------------------+---------------------------------------+
+| Size                                     | 3.2cm*2.4cm                           |
++------------------------------------------+---------------------------------------+
+
+.. figure:: /../images/ATM-2.png
+    :align: center
+
+**3.Wiring Diagram**
+
+.. container:: custom-hint
+.. Hint:: 
+
+   Expansion board is attached to esp32 controller board.
+
+.. figure:: /../images/ATM-3.png
+    :align: center
+
++---------------------------+----------------+
+|Barometric Pressure Sensor | ESP32          |
++===========================+================+
+| SCL                       | SCL            |
++---------------------------+----------------+
+| SDA                       | SDA            |
++---------------------------+----------------+
+| VCC                       | 5V             |
++---------------------------+----------------+
+| GND                       | GND            |
++---------------------------+----------------+
+
+
+**4.Sample Code**
+
+.. literalinclude:: /../../examples/Barometric_pressure/Barometric_pressure.ino
+    :linenos:
+
+**5.Test Result**
+
+When you successfully connect the wiring according to the wiring diagram and successfully upload the correct program, the serial port monitor will print the current atmospheric temperature, atmospheric pressure intensity and altitude data of the atmospheric pressure sensor.
+
+.. figure:: /../images/ATM-4.png
+    :align: center
+
+.. figure:: /../images/ATM-5.png
+    :align: center
+
+
+**6.Related Resources**
+
+ `PDF and Code <https://www.dropbox.com/scl/fo/hz58f7isu8uyifon0jaxp/AI2rfqcd27VR7yvWKgo8iSQ?rlkey=7698fnsd4hamaegn5d5nfbx0i&st=l14hgqvq&dl=0>`_
+
+**7.Get One Now**
+
+    B2B Business: info@acebott.com
+
+    Individual buyer: shop on  `aliexpress <https://www.dropbox.com/scl/fo/hz58f7isu8uyifon0jaxp/AI2rfqcd27VR7yvWKgo8iSQ?rlkey=7698fnsd4hamaegn5d5nfbx0i&st=l14hgqvq&dl=0>`_
